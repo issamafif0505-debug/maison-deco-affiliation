@@ -1,0 +1,38 @@
+{
+  "name": "Lampe Sunset Projection Coucher de Soleil TikTok",
+  "slug": "lampe-sunset-projection",
+  "shortDescription": "Lampe projection coucher de soleil 16 couleurs, rotation 360 degres, USB, ideal TikTok et deco chambre",
+  "fullDescription": "La lampe Sunset est le phenomene TikTok par excellence ! Elle projette un magnifique halo de lumiere qui imite un coucher de soleil sur vos murs. Avec 16 couleurs differentes et une rotation 360 degres, elle cree des ambiances uniques pour vos photos, videos TikTok, ou simplement pour profiter d'une atmosphere relaxante. L'alimentation USB la rend ultra-pratique. C'est aussi un cadeau original qui plait a coup sur. Produit parfait pour l'affiliation : le rendu en video est irresistible !",
+  "category": "eclairage",
+  "amazonAsin": "B09XJ75QK8",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 19.99,
+    "currency": "EUR",
+    "lastChecked": "2025-06-15"
+  },
+  "rating": {
+    "score": 4.2,
+    "count": 3842
+  },
+  "image": "https://placehold.co/400x400/FEF3C7/D97706?text=Lampe%0ASunset+TikTok&font=playfair-display",
+  "pros": [
+    "Effet visuel spectaculaire (viral TikTok)",
+    "16 couleurs differentes",
+    "Rotation 360 degres ajustable",
+    "Prix tres accessible (cadeau ideal)"
+  ],
+  "cons": [
+    "Qualite de construction basique",
+    "Luminosite faible (ambiance uniquement)"
+  ],
+  "specifications": [
+    { "label": "Couleurs", "value": "16 couleurs" },
+    { "label": "Rotation", "value": "360 degres" },
+    { "label": "Alimentation", "value": "USB" },
+    { "label": "Hauteur", "value": "Reglable avec trepied" },
+    { "label": "Utilisation", "value": "Deco, photo, TikTok, ambiance" }
+  ],
+  "featured": false,
+  "inStock": true
+}

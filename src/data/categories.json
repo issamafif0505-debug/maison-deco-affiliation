@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Salon",
+    "slug": "salon",
+    "description": "Meubles, déco et accessoires pour votre salon",
+    "emoji": "🛋️"
+  },
+  {
+    "name": "Chambre",
+    "slug": "chambre",
+    "description": "Literie, rangement et décoration de chambre",
+    "emoji": "🛏️"
+  },
+  {
+    "name": "Cuisine",
+    "slug": "cuisine",
+    "description": "Ustensiles, électroménager et organisation cuisine",
+    "emoji": "🍳"
+  },
+  {
+    "name": "Salle de bain",
+    "slug": "salle-de-bain",
+    "description": "Accessoires et organisation salle de bain",
+    "emoji": "🚿"
+  },
+  {
+    "name": "Jardin",
+    "slug": "jardin",
+    "description": "Mobilier de jardin, plantes et décoration extérieure",
+    "emoji": "🌿"
+  },
+  {
+    "name": "Décoration",
+    "slug": "decoration",
+    "description": "Tableaux, vases, coussins et objets déco",
+    "emoji": "🎨"
+  },
+  {
+    "name": "Rangement",
+    "slug": "rangement",
+    "description": "Solutions de rangement et organisation",
+    "emoji": "📦"
+  },
+  {
+    "name": "Éclairage",
+    "slug": "eclairage",
+    "description": "Lampes, guirlandes et luminaires",
+    "emoji": "💡"
+  }
+]

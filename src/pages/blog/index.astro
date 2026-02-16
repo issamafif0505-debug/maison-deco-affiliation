@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BlogCard from '../../components/blog/BlogCard.astro';
+import Breadcrumbs from '../../components/common/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import categories from '../../data/categories.json';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const sortedPosts = allPosts.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+---
+
+<BaseLayout
+  title="Blog"
+  description="Decouvrez nos guides d'achat, comparatifs et avis sur les meilleurs produits maison et decoration."
+>
+  <div class="container-custom py-8 md:py-12">
+    <Breadcrumbs items={[{ label: 'Blog' }]} />
+
+    <div class="max-w-3xl mb-10">
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Le Blog
+      </h1>
+      <p class="text-lg text-gray-600">
+        Guides d'achat, comparatifs et avis honnetes sur les meilleurs produits pour votre maison.
+      </p>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="flex flex-wrap gap-2 mb-10">
+      <a
+        href="/blog/"
+        class="badge bg-primary-500 text-white"
+      >
+        Tous
+      </a>
+      {categories.map((cat) => (
+        <a
+          href={`/blog/categorie/${cat.slug}/`}
+          class="badge bg-gray-100 text-gray-600 hover:bg-primary-100 hover:text-primary-700 transition-colors"
+        >
+          {cat.emoji} {cat.name}
+        </a>
+      ))}
+    </div>
+
+    <!-- Posts Grid -->
+    {sortedPosts.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sortedPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            cover={post.data.cover}
+            coverAlt={post.data.coverAlt}
+            category={post.data.category}
+            type={post.data.type}
+            pubDate={post.data.pubDate}
+            slug={post.id}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="text-center py-20">
+        <span class="text-6xl mb-4 block">📝</span>
+        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Aucun article pour le moment</h2>
+        <p class="text-gray-600">Les premiers articles arrivent bientot !</p>
+      </div>
+    )}
+  </div>
+</BaseLayout>

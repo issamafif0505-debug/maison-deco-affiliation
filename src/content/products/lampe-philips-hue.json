@@ -1,0 +1,38 @@
+{
+  "name": "Philips Hue White & Color Ambiance E27 - Pack de 2",
+  "slug": "lampe-philips-hue",
+  "shortDescription": "Lot de 2 ampoules connectees E27, 16 millions de couleurs, compatibles Alexa et Google Home",
+  "fullDescription": "La Philips Hue White & Color Ambiance est la reference en matiere d'eclairage connecte. Avec ses 16 millions de couleurs et ses nuances de blanc, elle transforme completement l'ambiance de votre piece. Compatible avec Alexa, Google Home et Apple HomeKit, elle s'integre parfaitement dans votre maison connectee. L'application Philips Hue permet de creer des scenes personnalisees et de programmer des automatisations. Ce pack de 2 ampoules est le meilleur rapport qualite-prix pour demarrer.",
+  "category": "eclairage",
+  "amazonAsin": "B07SS38CVG",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 84.99,
+    "currency": "EUR",
+    "lastChecked": "2025-06-15"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 12453
+  },
+  "image": "https://placehold.co/400x400/FFF8F0/D77F35?text=Philips+Hue%0AE27+Pack+2&font=playfair-display",
+  "pros": [
+    "16 millions de couleurs",
+    "Compatible Alexa, Google Home, Apple HomeKit",
+    "Application intuitive et complete",
+    "Pack de 2 = meilleur rapport qualite-prix"
+  ],
+  "cons": [
+    "Necessite le pont Hue pour fonctions avancees",
+    "Prix eleve par rapport aux concurrents"
+  ],
+  "specifications": [
+    { "label": "Puissance", "value": "9W (equivalent 60W)" },
+    { "label": "Culot", "value": "E27" },
+    { "label": "Connectivite", "value": "Bluetooth + Zigbee" },
+    { "label": "Duree de vie", "value": "25 000 heures" },
+    { "label": "Lumens", "value": "806 lm" }
+  ],
+  "featured": true,
+  "inStock": true
+}

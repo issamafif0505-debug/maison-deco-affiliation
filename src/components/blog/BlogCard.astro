@@ -1,0 +1,55 @@
+---
+import { formatDate } from '../../utils/formatting';
+
+interface Props {
+  title: string;
+  description: string;
+  cover: string;
+  coverAlt: string;
+  category: string;
+  type: string;
+  pubDate: Date;
+  slug: string;
+}
+
+const { title, description, cover, coverAlt, category, type, pubDate, slug } = Astro.props;
+
+const typeLabels: Record<string, string> = {
+  'top-10': 'Top 10',
+  'comparatif': 'Comparatif',
+  'review': 'Review',
+  'guide': 'Guide',
+  'astuce': 'Astuce',
+};
+---
+
+<article class="card group">
+  <a href={`/blog/${slug}/`} class="block">
+    <!-- Image -->
+    <div class="relative overflow-hidden aspect-video">
+      <img
+        src={cover}
+        alt={coverAlt}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        loading="lazy"
+      />
+      <div class="absolute top-3 left-3 flex gap-2">
+        <span class="badge-category text-xs capitalize">{category}</span>
+        <span class="badge-type text-xs">{typeLabels[type] || type}</span>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="p-5">
+      <h2 class="font-serif text-lg font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-2 line-clamp-2">
+        {title}
+      </h2>
+      <p class="text-sm text-gray-600 line-clamp-2 mb-3">
+        {description}
+      </p>
+      <time datetime={pubDate.toISOString()} class="text-xs text-gray-400">
+        {formatDate(pubDate)}
+      </time>
+    </div>
+  </a>
+</article>

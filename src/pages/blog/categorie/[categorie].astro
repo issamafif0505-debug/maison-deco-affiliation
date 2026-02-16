@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import BlogCard from '../../../components/blog/BlogCard.astro';
+import Breadcrumbs from '../../../components/common/Breadcrumbs.astro';
+import { getCollection } from 'astro:content';
+import categories from '../../../data/categories.json';
+
+export function getStaticPaths() {
+  return categories.map((cat) => ({
+    params: { categorie: cat.slug },
+    props: { category: cat },
+  }));
+}
+
+const { category } = Astro.props;
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft && data.category === category.slug);
+const sortedPosts = allPosts.sort(
+  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+);
+---
+
+<BaseLayout
+  title={`${category.name} - Blog`}
+  description={`Decouvrez nos articles sur ${category.name.toLowerCase()} : ${category.description}`}
+>
+  <div class="container-custom py-8 md:py-12">
+    <Breadcrumbs items={[
+      { label: 'Blog', href: '/blog/' },
+      { label: category.name },
+    ]} />
+
+    <div class="max-w-3xl mb-10">
+      <span class="text-5xl mb-4 block">{category.emoji}</span>
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        {category.name}
+      </h1>
+      <p class="text-lg text-gray-600">
+        {category.description}
+      </p>
+    </div>
+
+    <!-- Category Filter -->
+    <div class="flex flex-wrap gap-2 mb-10">
+      <a href="/blog/" class="badge bg-gray-100 text-gray-600 hover:bg-primary-100 hover:text-primary-700 transition-colors">
+        Tous
+      </a>
+      {categories.map((cat) => (
+        <a
+          href={`/blog/categorie/${cat.slug}/`}
+          class:list={[
+            'badge transition-colors',
+            cat.slug === category.slug
+              ? 'bg-primary-500 text-white'
+              : 'bg-gray-100 text-gray-600 hover:bg-primary-100 hover:text-primary-700',
+          ]}
+        >
+          {cat.emoji} {cat.name}
+        </a>
+      ))}
+    </div>
+
+    {sortedPosts.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {sortedPosts.map((post) => (
+          <BlogCard
+            title={post.data.title}
+            description={post.data.description}
+            cover={post.data.cover}
+            coverAlt={post.data.coverAlt}
+            category={post.data.category}
+            type={post.data.type}
+            pubDate={post.data.pubDate}
+            slug={post.id}
+          />
+        ))}
+      </div>
+    ) : (
+      <div class="text-center py-20">
+        <span class="text-6xl mb-4 block">{category.emoji}</span>
+        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Aucun article dans cette categorie</h2>
+        <p class="text-gray-600">Les premiers articles arrivent bientot !</p>
+        <a href="/blog/" class="btn-primary mt-6 inline-flex">Voir tous les articles</a>
+      </div>
+    )}
+  </div>
+</BaseLayout>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#F5F5F5" rx="20"/>
+  <!-- Robot body -->
+  <ellipse cx="200" cy="220" rx="100" ry="30" fill="#2D3748"/>
+  <ellipse cx="200" cy="210" rx="100" ry="30" fill="#4A5568"/>
+  <!-- Top surface -->
+  <circle cx="200" cy="200" r="90" fill="#4A5568"/>
+  <circle cx="200" cy="200" r="85" fill="#2D3748"/>
+  <!-- LiDAR bump -->
+  <circle cx="200" cy="175" r="20" fill="#1A202C"/>
+  <circle cx="200" cy="175" r="15" fill="#4A5568"/>
+  <!-- Button -->
+  <circle cx="200" cy="210" r="12" fill="#E53E3E" opacity="0.8"/>
+  <!-- Camera eyes -->
+  <circle cx="175" cy="140" r="6" fill="#63B3ED"/>
+  <circle cx="225" cy="140" r="6" fill="#63B3ED"/>
+  <text x="200" y="340" font-family="Arial" font-size="16" fill="#6B7280" text-anchor="middle" font-weight="bold">Roborock S7</text>
+</svg>

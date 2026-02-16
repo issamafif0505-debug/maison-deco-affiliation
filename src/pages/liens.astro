@@ -1,0 +1,91 @@
+---
+import LinkInBioLayout from '../layouts/LinkInBioLayout.astro';
+import LinkCard from '../components/linkinbio/LinkCard.astro';
+import SocialIcons from '../components/linkinbio/SocialIcons.astro';
+import siteConfig from '../data/site-config.json';
+import { buildAmazonLink } from '../utils/affiliate';
+---
+
+<LinkInBioLayout>
+  <!-- Profile -->
+  <div class="text-center mb-8">
+    <div class="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center shadow-lg">
+      <span class="text-4xl">🏠</span>
+    </div>
+    <h1 class="font-serif text-2xl font-bold text-gray-900">{siteConfig.author.name}</h1>
+    <p class="text-gray-600 text-sm mt-1">{siteConfig.siteName}</p>
+    <p class="text-gray-500 text-xs mt-2 max-w-xs mx-auto">
+      Passionné de deco interieur a Marrakech. Je partage mes coups de coeur et bons plans Amazon !
+    </p>
+  </div>
+
+  <!-- Social Icons -->
+  <div class="mb-8">
+    <SocialIcons />
+  </div>
+
+  <!-- Links -->
+  <div class="space-y-3">
+    <LinkCard
+      title="Mes Ebooks Deco (PDF)"
+      url="/ebooks/"
+      emoji="📚"
+      highlight={true}
+    />
+    <LinkCard
+      title="Mes produits deco preferes"
+      url="/produits/"
+      emoji="🛒"
+    />
+    <LinkCard
+      title="Govee Lampadaire LED RGB"
+      url={buildAmazonLink('B09TZPNCJM')}
+      emoji="💡"
+      external={true}
+    />
+    <LinkCard
+      title="Bande LED Govee 5m (15 EUR !)"
+      url={buildAmazonLink('B07XT8J3HZ')}
+      emoji="🌈"
+      external={true}
+    />
+    <LinkCard
+      title="Lampe Sunset TikTok"
+      url={buildAmazonLink('B09XJ75QK8')}
+      emoji="🌅"
+      external={true}
+    />
+    <LinkCard
+      title="Philips Hue Pack 2 Ampoules"
+      url={buildAmazonLink('B07SS38CVG')}
+      emoji="💡"
+      external={true}
+    />
+    <LinkCard
+      title="Guirlande Boules Coton LED"
+      url={buildAmazonLink('B07XXYF382')}
+      emoji="✨"
+      external={true}
+    />
+    <LinkCard
+      title="Top 10 Lampes Design (article)"
+      url="/blog/top-10-lampes-design-salon/"
+      emoji="📝"
+    />
+    <LinkCard
+      title="Mon site complet"
+      url="/"
+      emoji="🌐"
+    />
+  </div>
+
+  <!-- Footer -->
+  <div class="text-center mt-8 pt-6 border-t border-gray-200/50">
+    <p class="text-xs text-gray-400">
+      En tant que Partenaire Amazon, je realise un benefice sur les achats remplissant les conditions requises.
+    </p>
+    <a href="/" class="text-xs text-primary-500 hover:text-primary-600 mt-2 inline-block">
+      {siteConfig.siteName}
+    </a>
+  </div>
+</LinkInBioLayout>

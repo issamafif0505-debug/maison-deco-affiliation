@@ -1,0 +1,47 @@
+---
+import ProductCard from './ProductCard.astro';
+
+interface Product {
+  id: string;
+  data: {
+    name: string;
+    slug: string;
+    shortDescription: string;
+    image: string;
+    category: string;
+    price: { current: number; currency: string };
+    rating: { score: number; count: number };
+    featured: boolean;
+    inStock: boolean;
+  };
+}
+
+interface Props {
+  products: Product[];
+  columns?: 2 | 3 | 4;
+}
+
+const { products, columns = 3 } = Astro.props;
+
+const gridCols = {
+  2: 'grid-cols-1 sm:grid-cols-2',
+  3: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+  4: 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4',
+};
+---
+
+<div class:list={['grid gap-6', gridCols[columns]]}>
+  {products.map((product) => (
+    <ProductCard
+      name={product.data.name}
+      slug={product.data.slug}
+      shortDescription={product.data.shortDescription}
+      image={product.data.image}
+      category={product.data.category}
+      price={product.data.price}
+      rating={product.data.rating}
+      featured={product.data.featured}
+      inStock={product.data.inStock}
+    />
+  ))}
+</div>

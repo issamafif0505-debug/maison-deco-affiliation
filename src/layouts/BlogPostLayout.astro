@@ -1,0 +1,136 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/common/Breadcrumbs.astro';
+import { formatDate } from '../utils/formatting';
+import { articleSchema } from '../utils/seo';
+import siteConfig from '../data/site-config.json';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  author: string;
+  cover: string;
+  coverAlt: string;
+  category: string;
+  tags: string[];
+  type: string;
+}
+
+const { title, description, pubDate, updatedDate, author, cover, coverAlt, category, tags, type } = Astro.props;
+
+const breadcrumbs = [
+  { label: 'Blog', href: '/blog/' },
+  { label: title },
+];
+
+const schema = articleSchema({
+  title,
+  description,
+  image: cover,
+  publishDate: pubDate,
+  updatedDate,
+  url: new URL(Astro.url.pathname, siteConfig.siteUrl).toString(),
+});
+
+const typeLabels: Record<string, string> = {
+  'top-10': 'Top 10',
+  'comparatif': 'Comparatif',
+  'review': 'Review',
+  'guide': 'Guide',
+  'astuce': 'Astuce',
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={cover}
+  type="article"
+  publishDate={pubDate}
+  schema={schema}
+>
+  <article class="container-custom py-8 md:py-12">
+    <Breadcrumbs items={breadcrumbs} />
+
+    <!-- Article Header -->
+    <header class="max-w-3xl mx-auto mb-10">
+      <div class="flex flex-wrap gap-2 mb-4">
+        <span class="badge-category capitalize">{category}</span>
+        <span class="badge-type">{typeLabels[type] || type}</span>
+      </div>
+
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+        {title}
+      </h1>
+
+      <p class="text-lg text-gray-600 mb-6">{description}</p>
+
+      <div class="flex items-center gap-4 text-sm text-gray-500">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center">
+            <span class="text-primary-700 font-semibold text-xs">{author.charAt(0)}</span>
+          </div>
+          <span class="font-medium text-gray-700">{author}</span>
+        </div>
+        <span>•</span>
+        <time datetime={pubDate.toISOString()}>
+          {formatDate(pubDate)}
+        </time>
+        {updatedDate && (
+          <>
+            <span>•</span>
+            <span>Mis a jour le {formatDate(updatedDate)}</span>
+          </>
+        )}
+      </div>
+    </header>
+
+    <!-- Cover Image -->
+    <div class="max-w-4xl mx-auto mb-10">
+      <img
+        src={cover}
+        alt={coverAlt}
+        class="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg"
+        loading="eager"
+      />
+    </div>
+
+    <!-- Article Content -->
+    <div class="max-w-3xl mx-auto">
+      <div class="prose-custom">
+        <slot />
+      </div>
+
+      <!-- Tags -->
+      <div class="mt-10 pt-8 border-t border-gray-200">
+        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Tags</h3>
+        <div class="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 transition-colors">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <!-- Author Box -->
+      <div class="mt-8 p-6 bg-warm-100 rounded-2xl">
+        <div class="flex items-start gap-4">
+          <div class="w-14 h-14 rounded-full bg-primary-200 flex items-center justify-center flex-shrink-0">
+            <span class="text-primary-700 font-bold text-xl">{author.charAt(0)}</span>
+          </div>
+          <div>
+            <h3 class="font-serif font-semibold text-gray-900 mb-1">A propos de {author}</h3>
+            <p class="text-sm text-gray-600">{siteConfig.author.bio}</p>
+            <div class="flex gap-3 mt-3">
+              <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="text-sm text-primary-600 hover:text-primary-700 font-medium">TikTok</a>
+              <a href={siteConfig.social.youtube} target="_blank" rel="noopener" class="text-sm text-primary-600 hover:text-primary-700 font-medium">YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

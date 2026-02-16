@@ -1,0 +1,38 @@
+{
+  "name": "GuirLED Guirlande Lumineuse Boules Coton LED USB",
+  "slug": "guirlande-lumineuse-boules-coton",
+  "shortDescription": "Guirlande lumineuse 24 boules coton LED USB avec commande vocale Alexa et Google",
+  "fullDescription": "La GuirLED est la guirlande lumineuse la plus vendue en France. Ses boules en coton veritable diffusent une lumiere douce et chaleureuse, parfaite pour creer une ambiance cosy dans votre chambre ou salon. La version WiFi se controle a la voix avec Alexa et Google Assistant. Avec 24 boules de 6 cm sur 2.4 metres, elle decore n'importe quel espace. Le branchement USB la rend compatible avec tout (chargeur, ordinateur, power bank). Un produit facile a vendre en affiliation car le rendu en video est magnifique !",
+  "category": "decoration",
+  "amazonAsin": "B07XXYF382",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 29.99,
+    "currency": "EUR",
+    "lastChecked": "2025-06-15"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 6547
+  },
+  "image": "https://placehold.co/400x400/FDF2F8/DB2777?text=GuirLED%0ABoules+Coton&font=playfair-display",
+  "pros": [
+    "Boules en vrai coton (qualite premium)",
+    "Commande vocale Alexa et Google",
+    "Branchement USB universel",
+    "Rendu magnifique en photo et video"
+  ],
+  "cons": [
+    "Longueur de 2.4m peut etre courte",
+    "WiFi uniquement 2.4 GHz"
+  ],
+  "specifications": [
+    { "label": "Nombre de boules", "value": "24 boules" },
+    { "label": "Longueur", "value": "2.4 metres" },
+    { "label": "Diametre boule", "value": "6 cm" },
+    { "label": "Alimentation", "value": "USB (adaptateur inclus)" },
+    { "label": "Connectivite", "value": "WiFi + commande vocale" }
+  ],
+  "featured": true,
+  "inStock": true
+}

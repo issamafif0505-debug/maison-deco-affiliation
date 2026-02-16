@@ -1,0 +1,60 @@
+---
+import { formatPrice } from '../../utils/formatting';
+import RatingStars from './RatingStars.astro';
+
+interface Props {
+  name: string;
+  slug: string;
+  shortDescription: string;
+  image: string;
+  category: string;
+  price: { current: number; currency: string };
+  rating: { score: number; count: number };
+  featured?: boolean;
+  inStock?: boolean;
+}
+
+const { name, slug, shortDescription, image, category, price, rating, featured = false, inStock = true } = Astro.props;
+---
+
+<article class="card group relative">
+  {featured && (
+    <div class="absolute top-3 right-3 z-10">
+      <span class="badge bg-amber-100 text-amber-700 text-xs">Coup de coeur</span>
+    </div>
+  )}
+  <a href={`/produits/${slug}/`} class="block">
+    <!-- Image -->
+    <div class="aspect-square bg-gray-50 flex items-center justify-center p-6 overflow-hidden">
+      <img
+        src={image}
+        alt={name}
+        class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- Content -->
+    <div class="p-4">
+      <span class="badge-category text-xs capitalize mb-2 inline-block">{category}</span>
+      <h3 class="font-serif font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-1 line-clamp-2">
+        {name}
+      </h3>
+      <p class="text-sm text-gray-500 line-clamp-2 mb-3">{shortDescription}</p>
+
+      <div class="flex items-center gap-2 mb-3">
+        <RatingStars score={rating.score} />
+        <span class="text-xs text-gray-400">({rating.count})</span>
+      </div>
+
+      <div class="flex items-center justify-between">
+        <span class="text-xl font-bold text-gray-900">
+          {formatPrice(price.current, price.currency)}
+        </span>
+        {!inStock && (
+          <span class="text-xs text-red-500 font-medium">Indisponible</span>
+        )}
+      </div>
+    </div>
+  </a>
+</article>

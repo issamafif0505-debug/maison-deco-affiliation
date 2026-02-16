@@ -1,0 +1,19 @@
+{
+  "siteName": "Maison & Déco by Issam",
+  "siteDescription": "Découvrez les meilleurs produits maison et décoration. Guides d'achat, comparatifs et avis pour embellir votre intérieur.",
+  "siteUrl": "https://maison-deco-issam.netlify.app",
+  "author": {
+    "name": "Issam",
+    "bio": "Passionné de décoration d'intérieur basé à Marrakech. Je teste et compare les meilleurs produits maison & déco pour vous aider à faire les meilleurs choix.",
+    "location": "Marrakech, Maroc"
+  },
+  "affiliateTag": "issamdeco-21",
+  "social": {
+    "tiktok": "https://tiktok.com/@issam_deco",
+    "youtube": "https://youtube.com/@issam_deco",
+    "instagram": "https://instagram.com/issam_deco"
+  },
+  "defaultOgImage": "/images/og-default.jpg",
+  "locale": "fr_FR",
+  "currency": "EUR"
+}

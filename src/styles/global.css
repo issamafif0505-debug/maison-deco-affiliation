@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-gray-800 bg-warm-50 antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-200 shadow-md hover:shadow-lg;
+  }
+
+  .btn-amazon {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-amber-400 text-gray-900 font-bold rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-md hover:shadow-lg gap-2;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  .badge-category {
+    @apply badge bg-primary-100 text-primary-700;
+  }
+
+  .badge-type {
+    @apply badge bg-accent-100 text-accent-700;
+  }
+
+  .prose-custom {
+    @apply prose prose-lg prose-gray max-w-none;
+    @apply prose-headings:font-serif prose-headings:text-gray-900;
+    @apply prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline;
+    @apply prose-img:rounded-xl;
+  }
+}

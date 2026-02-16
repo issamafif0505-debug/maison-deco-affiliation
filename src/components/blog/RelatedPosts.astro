@@ -1,0 +1,44 @@
+---
+import BlogCard from './BlogCard.astro';
+
+interface Post {
+  id: string;
+  data: {
+    title: string;
+    description: string;
+    cover: string;
+    coverAlt: string;
+    category: string;
+    type: string;
+    pubDate: Date;
+  };
+}
+
+interface Props {
+  posts: Post[];
+}
+
+const { posts } = Astro.props;
+---
+
+{posts.length > 0 && (
+  <section class="mt-16 pt-10 border-t border-gray-200">
+    <h2 class="font-serif text-2xl font-bold text-gray-900 mb-8 text-center">
+      Articles similaires
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {posts.slice(0, 3).map((post) => (
+        <BlogCard
+          title={post.data.title}
+          description={post.data.description}
+          cover={post.data.cover}
+          coverAlt={post.data.coverAlt}
+          category={post.data.category}
+          type={post.data.type}
+          pubDate={post.data.pubDate}
+          slug={post.id}
+        />
+      ))}
+    </div>
+  </section>
+)}

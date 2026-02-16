@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Redirections pour liens affiliés Amazon courts
+# Utilisation : tonsite.com/amazon/B07QV9XB87 → Amazon avec ton tag affilié
+[[redirects]]
+  from = "/amazon/:asin"
+  to = "https://www.amazon.fr/dp/:asin?tag=issamdeco-21&linkCode=ll1&language=fr_FR"
+  status = 301
+  force = true
+
+# Redirection trailing slash
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200

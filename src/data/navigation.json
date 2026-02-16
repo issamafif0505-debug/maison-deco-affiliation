@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Accueil",
+    "href": "/"
+  },
+  {
+    "label": "Blog",
+    "href": "/blog/"
+  },
+  {
+    "label": "Produits",
+    "href": "/produits/"
+  },
+  {
+    "label": "Ebooks",
+    "href": "/ebooks/"
+  },
+  {
+    "label": "A propos",
+    "href": "/a-propos/"
+  }
+]

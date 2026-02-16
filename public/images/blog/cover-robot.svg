@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#F5F5F5"/>
+  <!-- Floor -->
+  <rect x="0" y="250" width="800" height="150" fill="#E2E8F0"/>
+  <!-- Floor pattern -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#CBD5E0" stroke-width="0.5"/>
+  <line x1="0" y1="350" x2="800" y2="350" stroke="#CBD5E0" stroke-width="0.5"/>
+  <!-- Robot shadow -->
+  <ellipse cx="400" cy="260" rx="120" ry="20" fill="#000" opacity="0.1"/>
+  <!-- Robot body -->
+  <circle cx="400" cy="220" r="100" fill="#4A5568"/>
+  <circle cx="400" cy="220" r="95" fill="#2D3748"/>
+  <!-- LiDAR -->
+  <circle cx="400" cy="190" r="25" fill="#1A202C"/>
+  <circle cx="400" cy="190" r="18" fill="#4A5568"/>
+  <!-- Scanning lines -->
+  <line x1="200" y1="220" x2="310" y2="190" stroke="#63B3ED" stroke-width="1" opacity="0.5"/>
+  <line x1="250" y1="150" x2="340" y2="185" stroke="#63B3ED" stroke-width="1" opacity="0.4"/>
+  <line x1="500" y1="220" x2="490" y2="190" stroke="#63B3ED" stroke-width="1" opacity="0.5"/>
+  <line x1="550" y1="150" x2="460" y2="185" stroke="#63B3ED" stroke-width="1" opacity="0.4"/>
+  <line x1="600" y1="220" x2="490" y2="200" stroke="#63B3ED" stroke-width="1" opacity="0.3"/>
+  <!-- Clean path -->
+  <path d="M150 260 Q250 240 350 260 Q450 280 550 260 Q650 240 700 260" fill="none" stroke="#48BB78" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  <!-- Button -->
+  <circle cx="400" cy="230" r="15" fill="#E53E3E" opacity="0.8"/>
+  <text x="400" y="236" font-family="Arial" font-size="14" fill="white" text-anchor="middle">ON</text>
+  <!-- Stars rating -->
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="28" fill="#2D3748" text-anchor="middle" font-weight="bold">Test Roborock S7 MaxV Ultra</text>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="16" fill="#F59E0B" text-anchor="middle">★★★★★ 4.7/5</text>
+</svg>

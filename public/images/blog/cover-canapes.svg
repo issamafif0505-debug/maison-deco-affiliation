@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#F0F7F4"/>
+  <!-- Living room scene -->
+  <!-- Wall -->
+  <rect x="0" y="0" width="800" height="280" fill="#E8F0EB"/>
+  <!-- Floor -->
+  <rect x="0" y="280" width="800" height="120" fill="#D4A574" opacity="0.3"/>
+  <!-- Canape 1 -->
+  <rect x="80" y="170" width="220" height="70" rx="15" fill="#6B8F71"/>
+  <rect x="80" y="130" width="220" height="50" rx="12" fill="#4A7050"/>
+  <rect x="95" y="180" width="60" height="45" rx="8" fill="#8AB590"/>
+  <rect x="165" y="180" width="60" height="45" rx="8" fill="#8AB590"/>
+  <rect x="235" y="180" width="50" height="45" rx="8" fill="#8AB590"/>
+  <!-- Canape 2 -->
+  <rect x="480" y="170" width="250" height="70" rx="15" fill="#4A5568"/>
+  <rect x="480" y="130" width="250" height="50" rx="12" fill="#2D3748"/>
+  <rect x="495" y="180" width="70" height="45" rx="8" fill="#718096"/>
+  <rect x="575" y="180" width="70" height="45" rx="8" fill="#718096"/>
+  <rect x="655" y="180" width="60" height="45" rx="8" fill="#718096"/>
+  <!-- Coffee table -->
+  <rect x="340" y="220" width="100" height="40" rx="5" fill="#B8860B" opacity="0.6"/>
+  <!-- Picture frames on wall -->
+  <rect x="150" y="50" width="60" height="50" rx="3" fill="none" stroke="#B8860B" stroke-width="2"/>
+  <rect x="550" y="40" width="80" height="60" rx="3" fill="none" stroke="#B8860B" stroke-width="2"/>
+  <!-- Plant -->
+  <circle cx="420" cy="180" r="25" fill="#6B8F71"/>
+  <circle cx="405" cy="170" r="18" fill="#4A7050"/>
+  <rect x="415" y="200" width="10" height="30" rx="3" fill="#D4A574"/>
+  <!-- VS badge -->
+  <circle cx="400" cy="160" r="25" fill="#E53E3E"/>
+  <text x="400" y="167" font-family="Arial" font-size="18" fill="white" text-anchor="middle" font-weight="bold">VS</text>
+  <!-- Text -->
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="28" fill="#2D3748" text-anchor="middle" font-weight="bold">Comparatif Canapes Convertibles</text>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="16" fill="#6B7280" text-anchor="middle">Les meilleurs modeles 2025</text>
+</svg>

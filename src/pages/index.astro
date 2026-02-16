@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogCard from '../components/blog/BlogCard.astro';
+import ProductCard from '../components/product/ProductCard.astro';
+import { getCollection } from 'astro:content';
+import siteConfig from '../data/site-config.json';
+import categories from '../data/categories.json';
+
+const allPosts = await getCollection('blog', ({ data }) => !data.draft);
+const recentPosts = allPosts
+  .sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime())
+  .slice(0, 6);
+
+const allProducts = await getCollection('products');
+const featuredProducts = allProducts
+  .filter((p) => p.data.featured)
+  .slice(0, 4);
+---
+
+<BaseLayout
+  title="Accueil"
+  description={siteConfig.siteDescription}
+>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-primary-50 via-warm-50 to-accent-50 py-16 md:py-24">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+          Les meilleurs produits
+          <span class="text-primary-600">Maison & Deco</span>
+          testes pour vous
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          Guides d'achat, comparatifs et avis honnetes pour embellir votre interieur sans vous ruiner.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/blog/" class="btn-primary">
+            Lire le blog
+          </a>
+          <a href="/produits/" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-700 font-semibold rounded-lg border border-gray-200 hover:border-primary-300 hover:text-primary-600 transition-all duration-200 shadow-sm">
+            Voir les produits
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative elements -->
+    <div class="absolute top-10 left-10 text-6xl opacity-10">🏠</div>
+    <div class="absolute bottom-10 right-10 text-6xl opacity-10">🛋️</div>
+  </section>
+
+  <!-- Categories -->
+  <section class="py-16">
+    <div class="container-custom">
+      <h2 class="font-serif text-3xl font-bold text-gray-900 text-center mb-10">
+        Explorez par categorie
+      </h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        {categories.map((cat) => (
+          <a
+            href={`/blog/categorie/${cat.slug}/`}
+            class="card p-6 text-center hover:border-primary-200 group"
+          >
+            <span class="text-4xl mb-3 block">{cat.emoji}</span>
+            <h3 class="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">{cat.name}</h3>
+            <p class="text-xs text-gray-500 mt-1">{cat.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  {featuredProducts.length > 0 && (
+    <section class="py-16 bg-white">
+      <div class="container-custom">
+        <div class="flex items-center justify-between mb-10">
+          <h2 class="font-serif text-3xl font-bold text-gray-900">
+            Nos coups de coeur
+          </h2>
+          <a href="/produits/" class="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center gap-1">
+            Tous les produits
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {featuredProducts.map((product) => (
+            <ProductCard
+              name={product.data.name}
+              slug={product.data.slug}
+              shortDescription={product.data.shortDescription}
+              image={product.data.image}
+              category={product.data.category}
+              price={product.data.price}
+              rating={product.data.rating}
+              featured={product.data.featured}
+              inStock={product.data.inStock}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Recent Blog Posts -->
+  {recentPosts.length > 0 && (
+    <section class="py-16">
+      <div class="container-custom">
+        <div class="flex items-center justify-between mb-10">
+          <h2 class="font-serif text-3xl font-bold text-gray-900">
+            Derniers articles
+          </h2>
+          <a href="/blog/" class="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center gap-1">
+            Tous les articles
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {recentPosts.map((post) => (
+            <BlogCard
+              title={post.data.title}
+              description={post.data.description}
+              cover={post.data.cover}
+              coverAlt={post.data.coverAlt}
+              category={post.data.category}
+              type={post.data.type}
+              pubDate={post.data.pubDate}
+              slug={post.id}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- CTA Section -->
+  <section class="py-16 bg-gradient-to-r from-primary-500 to-primary-700">
+    <div class="container-custom text-center">
+      <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
+        Suivez-moi sur les reseaux
+      </h2>
+      <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
+        Decouvrez mes bons plans, astuces deco et tests de produits en video sur TikTok et YouTube !
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-colors gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.83 4.83 0 01-1-.15z"/></svg>
+          TikTok
+        </a>
+        <a href={siteConfig.social.youtube} target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-3 bg-red-600 text-white font-bold rounded-lg hover:bg-red-700 transition-colors gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

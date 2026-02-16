@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/common/Breadcrumbs.astro';
+import siteConfig from '../data/site-config.json';
+---
+
+<BaseLayout
+  title="A propos"
+  description="Decouvrez qui se cache derrière Maison & Deco by Issam. Passionné de decoration intérieure basé à Marrakech."
+>
+  <div class="container-custom py-8 md:py-12">
+    <Breadcrumbs items={[{ label: 'A propos' }]} />
+
+    <div class="max-w-3xl mx-auto">
+      <!-- Hero -->
+      <div class="text-center mb-12">
+        <div class="w-32 h-32 rounded-full bg-primary-200 mx-auto mb-6 flex items-center justify-center shadow-lg">
+          <span class="text-6xl">🏠</span>
+        </div>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Salut, moi c'est {siteConfig.author.name} !
+        </h1>
+        <p class="text-lg text-gray-600">
+          {siteConfig.author.bio}
+        </p>
+      </div>
+
+      <!-- Content -->
+      <div class="prose-custom">
+        <h2>Pourquoi ce site ?</h2>
+        <p>
+          J'ai cree {siteConfig.siteName} pour partager ma passion pour la decoration d'interieur et aider les gens a trouver les meilleurs produits pour leur maison. Chaque produit que je recommande est soigneusement selectionne et analyse.
+        </p>
+
+        <h2>Comment je selectionne les produits ?</h2>
+        <p>
+          Chaque produit presente sur ce site est choisi selon des criteres stricts :
+        </p>
+        <ul>
+          <li><strong>Qualite</strong> : Je privilegie les produits bien notes et durables</li>
+          <li><strong>Rapport qualite-prix</strong> : Le meilleur produit n'est pas forcement le plus cher</li>
+          <li><strong>Avis clients</strong> : J'analyse les retours des utilisateurs reels</li>
+          <li><strong>Design</strong> : L'esthetique compte autant que la fonctionnalite</li>
+        </ul>
+
+        <h2>Transparence</h2>
+        <p>
+          Ce site contient des liens d'affiliation vers Amazon. Cela signifie que si vous achetez un produit via mes liens, je recois une petite commission, sans aucun cout supplementaire pour vous. Cela me permet de continuer a creer du contenu gratuit et de qualite.
+        </p>
+
+        <h2>Suivez-moi !</h2>
+        <p>
+          Retrouvez mes bons plans et astuces deco en video sur mes reseaux sociaux :
+        </p>
+      </div>
+
+      <!-- Social CTA -->
+      <div class="flex flex-col sm:flex-row gap-4 mt-8">
+        <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="btn-primary flex-1 justify-center">
+          TikTok
+        </a>
+        <a href={siteConfig.social.youtube} target="_blank" rel="noopener" class="inline-flex items-center justify-center flex-1 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors">
+          YouTube
+        </a>
+        <a href={siteConfig.social.instagram} target="_blank" rel="noopener" class="inline-flex items-center justify-center flex-1 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all">
+          Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

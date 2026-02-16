@@ -1,0 +1,38 @@
+{
+  "name": "Govee Bande LED WiFi RGB 5m - Ruban LED Chambre",
+  "slug": "govee-bande-led-wifi-chambre",
+  "shortDescription": "Ruban LED 5 metres WiFi RGB, controle par application, sync musique, compatible Alexa",
+  "fullDescription": "Le ruban LED Govee 5m est le produit d'affiliation ideal : petit prix, fort impact visuel, et tout le monde en veut un ! Compatible WiFi, il se controle depuis l'application Govee, par Alexa ou Google Home. Le mode synchronisation musique cree des ambiances de fou pour vos soirees. Avec 16 millions de couleurs et des dizaines de modes predefinis, il transforme n'importe quelle chambre ou salon en quelques minutes. Le ruban adhesif 3M assure une installation facile et durable.",
+  "category": "eclairage",
+  "amazonAsin": "B07XT8J3HZ",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 15.99,
+    "currency": "EUR",
+    "lastChecked": "2025-06-15"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 45672
+  },
+  "image": "https://placehold.co/400x400/EDE9FE/7C3AED?text=Govee%0ABande+LED+5m&font=playfair-display",
+  "pros": [
+    "Prix imbattable (moins de 16 EUR)",
+    "Compatible WiFi + Alexa + Google Home",
+    "Mode sync musique tres fun",
+    "Installation facile (adhesif 3M)"
+  ],
+  "cons": [
+    "Non decoupable une fois colle",
+    "WiFi 2.4 GHz uniquement"
+  ],
+  "specifications": [
+    { "label": "Longueur", "value": "5 metres" },
+    { "label": "Technologie", "value": "RGB LED" },
+    { "label": "Connectivite", "value": "WiFi 2.4 GHz + Bluetooth" },
+    { "label": "Compatibilite", "value": "Alexa, Google Home" },
+    { "label": "Installation", "value": "Adhesif 3M" }
+  ],
+  "featured": true,
+  "inStock": true
+}

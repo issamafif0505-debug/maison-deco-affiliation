@@ -1,0 +1,63 @@
+---
+import { formatPrice } from '../../utils/formatting';
+import { buildAmazonLink } from '../../utils/affiliate';
+
+interface Product {
+  name: string;
+  amazonAsin: string;
+  affiliateTag: string;
+  price: { current: number; currency: string };
+  rating: { score: number; count: number };
+  image: string;
+}
+
+interface Props {
+  products: Product[];
+}
+
+const { products } = Astro.props;
+---
+
+<div class="overflow-x-auto">
+  <table class="w-full bg-white rounded-2xl border border-gray-100 overflow-hidden">
+    <thead>
+      <tr class="bg-gray-50">
+        <th class="px-4 py-3 text-left text-sm font-semibold text-gray-700">Produit</th>
+        <th class="px-4 py-3 text-center text-sm font-semibold text-gray-700">Note</th>
+        <th class="px-4 py-3 text-center text-sm font-semibold text-gray-700">Prix</th>
+        <th class="px-4 py-3 text-center text-sm font-semibold text-gray-700">Lien</th>
+      </tr>
+    </thead>
+    <tbody>
+      {products.map((product, index) => (
+        <tr class:list={[index % 2 === 0 ? 'bg-white' : 'bg-gray-50', 'border-t border-gray-100']}>
+          <td class="px-4 py-3">
+            <div class="flex items-center gap-3">
+              <img src={product.image} alt={product.name} class="w-12 h-12 object-contain rounded" />
+              <span class="text-sm font-medium text-gray-900">{product.name}</span>
+            </div>
+          </td>
+          <td class="px-4 py-3 text-center">
+            <span class="text-sm font-semibold text-amber-600">{product.rating.score}/5</span>
+          </td>
+          <td class="px-4 py-3 text-center">
+            <span class="text-sm font-bold text-gray-900">{formatPrice(product.price.current, product.price.currency)}</span>
+          </td>
+          <td class="px-4 py-3 text-center">
+            <a
+              href={buildAmazonLink(product.amazonAsin, product.affiliateTag)}
+              rel="nofollow sponsored noopener"
+              target="_blank"
+              class="inline-flex items-center gap-1 px-3 py-1.5 bg-amber-400 text-gray-900 text-xs font-bold rounded-lg hover:bg-amber-500 transition-colors"
+            >
+              Voir
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>

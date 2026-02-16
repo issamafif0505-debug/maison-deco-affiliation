@@ -1,0 +1,49 @@
+---
+import Header from '../components/common/Header.astro';
+import Footer from '../components/common/Footer.astro';
+import SEOHead from '../components/common/SEOHead.astro';
+import SchemaMarkup from '../components/common/SchemaMarkup.astro';
+import { websiteSchema } from '../utils/seo';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  publishDate?: Date;
+  canonicalUrl?: string;
+  noindex?: boolean;
+  schema?: Record<string, unknown>;
+}
+
+const { title, description, image, type, publishDate, canonicalUrl, noindex, schema } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <SEOHead
+      title={title}
+      description={description}
+      image={image}
+      type={type}
+      publishDate={publishDate}
+      canonicalUrl={canonicalUrl}
+      noindex={noindex}
+    />
+    <SchemaMarkup schema={websiteSchema()} />
+    {schema && <SchemaMarkup schema={schema} />}
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <Header />
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

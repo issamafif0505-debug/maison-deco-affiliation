@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Page non trouvee"
+  description="La page que vous recherchez n'existe pas."
+  noindex={true}
+>
+  <div class="container-custom py-20 text-center">
+    <span class="text-8xl mb-6 block">🏚️</span>
+    <h1 class="font-serif text-5xl font-bold text-gray-900 mb-4">404</h1>
+    <p class="text-xl text-gray-600 mb-8">
+      Oups ! Cette page n'existe pas ou a ete deplacee.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="/" class="btn-primary">
+        Retour a l'accueil
+      </a>
+      <a href="/blog/" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-700 font-semibold rounded-lg border border-gray-200 hover:border-primary-300 transition-colors">
+        Lire le blog
+      </a>
+    </div>
+  </div>
+</BaseLayout>

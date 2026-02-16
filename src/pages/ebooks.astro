@@ -1,0 +1,179 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/common/Breadcrumbs.astro';
+import siteConfig from '../data/site-config.json';
+
+const ebooks = [
+  {
+    title: "50 Astuces Deco Petit Budget",
+    description: "Transformez votre interieur sans vous ruiner ! 50 astuces concretes pour decorer votre maison avec moins de 50 EUR par piece.",
+    price: "9.99",
+    originalPrice: "19.99",
+    emoji: "🏠",
+    features: [
+      "50 astuces testees et approuvees",
+      "Photos avant/apres pour chaque astuce",
+      "Liste de courses Amazon pour chaque projet",
+      "Compatible smartphones, tablettes et PC",
+    ],
+    badge: "Best-seller",
+    link: "#",
+    color: "primary",
+  },
+  {
+    title: "Guide Eclairage : Illuminez Votre Interieur",
+    description: "Le guide complet pour choisir et installer le bon eclairage dans chaque piece. Du salon a la chambre, apprenez a creer des ambiances parfaites.",
+    price: "7.99",
+    originalPrice: "14.99",
+    emoji: "💡",
+    features: [
+      "Guide piece par piece (salon, chambre, cuisine...)",
+      "Comparatif des meilleures marques",
+      "Schemas d'installation faciles a suivre",
+      "Bonus : 10 ambiances lumineuses copiables",
+    ],
+    badge: "Nouveau",
+    link: "#",
+    color: "accent",
+  },
+  {
+    title: "Room Makeover en 7 Jours",
+    description: "Un plan jour par jour pour transformer completement une piece en une semaine. Ideal pour les debutants qui veulent un resultat professionnel.",
+    price: "12.99",
+    originalPrice: "24.99",
+    emoji: "✨",
+    features: [
+      "Plan detaille jour par jour",
+      "Budget total : moins de 200 EUR",
+      "Video tutoriels complementaires",
+      "Checklist imprimable pour chaque etape",
+    ],
+    badge: "Premium",
+    link: "#",
+    color: "warm",
+  },
+];
+---
+
+<BaseLayout
+  title="Ebooks & Guides Deco"
+  description="Telechargez nos ebooks et guides pratiques pour transformer votre interieur. Astuces deco, eclairage, room makeover et plus."
+>
+  <div class="container-custom py-8 md:py-12">
+    <Breadcrumbs items={[{ label: 'Ebooks & Guides' }]} />
+
+    <!-- Hero -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <span class="text-6xl mb-4 block">📚</span>
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Ebooks & Guides Deco
+      </h1>
+      <p class="text-lg text-gray-600">
+        Mes guides pratiques pour transformer votre interieur pas a pas. Telechargement instantane, lisible sur tous vos appareils.
+      </p>
+    </div>
+
+    <!-- Ebooks Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      {ebooks.map((ebook) => (
+        <div class="card flex flex-col">
+          <!-- Header -->
+          <div class:list={[
+            'p-6 text-center',
+            ebook.color === 'primary' && 'bg-gradient-to-br from-primary-50 to-primary-100',
+            ebook.color === 'accent' && 'bg-gradient-to-br from-accent-50 to-accent-100',
+            ebook.color === 'warm' && 'bg-gradient-to-br from-warm-50 to-warm-100',
+          ]}>
+            <div class="relative inline-block">
+              <span class="text-6xl">{ebook.emoji}</span>
+              <span class:list={[
+                'absolute -top-2 -right-8 text-xs font-bold px-2 py-1 rounded-full',
+                ebook.color === 'primary' && 'bg-primary-500 text-white',
+                ebook.color === 'accent' && 'bg-accent-500 text-white',
+                ebook.color === 'warm' && 'bg-warm-500 text-white',
+              ]}>
+                {ebook.badge}
+              </span>
+            </div>
+            <h2 class="font-serif text-xl font-bold text-gray-900 mt-4">{ebook.title}</h2>
+          </div>
+
+          <!-- Content -->
+          <div class="p-6 flex flex-col flex-grow">
+            <p class="text-gray-600 text-sm mb-4">{ebook.description}</p>
+
+            <!-- Features -->
+            <ul class="space-y-2 mb-6 flex-grow">
+              {ebook.features.map((feature) => (
+                <li class="flex items-start gap-2 text-sm text-gray-700">
+                  <svg class="w-4 h-4 mt-0.5 flex-shrink-0 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+
+            <!-- Price -->
+            <div class="text-center mb-4">
+              <span class="text-sm text-gray-400 line-through">{ebook.originalPrice} EUR</span>
+              <span class="text-3xl font-bold text-gray-900 ml-2">{ebook.price} EUR</span>
+            </div>
+
+            <!-- CTA -->
+            <a
+              href={ebook.link}
+              class:list={[
+                'block w-full text-center py-3 px-6 rounded-lg font-bold transition-all duration-200 hover:shadow-lg',
+                ebook.color === 'primary' && 'bg-primary-500 text-white hover:bg-primary-600',
+                ebook.color === 'accent' && 'bg-accent-500 text-white hover:bg-accent-600',
+                ebook.color === 'warm' && 'bg-warm-500 text-white hover:bg-warm-600',
+              ]}
+            >
+              Telecharger maintenant
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-serif text-3xl font-bold text-gray-900 text-center mb-10">
+        Questions frequentes
+      </h2>
+      <div class="space-y-4">
+        <div class="card p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Comment recevoir mon ebook ?</h3>
+          <p class="text-sm text-gray-600">Apres votre achat, vous recevez immediatement un lien de telechargement par email. L'ebook est au format PDF, lisible sur tous les appareils.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Puis-je obtenir un remboursement ?</h3>
+          <p class="text-sm text-gray-600">Oui ! Si l'ebook ne vous convient pas, vous etes rembourse sous 30 jours, sans question.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Les astuces fonctionnent-elles avec un petit budget ?</h3>
+          <p class="text-sm text-gray-600">Absolument ! C'est meme le but principal. Chaque astuce est concue pour etre realisable avec moins de 50 EUR. Les liens Amazon inclus pointent vers les produits les moins chers.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">Comment payer depuis le Maroc ou l'Afrique ?</h3>
+          <p class="text-sm text-gray-600">Le paiement se fait via des plateformes securisees qui acceptent les cartes bancaires internationales et PayPal.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom CTA -->
+    <div class="text-center mt-16 p-10 bg-gradient-to-r from-primary-500 to-primary-700 rounded-3xl">
+      <h2 class="font-serif text-3xl font-bold text-white mb-3">Pack Complet -40%</h2>
+      <p class="text-primary-100 mb-2">Les 3 ebooks pour le prix de 2</p>
+      <div class="mb-6">
+        <span class="text-lg text-primary-200 line-through">30.97 EUR</span>
+        <span class="text-4xl font-bold text-white ml-3">18.99 EUR</span>
+      </div>
+      <a href="#" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 font-bold rounded-lg hover:bg-gray-100 transition-colors text-lg shadow-lg">
+        Obtenir le pack complet
+      </a>
+      <p class="text-primary-200 text-xs mt-4">Telechargement instantane • Satisfait ou rembourse 30 jours</p>
+    </div>
+  </div>
+</BaseLayout>
