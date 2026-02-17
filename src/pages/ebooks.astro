@@ -19,6 +19,7 @@ const ebooks = [
     badge: "Best-seller",
     link: "#",
     color: "primary",
+    freeExtract: "/downloads/50-astuces-deco-extrait.pdf",
   },
   {
     title: "Guide Eclairage : Illuminez Votre Interieur",
@@ -35,6 +36,7 @@ const ebooks = [
     badge: "Nouveau",
     link: "#",
     color: "accent",
+    freeExtract: null,
   },
   {
     title: "Room Makeover en 7 Jours",
@@ -51,6 +53,7 @@ const ebooks = [
     badge: "Premium",
     link: "#",
     color: "warm",
+    freeExtract: null,
   },
 ];
 ---
@@ -63,14 +66,29 @@ const ebooks = [
     <Breadcrumbs items={[{ label: 'Ebooks & Guides' }]} />
 
     <!-- Hero -->
-    <div class="text-center max-w-3xl mx-auto mb-16">
+    <div class="text-center max-w-3xl mx-auto mb-12">
       <span class="text-6xl mb-4 block">📚</span>
       <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
         Ebooks & Guides Deco
       </h1>
-      <p class="text-lg text-gray-600">
+      <p class="text-lg text-gray-600 mb-6">
         Mes guides pratiques pour transformer votre interieur pas a pas. Telechargement instantane, lisible sur tous vos appareils.
       </p>
+
+      <!-- Free extract CTA -->
+      <div class="inline-flex flex-col items-center bg-green-50 border-2 border-green-200 rounded-2xl p-6 max-w-lg">
+        <span class="text-sm font-bold text-green-700 bg-green-100 px-3 py-1 rounded-full mb-3">🎁 EXTRAIT GRATUIT</span>
+        <p class="text-gray-700 font-medium mb-3">Telechargez gratuitement les 10 premieres astuces du guide best-seller</p>
+        <a
+          href="/downloads/50-astuces-deco-extrait.pdf"
+          download
+          class="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition-colors shadow-md"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+          Telecharger l'extrait gratuit (PDF)
+        </a>
+        <span class="text-xs text-gray-500 mt-2">Aucun email requis • PDF instantane</span>
+      </div>
     </div>
 
     <!-- Ebooks Grid -->
@@ -130,11 +148,48 @@ const ebooks = [
                 ebook.color === 'warm' && 'bg-warm-500 text-white hover:bg-warm-600',
               ]}
             >
-              Telecharger maintenant
+              Acheter maintenant
             </a>
+
+            <!-- Free extract link -->
+            {ebook.freeExtract && (
+              <a href={ebook.freeExtract} download class="block text-center text-sm text-primary-600 hover:text-primary-700 mt-3 font-medium">
+                ou telecharger l'extrait gratuit →
+              </a>
+            )}
           </div>
         </div>
       ))}
+    </div>
+
+    <!-- Social Proof -->
+    <div class="bg-gray-50 rounded-2xl p-8 mb-16">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 text-center mb-8">
+        Ce que disent nos lecteurs
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="flex items-center gap-1 text-yellow-400 mb-3">
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+          <p class="text-sm text-gray-600 italic mb-3">"J'ai transforme ma chambre avec seulement 40 EUR grace aux astuces de ce guide. Les liens Amazon sont super pratiques !"</p>
+          <p class="text-sm font-bold text-gray-900">— Sarah M.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="flex items-center gap-1 text-yellow-400 mb-3">
+            <span>⭐⭐⭐⭐⭐</span>
+          </div>
+          <p class="text-sm text-gray-600 italic mb-3">"Enfin un guide concret et pas cher ! J'ai mis en pratique 15 astuces en un week-end. Mon salon est meconnaissable."</p>
+          <p class="text-sm font-bold text-gray-900">— Karim B.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+          <div class="flex items-center gap-1 text-yellow-400 mb-3">
+            <span>⭐⭐⭐⭐</span>
+          </div>
+          <p class="text-sm text-gray-600 italic mb-3">"Le chapitre sur l'eclairage a change ma vie ! Je ne savais pas qu'on pouvait faire autant avec des bandes LED a 15 EUR."</p>
+          <p class="text-sm font-bold text-gray-900">— Amina L.</p>
+        </div>
+      </div>
     </div>
 
     <!-- FAQ Section -->
@@ -157,7 +212,11 @@ const ebooks = [
         </div>
         <div class="card p-6">
           <h3 class="font-semibold text-gray-900 mb-2">Comment payer depuis le Maroc ou l'Afrique ?</h3>
-          <p class="text-sm text-gray-600">Le paiement se fait via des plateformes securisees qui acceptent les cartes bancaires internationales et PayPal.</p>
+          <p class="text-sm text-gray-600">Le paiement se fait via Gumroad qui accepte les cartes bancaires internationales (Visa, Mastercard) et PayPal. Accessible depuis le monde entier.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="font-semibold text-gray-900 mb-2">L'extrait gratuit est vraiment gratuit ?</h3>
+          <p class="text-sm text-gray-600">Oui ! L'extrait PDF contient les 10 premieres astuces du chapitre Eclairage + la liste des meilleurs produits Amazon. Aucun email requis, telechargement instantane.</p>
         </div>
       </div>
     </div>

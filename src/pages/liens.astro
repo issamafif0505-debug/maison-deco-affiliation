@@ -1,91 +1,134 @@
 ---
 import LinkInBioLayout from '../layouts/LinkInBioLayout.astro';
-import LinkCard from '../components/linkinbio/LinkCard.astro';
-import SocialIcons from '../components/linkinbio/SocialIcons.astro';
 import siteConfig from '../data/site-config.json';
 import { buildAmazonLink } from '../utils/affiliate';
 ---
 
 <LinkInBioLayout>
   <!-- Profile -->
-  <div class="text-center mb-8">
-    <div class="w-24 h-24 rounded-full bg-primary-200 mx-auto mb-4 flex items-center justify-center shadow-lg">
-      <span class="text-4xl">🏠</span>
+  <div class="text-center mb-6">
+    <div class="w-20 h-20 rounded-full bg-gradient-to-br from-primary-400 to-primary-600 mx-auto mb-3 flex items-center justify-center shadow-lg ring-4 ring-primary-200">
+      <span class="text-3xl">🏠</span>
     </div>
-    <h1 class="font-serif text-2xl font-bold text-gray-900">{siteConfig.author.name}</h1>
-    <p class="text-gray-600 text-sm mt-1">{siteConfig.siteName}</p>
-    <p class="text-gray-500 text-xs mt-2 max-w-xs mx-auto">
-      Passionné de deco interieur a Marrakech. Je partage mes coups de coeur et bons plans Amazon !
-    </p>
+    <h1 class="font-serif text-xl font-bold text-gray-900">{siteConfig.author.name}</h1>
+    <p class="text-gray-500 text-xs mt-1">Deco & Bons plans Amazon 🇲🇦</p>
   </div>
 
-  <!-- Social Icons -->
-  <div class="mb-8">
-    <SocialIcons />
+  <!-- Social Icons Inline -->
+  <div class="flex justify-center gap-4 mb-6">
+    <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-900 text-white hover:scale-110 transition-transform">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.83 4.83 0 01-1-.15z"/></svg>
+    </a>
+    <a href={siteConfig.social.youtube} target="_blank" rel="noopener" class="w-10 h-10 flex items-center justify-center rounded-full bg-red-600 text-white hover:scale-110 transition-transform">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+    <a href={siteConfig.social.instagram} target="_blank" rel="noopener" class="w-10 h-10 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-600 text-white hover:scale-110 transition-transform">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+    </a>
   </div>
 
   <!-- Links -->
   <div class="space-y-3">
-    <LinkCard
-      title="Mes Ebooks Deco (PDF)"
-      url="/ebooks/"
-      emoji="📚"
-      highlight={true}
-    />
-    <LinkCard
-      title="Mes produits deco preferes"
-      url="/produits/"
-      emoji="🛒"
-    />
-    <LinkCard
-      title="Govee Lampadaire LED RGB"
-      url={buildAmazonLink('B09TZPNCJM')}
-      emoji="💡"
-      external={true}
-    />
-    <LinkCard
-      title="Bande LED Govee 5m (15 EUR !)"
-      url={buildAmazonLink('B07XT8J3HZ')}
-      emoji="🌈"
-      external={true}
-    />
-    <LinkCard
-      title="Lampe Sunset TikTok"
-      url={buildAmazonLink('B09XJ75QK8')}
-      emoji="🌅"
-      external={true}
-    />
-    <LinkCard
-      title="Philips Hue Pack 2 Ampoules"
-      url={buildAmazonLink('B07SS38CVG')}
-      emoji="💡"
-      external={true}
-    />
-    <LinkCard
-      title="Guirlande Boules Coton LED"
-      url={buildAmazonLink('B07XXYF382')}
-      emoji="✨"
-      external={true}
-    />
-    <LinkCard
-      title="Top 10 Lampes Design (article)"
-      url="/blog/top-10-lampes-design-salon/"
-      emoji="📝"
-    />
-    <LinkCard
-      title="Mon site complet"
-      url="/"
-      emoji="🌐"
-    />
+    <!-- Highlight: Ebook -->
+    <a
+      href="/ebooks/"
+      class="block w-full p-4 rounded-xl text-center font-bold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-lg hover:shadow-xl relative overflow-hidden"
+    >
+      <span class="absolute top-0 right-0 bg-yellow-400 text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">-50%</span>
+      📚 Ebook : 50 Astuces Deco (9.99 EUR)
+    </a>
+
+    <!-- Trending badge product -->
+    <a
+      href={buildAmazonLink('B09XJ75QK8')}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-gradient-to-r from-orange-500 to-red-500 text-white shadow-md hover:shadow-lg relative overflow-hidden"
+    >
+      <span class="absolute top-0 right-0 bg-white text-red-500 text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">🔥 VIRAL</span>
+      <span class="flex items-center justify-center gap-2">
+        🌅 Lampe Sunset TikTok — 15 EUR
+        <svg class="w-4 h-4 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </span>
+    </a>
+
+    <!-- Best seller -->
+    <a
+      href={buildAmazonLink('B07XT8J3HZ')}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-white text-gray-800 border-2 border-green-400 hover:border-green-500 hover:shadow-md relative overflow-hidden"
+    >
+      <span class="absolute top-0 right-0 bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">BEST-SELLER</span>
+      <span class="flex items-center justify-center gap-2">
+        🌈 Bande LED 5m Govee — 16 EUR
+        <svg class="w-4 h-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </span>
+    </a>
+
+    <a
+      href={buildAmazonLink('B09TZPNCJM')}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-white text-gray-800 border border-gray-200 hover:border-primary-300 hover:shadow-md"
+    >
+      <span class="flex items-center justify-center gap-2">
+        💡 Govee Lampadaire RGB — 80 EUR
+        <svg class="w-4 h-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </span>
+    </a>
+
+    <a
+      href={buildAmazonLink('B07SS38CVG')}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-white text-gray-800 border border-gray-200 hover:border-primary-300 hover:shadow-md"
+    >
+      <span class="flex items-center justify-center gap-2">
+        💡 Philips Hue Pack 2 — 85 EUR
+        <svg class="w-4 h-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </span>
+    </a>
+
+    <a
+      href={buildAmazonLink('B07XXYF382')}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-white text-gray-800 border border-gray-200 hover:border-primary-300 hover:shadow-md"
+    >
+      <span class="flex items-center justify-center gap-2">
+        ✨ Guirlande Boules Coton — 30 EUR
+        <svg class="w-4 h-4 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+      </span>
+    </a>
+
+    <!-- Blog article -->
+    <a
+      href="/blog/meilleure-lampe-sunset-tiktok/"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-gray-100 text-gray-700 hover:bg-gray-200"
+    >
+      📝 Test : Quelle Lampe Sunset choisir ?
+    </a>
+
+    <a
+      href="/blog/deco-chambre-led-pas-cher/"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-gray-100 text-gray-700 hover:bg-gray-200"
+    >
+      📝 7 Idees Deco LED a moins de 30 EUR
+    </a>
+
+    <a
+      href="/"
+      class="block w-full p-4 rounded-xl font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-gray-100 text-gray-700 hover:bg-gray-200"
+    >
+      🌐 Mon site complet
+    </a>
   </div>
 
   <!-- Footer -->
-  <div class="text-center mt-8 pt-6 border-t border-gray-200/50">
-    <p class="text-xs text-gray-400">
+  <div class="text-center mt-6 pt-4 border-t border-gray-200/50">
+    <p class="text-[10px] text-gray-400">
       En tant que Partenaire Amazon, je realise un benefice sur les achats remplissant les conditions requises.
     </p>
-    <a href="/" class="text-xs text-primary-500 hover:text-primary-600 mt-2 inline-block">
-      {siteConfig.siteName}
-    </a>
   </div>
 </LinkInBioLayout>

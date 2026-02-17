@@ -1,0 +1,38 @@
+{
+  "name": "Projecteur Ciel Etoile Galaxie LED",
+  "slug": "projecteur-galaxie-etoile",
+  "shortDescription": "Projecteur LED galaxie avec nebuleuse, etoiles et rotation. Telecommande, minuterie, ideal chambre et deco TikTok.",
+  "fullDescription": "Transformez votre chambre en galaxie avec ce projecteur LED ultra-populaire sur TikTok. Il projette un ciel etoile realiste avec des effets de nebuleuse colores sur votre plafond et vos murs. Avec sa telecommande, vous changez les couleurs et les modes en un clic. La minuterie integree vous permet de vous endormir sous les etoiles. Compatible avec les enceintes Bluetooth pour une experience complete.",
+  "category": "eclairage",
+  "amazonAsin": "B0CP5C6KR6",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 29.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-20"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 8542
+  },
+  "image": "https://placehold.co/400x400/1A1A3E/9B59B6?text=Projecteur%0AGalaxie+LED&font=playfair-display",
+  "pros": [
+    "Effet galaxie spectaculaire au plafond",
+    "Telecommande + minuterie integree",
+    "Bluetooth pour musique synchronisee",
+    "Parfait pour TikTok et ambiance"
+  ],
+  "cons": [
+    "Bruit du ventilateur perceptible",
+    "Necessite une piece sombre pour le meilleur effet"
+  ],
+  "specifications": [
+    { "label": "Puissance", "value": "10W LED" },
+    { "label": "Surface couverte", "value": "20-60 m2" },
+    { "label": "Connectivite", "value": "Bluetooth + Telecommande" },
+    { "label": "Minuterie", "value": "1h / 2h / 4h" },
+    { "label": "Alimentation", "value": "USB 5V" }
+  ],
+  "featured": true,
+  "inStock": true
+}
