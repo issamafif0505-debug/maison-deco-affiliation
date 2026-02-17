@@ -1,0 +1,310 @@
+{
+  "storyboards": [
+    {
+      "id": 1,
+      "title": "Lampe Sunset - Reveal en 15 sec",
+      "type": "Product Reveal",
+      "duration": "15s",
+      "product": "Lampe Sunset TikTok",
+      "asin": "B09XJ75QK8",
+      "price": "15 EUR",
+      "hook": "Ce truc a 15 EUR a change ma chambre...",
+      "scenes": [
+        {
+          "time": "0-3s",
+          "scene": "PLAN LARGE : Ta chambre avec lumière normale (plafonnier allumé). Ambient normal, pas d'édition.",
+          "action": "Reste debout face à la caméra, regarde l'objectif avec curiosité",
+          "audio": "Silence ou musique calme de fond",
+          "text": "Ce truc a 15 EUR a CHANGE ma chambre 😍"
+        },
+        {
+          "time": "3-5s",
+          "scene": "CLOSE-UP : Tes mains qui branchent la lampe Sunset (USB)",
+          "action": "Branche lentement et délibérément pour le suspense",
+          "audio": "Son discret du branchement (ASMR)",
+          "text": ""
+        },
+        {
+          "time": "5-8s",
+          "scene": "Éteins le plafonnier (ou demande à quelqu'un de le faire)",
+          "action": "Va vers l'interrupteur, appuie",
+          "audio": "Son du clic",
+          "text": ""
+        },
+        {
+          "time": "8-15s",
+          "scene": "REVEAL : La chambre s'illumine avec le halo sunset orange/rose sur le mur",
+          "action": "Regarde l'effet avec émerveillement, fais des réactions authentiques (yeux écarquillés, sourire)",
+          "audio": "Son satisfaisant ou bass drop musical",
+          "text": "Lien en bio 👇 (pointe vers le bas)"
+        }
+      ],
+      "filming_tips": [
+        "Filme EN VERTICAL sur ton téléphone (9:16)",
+        "Utilise la caméra arrière pour meilleure qualité",
+        "Bonne lumière (naturelle si possible avant d'éteindre)",
+        "Stabilise avec un trépied ou appuie le téléphone",
+        "Tourne 2-3 fois, garde la meilleure prise"
+      ],
+      "editing_tips": [
+        "Coupe les 'blancs' inutiles (transitions rapides)",
+        "Ajoute un son TikTok tendance du moment",
+        "Zoom rapide au moment du reveal (optionnel mais efficace)",
+        "Ajoute des captions/emojis si possible"
+      ],
+      "caption": "Ce produit Amazon a 15 EUR a transformé ma chambre 🌅 #deco #amazon #sunset #chambre #tiktok #viral",
+      "cta": "Lien dans ma bio 👇",
+      "hashtags": "#deco #amazon #sunset #chambre #tiktok #viral #design #interieur"
+    },
+    {
+      "id": 2,
+      "title": "Avant/Après LED - Split Screen 20 sec",
+      "type": "Before/After",
+      "duration": "20s",
+      "product": "Govee Bande LED 5m",
+      "asin": "B07XT8J3HZ",
+      "price": "16 EUR",
+      "hook": "Ma chambre AVANT vs APRES les LED...",
+      "scenes": [
+        {
+          "time": "0-2s",
+          "scene": "PLAN LARGE : Chambre éclairée normalement (lumière blanche/froide)",
+          "action": "Tourne-toi vers la caméra, point vers les murs",
+          "audio": "Son ennuyeux/plat",
+          "text": "AVANT ❌"
+        },
+        {
+          "time": "2-4s",
+          "scene": "TRANSITION rapide (swipe ou flash blanc)",
+          "action": "Bouge rapidement l'appareil ou ferme les yeux",
+          "audio": "Transition sound (whoosh)",
+          "text": ""
+        },
+        {
+          "time": "4-20s",
+          "scene": "PLAN LARGE : Chambre avec LED violette/bleue derrière le lit, lumière principale éteinte",
+          "action": "Regarde autour de la chambre, admire les couleurs, réagis avec émerveillement",
+          "audio": "Musique hype/bass drop",
+          "text": "APRES ✅ (16 EUR)\nLien en bio 🔗"
+        }
+      ],
+      "filming_tips": [
+        "Important : Filme la MEME chambre sous 2 éclairages différents",
+        "AVANT = lumière blanche/froide classique",
+        "APRES = LED allumée en couleur (violet/bleu/rose)",
+        "Même angle de caméra pour les deux prises",
+        "La TRANSITION doit être RAPIDE (cut sec ou swipe)"
+      ],
+      "editing_tips": [
+        "Utilise un cut rapide ou un effet swipe",
+        "Ajoute des textes AVANT/APRES bien visibles",
+        "La musique doit être DOUCE avant, ÉNERGIQUE après",
+        "Zoom leeeeeeger sur la LED pour montrer les détails"
+      ],
+      "caption": "Avant vs après les LED 🌈 seulement 16 EUR sur Amazon #avantapres #deco #led #chambre #amazon #beforeafter",
+      "cta": "Lien dans ma bio 🔗",
+      "hashtags": "#avantapres #beforeafter #deco #led #chambre #amazon #transformation #interieur"
+    },
+    {
+      "id": 3,
+      "title": "Hack Déco Secret - 15 sec",
+      "type": "Hack/Tutorial",
+      "duration": "15s",
+      "product": "Lampe Sunset",
+      "asin": "B09XJ75QK8",
+      "price": "15 EUR",
+      "hook": "Le hack déco a 15 EUR que PERSONNE connait 🤫",
+      "scenes": [
+        {
+          "time": "0-3s",
+          "scene": "PLAN RAPPROCHÉ : Ta main tenant la lampe Sunset (encore éteinte)",
+          "action": "Montre la lampe, chuchote ou parle bas (mystère)",
+          "audio": "Chuchote ou parle bas : 'Attends, tu vois ce truc?'",
+          "text": "Le hack que personne connait 🤫"
+        },
+        {
+          "time": "3-6s",
+          "scene": "CLOSE-UP : Tes mains qui posent la lampe à 45° contre le mur (orientation cruciale)",
+          "action": "Positionne la lampe pour que le halo illumine le mur, pas le sol",
+          "audio": "Son calme",
+          "text": "Angle de fou 🔧"
+        },
+        {
+          "time": "6-10s",
+          "scene": "Allume la lampe (lumière s'allume progressivement)",
+          "action": "Appuie sur le bouton",
+          "audio": "Son satisfaisant (ASMR)",
+          "text": ""
+        },
+        {
+          "time": "10-15s",
+          "scene": "FULL SHOT : Le mur illuminé avec le halo parfait, ta réaction faciale",
+          "action": "Montre de l'émerveillement, hoche la tête approbativement",
+          "audio": "Bass drop ou son wow",
+          "text": "15 EUR 🌅 Bio 👇"
+        }
+      ],
+      "filming_tips": [
+        "L'ANGLE DE LA LAMPE est CRUCIAL - elle doit illuminer le mur, pas le sol",
+        "Teste 2-3 angles avant de filmer",
+        "Chuchote ou parle bas pour le mystère (augmente l'engagement)",
+        "Réactions faciales sont KEY (sourire, yeux écarquillés)"
+      ],
+      "editing_tips": [
+        "Ajoute des émojis animés (fusée, étoile) au moment du reveal",
+        "Zoom sur la lampe au moment crucial",
+        "Son tendance DOIT être énergique/satisfaisant"
+      ],
+      "caption": "Ce hack déco a 15 EUR change tout 🌅✨ #deco #hack #amazon #sunset #chambre #viral #astucedeco #decoastuce",
+      "cta": "Lien en bio 👇",
+      "hashtags": "#deco #hack #amazon #sunset #astuces #chambre #viral #tiktok"
+    },
+    {
+      "id": 4,
+      "title": "Room Tour Complète - 45 sec",
+      "type": "Room Tour",
+      "duration": "45s",
+      "product": "Multiple",
+      "asin": "multiple",
+      "price": "moins de 200 EUR total",
+      "hook": "Ma chambre 100% Amazon pour moins de 200 EUR",
+      "scenes": [
+        {
+          "time": "0-3s",
+          "scene": "PLAN LARGE : Debout devant la porte de ta chambre (fermée)",
+          "action": "Face caméra, sourire ou suspense",
+          "audio": "Musique d'intro",
+          "text": "Ma chambre 100% Amazon ❤️"
+        },
+        {
+          "time": "3-8s",
+          "scene": "Ouvre la porte dramatiquement et rentre",
+          "action": "Bouge naturellement, laisse la caméra découvrir la pièce",
+          "audio": "Musique continue",
+          "text": "Moins de 200 EUR au total"
+        },
+        {
+          "time": "8-15s",
+          "scene": "FOCUS sur la bande LED derrière le lit",
+          "action": "Pointe vers la LED, montre l'effet",
+          "audio": "",
+          "text": "LED Govee 5m → 16 EUR ⭐⭐⭐⭐"
+        },
+        {
+          "time": "15-22s",
+          "scene": "FOCUS sur la lampe Sunset",
+          "action": "Allume la lampe pour montrer l'effet",
+          "audio": "",
+          "text": "Lampe Sunset → 15 EUR ⭐⭐⭐⭐"
+        },
+        {
+          "time": "22-30s",
+          "scene": "FOCUS sur les étagères hexagonales",
+          "action": "Montre les étagères avec les plantes/objets",
+          "audio": "",
+          "text": "Etageres hexa x3 → 25 EUR ⭐⭐⭐⭐"
+        },
+        {
+          "time": "30-37s",
+          "scene": "FOCUS sur le Néon LED personnalisé",
+          "action": "Montre le texte du néon",
+          "audio": "",
+          "text": "Néon LED → 36 EUR ⭐⭐⭐⭐⭐"
+        },
+        {
+          "time": "37-45s",
+          "scene": "PLAN LARGE FINAL : Toute la chambre illuminée avec tous les produits",
+          "action": "Fais un panoramique lent de la chambre",
+          "audio": "Drop musical",
+          "text": "Total : ~120 EUR 🤯\nLiens en bio 🔗"
+        }
+      ],
+      "filming_tips": [
+        "Filme EN PIED (montre-toi et la chambre)",
+        "Mouvements naturels et fluides (pas de saccades)",
+        "Lumière bonne (idéalement mélange lumière naturelle + LED)",
+        "Chaque produit = 5-10 secondes max",
+        "Finale : toutes les lumières allumées pour l'impact"
+      ],
+      "editing_tips": [
+        "Transitions fluides entre les segments",
+        "Ajoute des textes/prix sur chaque produit",
+        "La musique build progressivement jusqu'au finale",
+        "Optionnel : zoom slow motion sur les détails"
+      ],
+      "caption": "Room tour 100% Amazon pour moins de 200 EUR 🏠 Tous les liens dans ma bio ! #roomtour #deco #amazon #chambre #pascher #apartementtour",
+      "cta": "Tous les liens en bio 🔗",
+      "hashtags": "#roomtour #deco #amazon #chambre #apartementtour #interieur #hometour #amazonfind"
+    },
+    {
+      "id": 5,
+      "title": "ASMR Unboxing - 30 sec",
+      "type": "ASMR Unboxing",
+      "duration": "30s",
+      "product": "Projecteur Galaxie",
+      "asin": "B0B79LJYFN",
+      "price": "30 EUR",
+      "hook": "ASMR: J'ouvre le projecteur galaxie...",
+      "scenes": [
+        {
+          "time": "0-3s",
+          "scene": "PLAN LARGE : Colis Amazon sur table, tes mains visibles",
+          "action": "Montre le colis, prépare-toi à l'ouvrir",
+          "audio": "ASMR : son du carton",
+          "text": "ASMR Unboxing 📦"
+        },
+        {
+          "time": "3-8s",
+          "scene": "CLOSE-UP MAIN : Ouvre le colis lentement (ASMR KEY)",
+          "action": "Déchire le carton, enroule le plastique à bulles",
+          "audio": "Sons ASMR : carton qui déchire, plastique à bulles qui crépite",
+          "text": ""
+        },
+        {
+          "time": "8-12s",
+          "scene": "CLOSE-UP : Sort le projecteur de la boîte",
+          "action": "Pose-le doucement sur la table",
+          "audio": "Son léger du carton",
+          "text": "Projecteur Galaxie 🌌"
+        },
+        {
+          "time": "12-20s",
+          "scene": "CLOSE-UP : Branche le projecteur (USB)",
+          "action": "Insère le cable USB lentement",
+          "audio": "Son ASMR du branchement",
+          "text": ""
+        },
+        {
+          "time": "20-25s",
+          "scene": "Éteins la lumière (main qui appuie sur interrupteur)",
+          "action": "Appuie sur l'interrupteur, la chambre devient noire",
+          "audio": "Son du clic",
+          "text": ""
+        },
+        {
+          "time": "25-30s",
+          "scene": "REVEAL : Le plafond s'illumine avec les étoiles et nebuleuse",
+          "action": "Regarde vers le haut avec émerveillement",
+          "audio": "Musique spatiale douce ou 'wow' sound",
+          "text": "30 EUR sur Amazon 🔗"
+        }
+      ],
+      "filming_tips": [
+        "TRÈS IMPORTANT : NO MUSIC pendant l'unboxing (juste les sons ASMR)",
+        "Micro proche pour capturer les sons de qualité",
+        "Mouvements LENTS et délibérés",
+        "Éclairage bon pour voir les mains clairement",
+        "Finale : projete vers le HAUT pour montrer l'effet au plafond"
+      ],
+      "editing_tips": [
+        "Booste légèrement les sons ASMR",
+        "Ajoute musique uniquement pour le reveal final",
+        "Transition noire avant le reveal (for dramatic effect)",
+        "Plan rapproché du projecteur au moment du reveal"
+      ],
+      "caption": "ASMR: J'ouvre le projecteur qui transforme ma chambre en GALAXIE 🌌✨ #asmr #unboxing #amazon #galaxie #projecteur #deco",
+      "cta": "Lien en bio 🔗",
+      "hashtags": "#asmr #unboxing #galaxie #projecteur #amazon #deco #relax #relaxing"
+    }
+  ]
+}

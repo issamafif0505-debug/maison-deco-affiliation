@@ -1,0 +1,264 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/common/Breadcrumbs.astro';
+
+const storyboards = [
+  {
+    id: 1,
+    title: "Lampe Sunset - Reveal 15 sec",
+    type: "Product Reveal",
+    difficulty: "Très facile ⭐",
+    filming_time: "10 min",
+    editing_time: "5 min",
+    description: "Simple reveal de la lampe. Plafond ON puis OFF pour montrer l'effet."
+  },
+  {
+    id: 2,
+    title: "Avant/Après LED - 20 sec",
+    type: "Before/After",
+    difficulty: "Facile ⭐⭐",
+    filming_time: "15 min",
+    editing_time: "10 min",
+    description: "Même chambre sous 2 éclairages différents. Impact majeur."
+  },
+  {
+    id: 3,
+    title: "Hack Déco Secret - 15 sec",
+    type: "Hack",
+    difficulty: "Facile ⭐⭐",
+    filming_time: "10 min",
+    editing_time: "5 min",
+    description: "Le hack de l'angle parfait de la lampe Sunset."
+  },
+  {
+    id: 4,
+    title: "Room Tour Complète - 45 sec",
+    type: "Room Tour",
+    difficulty: "Moyen ⭐⭐⭐",
+    filming_time: "30 min",
+    editing_time: "15 min",
+    description: "Visite complète de ta chambre avec tous les produits."
+  },
+  {
+    id: 5,
+    title: "ASMR Unboxing - 30 sec",
+    type: "ASMR",
+    difficulty: "Moyen ⭐⭐⭐",
+    filming_time: "20 min",
+    editing_time: "10 min",
+    description: "Unboxing authentique avec sons ASMR."
+  },
+];
+---
+
+<BaseLayout
+  title="Guide Filming - Comment Tourner Tes Videos"
+  description="Guide complet pour tourner des videos UGC authentiques. Storyboards detailles, conseils, materiel, editing."
+>
+  <div class="container-custom py-8 md:py-12">
+    <Breadcrumbs items={[{ label: 'Filming Guide' }]} />
+
+    <!-- Hero -->
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-6xl mb-4 block">🎬</span>
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Guide Complet du Filming
+      </h1>
+      <p class="text-lg text-gray-600">
+        Comment tourner des videos UGC authentiques qui convertissent. Storyboards detailles, conseils pro, sans equipment expensive.
+      </p>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="bg-primary-50 rounded-2xl p-6 mb-12 border border-primary-100">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div>
+          <div class="text-2xl font-bold text-primary-600">5</div>
+          <p class="text-xs text-gray-600 mt-1">Videos a tourner</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-primary-600">75 min</div>
+          <p class="text-xs text-gray-600 mt-1">Temps total (filming + edit)</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-primary-600">0 EUR</div>
+          <p class="text-xs text-gray-600 mt-1">Equipment necessaire</p>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-primary-600">9:16</div>
+          <p class="text-xs text-gray-600 mt-1">Format (vertical)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Equipment -->
+    <section class="mb-12">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-6">📦 Equipment (Tu as deja TOUT)</h2>
+      <div class="bg-white rounded-xl border p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex items-start gap-3">
+            <span class="text-2xl">📱</span>
+            <div>
+              <p class="font-bold text-gray-900">Ton telephone</p>
+              <p class="text-sm text-gray-600">Caméra arrière, resolution 1080p min</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-2xl">🪑</span>
+            <div>
+              <p class="font-bold text-gray-900">Trépied ou support</p>
+              <p class="text-sm text-gray-600">Ou appuie le telephone contre quelque chose</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-2xl">💡</span>
+            <div>
+              <p class="font-bold text-gray-900">Bonne lumiere</p>
+              <p class="text-sm text-gray-600">Fenetre, lampe, ou les LED que tu vends</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-2xl">🎁</span>
+            <div>
+              <p class="font-bold text-gray-900">Les produits Amazon</p>
+              <p class="text-sm text-gray-600">Ceux que tu vends : LED, lampes, etc.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Storyboards -->
+    <section class="mb-12">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-6">🎬 Les 5 Videos a Tourner</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {storyboards.map((sb) => (
+          <div class="card overflow-hidden hover:shadow-lg transition-shadow">
+            <div class="bg-gradient-to-r from-primary-50 to-accent-50 p-4 border-b">
+              <div class="flex items-start justify-between mb-2">
+                <span class="bg-primary-100 text-primary-700 text-xs font-bold px-2 py-1 rounded-full">{sb.type}</span>
+                <span class="text-xs text-gray-500">{sb.difficulty}</span>
+              </div>
+              <h3 class="font-bold text-gray-900">{sb.title}</h3>
+            </div>
+            <div class="p-4">
+              <p class="text-sm text-gray-600 mb-3">{sb.description}</p>
+
+              <div class="space-y-2 text-xs mb-4">
+                <div class="flex items-center gap-2">
+                  <span class="text-gray-400">🎥</span>
+                  <span class="text-gray-700">Filming: {sb.filming_time}</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <span class="text-gray-400">✂️</span>
+                  <span class="text-gray-700">Editing: {sb.editing_time}</span>
+                </div>
+              </div>
+
+              <a href={`/ugc-hub/`} class="inline-flex items-center gap-1 text-primary-600 hover:text-primary-700 font-medium text-sm">
+                Voir le storyboard complet →
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Key Rules -->
+    <section class="mb-12">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-6">⚡ Les 5 Regles d'Or du Filming</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="card p-4">
+          <span class="text-2xl mb-2 block">📱</span>
+          <h3 class="font-bold text-gray-900 mb-1">1. TOUJOURS en 9:16 (Portrait)</h3>
+          <p class="text-sm text-gray-600">Jamais horizontal. TikTok/Reels/Shorts = vertical obligatoire.</p>
+        </div>
+        <div class="card p-4">
+          <span class="text-2xl mb-2 block">😊</span>
+          <h3 class="font-bold text-gray-900 mb-1">2. Reactions faciales = KEY</h3>
+          <p class="text-sm text-gray-600">L'algo booste les videos avec beaucoup de réactions. Montre de l'emotion!</p>
+        </div>
+        <div class="card p-4">
+          <span class="text-2xl mb-2 block">⚫</span>
+          <h3 class="font-bold text-gray-900 mb-1">3. Pas de transition fade</h3>
+          <p class="text-sm text-gray-600">Transition rapide ou cut sec = plus dynamique. Fade = ennuyeux.</p>
+        </div>
+        <div class="card p-4">
+          <span class="text-2xl mb-2 block">🔊</span>
+          <h3 class="font-bold text-gray-900 mb-1">4. Son tendance du moment</h3>
+          <p class="text-sm text-gray-600">Utilise les sounds virales. TikTok te les suggère. TRES important.</p>
+        </div>
+        <div class="card p-4">
+          <span class="text-2xl mb-2 block">👆</span>
+          <h3 class="font-bold text-gray-900 mb-1">5. CTA clair : "Lien en bio"</h3>
+          <p class="text-sm text-gray-600">Dit ET écrit. Point vers le bas. Ca augmente les clics de 300%.</p>
+        </div>
+        <div class="card p-4">
+          <span class="text-2xl mb-2 block">🪞</span>
+          <h3 class="font-bold text-gray-900 mb-1">BONUS: Caméra arriere, pas selfie</h3>
+          <p class="text-sm text-gray-600">Meilleure qualité. Les pros utilisent la caméra arrière.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Pro -->
+    <section class="mb-12">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-6">💡 Tips Pro</h2>
+      <div class="space-y-4">
+        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
+          <p class="font-bold text-blue-900 mb-1">Meilleurs horaires pour poster</p>
+          <p class="text-sm text-blue-800">Weekday: 19h-21h | Weekend: 11h-13h</p>
+        </div>
+        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded">
+          <p class="font-bold text-green-900 mb-1">Fréquence ideale</p>
+          <p class="text-sm text-green-800">1 video/jour = optimal | Min 3/semaine = acceptable</p>
+        </div>
+        <div class="bg-purple-50 border-l-4 border-purple-500 p-4 rounded">
+          <p class="font-bold text-purple-900 mb-1">Triple ta portée</p>
+          <p class="text-sm text-purple-800">Même video = TikTok + Instagram Reels + YouTube Shorts. 3x la portée.</p>
+        </div>
+        <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded">
+          <p class="font-bold text-orange-900 mb-1">Qualité > Perfection</p>
+          <p class="text-sm text-orange-800">Les meilleures videos UGC sont AUTHENTIQUES. Pas besoin d'être parfait.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download CTA -->
+    <div class="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 text-center mb-12">
+      <h2 class="font-serif text-2xl font-bold text-white mb-3">📋 Guide Complet (26 pages)</h2>
+      <p class="text-primary-100 mb-4">Telecharge le guide COMPLET avec storyboards detailles etape par etape</p>
+      <a href="/GUIDE-FILMING.md" class="inline-flex items-center gap-2 bg-white text-primary-600 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+        Telecharger le guide
+      </a>
+    </div>
+
+    <!-- Next Steps -->
+    <div class="bg-gray-900 rounded-2xl p-8 text-white">
+      <h2 class="font-serif text-2xl font-bold mb-4">🚀 Prochaines Etapes</h2>
+      <ol class="space-y-3 text-gray-300">
+        <li class="flex gap-3">
+          <span class="flex-shrink-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold">1</span>
+          <span>Lis le guide complet (fichier scripts/ugc/GUIDE-FILMING.md)</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="flex-shrink-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold">2</span>
+          <span>Tourne la Video #1 (Lampe Sunset - la plus facile, 15 min)</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="flex-shrink-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold">3</span>
+          <span>Edit sur TikTok (5-10 min) et publie</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="flex-shrink-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold">4</span>
+          <span>Repost sur Reels + Shorts (copy-paste)</span>
+        </li>
+        <li class="flex gap-3">
+          <span class="flex-shrink-0 w-8 h-8 bg-primary-500 text-white rounded-full flex items-center justify-center font-bold">5</span>
+          <span>Repete : 1 video/jour pendant 30 jours</span>
+        </li>
+      </ol>
+    </div>
+  </div>
+</BaseLayout>
