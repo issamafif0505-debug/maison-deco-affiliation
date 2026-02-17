@@ -3,7 +3,7 @@ title: "Comparatif des Meilleurs Canapes Convertibles 2025"
 description: "Quel canape-lit choisir ? Notre comparatif des meilleurs canapes convertibles avec avis, prix et guide d'achat."
 pubDate: 2025-06-10
 author: "Issam"
-cover: "https://placehold.co/800x400/F0F7F4/2D3748?text=Comparatif%0ACanapes+Convertibles&font=playfair-display"
+cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
 coverAlt: "Canape moderne dans un salon lumineux"
 category: "salon"
 tags: ["canape", "convertible", "salon", "comparatif", "meuble"]

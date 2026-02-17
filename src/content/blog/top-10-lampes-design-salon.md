@@ -3,7 +3,7 @@ title: "Top 10 des Lampes Design pour Salon en 2025"
 description: "Decouvrez notre selection des meilleures lampes de salon design. Guide complet avec comparatif, avis et liens Amazon."
 pubDate: 2025-06-15
 author: "Issam"
-cover: "https://placehold.co/800x400/1A1A2E/F59E0B?text=Top+10+Lampes%0ADesign+Salon+2025&font=playfair-display"
+cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
 coverAlt: "Lampe design moderne dans un salon"
 category: "eclairage"
 tags: ["lampe", "salon", "design", "eclairage", "top-10"]

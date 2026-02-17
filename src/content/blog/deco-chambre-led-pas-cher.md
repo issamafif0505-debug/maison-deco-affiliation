@@ -3,7 +3,7 @@ title: "Deco Chambre LED : 7 Idees a Moins de 30 EUR (2025)"
 description: "Transformez votre chambre avec des LED pas cher. 7 idees deco testees avec les meilleurs produits Amazon a petit budget."
 pubDate: 2025-07-05
 author: "Issam"
-cover: "https://placehold.co/800x400/7C3AED/FFFFFF?text=Deco+Chambre%0ALED+Pas+Cher&font=playfair-display"
+cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
 coverAlt: "Chambre decoree avec des bandes LED colorees"
 category: "chambre"
 tags: ["chambre", "LED", "pas cher", "deco", "bande LED", "ambiance"]

@@ -3,7 +3,7 @@ title: "Top 20 Produits Deco Amazon a Moins de 20 EUR (2025)"
 description: "Les meilleurs produits deco Amazon a petit prix. Notre selection de 20 produits testes a moins de 20 euros pour votre interieur."
 pubDate: 2025-07-20
 author: "Issam"
-cover: "https://placehold.co/800x400/059669/FFFFFF?text=Top+20+Deco%0AMoins+de+20+EUR&font=playfair-display"
+cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
 coverAlt: "Selection de produits deco pas cher sur Amazon"
 category: "decoration"
 tags: ["pas cher", "amazon", "deco", "petit budget", "top-20", "bon plan"]
