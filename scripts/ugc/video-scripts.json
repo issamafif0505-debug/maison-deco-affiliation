@@ -1,0 +1,202 @@
+{
+  "scripts": [
+    {
+      "id": 1,
+      "type": "product-reveal",
+      "title": "Lampe Sunset - Le produit TikTok qui a change ma chambre",
+      "product": "Lampe Sunset",
+      "asin": "B09XJ75QK8",
+      "duration": "15-30s",
+      "platform": ["tiktok", "youtube-shorts", "instagram-reels"],
+      "hook": "Ce truc a 15 EUR a COMPLETEMENT change ma chambre...",
+      "scenes": [
+        { "time": "0-3s", "visual": "Chambre sombre, lampe eteinte posee sur le bureau", "text": "Ce truc a 15 EUR a change ma chambre...", "audio": "Musique tendance calme" },
+        { "time": "3-5s", "visual": "Main qui branche la lampe (USB)", "text": "", "audio": "Son de branchement" },
+        { "time": "5-10s", "visual": "REVEAL: La lampe s'allume, halo sunset sur le mur", "text": "REGARDEZ CA 😍", "audio": "Bass drop / son satisfaisant" },
+        { "time": "10-15s", "visual": "Plan large de la chambre avec le halo sunset", "text": "Lien dans ma bio 👇", "audio": "Musique continue" }
+      ],
+      "caption": "Ce produit Amazon a 15 EUR a transforme ma chambre 🌅 #deco #amazon #sunset #chambre #tiktok",
+      "cta": "Lien dans ma bio pour le trouver sur Amazon !"
+    },
+    {
+      "id": 2,
+      "type": "before-after",
+      "title": "Ma chambre AVANT vs APRES les LED (16 EUR)",
+      "product": "Govee Bande LED 5m",
+      "asin": "B07XT8J3HZ",
+      "duration": "15-30s",
+      "platform": ["tiktok", "youtube-shorts", "instagram-reels"],
+      "hook": "Ma chambre avant les LED vs apres... vous etes pas pret",
+      "scenes": [
+        { "time": "0-3s", "visual": "Chambre eclairee normalement (lumiere blanche)", "text": "Ma chambre AVANT ❌", "audio": "Son triste/ennuyeux" },
+        { "time": "3-5s", "visual": "Transition rapide (swipe ou flash)", "text": "", "audio": "Transition son" },
+        { "time": "5-12s", "visual": "Chambre avec LED derriere le lit, couleur violette/bleue", "text": "Ma chambre APRES ✅ (16 EUR)", "audio": "Musique hype / bass" },
+        { "time": "12-15s", "visual": "Changement de couleurs en temps reel via l'appli", "text": "Lien en bio 🔗", "audio": "Musique continue" }
+      ],
+      "caption": "Avant vs apres les LED 🌈 seulement 16 EUR sur Amazon #avantapres #deco #led #chambre #amazon",
+      "cta": "Le lien Amazon est dans ma bio !"
+    },
+    {
+      "id": 3,
+      "type": "top-products",
+      "title": "5 produits Amazon deco a moins de 30 EUR",
+      "product": "Multiple",
+      "asin": "multiple",
+      "duration": "30-60s",
+      "platform": ["tiktok", "youtube-shorts"],
+      "hook": "5 produits Amazon qui vont transformer votre interieur pour moins de 30 EUR",
+      "scenes": [
+        { "time": "0-3s", "visual": "Texte anime: '5 produits deco Amazon -30EUR'", "text": "5 produits deco Amazon a moins de 30 EUR 👇", "audio": "Musique upbeat" },
+        { "time": "3-8s", "visual": "Lampe sunset en action", "text": "1. Lampe Sunset - 15 EUR 🌅", "audio": "" },
+        { "time": "8-13s", "visual": "Bande LED derriere un lit", "text": "2. Bande LED 5m - 16 EUR 🌈", "audio": "" },
+        { "time": "13-18s", "visual": "Guirlande boules de coton sur etagere", "text": "3. Guirlande boules coton - 25 EUR ✨", "audio": "" },
+        { "time": "18-23s", "visual": "Lampe lune 3D sur table de chevet", "text": "4. Lampe Lune 3D - 15 EUR 🌙", "audio": "" },
+        { "time": "23-28s", "visual": "Diffuseur avec lumiere LED", "text": "5. Diffuseur LED - 23 EUR 🌿", "audio": "" },
+        { "time": "28-30s", "visual": "Texte: tous les liens dans ma bio", "text": "Tous les liens → Bio 🔗", "audio": "" }
+      ],
+      "caption": "5 produits Amazon deco a moins de 30 EUR qui changent tout 🏠✨ #amazon #deco #pascher #maison #top5",
+      "cta": "Tous les liens sont dans ma bio !"
+    },
+    {
+      "id": 4,
+      "type": "asmr-unboxing",
+      "title": "ASMR Unboxing Projecteur Galaxie",
+      "product": "Projecteur Galaxie POCOCO",
+      "asin": "B0B79LJYFN",
+      "duration": "30-60s",
+      "platform": ["tiktok", "youtube-shorts", "instagram-reels"],
+      "hook": "J'ai trouve LE projecteur qui transforme ta chambre en galaxie...",
+      "scenes": [
+        { "time": "0-3s", "visual": "Colis Amazon sur table, mains qui l'ouvrent", "text": "Unboxing Amazon 📦", "audio": "ASMR: bruit du carton" },
+        { "time": "3-8s", "visual": "Sortir le produit, montrer l'emballage", "text": "Projecteur Galaxie 🌌", "audio": "ASMR: plastique" },
+        { "time": "8-12s", "visual": "Brancher le projecteur", "text": "", "audio": "ASMR: clic du branchement" },
+        { "time": "12-20s", "visual": "Eteindre la lumiere, REVEAL galaxie au plafond", "text": "😍😍😍", "audio": "Musique spatiale douce" },
+        { "time": "20-30s", "visual": "Plans rapproches des etoiles et nebuleuses", "text": "30 EUR sur Amazon 🔗 Bio", "audio": "Musique continue" }
+      ],
+      "caption": "Ce projecteur transforme ma chambre en GALAXIE 🌌✨ 30 EUR sur Amazon #galaxie #projecteur #deco #asmr #unboxing",
+      "cta": "Lien Amazon dans ma bio !"
+    },
+    {
+      "id": 5,
+      "type": "room-tour",
+      "title": "Room Tour Deco 100% Amazon - Moins de 200 EUR",
+      "product": "Multiple",
+      "asin": "multiple",
+      "duration": "45-60s",
+      "platform": ["tiktok", "youtube-shorts"],
+      "hook": "Ma chambre 100% decoree avec Amazon pour moins de 200 EUR",
+      "scenes": [
+        { "time": "0-3s", "visual": "Se tenir devant la porte fermee de la chambre", "text": "Ma chambre 100% Amazon ❤️", "audio": "Musique douce" },
+        { "time": "3-8s", "visual": "Ouvrir la porte, panoramique", "text": "Moins de 200 EUR au total", "audio": "" },
+        { "time": "8-15s", "visual": "Pointer la bande LED derriere le lit", "text": "LED Govee 5m → 16 EUR", "audio": "" },
+        { "time": "15-22s", "visual": "Montrer la lampe sunset", "text": "Lampe Sunset → 15 EUR", "audio": "" },
+        { "time": "22-30s", "visual": "Montrer les etageres hexagonales", "text": "Etageres hexa x3 → 25 EUR", "audio": "" },
+        { "time": "30-37s", "visual": "Montrer le neon LED", "text": "Neon LED → 36 EUR", "audio": "" },
+        { "time": "37-45s", "visual": "Montrer le projecteur galaxie au plafond", "text": "Projecteur Galaxie → 30 EUR", "audio": "" },
+        { "time": "45-50s", "visual": "Plan large final de toute la chambre", "text": "Total : 122 EUR 🤯", "audio": "Drop musical" },
+        { "time": "50-55s", "visual": "Face camera", "text": "Tous les liens → Bio", "audio": "" }
+      ],
+      "caption": "Room tour 100% Amazon pour moins de 200 EUR 🏠 Tous les liens dans ma bio ! #roomtour #deco #amazon #chambre #pascher",
+      "cta": "Tous les liens sont dans ma bio !"
+    },
+    {
+      "id": 6,
+      "type": "pov-storytelling",
+      "title": "POV: Tu decouvres les produits deco TikTok",
+      "product": "Multiple",
+      "asin": "multiple",
+      "duration": "15-20s",
+      "platform": ["tiktok"],
+      "hook": "POV: Tu commandes les produits deco que tu vois sur TikTok",
+      "scenes": [
+        { "time": "0-3s", "visual": "Ecran telephone scrollant TikTok (flou)", "text": "POV: Tu craques pour les produits TikTok", "audio": "Son tendance" },
+        { "time": "3-6s", "visual": "Colis Amazon a la porte", "text": "La livraison...", "audio": "" },
+        { "time": "6-10s", "visual": "Ouvrir le colis, sortir lampe sunset", "text": "", "audio": "" },
+        { "time": "10-15s", "visual": "Montage rapide : tout installe, lumiere eteinte, reveal", "text": "Ca valait le coup 😍", "audio": "Bass drop" },
+        { "time": "15-20s", "visual": "Chambre complete illuminee", "text": "Lien en bio 🔗", "audio": "" }
+      ],
+      "caption": "POV: Tu testes les produits deco TikTok 😍 #pov #deco #tiktok #amazon #chambre",
+      "cta": "Lien dans ma bio !"
+    },
+    {
+      "id": 7,
+      "type": "hack-deco",
+      "title": "Le hack deco que personne connait (15 EUR)",
+      "product": "Lampe Sunset",
+      "asin": "B09XJ75QK8",
+      "duration": "15-20s",
+      "platform": ["tiktok", "instagram-reels"],
+      "hook": "Le hack deco a 15 EUR que personne ne connait encore...",
+      "scenes": [
+        { "time": "0-3s", "visual": "Face camera, air mysterieux", "text": "Le hack deco a 15 EUR que PERSONNE connait 🤫", "audio": "Son suspense" },
+        { "time": "3-6s", "visual": "Montrer la lampe sunset eteinte", "text": "Ce truc...", "audio": "" },
+        { "time": "6-10s", "visual": "L'orienter vers le mur, allumer", "text": "", "audio": "" },
+        { "time": "10-15s", "visual": "Resultat : mur illumine avec halo sunset", "text": "15 EUR sur Amazon 🌅", "audio": "Son satisfaisant" },
+        { "time": "15-18s", "visual": "Plan large chambre", "text": "Lien en bio →", "audio": "" }
+      ],
+      "caption": "Ce hack deco a 15 EUR change tout 🌅✨ #deco #hack #amazon #sunset #chambre #viral",
+      "cta": "Lien dans la bio !"
+    },
+    {
+      "id": 8,
+      "type": "comparison",
+      "title": "J'ai teste 3 lampes virales TikTok - Laquelle est la meilleure?",
+      "product": "Multiple",
+      "asin": "multiple",
+      "duration": "45-60s",
+      "platform": ["tiktok", "youtube-shorts"],
+      "hook": "J'ai achete 3 lampes virales TikTok pour voir laquelle est la meilleure",
+      "scenes": [
+        { "time": "0-3s", "visual": "3 lampes posees sur table", "text": "J'ai teste 3 lampes TikTok 👇", "audio": "Musique intrigue" },
+        { "time": "3-12s", "visual": "Lampe Sunset en action", "text": "1. Lampe Sunset → 15 EUR ⭐⭐⭐⭐", "audio": "" },
+        { "time": "12-22s", "visual": "Projecteur Galaxie en action", "text": "2. Projecteur Galaxie → 30 EUR ⭐⭐⭐⭐⭐", "audio": "" },
+        { "time": "22-32s", "visual": "Lampe Lune 3D en action", "text": "3. Lampe Lune 3D → 15 EUR ⭐⭐⭐", "audio": "" },
+        { "time": "32-40s", "visual": "Face camera, verdict", "text": "Mon prefere : Le Projecteur Galaxie 🏆", "audio": "" },
+        { "time": "40-45s", "visual": "Plan final", "text": "Liens dans ma bio 🔗", "audio": "" }
+      ],
+      "caption": "J'ai teste 3 lampes virales TikTok 💡 Verdict en video ! #test #lampe #tiktok #deco #amazon #comparatif",
+      "cta": "Tous les liens dans ma bio !"
+    },
+    {
+      "id": 9,
+      "type": "trend-reaction",
+      "title": "Reacting to: produits deco TikTok, ca vaut le coup?",
+      "product": "Multiple",
+      "asin": "multiple",
+      "duration": "30-45s",
+      "platform": ["tiktok"],
+      "hook": "On me demande toujours si les produits deco TikTok valent le coup...",
+      "scenes": [
+        { "time": "0-4s", "visual": "Face camera", "text": "Les produits deco TikTok valent le coup? 🤔", "audio": "Son question" },
+        { "time": "4-10s", "visual": "Montrer la lampe sunset", "text": "Lampe Sunset 15 EUR → OUI ✅", "audio": "Son positif" },
+        { "time": "10-16s", "visual": "Montrer bande LED", "text": "LED Govee 16 EUR → OUI ✅", "audio": "Son positif" },
+        { "time": "16-22s", "visual": "Montrer projecteur galaxie", "text": "Projecteur 30 EUR → INCROYABLE ✅", "audio": "Son wow" },
+        { "time": "22-28s", "visual": "Tout allume dans la chambre", "text": "Total : 61 EUR pour TOUT CA", "audio": "Drop" },
+        { "time": "28-32s", "visual": "Face camera, sourire", "text": "Liens dans ma bio 🔗", "audio": "" }
+      ],
+      "caption": "Les produits deco TikTok valent le coup? Mon verdict apres test 🏠 #deco #tiktok #amazon #test #reaction",
+      "cta": "Retrouvez tous les liens dans ma bio !"
+    },
+    {
+      "id": 10,
+      "type": "tutorial",
+      "title": "Comment transformer sa chambre en 10 minutes (moins de 50 EUR)",
+      "product": "Multiple",
+      "asin": "multiple",
+      "duration": "45-60s",
+      "platform": ["tiktok", "youtube-shorts", "youtube"],
+      "hook": "Comment j'ai transforme ma chambre en 10 minutes pour moins de 50 EUR",
+      "scenes": [
+        { "time": "0-3s", "visual": "Chambre 'avant' (lumieres normales, pas de deco)", "text": "Transforme ta chambre en 10 min ⏰", "audio": "Timer sound" },
+        { "time": "3-10s", "visual": "Etape 1: Coller la bande LED derriere le lit", "text": "Etape 1: Bande LED (16 EUR)", "audio": "Musique motivante" },
+        { "time": "10-18s", "visual": "Etape 2: Installer la lampe sunset", "text": "Etape 2: Lampe Sunset (15 EUR)", "audio": "" },
+        { "time": "18-25s", "visual": "Etape 3: Ajouter la guirlande sur l'etagere", "text": "Etape 3: Guirlande LED (10 EUR)", "audio": "" },
+        { "time": "25-30s", "visual": "Eteindre la lumiere principale", "text": "Et maintenant...", "audio": "Silence dramatique" },
+        { "time": "30-40s", "visual": "REVEAL: Chambre completement transformee", "text": "41 EUR. 10 minutes. 😍", "audio": "Bass drop epique" },
+        { "time": "40-45s", "visual": "Face camera devant la chambre", "text": "Guide complet + liens → Bio", "audio": "" }
+      ],
+      "caption": "Transforme ta chambre en 10 min pour moins de 50 EUR 🏠✨ Guide complet dans ma bio ! #deco #chambre #transformation #amazon #tuto",
+      "cta": "Guide complet et tous les liens dans ma bio !"
+    }
+  ]
+}

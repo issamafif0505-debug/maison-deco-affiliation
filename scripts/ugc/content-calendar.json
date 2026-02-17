@@ -1,0 +1,42 @@
+{
+  "calendar": {
+    "name": "Calendrier Contenu 30 Jours - Maison & Deco",
+    "creator": "Issam @issam_deco",
+    "strategy": "Poster 1 video/jour sur TikTok + reposter en Reels et Shorts",
+    "days": [
+      { "day": 1, "type": "product-reveal", "script_id": 1, "title": "Lampe Sunset - Le produit qui a change ma chambre", "platform": "TikTok + Reels", "goal": "Premier contenu, accrocher l'audience", "tip": "Film avec la lumiere naturelle du soir pour le meilleur rendu" },
+      { "day": 2, "type": "before-after", "script_id": 2, "title": "Ma chambre AVANT vs APRES les LED", "platform": "TikTok + Reels", "goal": "Effet wow pour partages", "tip": "Le contraste doit etre MAXIMUM entre avant et apres" },
+      { "day": 3, "type": "hack-deco", "script_id": 7, "title": "Le hack deco a 15 EUR que personne connait", "platform": "TikTok", "goal": "Viralite via curiosite", "tip": "Commence par un air mysterieux, chuchote si possible" },
+      { "day": 4, "type": "top-products", "script_id": 3, "title": "5 produits Amazon deco a moins de 30 EUR", "platform": "TikTok + Shorts", "goal": "Valeur + multiple liens", "tip": "Montre chaque produit en action, pas juste le packaging" },
+      { "day": 5, "type": "asmr-unboxing", "script_id": 4, "title": "ASMR Unboxing Projecteur Galaxie", "platform": "TikTok + Reels", "goal": "Engagement ASMR communaute", "tip": "Micro proche des mains, pas de musique, juste les sons" },
+      { "day": 6, "type": "tutorial", "script_id": 10, "title": "Transforme ta chambre en 10 min", "platform": "TikTok + YouTube", "goal": "Contenu utile, saves", "tip": "Time-lapse accelere pour l'installation" },
+      { "day": 7, "type": "pov-storytelling", "script_id": 6, "title": "POV: Tu commandes les produits deco TikTok", "platform": "TikTok", "goal": "Relatability + trend", "tip": "Utilise un son POV tendance du moment" },
+
+      { "day": 8, "type": "product-reveal", "script_id": 1, "title": "Ce projecteur transforme ta chambre en GALAXIE", "platform": "TikTok + Reels", "goal": "Wow effect", "tip": "Film dans le noir complet, le resultat sera dingue" },
+      { "day": 9, "type": "comparison", "script_id": 8, "title": "J'ai teste 3 lampes virales TikTok", "platform": "TikTok + Shorts", "goal": "Autorite + confiance", "tip": "Sois honnete sur les defauts, ca cree la confiance" },
+      { "day": 10, "type": "trend-reaction", "script_id": 9, "title": "Les produits deco TikTok valent le coup?", "platform": "TikTok", "goal": "Engagement commentaires", "tip": "Demande l'avis des viewers a la fin" },
+      { "day": 11, "type": "room-tour", "script_id": 5, "title": "Room Tour 100% Amazon - Moins de 200 EUR", "platform": "TikTok + Shorts + YouTube", "goal": "Contenu complet, multiple produits", "tip": "Commence face a la porte fermee, ouvre dramatiquement" },
+      { "day": 12, "type": "hack-deco", "script_id": 7, "title": "Bande LED derriere le lit = chambre de reve", "platform": "TikTok + Reels", "goal": "Astuce rapide virale", "tip": "Montre le collage en accelere" },
+      { "day": 13, "type": "top-products", "script_id": 3, "title": "3 produits Amazon pour salon marocain moderne", "platform": "TikTok", "goal": "Niche specifique = moins de concurrence", "tip": "Mets de la musique marocaine moderne en fond" },
+      { "day": 14, "type": "before-after", "script_id": 2, "title": "Salon AVANT vs APRES (budget 100 EUR)", "platform": "TikTok + Reels", "goal": "Week-end = plus de vues", "tip": "Filme le dimanche, les gens sont chez eux" },
+
+      { "day": 15, "type": "product-reveal", "script_id": 1, "title": "Lampe Lune 3D - Le cadeau parfait a 15 EUR", "platform": "TikTok + Reels", "goal": "Angle cadeau", "tip": "Emballe-la en cadeau avant de la reveler" },
+      { "day": 16, "type": "tutorial", "script_id": 10, "title": "Comment installer des LED en 5 minutes", "platform": "TikTok + YouTube", "goal": "Contenu educatif, saves", "tip": "Montre les erreurs courantes a eviter" },
+      { "day": 17, "type": "asmr-unboxing", "script_id": 4, "title": "ASMR: J'ouvre 5 colis Amazon deco", "platform": "TikTok", "goal": "Long format ASMR", "tip": "5 produits = 5 mini-reveals" },
+      { "day": 18, "type": "pov-storytelling", "script_id": 6, "title": "POV: Tu refais ta deco avec 50 EUR", "platform": "TikTok", "goal": "Budget challenge", "tip": "Montre le panier Amazon avec les prix" },
+      { "day": 19, "type": "hack-deco", "script_id": 7, "title": "Guirlande dans un vase = magie (10 EUR)", "platform": "TikTok + Reels", "goal": "Astuce facile reproductible", "tip": "Utilise un vase transparent" },
+      { "day": 20, "type": "comparison", "script_id": 8, "title": "LED 10 EUR vs LED 16 EUR: la difference?", "platform": "TikTok + Shorts", "goal": "Contenu comparatif", "tip": "Montre cote a cote pour que la difference soit visible" },
+      { "day": 21, "type": "room-tour", "script_id": 5, "title": "Tour de ma nouvelle deco salon", "platform": "TikTok + Reels", "goal": "Contenu weekend", "tip": "Filme en slow motion pour le cote esthetique" },
+
+      { "day": 22, "type": "product-reveal", "script_id": 1, "title": "Ce diffuseur a 23 EUR sent INCROYABLE", "platform": "TikTok", "goal": "Angle sensoriel", "tip": "Decris les odeurs, fais reagir" },
+      { "day": 23, "type": "top-products", "script_id": 3, "title": "10 produits Amazon deco a moins de 20 EUR", "platform": "TikTok + Shorts", "goal": "Listicle viral", "tip": "1 produit = 3 secondes max" },
+      { "day": 24, "type": "trend-reaction", "script_id": 9, "title": "J'ai achete les produits les plus notes Amazon", "platform": "TikTok", "goal": "Angle reviews", "tip": "Montre les notes Amazon en gros plan" },
+      { "day": 25, "type": "tutorial", "script_id": 10, "title": "Neon LED DIY: Comment l'installer au mur", "platform": "TikTok + YouTube", "goal": "Tuto specifique", "tip": "Montre les clips de fixation en detail" },
+      { "day": 26, "type": "before-after", "script_id": 2, "title": "Salle de bain AVANT vs APRES (bougies LED)", "platform": "TikTok + Reels", "goal": "Nouvelle piece = nouveau public", "tip": "Les bougies LED dans le noir = contenu magique" },
+      { "day": 27, "type": "hack-deco", "script_id": 7, "title": "Etageres hexagonales = deco murale de ouf", "platform": "TikTok + Reels", "goal": "Produit specifique", "tip": "Montre le montage en accelere" },
+      { "day": 28, "type": "asmr-unboxing", "script_id": 4, "title": "ASMR Unboxing Neon LED Personnalise", "platform": "TikTok", "goal": "ASMR + personnalisation", "tip": "Le reveal du texte personnalise est le climax" },
+      { "day": 29, "type": "pov-storytelling", "script_id": 6, "title": "POV: Ton ami te demande comment t'as decore", "platform": "TikTok", "goal": "Humour + produits", "tip": "Joue les 2 roles ou utilise un ami" },
+      { "day": 30, "type": "room-tour", "script_id": 5, "title": "Bilan 1 mois: Ma deco complete 100% Amazon", "platform": "TikTok + YouTube + Reels", "goal": "Recap + tous les liens", "tip": "Fais un montage des meilleurs moments du mois" }
+    ]
+  }
+}

@@ -1,0 +1,235 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/common/Breadcrumbs.astro';
+import siteConfig from '../data/site-config.json';
+
+const videos = [
+  { id: 1, type: "Product Reveal", title: "Lampe Sunset - Le produit TikTok qui a change ma chambre", file: "/ugc-videos/video-1-product-reveal.mp4", duration: "15-30s", product: "Lampe Sunset", caption: "Ce produit Amazon a 15 EUR a transforme ma chambre 🌅 #deco #amazon #sunset #chambre #tiktok" },
+  { id: 2, type: "Before/After", title: "Ma chambre AVANT vs APRES les LED", file: "/ugc-videos/video-2-before-after.mp4", duration: "15-30s", product: "Govee Bande LED", caption: "Avant vs apres les LED 🌈 seulement 16 EUR sur Amazon #avantapres #deco #led #chambre #amazon" },
+  { id: 3, type: "Top Products", title: "5 produits Amazon deco a moins de 30 EUR", file: "/ugc-videos/video-3-top-products.mp4", duration: "30-60s", product: "Multi-produits", caption: "5 produits Amazon deco a moins de 30 EUR qui changent tout 🏠✨ #amazon #deco #pascher #maison #top5" },
+  { id: 7, type: "Hack Deco", title: "Le hack deco a 15 EUR que personne connait", file: "/ugc-videos/video-7-hack-deco.mp4", duration: "15-20s", product: "Lampe Sunset", caption: "Ce hack deco a 15 EUR change tout 🌅✨ #deco #hack #amazon #sunset #chambre #viral" },
+];
+
+const calendar = [
+  { day: 1, title: "Lampe Sunset reveal", type: "Product Reveal", tip: "Film avec la lumiere du soir" },
+  { day: 2, title: "Chambre AVANT vs APRES LED", type: "Before/After", tip: "Contraste MAXIMUM" },
+  { day: 3, title: "Le hack deco a 15 EUR", type: "Hack", tip: "Chuchote pour le suspense" },
+  { day: 4, title: "5 produits Amazon -30 EUR", type: "Top 5", tip: "Montre en action, pas le packaging" },
+  { day: 5, title: "ASMR Unboxing Projecteur", type: "ASMR", tip: "Micro proche, pas de musique" },
+  { day: 6, title: "Tuto: Chambre en 10 min", type: "Tutoriel", tip: "Time-lapse pour installation" },
+  { day: 7, title: "POV: Produits deco TikTok", type: "POV", tip: "Son POV tendance du moment" },
+  { day: 8, title: "Projecteur Galaxie reveal", type: "Product Reveal", tip: "Film dans le noir complet" },
+  { day: 9, title: "3 lampes TikTok testees", type: "Comparatif", tip: "Sois honnete sur les defauts" },
+  { day: 10, title: "Ca vaut le coup?", type: "Reaction", tip: "Demande l'avis des viewers" },
+  { day: 11, title: "Room Tour 100% Amazon", type: "Room Tour", tip: "Porte fermee → reveal" },
+  { day: 12, title: "LED derriere le lit", type: "Hack", tip: "Collage en accelere" },
+  { day: 13, title: "Salon marocain moderne", type: "Top 3", tip: "Musique marocaine moderne" },
+  { day: 14, title: "Salon AVANT vs APRES", type: "Before/After", tip: "Poste le dimanche" },
+];
+
+const typeColors: Record<string, string> = {
+  "Product Reveal": "bg-orange-100 text-orange-700",
+  "Before/After": "bg-blue-100 text-blue-700",
+  "Top 5": "bg-green-100 text-green-700",
+  "Top 3": "bg-green-100 text-green-700",
+  "Hack": "bg-purple-100 text-purple-700",
+  "ASMR": "bg-pink-100 text-pink-700",
+  "Tutoriel": "bg-yellow-100 text-yellow-700",
+  "POV": "bg-red-100 text-red-700",
+  "Comparatif": "bg-indigo-100 text-indigo-700",
+  "Reaction": "bg-cyan-100 text-cyan-700",
+  "Room Tour": "bg-emerald-100 text-emerald-700",
+  "Top Products": "bg-green-100 text-green-700",
+  "Hack Deco": "bg-purple-100 text-purple-700",
+};
+---
+
+<BaseLayout
+  title="UGC Hub - Videos & Contenu"
+  description="Centre de creation de contenu UGC : scripts video, calendrier 30 jours, templates TikTok et YouTube pour l'affiliation Amazon deco."
+>
+  <div class="container-custom py-8 md:py-12">
+    <Breadcrumbs items={[{ label: 'UGC Hub' }]} />
+
+    <!-- Hero -->
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="text-6xl mb-4 block">🎬</span>
+      <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        UGC Hub
+      </h1>
+      <p class="text-lg text-gray-600">
+        Ton centre de commande pour creer du contenu viral. Videos pretes, scripts, calendrier 30 jours et captions.
+      </p>
+    </div>
+
+    <!-- Stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm border">
+        <span class="text-3xl font-bold text-primary-600">10</span>
+        <p class="text-xs text-gray-500 mt-1">Scripts video</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm border">
+        <span class="text-3xl font-bold text-primary-600">30</span>
+        <p class="text-xs text-gray-500 mt-1">Jours de contenu</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm border">
+        <span class="text-3xl font-bold text-primary-600">4</span>
+        <p class="text-xs text-gray-500 mt-1">Videos pretes</p>
+      </div>
+      <div class="bg-white rounded-xl p-4 text-center shadow-sm border">
+        <span class="text-3xl font-bold text-primary-600">3</span>
+        <p class="text-xs text-gray-500 mt-1">Plateformes</p>
+      </div>
+    </div>
+
+    <!-- Videos pretes -->
+    <section class="mb-16">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+        🎥 Videos Pretes a Poster
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {videos.map((video) => (
+          <div class="card overflow-hidden">
+            <div class="bg-gray-900 p-4">
+              <video
+                src={video.file}
+                class="w-full max-h-80 mx-auto rounded-lg"
+                controls
+                preload="metadata"
+              />
+            </div>
+            <div class="p-4">
+              <div class="flex items-center gap-2 mb-2">
+                <span class:list={["text-xs font-bold px-2 py-1 rounded-full", typeColors[video.type] || "bg-gray-100 text-gray-700"]}>
+                  {video.type}
+                </span>
+                <span class="text-xs text-gray-400">{video.duration}</span>
+              </div>
+              <h3 class="font-bold text-gray-900 mb-2">{video.title}</h3>
+              <p class="text-xs text-gray-500 mb-3">Produit : {video.product}</p>
+
+              <div class="bg-gray-50 rounded-lg p-3">
+                <p class="text-xs font-bold text-gray-700 mb-1">Caption a copier :</p>
+                <p class="text-xs text-gray-600">{video.caption}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Calendrier 14 jours -->
+    <section class="mb-16">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+        📅 Calendrier de Contenu (14 premiers jours)
+      </h2>
+      <div class="bg-white rounded-2xl shadow-sm border overflow-hidden">
+        <div class="grid grid-cols-[60px_1fr_auto_1fr] md:grid-cols-[80px_1fr_auto_1fr] gap-0">
+          {/* Header */}
+          <div class="bg-gray-900 text-white font-bold text-xs p-3 text-center">Jour</div>
+          <div class="bg-gray-900 text-white font-bold text-xs p-3">Video</div>
+          <div class="bg-gray-900 text-white font-bold text-xs p-3 text-center">Type</div>
+          <div class="bg-gray-900 text-white font-bold text-xs p-3">Conseil</div>
+
+          {calendar.map((item, i) => (
+            <>
+              <div class:list={["text-center p-3 font-bold text-sm flex items-center justify-center", i % 2 === 0 ? "bg-gray-50" : "bg-white"]}>
+                <span class="bg-primary-100 text-primary-700 w-8 h-8 rounded-full flex items-center justify-center text-xs font-bold">
+                  {item.day}
+                </span>
+              </div>
+              <div class:list={["p-3 text-sm text-gray-800 flex items-center", i % 2 === 0 ? "bg-gray-50" : "bg-white"]}>
+                {item.title}
+              </div>
+              <div class:list={["p-3 flex items-center justify-center", i % 2 === 0 ? "bg-gray-50" : "bg-white"]}>
+                <span class:list={["text-[10px] font-bold px-2 py-1 rounded-full whitespace-nowrap", typeColors[item.type] || "bg-gray-100 text-gray-700"]}>
+                  {item.type}
+                </span>
+              </div>
+              <div class:list={["p-3 text-xs text-gray-500 flex items-center", i % 2 === 0 ? "bg-gray-50" : "bg-white"]}>
+                💡 {item.tip}
+              </div>
+            </>
+          ))}
+        </div>
+      </div>
+      <p class="text-xs text-gray-400 mt-3 text-center">Le calendrier complet de 30 jours est dans le fichier scripts/ugc/content-calendar.json</p>
+    </section>
+
+    <!-- Quick Tips -->
+    <section class="mb-16">
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+        💡 Regles d'Or du Contenu UGC
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="card p-5">
+          <span class="text-2xl mb-2 block">🪝</span>
+          <h3 class="font-bold text-gray-900 mb-1">Hook en 3 secondes</h3>
+          <p class="text-sm text-gray-600">Les 3 premieres secondes decident de tout. Commence par une phrase choc ou un visuel surprenant.</p>
+        </div>
+        <div class="card p-5">
+          <span class="text-2xl mb-2 block">📱</span>
+          <h3 class="font-bold text-gray-900 mb-1">Toujours en vertical 9:16</h3>
+          <p class="text-sm text-gray-600">TikTok, Reels, Shorts = format vertical. Jamais d'horizontal, jamais de bordures noires.</p>
+        </div>
+        <div class="card p-5">
+          <span class="text-2xl mb-2 block">🎵</span>
+          <h3 class="font-bold text-gray-900 mb-1">Son tendance</h3>
+          <p class="text-sm text-gray-600">Utilise les sons viraux du moment. L'algorithme pousse les videos qui utilisent des sons populaires.</p>
+        </div>
+        <div class="card p-5">
+          <span class="text-2xl mb-2 block">💬</span>
+          <h3 class="font-bold text-gray-900 mb-1">CTA en fin de video</h3>
+          <p class="text-sm text-gray-600">Toujours terminer par "Lien dans ma bio" et pointer vers le bas. Ca augmente les clics de 300%.</p>
+        </div>
+        <div class="card p-5">
+          <span class="text-2xl mb-2 block">📊</span>
+          <h3 class="font-bold text-gray-900 mb-1">Poste a 19h-21h</h3>
+          <p class="text-sm text-gray-600">Les meilleures heures : 19h-21h en semaine, 11h-13h le weekend. C'est quand les gens scrollent le plus.</p>
+        </div>
+        <div class="card p-5">
+          <span class="text-2xl mb-2 block">🔄</span>
+          <h3 class="font-bold text-gray-900 mb-1">Repost partout</h3>
+          <p class="text-sm text-gray-600">Une video TikTok = un Reel Instagram = un Short YouTube. Triple ta portee sans effort supplementaire.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hashtags -->
+    <section class="bg-gray-900 rounded-2xl p-8 mb-16">
+      <h2 class="font-serif text-2xl font-bold text-white mb-4">
+        # Hashtags Optimises
+      </h2>
+      <p class="text-gray-400 text-sm mb-4">Copie ces groupes de hashtags pour tes videos :</p>
+
+      <div class="space-y-4">
+        <div>
+          <p class="text-xs font-bold text-primary-400 mb-1">Deco Generale :</p>
+          <p class="text-sm text-gray-300 bg-gray-800 p-3 rounded-lg">#deco #decoration #maison #interieur #homedecor #decomaison #amazon #amazonfinds #bonplan</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold text-primary-400 mb-1">LED / Eclairage :</p>
+          <p class="text-sm text-gray-300 bg-gray-800 p-3 rounded-lg">#led #chambre #ambiance #eclairage #govee #philipshue #lampe #decointerieur #roomdecor</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold text-primary-400 mb-1">TikTok Viral :</p>
+          <p class="text-sm text-gray-300 bg-gray-800 p-3 rounded-lg">#tiktokfrance #viral #foryou #fyp #pourtoi #trending #amazonmusthaves #tiktokmademebuyit</p>
+        </div>
+        <div>
+          <p class="text-xs font-bold text-primary-400 mb-1">Budget / Petit Prix :</p>
+          <p class="text-sm text-gray-300 bg-gray-800 p-3 rounded-lg">#pascher #petitbudget #moinsde20euros #bonplan #promos #amazon #decobudget #astucedeco</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Generator CTA -->
+    <div class="text-center bg-gradient-to-r from-primary-500 to-primary-700 rounded-2xl p-8">
+      <h2 class="font-serif text-2xl font-bold text-white mb-3">Generer Plus de Videos</h2>
+      <p class="text-primary-100 mb-4 text-sm">Utilise le generateur en ligne de commande pour creer plus de videos :</p>
+      <div class="bg-black/30 rounded-lg p-4 text-left max-w-lg mx-auto">
+        <code class="text-green-400 text-sm">node scripts/ugc/generate-video.mjs [1-10]</code>
+      </div>
+      <p class="text-primary-200 text-xs mt-3">10 scripts disponibles • Format TikTok 9:16 • MP4 pret a poster</p>
+    </div>
+  </div>
+</BaseLayout>
