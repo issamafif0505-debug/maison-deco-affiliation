@@ -1,0 +1,38 @@
+{
+  "name": "Liesun Etagere Murale Hexagonale Lot de 3",
+  "slug": "etagere-hexagonale-murale",
+  "shortDescription": "Lot de 3 etageres murales hexagonales en bois et metal noir. Style industriel, parfaites pour deco et rangement.",
+  "fullDescription": "Ces etageres murales hexagonales combinent bois naturel et metal noir pour un look industriel tres tendance. Le lot de 3 permet de creer une composition murale unique. Parfaites pour exposer des plantes, bougies, petits objets deco ou livres. Installation facile avec les fixations incluses. Le design geometrique ajoute du caractere a n'importe quel mur. Disponibles en plusieurs combinaisons de tailles pour s'adapter a votre espace.",
+  "category": "rangement",
+  "amazonAsin": "B08VHRJQV1",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 24.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-20"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 6230
+  },
+  "image": "https://placehold.co/400x400/F5F0E8/4A3728?text=Etagere%0AHexagonale+x3&font=playfair-display",
+  "pros": [
+    "Lot de 3 pour composition murale",
+    "Style industriel bois + metal noir",
+    "Fixations incluses, installation facile",
+    "Polyvalent : plantes, deco, rangement"
+  ],
+  "cons": [
+    "Charge maximale limitee (3 kg par etagere)",
+    "Necessite percer le mur"
+  ],
+  "specifications": [
+    { "label": "Materiau", "value": "Bois + metal noir" },
+    { "label": "Quantite", "value": "Lot de 3" },
+    { "label": "Style", "value": "Industriel / Scandinave" },
+    { "label": "Charge max", "value": "3 kg par etagere" },
+    { "label": "Fixation", "value": "Murale (vis incluses)" }
+  ],
+  "featured": false,
+  "inStock": true
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Neon LED Personnalisable Enseigne Lumineuse",
+  "slug": "neon-led-personnalisable",
+  "shortDescription": "Enseigne lumineuse LED neon personnalisable. Ideal deco murale, chambre, salon, evenement. USB.",
+  "fullDescription": "Creez votre propre decoration lumineuse avec ce neon LED personnalisable. Que ce soit votre prenom, un mot inspirant (LOVE, HOME, DREAM) ou une forme originale, ce neon LED flexible s'adapte a toutes vos envies. Alimentation USB pratique, il fonctionne avec n'importe quel chargeur ou batterie externe. Le look neon retro est ultra-tendance sur Instagram et TikTok. Parfait comme cadeau personnalise ou pour ajouter du caractere a votre chambre, salon ou coin gaming.",
+  "category": "eclairage",
+  "amazonAsin": "B095BZQHFP",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 35.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-20"
+  },
+  "rating": {
+    "score": 4.2,
+    "count": 3450
+  },
+  "image": "https://placehold.co/400x400/1A1A3E/FF6EC7?text=NEON+LED%0APersonnalisable&font=playfair-display",
+  "pros": [
+    "Personnalisable (mot, prenom, forme)",
+    "Alimentation USB (batterie externe possible)",
+    "Look retro neon tres tendance TikTok",
+    "Cadeau original et unique"
+  ],
+  "cons": [
+    "Delai de fabrication personnalisee",
+    "Plus cher que les enseignes standard"
+  ],
+  "specifications": [
+    { "label": "Type", "value": "LED flexible neon" },
+    { "label": "Alimentation", "value": "USB 5V" },
+    { "label": "Personnalisation", "value": "Texte ou forme au choix" },
+    { "label": "Longueur max", "value": "60 cm" },
+    { "label": "Fixation", "value": "Adhesif ou crochets" }
+  ],
+  "featured": true,
+  "inStock": true
+}
