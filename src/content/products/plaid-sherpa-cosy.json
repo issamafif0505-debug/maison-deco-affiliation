@@ -1,0 +1,38 @@
+{
+  "name": "Plaid Sherpa Douillet 130x160cm — Ultra Doux",
+  "slug": "plaid-sherpa-cosy",
+  "shortDescription": "Plaid sherpa double face ultra doux 130x160cm. Parfait pour le canapé, cadeau idéal, lavable en machine.",
+  "fullDescription": "Ce plaid sherpa est la définition du confort. Double face : une face sherpa ultra-douce, une face polaire chaude. Format généreux 130x160cm qui enveloppe entièrement. C'est le produit parfait pour l'affiliation en hiver : le rendu en photo est magnifique, tout le monde en a besoin, et il se vend tout seul. Disponible en 8 coloris tendance (gris, beige, kaki, blanc cassé...). Lavable en machine à 30°C. Le cadeau parfait pour Noël ou une fête des mères.",
+  "category": "salon",
+  "amazonAsin": "B08LDPHXLM",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 24.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 12450
+  },
+  "image": "https://images.unsplash.com/photo-1586023492124-424f6a782cbb?w=600&h=600&fit=crop&q=80",
+  "pros": [
+    "Ultra doux, double face sherpa + polaire",
+    "Format généreux (130x160cm)",
+    "8 coloris tendance disponibles",
+    "Lavable en machine 30°C"
+  ],
+  "cons": [
+    "Peluche légèrement aux premiers lavages",
+    "Certains coloris peuvent varier légèrement"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "130 x 160 cm" },
+    { "label": "Matière", "value": "Sherpa + Polaire double face" },
+    { "label": "Coloris", "value": "8 options disponibles" },
+    { "label": "Entretien", "value": "Lavage machine 30°C" },
+    { "label": "Poids", "value": "600g" }
+  ],
+  "featured": true,
+  "inStock": true
+}

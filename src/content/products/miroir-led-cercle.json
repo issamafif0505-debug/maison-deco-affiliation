@@ -1,0 +1,38 @@
+{
+  "name": "Miroir Mural LED Rond 50cm — Rétroéclairage",
+  "slug": "miroir-led-cercle",
+  "shortDescription": "Miroir rond LED 50cm, lumière chaude/froide réglable, parfait chambre, salon et salle de bain. Ultra tendance TikTok.",
+  "fullDescription": "Le miroir LED rond est l'accessoire déco qui a envahi TikTok et Instagram. Son rétroéclairage LED crée un halo lumineux élégant autour du miroir, parfait pour les photos et les vidéos. Avec 3 températures de couleur (blanc chaud, neutre, froid) et 10 niveaux de luminosité, il s'adapte à toutes les ambiances. Le design épuré en métal noir mat s'intègre dans tous les styles d'intérieur, du scandinave au moderne. Installation murale simple avec quincaillerie incluse.",
+  "category": "decoration",
+  "amazonAsin": "B09NQYXK7T",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 45.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 4821
+  },
+  "image": "https://images.unsplash.com/photo-1610401736116-e1e27e11451b?w=600&h=600&fit=crop&q=80",
+  "pros": [
+    "Rétroéclairage LED magnifique (viral TikTok)",
+    "3 températures + 10 niveaux de luminosité",
+    "Design métal noir mat très élégant",
+    "Parfait pour selfies et vidéos"
+  ],
+  "cons": [
+    "Câble électrique visible si prise éloignée",
+    "Poids : prévoir chevilles solides"
+  ],
+  "specifications": [
+    { "label": "Diamètre", "value": "50 cm" },
+    { "label": "Cadre", "value": "Métal noir mat" },
+    { "label": "Éclairage", "value": "LED intégrée" },
+    { "label": "Températures", "value": "Chaud / Neutre / Froid" },
+    { "label": "Alimentation", "value": "Secteur (adaptateur inclus)" }
+  ],
+  "featured": true,
+  "inStock": true
+}

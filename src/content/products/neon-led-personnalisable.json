@@ -15,7 +15,7 @@
     "score": 4.2,
     "count": 3450
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1557804506-672719786933?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Personnalisable (mot, prenom, forme)",
     "Alimentation USB (batterie externe possible)",
@@ -27,11 +27,26 @@
     "Plus cher que les enseignes standard"
   ],
   "specifications": [
-    { "label": "Type", "value": "LED flexible neon" },
-    { "label": "Alimentation", "value": "USB 5V" },
-    { "label": "Personnalisation", "value": "Texte ou forme au choix" },
-    { "label": "Longueur max", "value": "60 cm" },
-    { "label": "Fixation", "value": "Adhesif ou crochets" }
+    {
+      "label": "Type",
+      "value": "LED flexible neon"
+    },
+    {
+      "label": "Alimentation",
+      "value": "USB 5V"
+    },
+    {
+      "label": "Personnalisation",
+      "value": "Texte ou forme au choix"
+    },
+    {
+      "label": "Longueur max",
+      "value": "60 cm"
+    },
+    {
+      "label": "Fixation",
+      "value": "Adhesif ou crochets"
+    }
   ],
   "featured": true,
   "inStock": true

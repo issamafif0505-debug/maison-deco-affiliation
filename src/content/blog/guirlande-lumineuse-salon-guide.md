@@ -3,8 +3,8 @@ title: "Guirlande Lumineuse Salon : Le Guide Complet 2025"
 description: "Quelle guirlande lumineuse choisir pour votre salon ? Comparatif des meilleures guirlandes LED avec nos avis et conseils."
 pubDate: 2025-07-10
 author: "Issam"
-cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
-coverAlt: "Salon decore avec des guirlandes lumineuses chaleureuses"
+cover: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1200&h=600&fit=crop&q=80"
+coverAlt: "Guirlande lumineuse decorant un salon cosy"
 category: "eclairage"
 tags: ["guirlande", "salon", "LED", "decoration", "ambiance", "eclairage"]
 type: "comparatif"

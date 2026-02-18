@@ -15,7 +15,7 @@
     "score": 4.4,
     "count": 45672
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Prix imbattable (moins de 16 EUR)",
     "Compatible WiFi + Alexa + Google Home",
@@ -27,11 +27,26 @@
     "WiFi 2.4 GHz uniquement"
   ],
   "specifications": [
-    { "label": "Longueur", "value": "5 metres" },
-    { "label": "Technologie", "value": "RGB LED" },
-    { "label": "Connectivite", "value": "WiFi 2.4 GHz + Bluetooth" },
-    { "label": "Compatibilite", "value": "Alexa, Google Home" },
-    { "label": "Installation", "value": "Adhesif 3M" }
+    {
+      "label": "Longueur",
+      "value": "5 metres"
+    },
+    {
+      "label": "Technologie",
+      "value": "RGB LED"
+    },
+    {
+      "label": "Connectivite",
+      "value": "WiFi 2.4 GHz + Bluetooth"
+    },
+    {
+      "label": "Compatibilite",
+      "value": "Alexa, Google Home"
+    },
+    {
+      "label": "Installation",
+      "value": "Adhesif 3M"
+    }
   ],
   "featured": true,
   "inStock": true

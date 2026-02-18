@@ -5,67 +5,114 @@ import siteConfig from '../data/site-config.json';
 ---
 
 <BaseLayout
-  title="A propos"
-  description="Decouvrez qui se cache derrière Maison & Deco by Issam. Passionné de decoration intérieure basé à Marrakech."
+  title="À propos d'Issam — Maison & Déco"
+  description="Qui est Issam, le créateur de Maison & Déco ? Passionné de décoration basé à Marrakech, il teste les produits Amazon pour vous aider à décorer sans vous ruiner."
 >
   <div class="container-custom py-8 md:py-12">
-    <Breadcrumbs items={[{ label: 'A propos' }]} />
+    <Breadcrumbs items={[{ label: 'À propos' }]} />
 
     <div class="max-w-3xl mx-auto">
-      <!-- Hero -->
-      <div class="text-center mb-12">
-        <div class="w-32 h-32 rounded-full bg-primary-200 mx-auto mb-6 flex items-center justify-center shadow-lg">
-          <span class="text-6xl">🏠</span>
+
+      <!-- Hero perso -->
+      <div class="bg-gradient-to-br from-primary-50 to-warm-50 rounded-2xl p-8 md:p-12 mb-12 text-center">
+        <div class="w-28 h-28 rounded-full bg-white mx-auto mb-6 flex items-center justify-center shadow-lg border-4 border-primary-200">
+          <span class="text-5xl">👨‍💻</span>
         </div>
-        <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Salut, moi c'est {siteConfig.author.name} !
+        <h1 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-3">
+          Salut, moi c'est Issam !
         </h1>
-        <p class="text-lg text-gray-600">
-          {siteConfig.author.bio}
-        </p>
+        <p class="text-gray-600 text-lg mb-2">Passionné de déco • Marrakech, Maroc</p>
+        <div class="flex flex-wrap justify-center gap-3 mt-4">
+          <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">🏠 Décoration</span>
+          <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">📱 TikTok</span>
+          <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">🛒 Amazon</span>
+          <span class="bg-white px-3 py-1 rounded-full text-sm text-gray-700 border border-gray-200">🇲🇦 Maroc</span>
+        </div>
       </div>
 
-      <!-- Content -->
-      <div class="prose-custom">
-        <h2>Pourquoi ce site ?</h2>
+      <!-- Mon histoire -->
+      <div class="prose-custom mb-12">
+        <h2>Mon histoire avec la déco</h2>
         <p>
-          J'ai cree {siteConfig.siteName} pour partager ma passion pour la decoration d'interieur et aider les gens a trouver les meilleurs produits pour leur maison. Chaque produit que je recommande est soigneusement selectionne et analyse.
+          Tout a commencé quand j'ai emménagé dans mon premier appartement à Marrakech. Budget serré, pièce vide, et une obsession : rendre cet espace cosy et stylé sans dépenser une fortune.
+        </p>
+        <p>
+          J'ai passé des heures sur Amazon, à regarder des TikTok déco, à commander des produits… Certains étaient vraiment incroyables pour leur prix. D'autres étaient des déceptions totales. Et je me suis rendu compte qu'il manquait quelque chose sur internet : des <strong>avis vraiment honnêtes</strong>, en français, par quelqu'un avec un budget réel.
+        </p>
+        <p>
+          Alors j'ai créé ce site. L'idée est simple : je commande les produits, je les teste chez moi pendant plusieurs semaines, et je vous dis sans filtre ce qui vaut le coup et ce qu'il faut éviter.
         </p>
 
-        <h2>Comment je selectionne les produits ?</h2>
-        <p>
-          Chaque produit presente sur ce site est choisi selon des criteres stricts :
-        </p>
+        <h2>Ce que vous trouverez ici</h2>
         <ul>
-          <li><strong>Qualite</strong> : Je privilegie les produits bien notes et durables</li>
-          <li><strong>Rapport qualite-prix</strong> : Le meilleur produit n'est pas forcement le plus cher</li>
-          <li><strong>Avis clients</strong> : J'analyse les retours des utilisateurs reels</li>
-          <li><strong>Design</strong> : L'esthetique compte autant que la fonctionnalite</li>
+          <li><strong>Des avis honnêtes</strong> — J'achète les produits avec mon propre argent. Personne ne me paie pour écrire du bien d'un truc médiocre.</li>
+          <li><strong>Des guides pratiques</strong> — Comment créer une ambiance cosy, quel éclairage choisir, comment optimiser un petit espace avec peu de budget.</li>
+          <li><strong>Des sélections à petit budget</strong> — La plupart des produits sont sous 50 €. La belle déco n'est pas réservée aux riches.</li>
+          <li><strong>Du contenu régulièrement mis à jour</strong> — Les prix changent, les produits évoluent. Je revisite mes recommandations régulièrement.</li>
         </ul>
 
-        <h2>Transparence</h2>
-        <p>
-          Ce site contient des liens d'affiliation vers Amazon. Cela signifie que si vous achetez un produit via mes liens, je recois une petite commission, sans aucun cout supplementaire pour vous. Cela me permet de continuer a creer du contenu gratuit et de qualite.
-        </p>
+        <h2>Ma méthode de sélection</h2>
+        <ol>
+          <li>Je repère les produits tendance (TikTok, Amazon best-sellers, recommandations de la communauté)</li>
+          <li>Je vérifie les avis — je lis les avis 3 étoiles et moins, pas seulement les 5 étoiles</li>
+          <li>Je commande et je teste pendant au moins 2 à 3 semaines dans mon appartement</li>
+          <li>Je ne recommande que les produits que j'utilise encore chez moi aujourd'hui</li>
+        </ol>
 
-        <h2>Suivez-moi !</h2>
+        <h2>Transparence totale</h2>
         <p>
-          Retrouvez mes bons plans et astuces deco en video sur mes reseaux sociaux :
+          Ce site contient des <strong>liens d'affiliation Amazon</strong>. Concrètement : si vous cliquez sur un lien et achetez quelque chose, je touche une petite commission (entre 3 et 10% selon la catégorie). <strong>Ça ne change pas le prix que vous payez</strong> — c'est Amazon qui me verse cette commission.
+        </p>
+        <p>
+          Ces revenus me permettent de maintenir ce site, d'acheter de nouveaux produits à tester, et de créer du contenu gratuit. Je reste totalement indépendant : je recommande un produit parce qu'il est bon, pas parce qu'il rapporte plus.
         </p>
       </div>
 
-      <!-- Social CTA -->
-      <div class="flex flex-col sm:flex-row gap-4 mt-8">
-        <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="btn-primary flex-1 justify-center">
-          TikTok
-        </a>
-        <a href={siteConfig.social.youtube} target="_blank" rel="noopener" class="inline-flex items-center justify-center flex-1 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors">
-          YouTube
-        </a>
-        <a href={siteConfig.social.instagram} target="_blank" rel="noopener" class="inline-flex items-center justify-center flex-1 px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all">
-          Instagram
-        </a>
+      <!-- Stats perso -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        <div class="bg-primary-50 rounded-xl p-5 text-center">
+          <div class="text-2xl font-bold font-serif text-primary-700">50+</div>
+          <div class="text-sm text-gray-600 mt-1">Produits testés</div>
+        </div>
+        <div class="bg-primary-50 rounded-xl p-5 text-center">
+          <div class="text-2xl font-bold font-serif text-primary-700">8</div>
+          <div class="text-sm text-gray-600 mt-1">Guides rédigés</div>
+        </div>
+        <div class="bg-primary-50 rounded-xl p-5 text-center">
+          <div class="text-2xl font-bold font-serif text-primary-700">4★+</div>
+          <div class="text-sm text-gray-600 mt-1">Note min. sélection</div>
+        </div>
+        <div class="bg-primary-50 rounded-xl p-5 text-center">
+          <div class="text-2xl font-bold font-serif text-primary-700">100%</div>
+          <div class="text-sm text-gray-600 mt-1">Avis personnels</div>
+        </div>
       </div>
+
+      <!-- Suivez-moi -->
+      <div class="bg-gray-50 rounded-2xl p-8 text-center">
+        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-3">Suivez l'aventure !</h2>
+        <p class="text-gray-600 mb-6 max-w-lg mx-auto">
+          Je partage mes hauls Amazon, astuces déco et tests de produits en vidéo. Rejoignez la communauté !
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href={siteConfig.social.tiktok} target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center px-6 py-3 bg-gray-900 text-white font-bold rounded-xl hover:bg-gray-800 transition-colors gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.75a8.18 8.18 0 004.76 1.52V6.84a4.83 4.83 0 01-1-.15z"/></svg>
+            Suivre sur TikTok
+          </a>
+          <a href={siteConfig.social.youtube} target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center px-6 py-3 bg-red-600 text-white font-bold rounded-xl hover:bg-red-700 transition-colors gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            S'abonner YouTube
+          </a>
+          <a href={siteConfig.social.instagram} target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold rounded-xl hover:from-purple-600 hover:to-pink-600 transition-all gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 </BaseLayout>

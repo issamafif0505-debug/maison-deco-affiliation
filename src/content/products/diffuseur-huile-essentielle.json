@@ -15,7 +15,7 @@
     "score": 4.4,
     "count": 18750
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1547592180-85f173990554?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Grand reservoir 500ml (12h autonomie)",
     "7 couleurs LED d'ambiance",
@@ -27,11 +27,26 @@
     "Nettoyage regulier necessaire"
   ],
   "specifications": [
-    { "label": "Capacite", "value": "500 ml" },
-    { "label": "Duree diffusion", "value": "Jusqu'a 12h" },
-    { "label": "Surface", "value": "25-40 m2" },
-    { "label": "LED", "value": "7 couleurs" },
-    { "label": "Niveau sonore", "value": "< 35 dB" }
+    {
+      "label": "Capacite",
+      "value": "500 ml"
+    },
+    {
+      "label": "Duree diffusion",
+      "value": "Jusqu'a 12h"
+    },
+    {
+      "label": "Surface",
+      "value": "25-40 m2"
+    },
+    {
+      "label": "LED",
+      "value": "7 couleurs"
+    },
+    {
+      "label": "Niveau sonore",
+      "value": "< 35 dB"
+    }
   ],
   "featured": false,
   "inStock": true

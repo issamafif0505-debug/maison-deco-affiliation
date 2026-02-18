@@ -15,7 +15,7 @@
     "score": 4.2,
     "count": 3842
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1551909016-2f1e7ad4be9a?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Effet visuel spectaculaire (viral TikTok)",
     "16 couleurs differentes",
@@ -27,11 +27,26 @@
     "Luminosite faible (ambiance uniquement)"
   ],
   "specifications": [
-    { "label": "Couleurs", "value": "16 couleurs" },
-    { "label": "Rotation", "value": "360 degres" },
-    { "label": "Alimentation", "value": "USB" },
-    { "label": "Hauteur", "value": "Reglable avec trepied" },
-    { "label": "Utilisation", "value": "Deco, photo, TikTok, ambiance" }
+    {
+      "label": "Couleurs",
+      "value": "16 couleurs"
+    },
+    {
+      "label": "Rotation",
+      "value": "360 degres"
+    },
+    {
+      "label": "Alimentation",
+      "value": "USB"
+    },
+    {
+      "label": "Hauteur",
+      "value": "Reglable avec trepied"
+    },
+    {
+      "label": "Utilisation",
+      "value": "Deco, photo, TikTok, ambiance"
+    }
   ],
   "featured": false,
   "inStock": true

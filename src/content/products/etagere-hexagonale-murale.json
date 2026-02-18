@@ -15,7 +15,7 @@
     "score": 4.4,
     "count": 6230
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Lot de 3 pour composition murale",
     "Style industriel bois + metal noir",
@@ -27,11 +27,26 @@
     "Necessite percer le mur"
   ],
   "specifications": [
-    { "label": "Materiau", "value": "Bois + metal noir" },
-    { "label": "Quantite", "value": "Lot de 3" },
-    { "label": "Style", "value": "Industriel / Scandinave" },
-    { "label": "Charge max", "value": "3 kg par etagere" },
-    { "label": "Fixation", "value": "Murale (vis incluses)" }
+    {
+      "label": "Materiau",
+      "value": "Bois + metal noir"
+    },
+    {
+      "label": "Quantite",
+      "value": "Lot de 3"
+    },
+    {
+      "label": "Style",
+      "value": "Industriel / Scandinave"
+    },
+    {
+      "label": "Charge max",
+      "value": "3 kg par etagere"
+    },
+    {
+      "label": "Fixation",
+      "value": "Murale (vis incluses)"
+    }
   ],
   "featured": false,
   "inStock": true

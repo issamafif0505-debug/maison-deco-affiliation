@@ -15,7 +15,7 @@
     "score": 4.4,
     "count": 6547
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1513506003901-1e6a35d44e88?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Boules en vrai coton (qualite premium)",
     "Commande vocale Alexa et Google",
@@ -27,11 +27,26 @@
     "WiFi uniquement 2.4 GHz"
   ],
   "specifications": [
-    { "label": "Nombre de boules", "value": "24 boules" },
-    { "label": "Longueur", "value": "2.4 metres" },
-    { "label": "Diametre boule", "value": "6 cm" },
-    { "label": "Alimentation", "value": "USB (adaptateur inclus)" },
-    { "label": "Connectivite", "value": "WiFi + commande vocale" }
+    {
+      "label": "Nombre de boules",
+      "value": "24 boules"
+    },
+    {
+      "label": "Longueur",
+      "value": "2.4 metres"
+    },
+    {
+      "label": "Diametre boule",
+      "value": "6 cm"
+    },
+    {
+      "label": "Alimentation",
+      "value": "USB (adaptateur inclus)"
+    },
+    {
+      "label": "Connectivite",
+      "value": "WiFi + commande vocale"
+    }
   ],
   "featured": true,
   "inStock": true

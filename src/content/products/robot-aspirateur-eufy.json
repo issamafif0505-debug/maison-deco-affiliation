@@ -1,0 +1,38 @@
+{
+  "name": "Robot Aspirateur Eufy RoboVac 11S — Ultra-Fin",
+  "slug": "robot-aspirateur-eufy",
+  "shortDescription": "Robot aspirateur ultra-fin 2,85cm, 1300 Pa d'aspiration, autonomie 100 min, silencieux. Meilleur rapport qualité-prix.",
+  "fullDescription": "Le Eufy RoboVac 11S est le robot aspirateur le plus recommandé dans les tests comparatifs pour son rapport qualité-prix imbattable. Sa hauteur de seulement 2,85 cm lui permet de passer sous tous les meubles. L'aspiration de 1300 Pa aspire efficacement poils d'animaux, poussières et miettes. Autonomie de 100 minutes puis retour automatique à la base de recharge. Mode BoostIQ : augmente automatiquement l'aspiration sur les tapis. Silencieux (55 dB), il travaille pendant que vous dormez.",
+  "category": "technologie",
+  "amazonAsin": "B079QYYGF1",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 139.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 28940
+  },
+  "image": "https://images.unsplash.com/photo-1558618047-3c8c76c2d9c0?w=600&h=600&fit=crop&q=80",
+  "pros": [
+    "Ultra-fin (2,85 cm) — passe partout",
+    "1300 Pa aspiration puissante",
+    "100 min d'autonomie + retour auto",
+    "Silencieux 55 dB — travaille la nuit"
+  ],
+  "cons": [
+    "Pas de connexion WiFi / contrôle appli",
+    "Réservoir à vider régulièrement"
+  ],
+  "specifications": [
+    { "label": "Hauteur", "value": "2,85 cm" },
+    { "label": "Aspiration", "value": "1300 Pa" },
+    { "label": "Autonomie", "value": "100 minutes" },
+    { "label": "Niveau sonore", "value": "55 dB" },
+    { "label": "Recharge", "value": "Retour automatique base" }
+  ],
+  "featured": false,
+  "inStock": true
+}

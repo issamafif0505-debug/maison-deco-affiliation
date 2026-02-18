@@ -15,7 +15,7 @@
     "score": 4.3,
     "count": 15230
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1536244636800-a3f74db0f3cf?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Realisme impressionnant (impression 3D)",
     "16 couleurs + telecommande",
@@ -27,11 +27,26 @@
     "Petite taille (15 cm)"
   ],
   "specifications": [
-    { "label": "Diametre", "value": "15 cm" },
-    { "label": "Materiau", "value": "PLA imprime 3D" },
-    { "label": "Couleurs", "value": "16 couleurs RGB" },
-    { "label": "Autonomie", "value": "8-12 heures" },
-    { "label": "Recharge", "value": "USB (cable inclus)" }
+    {
+      "label": "Diametre",
+      "value": "15 cm"
+    },
+    {
+      "label": "Materiau",
+      "value": "PLA imprime 3D"
+    },
+    {
+      "label": "Couleurs",
+      "value": "16 couleurs RGB"
+    },
+    {
+      "label": "Autonomie",
+      "value": "8-12 heures"
+    },
+    {
+      "label": "Recharge",
+      "value": "USB (cable inclus)"
+    }
   ],
   "featured": false,
   "inStock": true

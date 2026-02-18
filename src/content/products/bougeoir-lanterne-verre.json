@@ -1,0 +1,38 @@
+{
+  "name": "Bougeoir Lanterne Verre & Métal — Set de 3",
+  "slug": "bougeoir-lanterne-verre",
+  "shortDescription": "Set de 3 lanternes bougies en verre et métal noir, style marocain et bohème. Parfait pour créer une ambiance cosy.",
+  "fullDescription": "Ce set de 3 lanternes en verre soufflé et métal noir mat est l'accessoire déco qui transforme instantanément l'ambiance d'une pièce. Style marocain-bohème, parfaitement dans l'air du temps. Les 3 tailles (petite, moyenne, grande) créent une composition harmonieuse. Compatible bougies chauffe-plats et bougies piliers. Magnifique en terrasse ou salon, utilisable intérieur/extérieur. Le rendu en photo est spectaculaire, idéal pour l'affiliation — surtout en période estivale et automnale.",
+  "category": "decoration",
+  "amazonAsin": "B07WKMRB1V",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 32.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 3210
+  },
+  "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&h=600&fit=crop&q=80",
+  "pros": [
+    "Set de 3 tailles assorties (très photogénique)",
+    "Style marocain-bohème ultra tendance",
+    "Intérieur et extérieur",
+    "Métal noir mat de qualité"
+  ],
+  "cons": [
+    "Verre assez léger — fragile si renversé",
+    "Bougies non incluses"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "3 lanternes (S, M, L)" },
+    { "label": "Matière", "value": "Verre + métal noir mat" },
+    { "label": "Utilisation", "value": "Intérieur et extérieur" },
+    { "label": "Compatibilité", "value": "Bougies chauffe-plats, piliers" },
+    { "label": "Style", "value": "Marocain / Bohème" }
+  ],
+  "featured": false,
+  "inStock": true
+}

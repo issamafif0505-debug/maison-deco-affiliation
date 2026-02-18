@@ -15,7 +15,7 @@
     "score": 4.5,
     "count": 8932
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop&q=80",
   "pros": [
     "16 millions de couleurs + 61 modes de scene",
     "Synchronisation musique spectaculaire",
@@ -27,11 +27,26 @@
     "Luminosite limitee pour eclairage principal"
   ],
   "specifications": [
-    { "label": "Hauteur", "value": "137 cm" },
-    { "label": "Technologie", "value": "RGBIC LED" },
-    { "label": "Connectivite", "value": "WiFi + Bluetooth" },
-    { "label": "Compatibilite", "value": "Alexa, Google, Matter" },
-    { "label": "Modes", "value": "61 scenes + sync musique" }
+    {
+      "label": "Hauteur",
+      "value": "137 cm"
+    },
+    {
+      "label": "Technologie",
+      "value": "RGBIC LED"
+    },
+    {
+      "label": "Connectivite",
+      "value": "WiFi + Bluetooth"
+    },
+    {
+      "label": "Compatibilite",
+      "value": "Alexa, Google, Matter"
+    },
+    {
+      "label": "Modes",
+      "value": "61 scenes + sync musique"
+    }
   ],
   "featured": true,
   "inStock": true

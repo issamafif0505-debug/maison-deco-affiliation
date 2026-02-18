@@ -3,8 +3,8 @@ title: "15 Idees Deco Salon Marocain Moderne (Budget Amazon)"
 description: "Creez un salon marocain moderne et tendance avec des produits Amazon. 15 idees deco accessibles pour un interieur chic."
 pubDate: 2025-07-15
 author: "Issam"
-cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
-coverAlt: "Salon marocain moderne avec decoration contemporaine"
+cover: "https://images.unsplash.com/photo-1524634126442-357e0eac3c14?w=1200&h=600&fit=crop&q=80"
+coverAlt: "Salon marocain moderne avec coussins et lanternes"
 category: "salon"
 tags: ["salon", "marocain", "moderne", "deco", "oriental", "tendance"]
 type: "guide"

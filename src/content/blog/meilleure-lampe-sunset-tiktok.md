@@ -3,8 +3,8 @@ title: "Lampe Sunset TikTok : Laquelle Choisir en 2025 ? (Test & Avis)"
 description: "On a teste les lampes sunset virales sur TikTok. Decouvrez laquelle vaut vraiment le coup et ou l'acheter au meilleur prix."
 pubDate: 2025-07-01
 author: "Issam"
-cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
-coverAlt: "Lampe sunset projettant un halo orange dans une chambre"
+cover: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1200&h=600&fit=crop&q=80"
+coverAlt: "Lampe sunset projetant une lumiere orange dans une chambre"
 category: "eclairage"
 tags: ["lampe sunset", "tiktok", "viral", "eclairage", "chambre", "deco"]
 type: "review"

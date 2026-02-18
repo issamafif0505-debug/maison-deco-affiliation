@@ -3,8 +3,8 @@ title: "Test du Roborock S7 MaxV Ultra : le robot aspirateur ultime ?"
 description: "Notre avis complet sur le Roborock S7 MaxV Ultra apres 3 mois d'utilisation. Test, avantages, inconvenients et verdict."
 pubDate: 2025-06-05
 author: "Issam"
-cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
-coverAlt: "Robot aspirateur dans un salon moderne"
+cover: "https://images.unsplash.com/photo-1558618047-3c8c76c2d9c0?w=1200&h=600&fit=crop&q=80"
+coverAlt: "Robot aspirateur sur parquet dans un salon moderne"
 category: "rangement"
 tags: ["robot aspirateur", "roborock", "test", "review", "maison connectee"]
 type: "review"

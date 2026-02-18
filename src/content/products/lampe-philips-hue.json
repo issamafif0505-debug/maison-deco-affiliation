@@ -15,7 +15,7 @@
     "score": 4.6,
     "count": 12453
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1565814636199-ae8133055c1c?w=600&h=600&fit=crop&q=80",
   "pros": [
     "16 millions de couleurs",
     "Compatible Alexa, Google Home, Apple HomeKit",
@@ -27,11 +27,26 @@
     "Prix eleve par rapport aux concurrents"
   ],
   "specifications": [
-    { "label": "Puissance", "value": "9W (equivalent 60W)" },
-    { "label": "Culot", "value": "E27" },
-    { "label": "Connectivite", "value": "Bluetooth + Zigbee" },
-    { "label": "Duree de vie", "value": "25 000 heures" },
-    { "label": "Lumens", "value": "806 lm" }
+    {
+      "label": "Puissance",
+      "value": "9W (equivalent 60W)"
+    },
+    {
+      "label": "Culot",
+      "value": "E27"
+    },
+    {
+      "label": "Connectivite",
+      "value": "Bluetooth + Zigbee"
+    },
+    {
+      "label": "Duree de vie",
+      "value": "25 000 heures"
+    },
+    {
+      "label": "Lumens",
+      "value": "806 lm"
+    }
   ],
   "featured": true,
   "inStock": true

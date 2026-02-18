@@ -15,7 +15,7 @@
     "score": 4.3,
     "count": 8542
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&h=600&fit=crop&q=80",
   "pros": [
     "Effet galaxie spectaculaire au plafond",
     "Telecommande + minuterie integree",
@@ -27,11 +27,26 @@
     "Necessite une piece sombre pour le meilleur effet"
   ],
   "specifications": [
-    { "label": "Puissance", "value": "10W LED" },
-    { "label": "Surface couverte", "value": "20-60 m2" },
-    { "label": "Connectivite", "value": "Bluetooth + Telecommande" },
-    { "label": "Minuterie", "value": "1h / 2h / 4h" },
-    { "label": "Alimentation", "value": "USB 5V" }
+    {
+      "label": "Puissance",
+      "value": "10W LED"
+    },
+    {
+      "label": "Surface couverte",
+      "value": "20-60 m2"
+    },
+    {
+      "label": "Connectivite",
+      "value": "Bluetooth + Telecommande"
+    },
+    {
+      "label": "Minuterie",
+      "value": "1h / 2h / 4h"
+    },
+    {
+      "label": "Alimentation",
+      "value": "USB 5V"
+    }
   ],
   "featured": true,
   "inStock": true
