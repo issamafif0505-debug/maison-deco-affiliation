@@ -15,7 +15,7 @@
     "score": 4.5,
     "count": 4821
   },
-  "image": "https://images.unsplash.com/photo-1610401736116-e1e27e11451b?w=600&h=600&fit=crop&q=80",
+  "image": "https://m.media-amazon.com/images/P/B09NQYXK7T.01._AC_SL600_.jpg",
   "pros": [
     "Rétroéclairage LED magnifique (viral TikTok)",
     "3 températures + 10 niveaux de luminosité",
@@ -27,11 +27,26 @@
     "Poids : prévoir chevilles solides"
   ],
   "specifications": [
-    { "label": "Diamètre", "value": "50 cm" },
-    { "label": "Cadre", "value": "Métal noir mat" },
-    { "label": "Éclairage", "value": "LED intégrée" },
-    { "label": "Températures", "value": "Chaud / Neutre / Froid" },
-    { "label": "Alimentation", "value": "Secteur (adaptateur inclus)" }
+    {
+      "label": "Diamètre",
+      "value": "50 cm"
+    },
+    {
+      "label": "Cadre",
+      "value": "Métal noir mat"
+    },
+    {
+      "label": "Éclairage",
+      "value": "LED intégrée"
+    },
+    {
+      "label": "Températures",
+      "value": "Chaud / Neutre / Froid"
+    },
+    {
+      "label": "Alimentation",
+      "value": "Secteur (adaptateur inclus)"
+    }
   ],
   "featured": true,
   "inStock": true
