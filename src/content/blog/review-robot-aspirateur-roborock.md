@@ -58,7 +58,7 @@ C'est ici que le Roborock S7 MaxV brille. Avec une puissance d'aspiration de 510
 
 ## Performance de lavage
 
-Le lavage est la vraie valeur ajoutee de ce modele. La serpilliere vibrante effectue 3000 vibrations par minute, simulant un nettoyage a la main.
+Le lavage est la vraie valeur ajoutee de ce modèle. La serpilliere vibrante effectue 3000 vibrations par minute, simulant un nettoyage a la main.
 
 **Ce qui marche bien :**
 - Les taches fraiches disparaissent facilement
@@ -107,4 +107,4 @@ Le Roborock S7 MaxV Ultra est fait pour vous si :
 
 Le Roborock S7 MaxV Ultra merite largement son statut de reference. La station automatique est un vrai game-changer qui transforme l'experience. Le prix est eleve, mais vous achetez une solution de nettoyage complete et quasi-autonome.
 
-**Mon conseil** : Si votre budget le permet, foncez. Sinon, attendez une promotion Amazon — ce modele beneficie regulierement de baisses de prix significatives.
+**Mon conseil** : Si votre budget le permet, foncez. Sinon, attendez une promotion Amazon — ce modèle beneficie regulierement de baisses de prix significatives.

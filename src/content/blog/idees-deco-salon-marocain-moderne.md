@@ -25,7 +25,7 @@ Remplacez les chaises par des poufs en cuir naturel. Posez-les autour d'une tabl
 **Budget** : 30-60 EUR le pouf sur Amazon
 
 ### 2. Coussins geometriques
-Les motifs geometriques berberes sont ultra-tendances. Mixez 3-4 coussins de tailles et motifs differents sur un canape uni.
+Les motifs geometriques berberes sont ultra-tendances. Mixez 3-4 coussins de tailles et motifs différents sur un canape uni.
 **Budget** : 10-20 EUR le coussin
 
 ### 3. Tapis Beni Ouarain (ou style)
@@ -81,13 +81,13 @@ Un plateau de the marocain expose sur une etagere ou utilise quotidiennement. La
 **Budget** : 25-50 EUR
 
 ### 15. Macrame mural
-Le macrame s'integre parfaitement dans un salon marocain moderne. Choisissez un modele en coton naturel.
+Le macrame s'integre parfaitement dans un salon marocain moderne. Choisissez un modèle en coton naturel.
 **Budget** : 15-30 EUR
 
 ## Les 3 erreurs a eviter
 
 ### Erreur 1 : Trop de motifs
-Mixez maximum 2 types de motifs (ex: geometrique + uni). Trop de motifs differents cree un effet fouillis.
+Mixez maximum 2 types de motifs (ex: geometrique + uni). Trop de motifs différents cree un effet fouillis.
 
 ### Erreur 2 : Trop de couleurs vives
 Restez sur une palette neutre (beige, blanc, brun) avec 1-2 touches de couleur (terracotta, bleu majorelle).
@@ -108,4 +108,4 @@ L'eclairage fait 50% de l'ambiance. Privilegiez les sources indirectes et les bo
 | Eclairage LED | 20 EUR |
 | **Total** | **295 EUR** |
 
-Pour moins de 300 EUR, vous pouvez transformer completement votre salon. Pas besoin de tout acheter d'un coup : commencez par les coussins et le tapis, puis ajoutez le reste petit a petit.
+Pour moins de 300 EUR, vous pouvez transformer complètement votre salon. Pas besoin de tout acheter d'un coup : commencez par les coussins et le tapis, puis ajoutez le reste petit a petit.

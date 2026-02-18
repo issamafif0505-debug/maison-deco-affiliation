@@ -53,14 +53,14 @@ Les guirlandes ne sont plus reservees aux fetes de fin d'annee. En 2025, elles s
 **Ideal pour** : salon connecte, ambiance fete, gamer setup
 **Prix moyen** : 20-40 EUR
 
-## Comparatif : Les 3 meilleures guirlandes testees
+## Comparatif : Les 3 meilleures guirlandes testées
 
 | Critère | GuirLED Boules Coton | Micro LED Cuivre | Globe Vintage |
 |---------|---------------------|------------------|---------------|
 | Design | Tendance, colore | Discret, elegant | Retro, chaleureux |
 | Luminosite | Moyenne | Faible | Forte |
 | Duree de vie | 50 000h | 30 000h | 20 000h |
-| Waterproof | Non | Oui | Selon modele |
+| Waterproof | Non | Oui | Selon modèle |
 | Prix | 30 EUR | 12 EUR | 20 EUR |
 | Note | 4.5/5 | 4.2/5 | 4.3/5 |
 

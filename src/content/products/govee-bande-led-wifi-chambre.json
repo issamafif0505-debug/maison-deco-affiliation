@@ -1,9 +1,9 @@
 {
   "name": "Govee Bande LED WiFi RGB 5m - Ruban LED Chambre",
   "slug": "govee-bande-led-wifi-chambre",
-  "shortDescription": "Ruban LED 5 metres WiFi RGB, controle par application, sync musique, compatible Alexa",
-  "fullDescription": "Le ruban LED Govee 5m est le produit d'affiliation ideal : petit prix, fort impact visuel, et tout le monde en veut un ! Compatible WiFi, il se controle depuis l'application Govee, par Alexa ou Google Home. Le mode synchronisation musique cree des ambiances de fou pour vos soirees. Avec 16 millions de couleurs et des dizaines de modes predefinis, il transforme n'importe quelle chambre ou salon en quelques minutes. Le ruban adhesif 3M assure une installation facile et durable.",
-  "category": "eclairage",
+  "shortDescription": "Ruban LED 5 mètrès WiFi RGB, controle par application, sync musique, compatible Alexa",
+  "fullDescription": "Le ruban LED Govee 5m est le produit d'affiliation idéal : petit prix, fort impact visuel, et tout le monde en veut un ! Compatible WiFi, il se controle depuis l'application Govee, par Alexa ou Google Home. Le mode synchronisation musique cree des ambiances de fou pour vos soirees. Avec 16 millions de couleurs et des dizaines de modes prédéfinis, il transforme n'importe quelle chambre ou salon en quelques minutes. Le ruban adhesif 3M assûre une installation facile et durable.",
+  "category": "éclairage",
   "amazonAsin": "B07XT8J3HZ",
   "affiliateTag": "issamdeco-21",
   "price": {
@@ -19,7 +19,7 @@
   "pros": [
     "Prix imbattable (moins de 16 EUR)",
     "Compatible WiFi + Alexa + Google Home",
-    "Mode sync musique tres fun",
+    "Mode sync musique très fun",
     "Installation facile (adhesif 3M)"
   ],
   "cons": [
@@ -29,7 +29,7 @@
   "specifications": [
     {
       "label": "Longueur",
-      "value": "5 metres"
+      "value": "5 mètrès"
     },
     {
       "label": "Technologie",
@@ -40,7 +40,7 @@
       "value": "WiFi 2.4 GHz + Bluetooth"
     },
     {
-      "label": "Compatibilite",
+      "label": "Compatibilité",
       "value": "Alexa, Google Home"
     },
     {

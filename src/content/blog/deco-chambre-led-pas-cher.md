@@ -1,6 +1,6 @@
 ---
 title: "Deco Chambre LED : 7 Idees a Moins de 30 EUR (2025)"
-description: "Transformez votre chambre avec des LED pas cher. 7 idees deco testees avec les meilleurs produits Amazon a petit budget."
+description: "Transformez votre chambre avec des LED pas cher. 7 idees deco testées avec les meilleurs produits Amazon a petit budget."
 pubDate: 2025-07-05
 author: "Issam"
 cover: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=1200&h=600&fit=crop&q=80"
@@ -28,7 +28,7 @@ C'est LA base de toute deco chambre en 2025. Une bande LED collee derriere la te
 3. Branchez sur USB ou prise secteur
 4. Choisissez votre couleur via l'appli
 
-**Budget** : 15-20 EUR pour une bande de 5 metres
+**Budget** : 15-20 EUR pour une bande de 5 mètres
 
 **Mon choix** : La Govee Bande LED WiFi 5m — compatible Alexa et Google Home, 16 millions de couleurs.
 
@@ -91,4 +91,4 @@ Ne comptez pas sur une seule source LED. Combinez bande LED + guirlande + lampe 
 
 ## Conclusion
 
-Pour moins de 30 EUR, vous pouvez completement transformer l'ambiance de votre chambre. Mon combo prefere : bande LED derriere le lit + lampe sunset + guirlande fairy lights. Le resultat est spectaculaire et parfait pour vos photos Instagram et TikTok.
+Pour moins de 30 EUR, vous pouvez complètement transformer l'ambiance de votre chambre. Mon combo prefere : bande LED derriere le lit + lampe sunset + guirlande fairy lights. Le resultat est spectaculaire et parfait pour vos photos Instagram et TikTok.
