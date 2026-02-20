@@ -1,0 +1,43 @@
+{
+  "name": "Lot de 6 Dessous de Verre Marbre & Or avec Support",
+  "slug": "dessous-verre-marbre-lot6",
+  "shortDescription": "Set de 6 dessous de verre effet marbre avec bordure dorée. Support en métal doré inclus. Céramique absorbante.",
+  "fullDescription": "Ces dessous de verre effet marbre avec bordure dorée ajoutent une touche de luxe à votre table basse ou salle à manger. La surface en céramique absorbante protège efficacement vos meubles des traces de condensation, de chaleur et de rayures. Le fond en liège antidérapant évite les glissements. Les 6 motifs de marbre sont légèrement différents (blanc, gris, rose, vert) pour un ensemble varié et élégant. Le support en métal doré permet de les ranger de manière décorative quand ils ne servent pas. Un petit accessoire qui fait une grande différence dans la déco de votre table.",
+  "category": "cuisine",
+  "amazonAsin": "B0BN8HXFTJ",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 15.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 7890
+  },
+  "image": "https://m.media-amazon.com/images/I/81DzD5s8VQL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/81DzD5s8VQL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71sMl-Y-qHL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71oZl8Md8mL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Effet marbre + or — look luxe",
+    "Céramique absorbante — protège les meubles",
+    "Fond liège antidérapant",
+    "Support doré décoratif inclus"
+  ],
+  "cons": [
+    "Céramique fragile — ne pas faire tomber",
+    "Pas au lave-vaisselle"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "6 dessous de verre + 1 support" },
+    { "label": "Diamètre", "value": "10 cm" },
+    { "label": "Matière", "value": "Céramique absorbante + liège" },
+    { "label": "Épaisseur", "value": "8 mm" },
+    { "label": "Support", "value": "Métal doré" }
+  ],
+  "featured": false,
+  "inStock": true
+}

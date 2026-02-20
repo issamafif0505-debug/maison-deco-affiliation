@@ -1,0 +1,43 @@
+{
+  "name": "Organisateur Maquillage Rotatif 360° Transparent",
+  "slug": "organisateur-maquillage-rotatif",
+  "shortDescription": "Rangement maquillage rotatif 360° en acrylique transparent. Plusieurs compartiments ajustables, design élégant.",
+  "fullDescription": "Cet organisateur de maquillage rotatif à 360° est la solution parfaite pour ranger tous vos produits de beauté de manière élégante et accessible. Fabriqué en acrylique transparent de haute qualité, il offre une visibilité totale sur tous vos produits. Les compartiments sont ajustables en hauteur pour accueillir des produits de différentes tailles : rouges à lèvres, fonds de teint, pinceaux, palettes, parfums. La base rotative permet d'accéder à tout en un tour de main. Un accessoire aussi pratique que décoratif pour votre coiffeuse ou salle de bain.",
+  "category": "salle-de-bain",
+  "amazonAsin": "B077BPJKWQ",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 21.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 18900
+  },
+  "image": "https://m.media-amazon.com/images/I/71M5D4bVxTL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/71M5D4bVxTL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81PqFQ8LOEL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71gg5P3j-7L._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Rotation 360° — tout accessible facilement",
+    "Compartiments ajustables en hauteur",
+    "Acrylique transparent — visibilité totale",
+    "Grande capacité de rangement"
+  ],
+  "cons": [
+    "Acrylique à nettoyer régulièrement (traces de doigts)",
+    "Montage initial un peu long"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "23 x 23 x 30 cm" },
+    { "label": "Matière", "value": "Acrylique transparent PMMA" },
+    { "label": "Rotation", "value": "360° sur base tournante" },
+    { "label": "Compartiments", "value": "8 niveaux ajustables" },
+    { "label": "Capacité", "value": "~30 produits" }
+  ],
+  "featured": true,
+  "inStock": true
+}

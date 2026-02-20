@@ -1,0 +1,43 @@
+{
+  "name": "Lot de 2 Coussins Velours Scandinave 45x45cm",
+  "slug": "coussin-velours-scandinave",
+  "shortDescription": "Coussins décoratifs en velours doux, design scandinave minimaliste. Housse avec fermeture invisible, garnissage inclus.",
+  "fullDescription": "Ces coussins en velours côtelé apportent une touche chaleureuse et élégante à votre canapé ou lit. Le tissu est d'une douceur incroyable au toucher, avec un rendu visuel très haut de gamme. La fermeture éclair invisible maintient un look épuré. Disponibles en plusieurs coloris (terracotta, vert sauge, beige, bleu canard), ils s'intègrent parfaitement dans un intérieur scandinave ou bohème. Le garnissage en fibre creuse est moelleux et garde bien sa forme dans le temps. Un excellent rapport qualité-prix pour transformer l'ambiance de votre salon.",
+  "category": "salon",
+  "amazonAsin": "B0BXKR4M3L",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 19.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 8720
+  },
+  "image": "https://m.media-amazon.com/images/I/81vJyHv1SYL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/81vJyHv1SYL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71H6HjQ1zoL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81YPXH8sHkL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Velours ultra doux et agréable au toucher",
+    "Garnissage moelleux inclus",
+    "Fermeture éclair invisible",
+    "Lavable en machine à 30°C"
+  ],
+  "cons": [
+    "Peut attirer les poils d'animaux",
+    "Coloris limités selon disponibilité"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "45 x 45 cm" },
+    { "label": "Matière", "value": "Velours côtelé polyester" },
+    { "label": "Garnissage", "value": "Fibre creuse siliconée" },
+    { "label": "Entretien", "value": "Lavable en machine 30°C" },
+    { "label": "Contenu", "value": "2 coussins (housse + garnissage)" }
+  ],
+  "featured": true,
+  "inStock": true
+}

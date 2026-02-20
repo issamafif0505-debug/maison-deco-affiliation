@@ -1,0 +1,42 @@
+{
+  "name": "Lampe de Chevet Tactile LED 3 Intensités",
+  "slug": "lampe-chevet-tactile-3-intensites",
+  "shortDescription": "Lampe de chevet LED tactile avec 3 niveaux de luminosité. Design moderne cylindrique, blanc chaud, port USB intégré.",
+  "fullDescription": "Cette lampe de chevet au design moderne et épuré est parfaite pour créer une ambiance douce dans votre chambre. Le contrôle tactile vous permet de basculer entre 3 niveaux de luminosité d'un simple toucher sur la base : lumière tamisée pour la lecture, moyenne pour l'ambiance, ou forte pour s'habiller. La lumière blanc chaud (3000K) est agréable et reposante pour les yeux. Le port USB intégré à l'arrière permet de charger votre téléphone directement depuis la lampe. Le corps en métal brossé et l'abat-jour en tissu lin donnent un look premium. Compacte mais efficace.",
+  "category": "éclairage",
+  "amazonAsin": "B08LH17WCD",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 27.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 15600
+  },
+  "image": "https://m.media-amazon.com/images/I/61dUPMVEP9L._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/61dUPMVEP9L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71c-5fQwfQL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Contrôle tactile intuitif — 3 intensités",
+    "Port USB intégré pour charger le téléphone",
+    "Blanc chaud 3000K agréable pour les yeux",
+    "Design moderne métal + tissu lin"
+  ],
+  "cons": [
+    "Ampoule LED non remplaçable",
+    "Câble d'alimentation un peu court (1.5m)"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "13 x 13 x 26 cm" },
+    { "label": "Température", "value": "3000K blanc chaud" },
+    { "label": "Puissance", "value": "6W LED (équiv. 40W)" },
+    { "label": "Port USB", "value": "USB-A 5V/1A" },
+    { "label": "Matière", "value": "Métal brossé + tissu lin" }
+  ],
+  "featured": false,
+  "inStock": true
+}

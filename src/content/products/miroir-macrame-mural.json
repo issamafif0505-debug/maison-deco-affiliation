@@ -1,0 +1,42 @@
+{
+  "name": "Miroir Mural Macramé Bohème Rond 35cm",
+  "slug": "miroir-macrame-mural",
+  "shortDescription": "Miroir décoratif rond avec contour en macramé tressé main. Style bohème, corde coton naturel, Ø35cm.",
+  "fullDescription": "Ce miroir mural en macramé est LA pièce déco bohème par excellence. Le contour tressé en corde de coton naturel encadre un miroir rond de qualité, créant un point focal magnifique sur n'importe quel mur. Le macramé est tressé à la main avec des détails soignés (franges, nœuds, motifs). Il apporte de la texture et de la chaleur à votre intérieur tout en agrandissant visuellement l'espace grâce au miroir. Parfait pour une entrée, un salon ou au-dessus d'une commode dans la chambre. Système d'accroche solide inclus.",
+  "category": "décoration",
+  "amazonAsin": "B08T6GY17H",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 18.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 4520
+  },
+  "image": "https://m.media-amazon.com/images/I/81f5YFRShYL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/81f5YFRShYL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81jKBFmIq3L._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Macramé tressé main — finition artisanale",
+    "Apporte texture et chaleur à la pièce",
+    "Miroir de bonne qualité, reflet net",
+    "Accroche murale solide incluse"
+  ],
+  "cons": [
+    "Coton naturel à protéger de l'humidité",
+    "Taille modeste (35 cm miroir)"
+  ],
+  "specifications": [
+    { "label": "Diamètre miroir", "value": "35 cm" },
+    { "label": "Diamètre total", "value": "55 cm (avec macramé)" },
+    { "label": "Matière", "value": "Corde coton naturel + verre miroir" },
+    { "label": "Style", "value": "Bohème / Artisanal" },
+    { "label": "Fixation", "value": "Crochet mural (inclus)" }
+  ],
+  "featured": false,
+  "inStock": true
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Set Accessoires Salle de Bain Bambou 6 Pièces",
+  "slug": "set-salle-bain-bambou",
+  "shortDescription": "Set complet salle de bain en bambou naturel : distributeur savon, porte-brosse, gobelet, boîte coton, plateau, brosse WC.",
+  "fullDescription": "Ce set de 6 accessoires en bambou naturel transforme votre salle de bain en un espace zen et élégant. Le kit complet inclut : distributeur de savon, porte-brosse à dents, gobelet, boîte à coton-tiges, plateau et brosse WC avec support. Le bambou est naturellement antibactérien et résistant à l'humidité, parfait pour la salle de bain. Le design épuré et la teinte chaude du bois naturel apportent une touche spa à votre quotidien. Tous les éléments sont coordonnés pour un rendu harmonieux. Un cadeau idéal pour une pendaison de crémaillère ou pour vous offrir un upgrade déco instantané.",
+  "category": "salle-de-bain",
+  "amazonAsin": "B07KR1JKHJ",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 29.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 9150
+  },
+  "image": "https://m.media-amazon.com/images/I/71lAb5m0XML._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/71lAb5m0XML._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71J2bTNHVvL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61XVYdQKf0L._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Set complet 6 pièces — tout coordonné",
+    "Bambou naturel antibactérien",
+    "Look zen et spa très élégant",
+    "Résistant à l'humidité"
+  ],
+  "cons": [
+    "Bambou à sécher après usage intensif",
+    "Brosse WC de qualité moyenne"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "6 pièces" },
+    { "label": "Pièces", "value": "Distributeur, porte-brosse, gobelet, boîte coton, plateau, brosse WC" },
+    { "label": "Matière", "value": "Bambou naturel" },
+    { "label": "Style", "value": "Zen / Nature" },
+    { "label": "Entretien", "value": "Essuyage humide" }
+  ],
+  "featured": true,
+  "inStock": true
+}

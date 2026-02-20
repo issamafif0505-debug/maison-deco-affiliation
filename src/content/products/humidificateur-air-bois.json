@@ -1,0 +1,42 @@
+{
+  "name": "Humidificateur d'Air Ultrasonique Effet Bois 300ml",
+  "slug": "humidificateur-air-bois",
+  "shortDescription": "Humidificateur et diffuseur d'huiles essentielles effet bois clair. Brume ultrasonique, LED 7 couleurs, silencieux, 300ml.",
+  "fullDescription": "Cet humidificateur 2-en-1 combine humidification de l'air et diffusion d'huiles essentielles dans un design effet bois clair très élégant. La technologie ultrasonique produit une brume fine et silencieuse (moins de 30dB) qui hydrate l'air ambiant tout en diffusant votre parfum préféré. Les 7 couleurs LED créent une ambiance lumineuse relaxante — parfait comme veilleuse. Le réservoir de 300ml offre jusqu'à 10 heures de brume continue avec arrêt automatique de sécurité quand le réservoir est vide. L'effet bois clair s'intègre naturellement dans la déco de votre salon, chambre ou bureau.",
+  "category": "technologie",
+  "amazonAsin": "B073ZR61GN",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 19.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 42300
+  },
+  "image": "https://m.media-amazon.com/images/I/61Q2MRqPm7L._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/61Q2MRqPm7L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71EV9SNOBNL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "2-en-1 : humidificateur + diffuseur huiles essentielles",
+    "Ultra silencieux (< 30 dB)",
+    "LED 7 couleurs — ambiance relaxante",
+    "Arrêt automatique de sécurité"
+  ],
+  "cons": [
+    "Réservoir 300ml — à remplir chaque jour",
+    "Ne couvre pas les pièces de plus de 20m²"
+  ],
+  "specifications": [
+    { "label": "Capacité", "value": "300 ml" },
+    { "label": "Autonomie", "value": "Jusqu'à 10 heures" },
+    { "label": "Bruit", "value": "< 30 dB (silencieux)" },
+    { "label": "LED", "value": "7 couleurs" },
+    { "label": "Surface couverte", "value": "15-20 m²" }
+  ],
+  "featured": false,
+  "inStock": true
+}

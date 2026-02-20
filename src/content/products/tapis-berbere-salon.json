@@ -1,0 +1,43 @@
+{
+  "name": "Tapis Berbère Salon 160x230cm Poils Courts",
+  "slug": "tapis-berbere-salon",
+  "shortDescription": "Tapis style berbère motifs géométriques. Poils courts, doux, antidérapant. Parfait pour salon ou chambre.",
+  "fullDescription": "Ce tapis d'inspiration berbère transforme instantanément l'ambiance de votre pièce. Les motifs géométriques en losanges sur fond crème donnent un look bohème chic très tendance. La matière en polypropylène haute densité est douce sous les pieds tout en étant extrêmement résistante et facile à nettoyer. Le dos antidérapant assure une bonne tenue au sol, même sur du carrelage ou du parquet. Avec ses 160x230cm, il couvre parfaitement un salon de taille standard. Un basique déco incontournable qui sublime n'importe quel intérieur.",
+  "category": "salon",
+  "amazonAsin": "B09KGFP8J7",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 49.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 12450
+  },
+  "image": "https://m.media-amazon.com/images/I/81hOsE6dUmL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/81hOsE6dUmL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/91vK7dSJ0TL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81xBnz3QKGL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Motifs berbères très tendance",
+    "Doux et confortable sous les pieds",
+    "Fond antidérapant intégré",
+    "Facile à aspirer et nettoyer"
+  ],
+  "cons": [
+    "Peut se froisser au déballage (se détend en 24-48h)",
+    "Pas adapté pour l'extérieur"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "160 x 230 cm" },
+    { "label": "Matière", "value": "Polypropylène haute densité" },
+    { "label": "Hauteur poils", "value": "12 mm" },
+    { "label": "Poids", "value": "3.2 kg/m²" },
+    { "label": "Fond", "value": "Antidérapant intégré" }
+  ],
+  "featured": true,
+  "inStock": true
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Coffret 4 Bougies Parfumées Cire de Soja Naturelle",
+  "slug": "bougie-parfumee-soja-coffret",
+  "shortDescription": "Coffret de 4 bougies parfumées en cire de soja naturelle. Mèche coton, 25h par bougie. Lavande, vanille, rose, jasmin.",
+  "fullDescription": "Ce coffret de 4 bougies parfumées est un véritable plaisir pour les sens et la déco. Fabriquées en cire de soja 100% naturelle, elles brûlent proprement sans fumée noire ni résidus chimiques. Chaque bougie offre un parfum différent : lavande apaisante, vanille gourmande, rose délicate et jasmin frais. La mèche en coton tressé assure une combustion régulière de 25 heures par bougie. Les petits pots en verre ambré sont réutilisables comme rangement déco une fois la bougie terminée. Un cadeau idéal ou un moment cocooning garanti.",
+  "category": "décoration",
+  "amazonAsin": "B09FJ2MFGK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 16.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 11200
+  },
+  "image": "https://m.media-amazon.com/images/I/81v4FhRGf0L._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/81v4FhRGf0L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71Dqrs9xmtL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71Z8gJ-MsRL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Cire de soja 100% naturelle — pas de produits chimiques",
+    "4 parfums variés dans un coffret",
+    "25h de combustion par bougie",
+    "Pots en verre réutilisables"
+  ],
+  "cons": [
+    "Parfum subtil — ne remplit pas les grandes pièces",
+    "Petite taille (120g par bougie)"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "4 bougies" },
+    { "label": "Parfums", "value": "Lavande, Vanille, Rose, Jasmin" },
+    { "label": "Cire", "value": "Soja 100% naturelle" },
+    { "label": "Durée", "value": "25h par bougie (100h total)" },
+    { "label": "Poids", "value": "120g par bougie" }
+  ],
+  "featured": true,
+  "inStock": true
+}

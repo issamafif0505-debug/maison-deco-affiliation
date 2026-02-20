@@ -1,0 +1,42 @@
+{
+  "name": "Étagère Échelle Bois et Métal 4 Niveaux",
+  "slug": "etagere-echelle-bois-metal",
+  "shortDescription": "Étagère échelle style industriel en bois et métal noir. 4 niveaux, design épuré, pour salon, chambre ou bureau.",
+  "fullDescription": "Cette étagère échelle au style industriel allie bois naturel et métal noir pour un look moderne et chaleureux. Les 4 tablettes en bois de pin offrent un espace de rangement généreux pour vos livres, plantes, cadres photos et objets déco. La structure en métal noir assure une solidité à toute épreuve. Le design incliné en forme d'échelle prend très peu de place au sol et s'appuie simplement contre le mur. Montage facile en 20 minutes. Elle transforme un coin vide en un véritable coin déco et rangement. Un meuble polyvalent qui s'intègre dans tous les intérieurs.",
+  "category": "rangement",
+  "amazonAsin": "B08GKZJD2J",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 45.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 6780
+  },
+  "image": "https://m.media-amazon.com/images/I/71rp5X5T5qL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/71rp5X5T5qL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81YZH+gUdjL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Style industriel très tendance",
+    "Bois naturel + métal — solide et beau",
+    "4 niveaux de rangement généreux",
+    "Faible encombrement au sol"
+  ],
+  "cons": [
+    "Doit être appuyée contre un mur",
+    "Bois à traiter si environnement humide"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "60 x 35 x 148 cm" },
+    { "label": "Matière", "value": "Pin naturel + acier noir" },
+    { "label": "Niveaux", "value": "4 tablettes" },
+    { "label": "Charge max", "value": "10 kg par tablette" },
+    { "label": "Montage", "value": "20 min — outils inclus" }
+  ],
+  "featured": false,
+  "inStock": true
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Distributeur de Savon Automatique Inox 280ml",
+  "slug": "distributeur-savon-automatique",
+  "shortDescription": "Distributeur de savon sans contact en acier inox. Capteur infrarouge, 2 doses réglables, étanche IPX4.",
+  "fullDescription": "Ce distributeur de savon automatique apporte une touche d'hygiène et de modernité à votre salle de bain ou cuisine. Le capteur infrarouge détecte votre main à 5cm et délivre la dose parfaite de savon sans aucun contact — fini les traces sur le distributeur. Le boîtier en acier inoxydable brossé résiste aux empreintes digitales et s'accorde avec tous les styles de déco. Deux niveaux de dosage sont réglables. Le réservoir de 280ml est transparent pour surveiller le niveau. Fonctionne avec 4 piles AAA (non incluses) pendant 6 mois environ. Étanche IPX4, parfait près de l'évier.",
+  "category": "salle-de-bain",
+  "amazonAsin": "B07QM47RJL",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 23.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 22400
+  },
+  "image": "https://m.media-amazon.com/images/I/61fGKmj6u2L._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/61fGKmj6u2L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71+4d4PVOgL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Sans contact — hygiénique",
+    "Inox brossé anti-traces de doigts",
+    "2 niveaux de dosage réglables",
+    "Étanche IPX4 — idéal près de l'évier"
+  ],
+  "cons": [
+    "Piles non incluses (4x AAA)",
+    "Ne fonctionne pas avec savon très épais"
+  ],
+  "specifications": [
+    { "label": "Capacité", "value": "280 ml" },
+    { "label": "Matière", "value": "Acier inoxydable brossé" },
+    { "label": "Capteur", "value": "Infrarouge (détection à 5 cm)" },
+    { "label": "Alimentation", "value": "4 piles AAA (6 mois)" },
+    { "label": "Étanchéité", "value": "IPX4" }
+  ],
+  "featured": false,
+  "inStock": true
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Lot de 4 Prises Connectées WiFi Meross",
+  "slug": "prise-connectee-wifi-lot4",
+  "shortDescription": "Pack 4 prises connectées WiFi Meross. Compatible Alexa, Google Home, Apple HomeKit. Programmation, contrôle à distance.",
+  "fullDescription": "Ces prises connectées Meross transforment votre maison en smart home à petit prix. Branchez n'importe quel appareil (lampe, ventilateur, machine à café) et contrôlez-le depuis votre smartphone ou par la voix avec Alexa, Google Home ou Siri. La programmation horaire permet d'automatiser vos routines : allumer les lampes au coucher du soleil, éteindre le fer à repasser automatiquement. Le suivi de consommation énergétique vous aide à réduire votre facture. Configuration simple via l'app Meross en 2 minutes via WiFi 2.4GHz. Le design compact ne bloque pas les prises adjacentes. Un pack de 4 pour équiper les pièces principales.",
+  "category": "technologie",
+  "amazonAsin": "B0B4SBJ5GY",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 39.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 28700
+  },
+  "image": "https://m.media-amazon.com/images/I/61HCuHVlwPL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/61HCuHVlwPL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71kMWUM87zL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61G24jW-cBL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Compatible Alexa, Google Home ET Apple HomeKit",
+    "Lot de 4 — excellent rapport qualité-prix",
+    "Suivi consommation énergétique",
+    "Design compact — ne bloque pas les prises voisines"
+  ],
+  "cons": [
+    "WiFi 2.4 GHz uniquement (pas 5 GHz)",
+    "Nécessite l'app Meross pour la configuration"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "4 prises connectées" },
+    { "label": "WiFi", "value": "2.4 GHz" },
+    { "label": "Compatibilité", "value": "Alexa, Google Home, Apple HomeKit" },
+    { "label": "Puissance max", "value": "16A / 3680W" },
+    { "label": "App", "value": "Meross (iOS / Android)" }
+  ],
+  "featured": true,
+  "inStock": true
+}

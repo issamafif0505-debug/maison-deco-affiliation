@@ -1,0 +1,43 @@
+{
+  "name": "Lot de 3 Paniers Rangement Tressés en Corde Coton",
+  "slug": "panier-rangement-tresse-lot3",
+  "shortDescription": "Set de 3 paniers de rangement tressés en corde de coton naturel. 3 tailles, pliables, multi-usage salon/chambre.",
+  "fullDescription": "Ces paniers tressés en corde de coton sont à la fois utiles et magnifiques. Ils apportent une touche naturelle et chaleureuse tout en vous aidant à organiser votre intérieur. Le lot de 3 tailles (petit, moyen, grand) permet de ranger de tout : plaids, jouets, magazines, linge, plantes. La corde de coton est épaisse et solide, le tressage serré assure une bonne tenue dans le temps. Ils sont pliables quand vous n'en avez pas besoin, et emboîtables pour gagner de la place. Les poignées latérales facilitent le transport. Un indispensable de la déco bohème et du rangement malin.",
+  "category": "rangement",
+  "amazonAsin": "B09HQXB3Y6",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 26.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 10200
+  },
+  "image": "https://m.media-amazon.com/images/I/81JlGBL8yBL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/81JlGBL8yBL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81xXvs6LQHL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71hBsVb7nYL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "3 tailles — polyvalent pour tout ranger",
+    "Corde coton naturel — look bohème chic",
+    "Pliables et emboîtables",
+    "Poignées pratiques pour transport"
+  ],
+  "cons": [
+    "Pas rigide — peut se déformer si trop chargé",
+    "Coton à garder au sec"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "3 paniers (S, M, L)" },
+    { "label": "Dimensions", "value": "S: 20cm, M: 27cm, L: 33cm (Ø)" },
+    { "label": "Matière", "value": "Corde coton naturel tressé" },
+    { "label": "Poignées", "value": "Oui — latérales" },
+    { "label": "Pliable", "value": "Oui" }
+  ],
+  "featured": false,
+  "inStock": true
+}

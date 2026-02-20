@@ -20,6 +20,8 @@ interface Props {
   price: { current: number; currency: string; lastChecked: string };
   rating: { score: number; count: number };
   image: string;
+  images?: string[];
+  videoUrl?: string;
   pros: string[];
   cons: string[];
   specifications: { label: string; value: string }[];
@@ -28,6 +30,7 @@ interface Props {
 }
 
 const props = Astro.props;
+const allImages = [props.image, ...(props.images || [])];
 
 const breadcrumbs = [
   { label: 'Produits', href: '/produits/' },
@@ -57,14 +60,44 @@ const schema = productSchema({
     <Breadcrumbs items={breadcrumbs} />
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
-      <!-- Product Image -->
-      <div class="aspect-square bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center p-8">
-        <img
-          src={props.image}
-          alt={props.name}
-          class="max-w-full max-h-full object-contain"
-          loading="eager"
-        />
+      <!-- Product Images Gallery -->
+      <div>
+        <div class="aspect-square bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center p-8 mb-3">
+          <img
+            id="main-product-image"
+            src={props.image}
+            alt={props.name}
+            class="max-w-full max-h-full object-contain"
+            loading="eager"
+          />
+        </div>
+        {allImages.length > 1 && (
+          <div class="flex gap-2 overflow-x-auto pb-2">
+            {allImages.map((img, i) => (
+              <button
+                class:list={["flex-shrink-0 w-16 h-16 rounded-lg border-2 overflow-hidden cursor-pointer bg-white p-1", i === 0 ? "border-primary-500" : "border-gray-200 hover:border-gray-400"]}
+                data-image-url={img}
+                onclick="document.getElementById('main-product-image').src=this.dataset.imageUrl; document.querySelectorAll('[data-image-url]').forEach(b=>b.classList.replace('border-primary-500','border-gray-200')); this.classList.replace('border-gray-200','border-primary-500');"
+              >
+                <img src={img} alt={`${props.name} - vue ${i + 1}`} class="w-full h-full object-contain" loading="lazy" />
+              </button>
+            ))}
+          </div>
+        )}
+        {props.videoUrl && (
+          <div class="mt-4 rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="aspect-video">
+              <iframe
+                src={props.videoUrl}
+                title={`Vidéo - ${props.name}`}
+                class="w-full h-full"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        )}
       </div>
 
       <!-- Product Info -->

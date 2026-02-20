@@ -1,0 +1,42 @@
+{
+  "name": "Cadre Photo Multi-Vues 10 Photos Bois Naturel",
+  "slug": "cadre-photo-multi-vues",
+  "shortDescription": "Cadre photo mural multi-vues pour 10 photos. Bois naturel, pêle-mêle élégant, mix formats 10x15 et 15x20cm.",
+  "fullDescription": "Ce cadre photo pêle-mêle est la façon idéale d'afficher vos plus beaux souvenirs. Conçu en bois naturel avec une finition soignée, il accueille 10 photos dans un mix de formats (6 photos en 10x15cm et 4 en 15x20cm). Le design asymétrique donne un rendu moderne et dynamique sur votre mur. Le fond et les vitres en plexiglas protègent vos photos de la poussière. Système d'accroche horizontal et vertical inclus pour s'adapter à votre mur. Un cadeau parfait ou un élément déco qui personnalise votre intérieur avec vos propres souvenirs.",
+  "category": "décoration",
+  "amazonAsin": "B08RJ8QSJ5",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 34.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 7650
+  },
+  "image": "https://m.media-amazon.com/images/I/81f6oTlhFUL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/81f6oTlhFUL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71sKuW4b4ZL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "10 photos — grand pêle-mêle mural",
+    "Mix de formats 10x15 et 15x20",
+    "Bois naturel de qualité",
+    "Accroche horizontale et verticale"
+  ],
+  "cons": [
+    "Plexiglas au lieu de verre véritable",
+    "Assez grand — prévoir un mur spacieux"
+  ],
+  "specifications": [
+    { "label": "Capacité", "value": "10 photos" },
+    { "label": "Formats", "value": "6x (10x15cm) + 4x (15x20cm)" },
+    { "label": "Matière", "value": "Bois naturel + plexiglas" },
+    { "label": "Dimensions totales", "value": "56 x 45 cm" },
+    { "label": "Fixation", "value": "Crochets + chevilles inclus" }
+  ],
+  "featured": false,
+  "inStock": true
+}

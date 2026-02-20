@@ -1,0 +1,42 @@
+{
+  "name": "Lot de 3 Tableaux Déco Abstraits Beige & Or 30x40cm",
+  "slug": "tableau-deco-abstrait-lot3",
+  "shortDescription": "Triptyque de tableaux abstraits beige, terracotta et or. Toile sur châssis bois 30x40cm, prêt à accrocher.",
+  "fullDescription": "Ce lot de 3 tableaux abstraits apporte immédiatement du cachet et de l'élégance à votre mur. Les teintes beige, terracotta et or créent une harmonie chaleureuse et sophistiquée qui s'accorde avec la plupart des intérieurs modernes, bohèmes ou scandinaves. Chaque toile est montée sur un châssis en bois de pin, prête à accrocher sans besoin de cadre supplémentaire. L'impression haute définition sur toile canvas donne un rendu similaire à une peinture originale. Disposés côte à côte ou en escalier, ces 3 tableaux transforment un mur vide en galerie d'art. Un changement déco à fort impact visuel.",
+  "category": "décoration",
+  "amazonAsin": "B09MVXV7T3",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 28.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 5420
+  },
+  "image": "https://m.media-amazon.com/images/I/71VwBfxFKfL._AC_SL1200_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/71VwBfxFKfL._AC_SL1200_.jpg",
+    "https://m.media-amazon.com/images/I/81Xzz7TdxNL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Lot de 3 — composition murale complète",
+    "Teintes tendance beige/terracotta/or",
+    "Toile sur châssis — prêt à accrocher",
+    "Impression HD qualité galerie"
+  ],
+  "cons": [
+    "30x40cm — peut paraître petit sur un grand mur",
+    "Crochets d'accroche non inclus"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "30 x 40 cm (par toile)" },
+    { "label": "Contenu", "value": "3 toiles abstraites" },
+    { "label": "Support", "value": "Toile canvas sur châssis bois" },
+    { "label": "Style", "value": "Abstrait minimaliste" },
+    { "label": "Épaisseur châssis", "value": "2 cm" }
+  ],
+  "featured": false,
+  "inStock": true
+}

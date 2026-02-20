@@ -1,0 +1,42 @@
+{
+  "name": "Rideaux Occultants Thermiques 140x260cm (Lot de 2)",
+  "slug": "rideau-occultant-thermique",
+  "shortDescription": "Rideaux occultants 100% isolants thermiques et phoniques. Oeillets métal, tissu épais anti-UV. Lot de 2 panneaux.",
+  "fullDescription": "Ces rideaux occultants sont un indispensable pour une chambre ou un salon bien isolé. Le tissu triple couche bloque 100% de la lumière, isole du froid en hiver et de la chaleur en été, tout en réduisant les bruits extérieurs. Les œillets en métal brossé coulissent facilement sur n'importe quelle tringle (diamètre max 4cm). Le tombé est impeccable, le tissu est lourd et de qualité, sans effet plastique. Disponibles en de nombreux coloris pour s'adapter à votre déco. Un investissement qui améliore votre confort au quotidien et réduit vos factures d'énergie.",
+  "category": "salon",
+  "amazonAsin": "B07N2LBJ7Q",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 29.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 34200
+  },
+  "image": "https://m.media-amazon.com/images/I/71wbCBEr-jL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/71wbCBEr-jL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71e8hXr5BgL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Occultation 100% — obscurité totale",
+    "Isolation thermique et phonique",
+    "Oeillets métal — facile à installer",
+    "Tissu épais, beau tombé, pas d'effet plastique"
+  ],
+  "cons": [
+    "Tissu lourd — nécessite une tringle solide",
+    "Peut rétrécir légèrement au premier lavage"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "140 x 260 cm (par panneau)" },
+    { "label": "Matière", "value": "Polyester triple couche" },
+    { "label": "Oeillets", "value": "Métal brossé (Ø 4 cm)" },
+    { "label": "Contenu", "value": "2 panneaux" },
+    { "label": "Entretien", "value": "Lavable en machine 30°C" }
+  ],
+  "featured": false,
+  "inStock": true
+}

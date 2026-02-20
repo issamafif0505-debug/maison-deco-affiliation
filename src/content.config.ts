@@ -48,6 +48,8 @@ const products = defineCollection({
       count: z.number(),
     }),
     image: z.string(),
+    images: z.array(z.string()).optional(),
+    videoUrl: z.string().optional(),
     pros: z.array(z.string()),
     cons: z.array(z.string()),
     specifications: z.array(

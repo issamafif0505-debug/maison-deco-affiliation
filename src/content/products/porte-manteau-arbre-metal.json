@@ -1,0 +1,42 @@
+{
+  "name": "Porte-Manteau Arbre Métal Noir 180cm 8 Crochets",
+  "slug": "porte-manteau-arbre-metal",
+  "shortDescription": "Porte-manteau sur pied en forme d'arbre, métal noir mat. 8 crochets, base stable, design moderne 180cm.",
+  "fullDescription": "Ce porte-manteau en forme d'arbre est à la fois fonctionnel et décoratif. Sa structure en métal noir mat apporte une touche industrielle et moderne à votre entrée ou chambre. Les 8 crochets répartis sur 4 niveaux permettent d'accrocher manteaux, sacs, chapeaux, écharpes et parapluies. La base trépied lestée assure une excellente stabilité même chargé. À 180cm de hauteur, il est accessible pour toute la famille. Le montage est simple (10 minutes) avec tous les outils inclus. Un meuble d'entrée indispensable qui remplace avantageusement un portemanteau mural.",
+  "category": "rangement",
+  "amazonAsin": "B08DHTKMHG",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 32.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 8430
+  },
+  "image": "https://m.media-amazon.com/images/I/51P2GB9SB7L._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/51P2GB9SB7L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61EcDuXmIJL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "8 crochets sur 4 niveaux — grande capacité",
+    "Base trépied très stable",
+    "Métal noir mat — look moderne",
+    "Montage facile en 10 minutes"
+  ],
+  "cons": [
+    "Peut basculer si trop chargé d'un côté",
+    "Base au sol prend un peu de place"
+  ],
+  "specifications": [
+    { "label": "Hauteur", "value": "180 cm" },
+    { "label": "Matière", "value": "Acier métal noir mat" },
+    { "label": "Crochets", "value": "8 crochets (4 niveaux)" },
+    { "label": "Base", "value": "Trépied Ø 40 cm" },
+    { "label": "Charge max", "value": "20 kg" }
+  ],
+  "featured": false,
+  "inStock": true
+}

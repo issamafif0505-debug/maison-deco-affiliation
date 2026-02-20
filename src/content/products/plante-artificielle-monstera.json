@@ -1,0 +1,43 @@
+{
+  "name": "Plante Artificielle Monstera en Pot 70cm",
+  "slug": "plante-artificielle-monstera",
+  "shortDescription": "Plante artificielle Monstera Deliciosa ultra réaliste en pot déco. 70cm de hauteur, feuilles détaillées, zéro entretien.",
+  "fullDescription": "Cette Monstera artificielle est bluffante de réalisme. Les grandes feuilles découpées reproduisent fidèlement la Monstera Deliciosa avec ses nervures, ses variations de vert et même ses légères imperfections naturelles. Le pot en ciment gris neutre s'intègre dans tous les styles de déco. À 70cm de hauteur, elle apporte une présence végétale immédiate à votre salon, bureau ou chambre. Contrairement à une vraie plante, elle ne demande aucun arrosage, pas de lumière spécifique, et reste belle toute l'année. Parfaite pour ceux qui n'ont pas la main verte mais veulent un intérieur green.",
+  "category": "décoration",
+  "amazonAsin": "B0B8HLMGWK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 34.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 5680
+  },
+  "image": "https://m.media-amazon.com/images/I/71RR1QWkGsL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/71RR1QWkGsL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71YpmJ6s4UL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81qKWzQ-SaL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Réalisme exceptionnel — trompe l'œil garanti",
+    "Zéro entretien, zéro arrosage",
+    "Pot en ciment inclus",
+    "70cm — belle présence dans la pièce"
+  ],
+  "cons": [
+    "Accumule la poussière sur les feuilles",
+    "Non parfumée (artificielle)"
+  ],
+  "specifications": [
+    { "label": "Hauteur totale", "value": "70 cm (avec pot)" },
+    { "label": "Feuilles", "value": "12 feuilles de Monstera" },
+    { "label": "Matière", "value": "Plastique PE + tissu soie" },
+    { "label": "Pot", "value": "Ciment gris Ø 15 cm" },
+    { "label": "Entretien", "value": "Dépoussiérage occasionnel" }
+  ],
+  "featured": false,
+  "inStock": true
+}

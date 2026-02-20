@@ -1,0 +1,43 @@
+{
+  "name": "Lot de 3 Vases Céramique Bohème Blanc Mat",
+  "slug": "vase-ceramique-boheme",
+  "shortDescription": "Set de 3 vases en céramique blanc mat style bohème. Formes variées, parfaits pour fleurs séchées ou pampa.",
+  "fullDescription": "Ce trio de vases en céramique est un incontournable de la déco bohème chic. Le blanc mat donne un rendu très épuré et moderne, tandis que les trois formes différentes (rond, allongé, évasé) permettent de créer une composition harmonieuse sur une étagère, console ou table basse. Ils sont parfaits pour accueillir des fleurs séchées, des branches de pampa ou de l'eucalyptus. La céramique est épaisse et de bonne qualité, avec un fond plat stable. Un excellent choix déco qui transforme n'importe quel espace avec élégance.",
+  "category": "décoration",
+  "amazonAsin": "B09GFKZ8H1",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 22.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 6340
+  },
+  "image": "https://m.media-amazon.com/images/I/61TWnHcKH4L._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/61TWnHcKH4L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71hhR5YOAVL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/71MSf3LQKZL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Set de 3 formes différentes — très décoratif",
+    "Céramique épaisse et qualitative",
+    "Blanc mat élégant et intemporel",
+    "Compatible fleurs séchées et fraîches"
+  ],
+  "cons": [
+    "Fragile — à manipuler avec soin",
+    "Petite taille (15-20 cm)"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "3 vases" },
+    { "label": "Hauteurs", "value": "15 cm, 18 cm, 20 cm" },
+    { "label": "Matière", "value": "Céramique blanc mat" },
+    { "label": "Style", "value": "Bohème / Minimaliste" },
+    { "label": "Utilisation", "value": "Fleurs séchées ou fraîches" }
+  ],
+  "featured": true,
+  "inStock": true
+}

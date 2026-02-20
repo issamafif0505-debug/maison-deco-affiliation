@@ -1,0 +1,42 @@
+{
+  "name": "Guirlande Eucalyptus Artificielle 1.8m",
+  "slug": "guirlande-eucalyptus-artificielle",
+  "shortDescription": "Guirlande de feuilles d'eucalyptus artificielles 1.8m. Aspect ultra réaliste, flexible, pour décoration intérieure.",
+  "fullDescription": "Cette guirlande d'eucalyptus artificielle apporte une touche de verdure fraîche et élégante à votre intérieur sans aucun entretien. Les feuilles sont d'un réalisme bluffant avec différentes nuances de vert et un toucher proche du naturel. La tige flexible permet de l'enrouler autour d'une tringle de rideau, d'un miroir, d'une rampe d'escalier ou de la suspendre au-dessus d'une tête de lit. À 1.80m, elle offre une belle longueur pour créer un effet visuel impactant. Pas d'arrosage, pas de feuilles qui tombent, un rendu green qui dure toute l'année.",
+  "category": "décoration",
+  "amazonAsin": "B08NWBQ24J",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 13.99,
+    "currency": "EUR",
+    "lastChecked": "2025-07-25"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 14300
+  },
+  "image": "https://m.media-amazon.com/images/I/71pNqDd1ysL._AC_SL1500_.jpg",
+  "images": [
+    "https://m.media-amazon.com/images/I/71pNqDd1ysL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81Pd9L-DSDL._AC_SL1500_.jpg"
+  ],
+  "pros": [
+    "Aspect ultra réaliste — feuilles variées",
+    "Tige flexible — se met partout",
+    "Zéro entretien, dure des années",
+    "1.80m de longueur"
+  ],
+  "cons": [
+    "Pas de parfum (artificiel)",
+    "Dépoussiérer de temps en temps"
+  ],
+  "specifications": [
+    { "label": "Longueur", "value": "1.80 m" },
+    { "label": "Matière", "value": "Soie + plastique + fil de fer" },
+    { "label": "Feuilles", "value": "~80 feuilles" },
+    { "label": "Style", "value": "Eucalyptus réaliste" },
+    { "label": "Utilisation", "value": "Intérieur uniquement" }
+  ],
+  "featured": false,
+  "inStock": true
+}
