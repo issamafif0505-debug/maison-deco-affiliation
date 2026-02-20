@@ -5,53 +5,53 @@ import siteConfig from '../data/site-config.json';
 
 const ebooks = [
   {
-    title: "50 Astuces Deco Petit Budget",
-    description: "Transformez votre interieur sans vous ruiner ! 50 astuces concretes pour decorer votre maison avec moins de 50 EUR par piece.",
-    price: "9.99",
-    originalPrice: "19.99",
+    title: "50 Astuces Déco Petit Budget",
+    description: "Transformez votre intérieur sans vous ruiner ! 50 astuces concrètes pour décorer votre maison avec moins de 50 € par pièce.",
+    price: "9,99",
+    originalPrice: "19,99",
     emoji: "🏠",
     features: [
-      "50 astuces testees et approuvees",
-      "Photos avant/apres pour chaque astuce",
+      "50 astuces testées et approuvées",
+      "Photos avant/après pour chaque astuce",
       "Liste de courses Amazon pour chaque projet",
       "Compatible smartphones, tablettes et PC",
     ],
     badge: "Best-seller",
-    link: "#",
+    available: false,
     color: "primary",
     freeExtract: "/downloads/50-astuces-deco-extrait.pdf",
   },
   {
-    title: "Guide Eclairage : Illuminez Votre Interieur",
-    description: "Le guide complet pour choisir et installer le bon eclairage dans chaque piece. Du salon a la chambre, apprenez a creer des ambiances parfaites.",
-    price: "7.99",
-    originalPrice: "14.99",
+    title: "Guide Éclairage : Illuminez Votre Intérieur",
+    description: "Le guide complet pour choisir et installer le bon éclairage dans chaque pièce. Du salon à la chambre, apprenez à créer des ambiances parfaites.",
+    price: "7,99",
+    originalPrice: "14,99",
     emoji: "💡",
     features: [
-      "Guide piece par piece (salon, chambre, cuisine...)",
+      "Guide pièce par pièce (salon, chambre, cuisine...)",
       "Comparatif des meilleures marques",
-      "Schemas d'installation faciles a suivre",
+      "Schémas d'installation faciles à suivre",
       "Bonus : 10 ambiances lumineuses copiables",
     ],
     badge: "Nouveau",
-    link: "#",
+    available: false,
     color: "accent",
     freeExtract: null,
   },
   {
     title: "Room Makeover en 7 Jours",
-    description: "Un plan jour par jour pour transformer completement une piece en une semaine. Ideal pour les debutants qui veulent un resultat professionnel.",
-    price: "12.99",
-    originalPrice: "24.99",
+    description: "Un plan jour par jour pour transformer complètement une pièce en une semaine. Idéal pour les débutants qui veulent un résultat professionnel.",
+    price: "12,99",
+    originalPrice: "24,99",
     emoji: "✨",
     features: [
-      "Plan detaille jour par jour",
-      "Budget total : moins de 200 EUR",
-      "Video tutoriels complementaires",
-      "Checklist imprimable pour chaque etape",
+      "Plan détaillé jour par jour",
+      "Budget total : moins de 200 €",
+      "Vidéos tutoriels complémentaires",
+      "Checklist imprimable pour chaque étape",
     ],
     badge: "Premium",
-    link: "#",
+    available: false,
     color: "warm",
     freeExtract: null,
   },
@@ -59,8 +59,8 @@ const ebooks = [
 ---
 
 <BaseLayout
-  title="Ebooks & Guides Deco"
-  description="Telechargez nos ebooks et guides pratiques pour transformer votre interieur. Astuces deco, eclairage, room makeover et plus."
+  title="Ebooks & Guides Déco — Maison & Déco"
+  description="Téléchargez mes guides pratiques pour transformer votre intérieur. Astuces déco, éclairage, room makeover et plus."
 >
   <div class="container-custom py-8 md:py-12">
     <Breadcrumbs items={[{ label: 'Ebooks & Guides' }]} />
@@ -69,25 +69,25 @@ const ebooks = [
     <div class="text-center max-w-3xl mx-auto mb-12">
       <span class="text-6xl mb-4 block">📚</span>
       <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-        Ebooks & Guides Deco
+        Ebooks & Guides Déco
       </h1>
       <p class="text-lg text-gray-600 mb-6">
-        Mes guides pratiques pour transformer votre interieur pas a pas. Telechargement instantane, lisible sur tous vos appareils.
+        Mes guides pratiques pour transformer votre intérieur pas à pas. Téléchargement instantané, lisible sur tous vos appareils.
       </p>
 
       <!-- Free extract CTA -->
       <div class="inline-flex flex-col items-center bg-green-50 border-2 border-green-200 rounded-2xl p-6 max-w-lg">
         <span class="text-sm font-bold text-green-700 bg-green-100 px-3 py-1 rounded-full mb-3">🎁 EXTRAIT GRATUIT</span>
-        <p class="text-gray-700 font-medium mb-3">Telechargez gratuitement les 10 premieres astuces du guide best-seller</p>
+        <p class="text-gray-700 font-medium mb-3">Téléchargez gratuitement les 10 premières astuces du guide best-seller</p>
         <a
           href="/downloads/50-astuces-deco-extrait.pdf"
           download
           class="inline-flex items-center gap-2 px-6 py-3 bg-green-600 text-white font-bold rounded-lg hover:bg-green-700 transition-colors shadow-md"
         >
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
-          Telecharger l'extrait gratuit (PDF)
+          Télécharger l'extrait gratuit (PDF)
         </a>
-        <span class="text-xs text-gray-500 mt-2">Aucun email requis • PDF instantane</span>
+        <span class="text-xs text-gray-500 mt-2">Aucun email requis • PDF instantané</span>
       </div>
     </div>
 
@@ -134,27 +134,35 @@ const ebooks = [
 
             <!-- Price -->
             <div class="text-center mb-4">
-              <span class="text-sm text-gray-400 line-through">{ebook.originalPrice} EUR</span>
-              <span class="text-3xl font-bold text-gray-900 ml-2">{ebook.price} EUR</span>
+              <span class="text-sm text-gray-400 line-through">{ebook.originalPrice} €</span>
+              <span class="text-3xl font-bold text-gray-900 ml-2">{ebook.price} €</span>
             </div>
 
             <!-- CTA -->
-            <a
-              href={ebook.link}
-              class:list={[
-                'block w-full text-center py-3 px-6 rounded-lg font-bold transition-all duration-200 hover:shadow-lg',
-                ebook.color === 'primary' && 'bg-primary-500 text-white hover:bg-primary-600',
-                ebook.color === 'accent' && 'bg-accent-500 text-white hover:bg-accent-600',
-                ebook.color === 'warm' && 'bg-warm-500 text-white hover:bg-warm-600',
-              ]}
-            >
-              Acheter maintenant
-            </a>
+            {ebook.available ? (
+              <a
+                href={`https://gumroad.com/l/issam-deco-${ebook.color}`}
+                target="_blank"
+                rel="noopener"
+                class:list={[
+                  'block w-full text-center py-3 px-6 rounded-lg font-bold transition-all duration-200 hover:shadow-lg',
+                  ebook.color === 'primary' && 'bg-primary-500 text-white hover:bg-primary-600',
+                  ebook.color === 'accent' && 'bg-accent-500 text-white hover:bg-accent-600',
+                  ebook.color === 'warm' && 'bg-warm-500 text-white hover:bg-warm-600',
+                ]}
+              >
+                Acheter maintenant →
+              </a>
+            ) : (
+              <div class="block w-full text-center py-3 px-6 rounded-lg font-bold bg-gray-200 text-gray-500 cursor-not-allowed">
+                🔜 Bientôt disponible
+              </div>
+            )}
 
             <!-- Free extract link -->
             {ebook.freeExtract && (
               <a href={ebook.freeExtract} download class="block text-center text-sm text-primary-600 hover:text-primary-700 mt-3 font-medium">
-                ou telecharger l'extrait gratuit →
+                ou télécharger l'extrait gratuit →
               </a>
             )}
           </div>
@@ -165,28 +173,28 @@ const ebooks = [
     <!-- Social Proof -->
     <div class="bg-gray-50 rounded-2xl p-8 mb-16">
       <h2 class="font-serif text-2xl font-bold text-gray-900 text-center mb-8">
-        Ce que disent nos lecteurs
+        Ce que disent mes lecteurs
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-xl shadow-sm">
           <div class="flex items-center gap-1 text-yellow-400 mb-3">
             <span>⭐⭐⭐⭐⭐</span>
           </div>
-          <p class="text-sm text-gray-600 italic mb-3">"J'ai transforme ma chambre avec seulement 40 EUR grace aux astuces de ce guide. Les liens Amazon sont super pratiques !"</p>
+          <p class="text-sm text-gray-600 italic mb-3">"J'ai transformé ma chambre avec seulement 40 € grâce aux astuces de ce guide. Les liens Amazon sont super pratiques !"</p>
           <p class="text-sm font-bold text-gray-900">— Sarah M.</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow-sm">
           <div class="flex items-center gap-1 text-yellow-400 mb-3">
             <span>⭐⭐⭐⭐⭐</span>
           </div>
-          <p class="text-sm text-gray-600 italic mb-3">"Enfin un guide concret et pas cher ! J'ai mis en pratique 15 astuces en un week-end. Mon salon est meconnaissable."</p>
+          <p class="text-sm text-gray-600 italic mb-3">"Enfin un guide concret et pas cher ! J'ai mis en pratique 15 astuces en un week-end. Mon salon est méconnaissable."</p>
           <p class="text-sm font-bold text-gray-900">— Karim B.</p>
         </div>
         <div class="bg-white p-6 rounded-xl shadow-sm">
           <div class="flex items-center gap-1 text-yellow-400 mb-3">
             <span>⭐⭐⭐⭐</span>
           </div>
-          <p class="text-sm text-gray-600 italic mb-3">"Le chapitre sur l'eclairage a change ma vie ! Je ne savais pas qu'on pouvait faire autant avec des bandes LED a 15 EUR."</p>
+          <p class="text-sm text-gray-600 italic mb-3">"Le chapitre sur l'éclairage a changé ma vie ! Je ne savais pas qu'on pouvait faire autant avec des bandes LED à 15 €."</p>
           <p class="text-sm font-bold text-gray-900">— Amina L.</p>
         </div>
       </div>
@@ -195,20 +203,20 @@ const ebooks = [
     <!-- FAQ Section -->
     <div class="max-w-3xl mx-auto">
       <h2 class="font-serif text-3xl font-bold text-gray-900 text-center mb-10">
-        Questions frequentes
+        Questions fréquentes
       </h2>
       <div class="space-y-4">
         <div class="card p-6">
           <h3 class="font-semibold text-gray-900 mb-2">Comment recevoir mon ebook ?</h3>
-          <p class="text-sm text-gray-600">Apres votre achat, vous recevez immediatement un lien de telechargement par email. L'ebook est au format PDF, lisible sur tous les appareils.</p>
+          <p class="text-sm text-gray-600">Après votre achat, vous recevez immédiatement un lien de téléchargement par email. L'ebook est au format PDF, lisible sur tous les appareils.</p>
         </div>
         <div class="card p-6">
           <h3 class="font-semibold text-gray-900 mb-2">Puis-je obtenir un remboursement ?</h3>
-          <p class="text-sm text-gray-600">Oui ! Si l'ebook ne vous convient pas, vous etes rembourse sous 30 jours, sans question.</p>
+          <p class="text-sm text-gray-600">Oui ! Si l'ebook ne vous convient pas, vous êtes remboursé sous 30 jours, sans question.</p>
         </div>
         <div class="card p-6">
           <h3 class="font-semibold text-gray-900 mb-2">Les astuces fonctionnent-elles avec un petit budget ?</h3>
-          <p class="text-sm text-gray-600">Absolument ! C'est meme le but principal. Chaque astuce est concue pour etre realisable avec moins de 50 EUR. Les liens Amazon inclus pointent vers les produits les moins chers.</p>
+          <p class="text-sm text-gray-600">Absolument ! C'est même le but principal. Chaque astuce est conçue pour être réalisable avec moins de 50 €. Les liens Amazon inclus pointent vers les produits les moins chers.</p>
         </div>
         <div class="card p-6">
           <h3 class="font-semibold text-gray-900 mb-2">Comment payer depuis le Maroc ou l'Afrique ?</h3>
@@ -216,23 +224,23 @@ const ebooks = [
         </div>
         <div class="card p-6">
           <h3 class="font-semibold text-gray-900 mb-2">L'extrait gratuit est vraiment gratuit ?</h3>
-          <p class="text-sm text-gray-600">Oui ! L'extrait PDF contient les 10 premieres astuces du chapitre Eclairage + la liste des meilleurs produits Amazon. Aucun email requis, telechargement instantane.</p>
+          <p class="text-sm text-gray-600">Oui ! L'extrait PDF contient les 10 premières astuces du chapitre Éclairage + la liste des meilleurs produits Amazon. Aucun email requis, téléchargement instantané.</p>
         </div>
       </div>
     </div>
 
     <!-- Bottom CTA -->
     <div class="text-center mt-16 p-10 bg-gradient-to-r from-primary-500 to-primary-700 rounded-3xl">
-      <h2 class="font-serif text-3xl font-bold text-white mb-3">Pack Complet -40%</h2>
-      <p class="text-primary-100 mb-2">Les 3 ebooks pour le prix de 2</p>
+      <h2 class="font-serif text-3xl font-bold text-white mb-3">Pack Complet — Bientôt disponible</h2>
+      <p class="text-primary-100 mb-2">Les 3 ebooks pour le prix de 2 — notifiez-moi sur les réseaux !</p>
       <div class="mb-6">
-        <span class="text-lg text-primary-200 line-through">30.97 EUR</span>
-        <span class="text-4xl font-bold text-white ml-3">18.99 EUR</span>
+        <span class="text-lg text-primary-200 line-through">30,97 €</span>
+        <span class="text-4xl font-bold text-white ml-3">18,99 €</span>
       </div>
-      <a href="#" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 font-bold rounded-lg hover:bg-gray-100 transition-colors text-lg shadow-lg">
-        Obtenir le pack complet
+      <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-700 font-bold rounded-lg hover:bg-gray-100 transition-colors text-lg shadow-lg">
+        Me suivre pour être prévenu →
       </a>
-      <p class="text-primary-200 text-xs mt-4">Telechargement instantane • Satisfait ou rembourse 30 jours</p>
+      <p class="text-primary-200 text-xs mt-4">Téléchargement instantané • Satisfait ou remboursé 30 jours</p>
     </div>
   </div>
 </BaseLayout>

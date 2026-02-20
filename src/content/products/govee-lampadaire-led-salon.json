@@ -1,0 +1,53 @@
+{
+  "name": "Govee Lampadaire LED RGBIC WiFi Salon",
+  "slug": "govee-lampadaire-led-salon",
+  "shortDescription": "Lampadaire LED intelligent 16 millions de couleurs, compatible Alexa et Google Home, sync musique",
+  "fullDescription": "Le lampadaire Govee RGBIC est LE produit deco viral sur TikTok. Avec ses 16 millions de couleurs et ses 61 modes de scene, il transforme n'importe quelle piece en experience immersive. La synchronisation musicale cree des ambiances spectaculaires pour vos soirees. Compatible WiFi, Alexa et Google Home, il se controle depuis l'application Govee ou à la voix. Le design moderne et fin s'intégré parfaitement dans tous les intérieurs.",
+  "category": "éclairage",
+  "amazonAsin": "B09TZPNCJM",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 79.99,
+    "currency": "EUR",
+    "lastChecked": "2025-06-15"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 8932
+  },
+  "image": "https://m.media-amazon.com/images/P/B09TZPNCJM.01._AC_SL600_.jpg",
+  "pros": [
+    "16 millions de couleurs + 61 modes de scene",
+    "Synchronisation musique spectaculaire",
+    "Compatible Alexa, Google Home, WiFi",
+    "Design moderne ultra-fin"
+  ],
+  "cons": [
+    "Application parfois lente à se connecter",
+    "Luminosité limitee pour éclairage principal"
+  ],
+  "specifications": [
+    {
+      "label": "Hauteur",
+      "value": "137 cm"
+    },
+    {
+      "label": "Technologie",
+      "value": "RGBIC LED"
+    },
+    {
+      "label": "Connectivite",
+      "value": "WiFi + Bluetooth"
+    },
+    {
+      "label": "Compatibilité",
+      "value": "Alexa, Google, Matter"
+    },
+    {
+      "label": "Modes",
+      "value": "61 scenes + sync musique"
+    }
+  ],
+  "featured": true,
+  "inStock": true
+}

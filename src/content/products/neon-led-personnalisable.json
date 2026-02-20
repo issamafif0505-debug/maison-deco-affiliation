@@ -1,9 +1,9 @@
 {
   "name": "Neon LED Personnalisable Enseigne Lumineuse",
   "slug": "neon-led-personnalisable",
-  "shortDescription": "Enseigne lumineuse LED neon personnalisable. Ideal deco murale, chambre, salon, evenement. USB.",
-  "fullDescription": "Creez votre propre decoration lumineuse avec ce neon LED personnalisable. Que ce soit votre prenom, un mot inspirant (LOVE, HOME, DREAM) ou une forme originale, ce neon LED flexible s'adapte a toutes vos envies. Alimentation USB pratique, il fonctionne avec n'importe quel chargeur ou batterie externe. Le look neon retro est ultra-tendance sur Instagram et TikTok. Parfait comme cadeau personnalise ou pour ajouter du caractere a votre chambre, salon ou coin gaming.",
-  "category": "eclairage",
+  "shortDescription": "Enseigne lumineuse LED neon personnalisable. Idéal deco murale, chambre, salon, evenement. USB.",
+  "fullDescription": "Créez votre propre décoration lumineuse avec ce neon LED personnalisable. Que ce soit votre prenom, un mot inspirant (LOVE, HOME, DREAM) ou une forme originale, ce neon LED flexible s'adapte à toutes vos envies. Alimentation USB pratique, il fonctionne avec n'importe quel chargeur ou batterie externe. Le look neon retro est ultra-tendance sur Instagram et TikTok. Parfait comme cadeau personnalisé ou pour ajouter du caractere à votre chambre, salon ou coin gaming.",
+  "category": "éclairage",
   "amazonAsin": "B095BZQHFP",
   "affiliateTag": "issamdeco-21",
   "price": {
@@ -15,23 +15,38 @@
     "score": 4.2,
     "count": 3450
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://m.media-amazon.com/images/P/B095BZQHFP.01._AC_SL600_.jpg",
   "pros": [
     "Personnalisable (mot, prenom, forme)",
     "Alimentation USB (batterie externe possible)",
-    "Look retro neon tres tendance TikTok",
+    "Look retro neon très tendance TikTok",
     "Cadeau original et unique"
   ],
   "cons": [
-    "Delai de fabrication personnalisee",
+    "Delai de fabrication personnalisée",
     "Plus cher que les enseignes standard"
   ],
   "specifications": [
-    { "label": "Type", "value": "LED flexible neon" },
-    { "label": "Alimentation", "value": "USB 5V" },
-    { "label": "Personnalisation", "value": "Texte ou forme au choix" },
-    { "label": "Longueur max", "value": "60 cm" },
-    { "label": "Fixation", "value": "Adhesif ou crochets" }
+    {
+      "label": "Type",
+      "value": "LED flexible neon"
+    },
+    {
+      "label": "Alimentation",
+      "value": "USB 5V"
+    },
+    {
+      "label": "Personnalisation",
+      "value": "Texte ou forme au choix"
+    },
+    {
+      "label": "Longueur max",
+      "value": "60 cm"
+    },
+    {
+      "label": "Fixation",
+      "value": "Adhesif ou crochets"
+    }
   ],
   "featured": true,
   "inStock": true

@@ -18,10 +18,10 @@ const featuredProducts = allProducts
   .slice(0, 4);
 
 const trendingProducts = [
-  { name: "Lampe Sunset TikTok", emoji: "🌅", price: "15", asin: "B09XJ75QK8", tag: "Viral TikTok", sales: "50K+" },
-  { name: "Bande LED Govee 5m", emoji: "🌈", price: "16", asin: "B07XT8J3HZ", tag: "Best-seller", sales: "100K+" },
-  { name: "Projecteur Galaxie POCOCO", emoji: "🌌", price: "30", asin: "B0B79LJYFN", tag: "Nouveau", sales: "35K+" },
-  { name: "Neon LED Personnalisable", emoji: "💜", price: "36", asin: "B095BZQHFP", tag: "Tendance", sales: "20K+" },
+  { name: "Lampe Sunset TikTok", emoji: "🌅", price: "19,99", asin: "B09XJ75QK8", tag: "Viral TikTok", sales: "50K+" },
+  { name: "Bande LED Govee 5m", emoji: "🌈", price: "15,99", asin: "B07XT8J3HZ", tag: "Best-seller", sales: "100K+" },
+  { name: "Projecteur Galaxie POCOCO", emoji: "🌌", price: "29,99", asin: "B0B79LJYFN", tag: "Nouveau", sales: "35K+" },
+  { name: "Guirlande Boules Coton LED", emoji: "✨", price: "29,99", asin: "B07XXYF382", tag: "Tendance", sales: "20K+" },
 ];
 ---
 
@@ -43,11 +43,11 @@ const trendingProducts = [
         </div>
 
         <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-          Transformez votre interieur
+          Décorez votre maison
           <span class="text-primary-600"> sans vous ruiner</span>
         </h1>
-        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-          Guides d'achat, comparatifs et avis honnetes. Decouvrez les meilleurs produits deco Amazon testes et approuves.
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+          Salut, je suis Issam. Je teste les produits déco Amazon pour vous, et je vous dis honnêtement lesquels valent vraiment le coup. Que des avis vrais, aucun bullshit.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <a href="/produits/" class="btn-primary text-lg px-8 py-4">
@@ -59,11 +59,19 @@ const trendingProducts = [
         </div>
 
         <!-- Trust badges -->
-        <div class="flex flex-wrap items-center justify-center gap-6 mt-8 text-sm text-gray-500">
-          <span class="flex items-center gap-1">✅ Produits testes</span>
-          <span class="flex items-center gap-1">📦 Livraison Amazon</span>
-          <span class="flex items-center gap-1">⭐ 4+ etoiles</span>
-          <span class="flex items-center gap-1">💰 Petit budget</span>
+        <div class="flex flex-wrap items-center justify-center gap-4 mt-8 text-sm">
+          <div class="flex items-center gap-2 bg-white/80 px-3 py-2 rounded-lg border border-gray-100">
+            <span>✅</span><span class="text-gray-700 font-medium">Produits testés</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/80 px-3 py-2 rounded-lg border border-gray-100">
+            <span>📦</span><span class="text-gray-700 font-medium">Livraison Amazon rapide</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/80 px-3 py-2 rounded-lg border border-gray-100">
+            <span>⭐</span><span class="text-gray-700 font-medium">Min. 4 étoiles</span>
+          </div>
+          <div class="flex items-center gap-2 bg-white/80 px-3 py-2 rounded-lg border border-gray-100">
+            <span>💰</span><span class="text-gray-700 font-medium">Petit budget</span>
+          </div>
         </div>
       </div>
     </div>
@@ -79,9 +87,9 @@ const trendingProducts = [
           🔥 TRENDING
         </span>
         <h2 class="font-serif text-3xl font-bold text-white">
-          Les plus vendus sur TikTok & Amazon
+          Les plus vendus en ce moment
         </h2>
-        <p class="text-gray-400 mt-2">Produits viraux testes et approuves par notre equipe</p>
+        <p class="text-gray-400 mt-2 text-sm">Sélection mise à jour — prix vérifiés sur Amazon.fr</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {trendingProducts.map((product) => (
@@ -97,7 +105,7 @@ const trendingProducts = [
             </div>
             <h3 class="font-bold text-white group-hover:text-primary-400 transition-colors mb-1">{product.name}</h3>
             <div class="flex items-center justify-between mt-3">
-              <span class="text-2xl font-bold text-primary-400">{product.price} EUR</span>
+              <span class="text-2xl font-bold text-amber-400">{product.price} €</span>
               <span class="text-xs text-gray-500">{product.sales} vendus</span>
             </div>
             <div class="mt-3 text-center bg-amber-400 text-gray-900 py-2 rounded-lg font-bold text-sm group-hover:bg-amber-300 transition-colors">
@@ -112,9 +120,10 @@ const trendingProducts = [
   <!-- Categories -->
   <section class="py-16">
     <div class="container-custom">
-      <h2 class="font-serif text-3xl font-bold text-gray-900 text-center mb-10">
-        Explorez par categorie
+      <h2 class="font-serif text-3xl font-bold text-gray-900 text-center mb-3">
+        Explorez par catégorie
       </h2>
+      <p class="text-gray-500 text-center mb-10 text-sm">Guides et produits triés par pièce et par thème</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {categories.map((cat) => (
           <a
@@ -135,11 +144,14 @@ const trendingProducts = [
     <section class="py-16 bg-white">
       <div class="container-custom">
         <div class="flex items-center justify-between mb-10">
-          <h2 class="font-serif text-3xl font-bold text-gray-900">
-            ⭐ Nos coups de coeur
-          </h2>
-          <a href="/produits/" class="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center gap-1">
-            Tous les produits
+          <div>
+            <h2 class="font-serif text-3xl font-bold text-gray-900">
+              ⭐ Mes coups de cœur
+            </h2>
+            <p class="text-gray-500 mt-1 text-sm">Produits que j'ai gardés après test — recommandés à 100%</p>
+          </div>
+          <a href="/produits/" class="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center gap-1 whitespace-nowrap">
+            Tout voir
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -169,10 +181,13 @@ const trendingProducts = [
     <section class="py-16">
       <div class="container-custom">
         <div class="flex items-center justify-between mb-10">
-          <h2 class="font-serif text-3xl font-bold text-gray-900">
-            📝 Derniers articles
-          </h2>
-          <a href="/blog/" class="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center gap-1">
+          <div>
+            <h2 class="font-serif text-3xl font-bold text-gray-900">
+              📝 Derniers guides
+            </h2>
+            <p class="text-gray-500 mt-1 text-sm">Conseils pratiques pour décorer intelligemment</p>
+          </div>
+          <a href="/blog/" class="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center gap-1 whitespace-nowrap">
             Tous les articles
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -204,17 +219,17 @@ const trendingProducts = [
         <div class="text-center md:text-left">
           <span class="text-4xl mb-2 block">📚</span>
           <h2 class="font-serif text-2xl md:text-3xl font-bold text-white mb-2">
-            Ebook : 50 Astuces Deco Petit Budget
+            Ebook : 50 Astuces Déco Petit Budget
           </h2>
-          <p class="text-purple-200">Transformez votre interieur pour moins de 50 EUR par piece</p>
+          <p class="text-purple-200">Transformez votre intérieur pour moins de 50 € par pièce</p>
         </div>
         <div class="text-center">
           <div class="mb-2">
-            <span class="text-sm text-purple-300 line-through">19.99 EUR</span>
-            <span class="text-3xl font-bold text-white ml-2">9.99 EUR</span>
+            <span class="text-sm text-purple-300 line-through">19,99 €</span>
+            <span class="text-3xl font-bold text-white ml-2">9,99 €</span>
           </div>
           <a href="/ebooks/" class="inline-flex items-center justify-center px-8 py-3 bg-white text-purple-700 font-bold rounded-lg hover:bg-gray-100 transition-colors shadow-lg">
-            Decouvrir →
+            Découvrir →
           </a>
         </div>
       </div>
@@ -225,10 +240,10 @@ const trendingProducts = [
   <section class="py-16 bg-gradient-to-r from-primary-500 to-primary-700">
     <div class="container-custom text-center">
       <h2 class="font-serif text-3xl md:text-4xl font-bold text-white mb-4">
-        Suivez-moi sur les reseaux
+        On se suit sur les réseaux ?
       </h2>
       <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
-        Decouvrez mes bons plans, astuces deco et tests de produits en video sur TikTok et YouTube !
+        Je partage mes bons plans, hauls Amazon et astuces déco en vidéo. Rejoins la communauté pour ne rien rater !
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="inline-flex items-center justify-center px-6 py-3 bg-white text-gray-900 font-bold rounded-lg hover:bg-gray-100 transition-colors gap-2">

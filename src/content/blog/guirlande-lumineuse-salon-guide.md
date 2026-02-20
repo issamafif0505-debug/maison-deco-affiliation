@@ -3,8 +3,8 @@ title: "Guirlande Lumineuse Salon : Le Guide Complet 2025"
 description: "Quelle guirlande lumineuse choisir pour votre salon ? Comparatif des meilleures guirlandes LED avec nos avis et conseils."
 pubDate: 2025-07-10
 author: "Issam"
-cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
-coverAlt: "Salon decore avec des guirlandes lumineuses chaleureuses"
+cover: "https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=1200&h=600&fit=crop&q=80"
+coverAlt: "Guirlande lumineuse decorant un salon cosy"
 category: "eclairage"
 tags: ["guirlande", "salon", "LED", "decoration", "ambiance", "eclairage"]
 type: "comparatif"
@@ -53,14 +53,14 @@ Les guirlandes ne sont plus reservees aux fetes de fin d'annee. En 2025, elles s
 **Ideal pour** : salon connecte, ambiance fete, gamer setup
 **Prix moyen** : 20-40 EUR
 
-## Comparatif : Les 3 meilleures guirlandes testees
+## Comparatif : Les 3 meilleures guirlandes testées
 
 | Critère | GuirLED Boules Coton | Micro LED Cuivre | Globe Vintage |
 |---------|---------------------|------------------|---------------|
 | Design | Tendance, colore | Discret, elegant | Retro, chaleureux |
 | Luminosite | Moyenne | Faible | Forte |
 | Duree de vie | 50 000h | 30 000h | 20 000h |
-| Waterproof | Non | Oui | Selon modele |
+| Waterproof | Non | Oui | Selon modèle |
 | Prix | 30 EUR | 12 EUR | 20 EUR |
 | Note | 4.5/5 | 4.2/5 | 4.3/5 |
 

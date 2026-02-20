@@ -3,8 +3,8 @@ title: "Test du Roborock S7 MaxV Ultra : le robot aspirateur ultime ?"
 description: "Notre avis complet sur le Roborock S7 MaxV Ultra apres 3 mois d'utilisation. Test, avantages, inconvenients et verdict."
 pubDate: 2025-06-05
 author: "Issam"
-cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
-coverAlt: "Robot aspirateur dans un salon moderne"
+cover: "https://images.unsplash.com/photo-1558618047-3c8c76c2d9c0?w=1200&h=600&fit=crop&q=80"
+coverAlt: "Robot aspirateur sur parquet dans un salon moderne"
 category: "rangement"
 tags: ["robot aspirateur", "roborock", "test", "review", "maison connectee"]
 type: "review"
@@ -58,7 +58,7 @@ C'est ici que le Roborock S7 MaxV brille. Avec une puissance d'aspiration de 510
 
 ## Performance de lavage
 
-Le lavage est la vraie valeur ajoutee de ce modele. La serpilliere vibrante effectue 3000 vibrations par minute, simulant un nettoyage a la main.
+Le lavage est la vraie valeur ajoutee de ce modèle. La serpilliere vibrante effectue 3000 vibrations par minute, simulant un nettoyage a la main.
 
 **Ce qui marche bien :**
 - Les taches fraiches disparaissent facilement
@@ -107,4 +107,4 @@ Le Roborock S7 MaxV Ultra est fait pour vous si :
 
 Le Roborock S7 MaxV Ultra merite largement son statut de reference. La station automatique est un vrai game-changer qui transforme l'experience. Le prix est eleve, mais vous achetez une solution de nettoyage complete et quasi-autonome.
 
-**Mon conseil** : Si votre budget le permet, foncez. Sinon, attendez une promotion Amazon — ce modele beneficie regulierement de baisses de prix significatives.
+**Mon conseil** : Si votre budget le permet, foncez. Sinon, attendez une promotion Amazon — ce modèle beneficie regulierement de baisses de prix significatives.

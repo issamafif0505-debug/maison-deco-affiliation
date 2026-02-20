@@ -2,8 +2,8 @@
   "name": "Philips Hue White & Color Ambiance E27 - Pack de 2",
   "slug": "lampe-philips-hue",
   "shortDescription": "Lot de 2 ampoules connectees E27, 16 millions de couleurs, compatibles Alexa et Google Home",
-  "fullDescription": "La Philips Hue White & Color Ambiance est la reference en matiere d'eclairage connecte. Avec ses 16 millions de couleurs et ses nuances de blanc, elle transforme completement l'ambiance de votre piece. Compatible avec Alexa, Google Home et Apple HomeKit, elle s'integre parfaitement dans votre maison connectee. L'application Philips Hue permet de creer des scenes personnalisees et de programmer des automatisations. Ce pack de 2 ampoules est le meilleur rapport qualite-prix pour demarrer.",
-  "category": "eclairage",
+  "fullDescription": "La Philips Hue White & Color Ambiance est la référence en matiere d'éclairage connecte. Avec ses 16 millions de couleurs et ses nuances de blanc, elle transforme completement l'ambiance de votre piece. Compatible avec Alexa, Google Home et Apple HomeKit, elle s'intégré parfaitement dans votre maison connectee. L'application Philips Hue permet de créer des scenes personnalisées et de programmer des automatisations. Ce pack de 2 ampoules est le meilleur rapport qualite-prix pour demarrer.",
+  "category": "éclairage",
   "amazonAsin": "B07SS38CVG",
   "affiliateTag": "issamdeco-21",
   "price": {
@@ -15,7 +15,7 @@
     "score": 4.6,
     "count": 12453
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://m.media-amazon.com/images/P/B07SS38CVG.01._AC_SL600_.jpg",
   "pros": [
     "16 millions de couleurs",
     "Compatible Alexa, Google Home, Apple HomeKit",
@@ -27,11 +27,26 @@
     "Prix eleve par rapport aux concurrents"
   ],
   "specifications": [
-    { "label": "Puissance", "value": "9W (equivalent 60W)" },
-    { "label": "Culot", "value": "E27" },
-    { "label": "Connectivite", "value": "Bluetooth + Zigbee" },
-    { "label": "Duree de vie", "value": "25 000 heures" },
-    { "label": "Lumens", "value": "806 lm" }
+    {
+      "label": "Puissance",
+      "value": "9W (equivalent 60W)"
+    },
+    {
+      "label": "Culot",
+      "value": "E27"
+    },
+    {
+      "label": "Connectivite",
+      "value": "Bluetooth + Zigbee"
+    },
+    {
+      "label": "Duree de vie",
+      "value": "25 000 heures"
+    },
+    {
+      "label": "Lumens",
+      "value": "806 lm"
+    }
   ],
   "featured": true,
   "inStock": true

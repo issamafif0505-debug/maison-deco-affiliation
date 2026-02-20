@@ -3,8 +3,8 @@ title: "Comparatif des Meilleurs Canapes Convertibles 2025"
 description: "Quel canape-lit choisir ? Notre comparatif des meilleurs canapes convertibles avec avis, prix et guide d'achat."
 pubDate: 2025-06-10
 author: "Issam"
-cover: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&h=400&fit=crop"
-coverAlt: "Canape moderne dans un salon lumineux"
+cover: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=1200&h=600&fit=crop&q=80"
+coverAlt: "Canape convertible moderne dans un salon design"
 category: "salon"
 tags: ["canape", "convertible", "salon", "comparatif", "meuble"]
 type: "comparatif"
@@ -16,7 +16,7 @@ draft: false
 
 Le canape convertible est le meuble ideal quand on manque d'espace ou qu'on recoit regulierement des invites. Il combine confort au quotidien et couchage d'appoint, le tout dans un seul meuble.
 
-Mais attention, tous les canapes convertibles ne se valent pas ! J'ai teste et compare les modeles les plus populaires sur Amazon pour vous aider a faire le meilleur choix.
+Mais attention, tous les canapes convertibles ne se valent pas ! J'ai teste et compare les modèles les plus populaires sur Amazon pour vous aider a faire le meilleur choix.
 
 ## Les criteres de comparaison
 
@@ -28,9 +28,9 @@ Mais attention, tous les canapes convertibles ne se valent pas ! J'ai teste et c
 | Rangement integre | Bonus |
 | Design | Important |
 | Durabilite | Essentiel |
-| Rapport qualite-prix | Essentiel |
+| Rapport qualité-prix | Essentiel |
 
-## 1. Canape Convertible Sven 3 Places — Le meilleur rapport qualite-prix
+## 1. Canape Convertible Sven 3 Places — Le meilleur rapport qualité-prix
 
 Le Sven est mon coup de coeur dans cette categorie. Son design scandinave s'integre parfaitement dans un interieur moderne, et son coffre de rangement est un vrai plus.
 
@@ -76,7 +76,7 @@ Si vous avez un grand salon, le canape d'angle convertible est la solution ideal
 - Grand couchage (200x150 cm)
 - Coffre de rangement XXL
 - Angle reversible (gauche ou droite)
-- Tres bon rapport qualite-prix
+- Tres bon rapport qualité-prix
 
 **Inconvenients :**
 - Encombrant (necessite un grand salon)

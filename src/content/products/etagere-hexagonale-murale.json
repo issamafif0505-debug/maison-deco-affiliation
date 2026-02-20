@@ -1,8 +1,8 @@
 {
-  "name": "Liesun Etagere Murale Hexagonale Lot de 3",
+  "name": "Liesun Étagère Murale Hexagonale Lot de 3",
   "slug": "etagere-hexagonale-murale",
-  "shortDescription": "Lot de 3 etageres murales hexagonales en bois et metal noir. Style industriel, parfaites pour deco et rangement.",
-  "fullDescription": "Ces etageres murales hexagonales combinent bois naturel et metal noir pour un look industriel tres tendance. Le lot de 3 permet de creer une composition murale unique. Parfaites pour exposer des plantes, bougies, petits objets deco ou livres. Installation facile avec les fixations incluses. Le design geometrique ajoute du caractere a n'importe quel mur. Disponibles en plusieurs combinaisons de tailles pour s'adapter a votre espace.",
+  "shortDescription": "Lot de 3 étagères murales hexagonales en bois et metal noir. Style industriel, parfaites pour deco et rangement.",
+  "fullDescription": "Ces étagères murales hexagonales combinent bois naturel et metal noir pour un look industriel très tendance. Le lot de 3 permet de créer une composition murale unique. Parfaites pour exposer des plantes, bougies, petits objets deco ou livres. Installation facile avec les fixations incluses. Le design geometrique ajoute du caractere à n'importe quel mur. Disponibles en plusieurs combinaisons de tailles pour s'adapter à votre espace.",
   "category": "rangement",
   "amazonAsin": "B08VHRJQV1",
   "affiliateTag": "issamdeco-21",
@@ -15,7 +15,7 @@
     "score": 4.4,
     "count": 6230
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://m.media-amazon.com/images/P/B08VHRJQV1.01._AC_SL600_.jpg",
   "pros": [
     "Lot de 3 pour composition murale",
     "Style industriel bois + metal noir",
@@ -27,11 +27,26 @@
     "Necessite percer le mur"
   ],
   "specifications": [
-    { "label": "Materiau", "value": "Bois + metal noir" },
-    { "label": "Quantite", "value": "Lot de 3" },
-    { "label": "Style", "value": "Industriel / Scandinave" },
-    { "label": "Charge max", "value": "3 kg par etagere" },
-    { "label": "Fixation", "value": "Murale (vis incluses)" }
+    {
+      "label": "Materiau",
+      "value": "Bois + metal noir"
+    },
+    {
+      "label": "Quantite",
+      "value": "Lot de 3"
+    },
+    {
+      "label": "Style",
+      "value": "Industriel / Scandinave"
+    },
+    {
+      "label": "Charge max",
+      "value": "3 kg par etagere"
+    },
+    {
+      "label": "Fixation",
+      "value": "Murale (vis incluses)"
+    }
   ],
   "featured": false,
   "inStock": true

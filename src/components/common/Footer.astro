@@ -29,9 +29,9 @@ import categories from '../../data/categories.json';
         </div>
       </div>
 
-      <!-- Categories -->
+      <!-- Catégories -->
       <div>
-        <h3 class="font-serif font-semibold text-white mb-4">Categories</h3>
+        <h3 class="font-serif font-semibold text-white mb-4">Catégories</h3>
         <ul class="space-y-2">
           {categories.slice(0, 6).map((cat) => (
             <li>
@@ -49,16 +49,17 @@ import categories from '../../data/categories.json';
         <ul class="space-y-2">
           <li><a href="/blog/" class="text-sm text-gray-400 hover:text-white transition-colors">Blog</a></li>
           <li><a href="/produits/" class="text-sm text-gray-400 hover:text-white transition-colors">Tous les produits</a></li>
-          <li><a href="/a-propos/" class="text-sm text-gray-400 hover:text-white transition-colors">A propos</a></li>
+          <li><a href="/a-propos/" class="text-sm text-gray-400 hover:text-white transition-colors">À propos</a></li>
           <li><a href="/liens/" class="text-sm text-gray-400 hover:text-white transition-colors">Mes liens</a></li>
+          <li><a href="/ebooks/" class="text-sm text-gray-400 hover:text-white transition-colors">Ebooks & Guides</a></li>
         </ul>
       </div>
 
-      <!-- Newsletter / CTA -->
+      <!-- Suivez-moi -->
       <div>
         <h3 class="font-serif font-semibold text-white mb-4">Suivez-moi</h3>
         <p class="text-sm text-gray-400 mb-4">
-          Retrouvez mes derniers bons plans et astuces deco sur TikTok et YouTube !
+          Bons plans, hauls Amazon et astuces déco en vidéo sur TikTok et YouTube !
         </p>
         <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="btn-primary text-sm py-2 px-4 w-full text-center block mb-2">
           Suivre sur TikTok
@@ -73,10 +74,10 @@ import categories from '../../data/categories.json';
     <div class="border-t border-gray-800 mt-10 pt-8">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-xs text-gray-500">
-          &copy; {new Date().getFullYear()} {siteConfig.siteName}. Tous droits reserves.
+          &copy; {new Date().getFullYear()} {siteConfig.siteName}. Tous droits réservés.
         </p>
         <p class="text-xs text-gray-500 text-center md:text-right max-w-lg">
-          En tant que Partenaire Amazon, je realise un benefice sur les achats remplissant les conditions requises. Les prix affiches sont indicatifs et peuvent varier.
+          En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises. Les prix affichés sont indicatifs et peuvent varier.
         </p>
       </div>
     </div>

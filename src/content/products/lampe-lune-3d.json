@@ -1,9 +1,9 @@
 {
   "name": "Lampe Lune 3D Rechargeable 16 Couleurs",
   "slug": "lampe-lune-3d",
-  "shortDescription": "Replique de la lune imprimee en 3D. 16 couleurs, telecommande, rechargeable USB. Cadeau deco original.",
-  "fullDescription": "Cette lampe lune 3D est imprimee avec precision pour reproduire les vrais reliefs de la surface lunaire. Elle offre 16 couleurs differentes avec telecommande, passe du blanc chaud au bleu nuit en un clic. Rechargeable par USB, elle fonctionne sans fil pendant 8-12 heures. Livree avec un support en bois elegant. C'est le cadeau deco parfait et un element de decoration unique pour votre chambre ou salon.",
-  "category": "eclairage",
+  "shortDescription": "Replique de la lune imprimee en 3D. 16 couleurs, télécommande, rechargeable USB. Cadeau deco original.",
+  "fullDescription": "Cette lampe lune 3D est imprimee avec precision pour reproduire les vrais reliefs de la surface lunaire. Elle offre 16 couleurs différentes avec télécommande, passe du blanc chaud au bleu nuit en un clic. Rechargeable par USB, elle fonctionne sans fil pendant 8-12 heures. Livree avec un support en bois elegant. C'est le cadeau deco parfait et un element de décoration unique pour votre chambre ou salon.",
+  "category": "éclairage",
   "amazonAsin": "B07CZB7FLN",
   "affiliateTag": "issamdeco-21",
   "price": {
@@ -15,23 +15,38 @@
     "score": 4.3,
     "count": 15230
   },
-  "image": "https://images.unsplash.com/photo-1609643455614-e70379056cb1?w=400&h=400&fit=crop",
+  "image": "https://m.media-amazon.com/images/P/B07CZB7FLN.01._AC_SL600_.jpg",
   "pros": [
     "Realisme impressionnant (impression 3D)",
-    "16 couleurs + telecommande",
+    "16 couleurs + télécommande",
     "Rechargeable USB (8-12h autonomie)",
-    "Support bois inclus, cadeau ideal"
+    "Support bois inclus, cadeau idéal"
   ],
   "cons": [
     "Fragilite du materiau PLA",
     "Petite taille (15 cm)"
   ],
   "specifications": [
-    { "label": "Diametre", "value": "15 cm" },
-    { "label": "Materiau", "value": "PLA imprime 3D" },
-    { "label": "Couleurs", "value": "16 couleurs RGB" },
-    { "label": "Autonomie", "value": "8-12 heures" },
-    { "label": "Recharge", "value": "USB (cable inclus)" }
+    {
+      "label": "Diametre",
+      "value": "15 cm"
+    },
+    {
+      "label": "Materiau",
+      "value": "PLA imprime 3D"
+    },
+    {
+      "label": "Couleurs",
+      "value": "16 couleurs RGB"
+    },
+    {
+      "label": "Autonomie",
+      "value": "8-12 heures"
+    },
+    {
+      "label": "Recharge",
+      "value": "USB (cable inclus)"
+    }
   ],
   "featured": false,
   "inStock": true
