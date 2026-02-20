@@ -24,15 +24,43 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-200 shadow-md hover:shadow-lg;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-all duration-200 shadow-md hover:shadow-lg;
   }
 
+  /* Bouton Amazon premium — couleur officielle Amazon */
   .btn-amazon {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-amber-400 text-gray-900 font-bold rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-md hover:shadow-lg gap-2;
+    @apply inline-flex items-center justify-center gap-2 font-bold rounded-xl transition-all duration-200 shadow-md;
+    background: linear-gradient(135deg, #FF9900 0%, #FF6B00 100%);
+    color: #111;
+    border: none;
+  }
+
+  .btn-amazon:hover {
+    background: linear-gradient(135deg, #FFB347 0%, #FF8C00 100%);
+    box-shadow: 0 6px 20px rgba(255, 153, 0, 0.45);
+    transform: translateY(-1px);
+  }
+
+  .btn-amazon:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(255, 153, 0, 0.3);
+  }
+
+  /* Bouton Amazon dans les cards — plus compact */
+  .btn-amazon-card {
+    @apply w-full flex items-center justify-center gap-2 font-bold rounded-lg text-sm py-2.5 px-4 transition-all duration-200;
+    background: linear-gradient(135deg, #FF9900 0%, #FF6B00 100%);
+    color: #111;
+  }
+
+  .btn-amazon-card:hover {
+    background: linear-gradient(135deg, #FFB347 0%, #FF8C00 100%);
+    box-shadow: 0 4px 14px rgba(255, 153, 0, 0.4);
+    transform: translateY(-1px);
   }
 
   .card {
-    @apply bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100;
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100;
   }
 
   .badge {
@@ -47,10 +75,28 @@
     @apply badge bg-accent-100 text-accent-700;
   }
 
+  /* Badge urgence */
+  .badge-hot {
+    @apply inline-flex items-center gap-1 bg-red-500 text-white px-2 py-0.5 rounded-full text-xs font-bold;
+  }
+
+  .badge-new {
+    @apply inline-flex items-center gap-1 bg-green-500 text-white px-2 py-0.5 rounded-full text-xs font-bold;
+  }
+
   .prose-custom {
     @apply prose prose-lg prose-gray max-w-none;
     @apply prose-headings:font-serif prose-headings:text-gray-900;
     @apply prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline;
     @apply prose-img:rounded-xl;
+  }
+
+  /* Rating stars */
+  .star-filled {
+    color: #FF9900;
+  }
+
+  .star-empty {
+    color: #D1D5DB;
   }
 }

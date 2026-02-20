@@ -13,16 +13,17 @@ const recentPosts = allPosts
   .slice(0, 6);
 
 const allProducts = await getCollection('products');
+// 8 coups de cœur pour la homepage
 const featuredProducts = allProducts
   .filter((p) => p.data.featured)
-  .slice(0, 4);
+  .sort((a, b) => b.data.rating.score - a.data.rating.score)
+  .slice(0, 8);
 
-const trendingProducts = [
-  { name: "Lampe Sunset TikTok", emoji: "🌅", price: "19,99", asin: "B09XJ75QK8", tag: "Viral TikTok", sales: "50K+" },
-  { name: "Bande LED Govee 5m", emoji: "🌈", price: "15,99", asin: "B07XT8J3HZ", tag: "Best-seller", sales: "100K+" },
-  { name: "Projecteur Galaxie POCOCO", emoji: "🌌", price: "29,99", asin: "B0B79LJYFN", tag: "Nouveau", sales: "35K+" },
-  { name: "Guirlande Boules Coton LED", emoji: "✨", price: "29,99", asin: "B07XXYF382", tag: "Tendance", sales: "20K+" },
-];
+// Top 4 produits les mieux notés (avec beaucoup d'avis) pour le trending
+const trendingProducts = allProducts
+  .filter((p) => p.data.rating.count > 3000)
+  .sort((a, b) => (b.data.rating.score * Math.log(b.data.rating.count)) - (a.data.rating.score * Math.log(a.data.rating.count)))
+  .slice(0, 4);
 ---
 
 <BaseLayout
@@ -79,58 +80,75 @@ const trendingProducts = [
     <div class="absolute bottom-10 right-10 text-6xl opacity-10">🛋️</div>
   </section>
 
-  <!-- 🔥 TRENDING TIKTOK Section - Le plus important pour la conversion -->
+  <!-- 🔥 TRENDING Section — produits réels dynamiques -->
   <section class="py-12 bg-gradient-to-r from-gray-900 to-gray-800">
     <div class="container-custom">
       <div class="text-center mb-8">
         <span class="inline-flex items-center gap-2 bg-red-500/20 text-red-400 px-3 py-1 rounded-full text-sm font-bold mb-3">
-          🔥 TRENDING
+          🔥 LES PLUS POPULAIRES
         </span>
         <h2 class="font-serif text-3xl font-bold text-white">
-          Les plus vendus en ce moment
+          Top produits en ce moment
         </h2>
-        <p class="text-gray-400 mt-2 text-sm">Sélection mise à jour — prix vérifiés sur Amazon.fr</p>
+        <p class="text-gray-400 mt-2 text-sm">Les mieux notés par des milliers d'acheteurs sur Amazon.fr</p>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {trendingProducts.map((product) => (
           <a
-            href={buildAmazonLink(product.asin)}
+            href={buildAmazonLink(product.data.amazonAsin, product.data.affiliateTag)}
             target="_blank"
             rel="nofollow sponsored noopener"
-            class="bg-gray-800/50 border border-gray-700 rounded-xl p-5 hover:border-primary-500 transition-all duration-300 hover:scale-[1.02] group block"
+            class="bg-gray-800/50 border border-gray-700 rounded-xl p-4 hover:border-primary-400 transition-all duration-300 hover:scale-[1.02] group block"
           >
+            <!-- Image produit réelle -->
+            <div class="aspect-square bg-white/5 rounded-lg flex items-center justify-center p-3 mb-3 overflow-hidden">
+              <img
+                src={product.data.image}
+                alt={product.data.name}
+                class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-primary-500/20 text-primary-400 capitalize">{product.data.category}</span>
+              <span class="text-xs text-amber-400 font-semibold">⭐ {product.data.rating.score}/5</span>
+            </div>
+            <h3 class="font-bold text-white group-hover:text-primary-400 transition-colors text-sm leading-snug mb-2 line-clamp-2">{product.data.name}</h3>
             <div class="flex items-center justify-between mb-3">
-              <span class="text-3xl">{product.emoji}</span>
-              <span class="text-xs font-bold px-2 py-1 rounded-full bg-primary-500/20 text-primary-400">{product.tag}</span>
+              <span class="text-xl font-bold text-amber-400">{product.data.price.current.toFixed(2)} €</span>
+              <span class="text-xs text-gray-500">{product.data.rating.count.toLocaleString('fr-FR')} avis</span>
             </div>
-            <h3 class="font-bold text-white group-hover:text-primary-400 transition-colors mb-1">{product.name}</h3>
-            <div class="flex items-center justify-between mt-3">
-              <span class="text-2xl font-bold text-amber-400">{product.price} €</span>
-              <span class="text-xs text-gray-500">{product.sales} vendus</span>
-            </div>
-            <div class="mt-3 text-center bg-amber-400 text-gray-900 py-2 rounded-lg font-bold text-sm group-hover:bg-amber-300 transition-colors">
-              Voir sur Amazon →
+            <div class="text-center py-2 rounded-lg font-bold text-sm transition-all duration-200 group-hover:shadow-lg"
+              style="background: linear-gradient(135deg, #FF9900 0%, #FF6B00 100%); color: #111;">
+              Voir le prix →
             </div>
           </a>
         ))}
       </div>
+      <div class="text-center mt-6">
+        <a href="/produits/" class="inline-flex items-center gap-2 text-gray-300 hover:text-white text-sm font-medium transition-colors">
+          Voir tous les produits
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Categories -->
+  <!-- Categories — lien vers les produits filtrés -->
   <section class="py-16">
     <div class="container-custom">
       <h2 class="font-serif text-3xl font-bold text-gray-900 text-center mb-3">
         Explorez par catégorie
       </h2>
-      <p class="text-gray-500 text-center mb-10 text-sm">Guides et produits triés par pièce et par thème</p>
+      <p class="text-gray-500 text-center mb-10 text-sm">Trouvez facilement les produits qu'il vous faut</p>
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
         {categories.map((cat) => (
           <a
-            href={`/blog/categorie/${cat.slug}/`}
-            class="card p-6 text-center hover:border-primary-200 group"
+            href={`/produits/`}
+            data-filter={cat.slug}
+            class="card p-6 text-center hover:border-primary-300 hover:shadow-md group transition-all duration-200"
           >
-            <span class="text-4xl mb-3 block">{cat.emoji}</span>
+            <span class="text-4xl mb-3 block group-hover:scale-110 transition-transform duration-200">{cat.emoji}</span>
             <h3 class="font-semibold text-gray-900 group-hover:text-primary-600 transition-colors">{cat.name}</h3>
             <p class="text-xs text-gray-500 mt-1">{cat.description}</p>
           </a>
@@ -151,7 +169,7 @@ const trendingProducts = [
             <p class="text-gray-500 mt-1 text-sm">Produits que j'ai gardés après test — recommandés à 100%</p>
           </div>
           <a href="/produits/" class="text-primary-600 hover:text-primary-700 font-medium text-sm flex items-center gap-1 whitespace-nowrap">
-            Tout voir
+            Tout voir ({allProducts.length})
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -165,6 +183,8 @@ const trendingProducts = [
               shortDescription={product.data.shortDescription}
               image={product.data.image}
               category={product.data.category}
+              amazonAsin={product.data.amazonAsin}
+              affiliateTag={product.data.affiliateTag}
               price={product.data.price}
               rating={product.data.rating}
               featured={product.data.featured}

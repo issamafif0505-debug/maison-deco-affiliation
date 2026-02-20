@@ -101,50 +101,64 @@ const schema = productSchema({
       </div>
 
       <!-- Product Info -->
-      <div class="flex flex-col justify-center">
-        <div class="flex flex-wrap gap-2 mb-3">
+      <div class="flex flex-col justify-start">
+        <!-- Badges -->
+        <div class="flex flex-wrap gap-2 mb-4">
           <span class="badge-category capitalize">{props.category}</span>
-          {props.featured && <span class="badge bg-amber-100 text-amber-700">Coup de coeur</span>}
+          {props.featured && <span class="badge bg-amber-100 text-amber-700">⭐ Coup de cœur</span>}
           {!props.inStock && <span class="badge bg-red-100 text-red-700">Indisponible</span>}
         </div>
 
-        <h1 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <h1 class="font-serif text-3xl md:text-4xl font-bold text-gray-900 mb-3 leading-snug">
           {props.name}
         </h1>
 
-        <p class="text-gray-600 text-lg mb-6">{props.shortDescription}</p>
+        <p class="text-gray-600 text-base mb-4 leading-relaxed">{props.shortDescription}</p>
 
-        <!-- Rating -->
-        <div class="flex items-center gap-3 mb-6">
+        <!-- Rating + avis -->
+        <div class="flex items-center gap-3 mb-5 pb-5 border-b border-gray-100">
           <RatingStars score={props.rating.score} />
-          <span class="text-sm text-gray-500">
-            {props.rating.score}/5 ({props.rating.count.toLocaleString('fr-FR')} avis)
-          </span>
+          <span class="text-sm font-semibold text-gray-700">{props.rating.score}/5</span>
+          <span class="text-sm text-gray-400">·</span>
+          <span class="text-sm text-gray-500">{props.rating.count.toLocaleString('fr-FR')} avis Amazon</span>
         </div>
 
-        <!-- Price -->
-        <div class="mb-6">
-          <span class="text-3xl font-bold text-gray-900">
-            {formatPrice(props.price.current, props.price.currency)}
-          </span>
-          <p class="text-xs text-gray-400 mt-1">
-            Prix constate le {props.price.lastChecked} - peut varier sur Amazon
-          </p>
+        <!-- Prix -->
+        <div class="mb-5">
+          <div class="flex items-baseline gap-3 mb-1">
+            <span class="text-4xl font-bold text-gray-900">
+              {formatPrice(props.price.current, props.price.currency)}
+            </span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <span class="flex items-center gap-1 text-green-600 font-semibold">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              Livraison rapide Amazon
+            </span>
+            <span class="text-gray-400">·</span>
+            <span class="text-gray-500">Prix vérifié le {props.price.lastChecked}</span>
+          </div>
         </div>
 
-        <!-- CTA -->
-        <AmazonButton asin={props.amazonAsin} tag={props.affiliateTag} size="large" />
+        <!-- CTA principal -->
+        <div class="mb-4">
+          <AmazonButton asin={props.amazonAsin} tag={props.affiliateTag} size="large" />
+        </div>
+
+        <!-- Social proof micro -->
+        <div class="flex items-center gap-2 text-xs text-gray-500 mb-6">
+          <svg class="w-4 h-4 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          Paiement sécurisé Amazon · Retour gratuit 30 jours
+        </div>
 
         <!-- Pros & Cons -->
-        <div class="mt-8">
-          <ProsCons pros={props.pros} cons={props.cons} />
-        </div>
+        <ProsCons pros={props.pros} cons={props.cons} />
       </div>
     </div>
 
     <!-- Full Description -->
     <div class="max-w-3xl mx-auto mb-12">
-      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-4">Notre avis detaille</h2>
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-4">Notre avis détaillé</h2>
       <div class="prose-custom">
         <p>{props.fullDescription}</p>
       </div>
@@ -153,14 +167,14 @@ const schema = productSchema({
     <!-- Specifications -->
     {props.specifications.length > 0 && (
       <div class="max-w-3xl mx-auto mb-12">
-        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-4">Caracteristiques techniques</h2>
-        <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-4">Caractéristiques techniques</h2>
+        <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm">
           <table class="w-full">
             <tbody>
               {props.specifications.map((spec, index) => (
                 <tr class:list={[index % 2 === 0 ? 'bg-gray-50' : 'bg-white']}>
-                  <td class="px-6 py-3 text-sm font-medium text-gray-700 w-1/3">{spec.label}</td>
-                  <td class="px-6 py-3 text-sm text-gray-600">{spec.value}</td>
+                  <td class="px-6 py-3.5 text-sm font-semibold text-gray-700 w-1/3">{spec.label}</td>
+                  <td class="px-6 py-3.5 text-sm text-gray-600">{spec.value}</td>
                 </tr>
               ))}
             </tbody>
@@ -170,10 +184,34 @@ const schema = productSchema({
     )}
 
     <!-- Bottom CTA -->
-    <div class="max-w-3xl mx-auto text-center p-8 bg-amber-50 rounded-2xl border border-amber-100">
-      <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Interesse(e) par ce produit ?</h3>
-      <p class="text-gray-600 mb-4">Consultez le prix actuel et les avis sur Amazon</p>
+    <div class="max-w-3xl mx-auto text-center p-8 rounded-2xl mb-8" style="background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); border: 1px solid #fed7aa;">
+      <h3 class="font-serif text-xl font-bold text-gray-900 mb-2">Intéressé(e) par ce produit ?</h3>
+      <p class="text-gray-600 mb-2">Consultez le prix actuel et les avis sur Amazon.fr</p>
+      <p class="text-xs text-gray-400 mb-5">Retour gratuit 30 jours · Livraison Prime disponible</p>
       <AmazonButton asin={props.amazonAsin} tag={props.affiliateTag} size="large" />
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="text-xs text-gray-400 text-center max-w-2xl mx-auto">
+      En tant que Partenaire Amazon, je perçois une commission sur les achats qualifiés. Cela ne change pas le prix que vous payez.
+    </p>
+  </div>
+
+  <!-- Sticky mobile CTA -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-white border-t border-gray-200 shadow-2xl p-3">
+    <div class="flex items-center gap-3 max-w-sm mx-auto">
+      <div class="flex-1 min-w-0">
+        <p class="text-xs font-semibold text-gray-900 truncate">{props.name}</p>
+        <p class="text-base font-bold text-gray-900">{formatPrice(props.price.current, props.price.currency)}</p>
+      </div>
+      <a
+        href={buildAmazonLink(props.amazonAsin, props.affiliateTag)}
+        target="_blank"
+        rel="nofollow sponsored noopener"
+        class="btn-amazon flex-shrink-0 px-5 py-3 text-sm"
+      >
+        Amazon →
+      </a>
     </div>
   </div>
 </BaseLayout>

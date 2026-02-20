@@ -1,9 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProductGrid from '../../components/product/ProductGrid.astro';
+import ProductCard from '../../components/product/ProductCard.astro';
 import Breadcrumbs from '../../components/common/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
-import categories from '../../data/categories.json';
 
 const allProducts = await getCollection('products');
 const sortedProducts = allProducts.sort((a, b) => {
@@ -11,32 +10,138 @@ const sortedProducts = allProducts.sort((a, b) => {
   if (!a.data.featured && b.data.featured) return 1;
   return b.data.rating.score - a.data.rating.score;
 });
+
+const uniqueCategories = [...new Set(sortedProducts.map(p => p.data.category))].sort();
 ---
 
 <BaseLayout
-  title="Tous les produits"
-  description="Decouvrez notre selection des meilleurs produits maison et decoration. Compares, testes et approuves."
+  title="Tous les produits sélectionnés — Maison & Déco"
+  description="35+ produits maison et décoration testés et approuvés par Issam. Images réelles, avis honnêtes, prix Amazon vérifiés."
 >
   <div class="container-custom py-8 md:py-12">
     <Breadcrumbs items={[{ label: 'Produits' }]} />
 
-    <div class="max-w-3xl mb-10">
-      <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-        Nos produits selectionnes
-      </h1>
-      <p class="text-lg text-gray-600">
-        Chaque produit est soigneusement selectionne et teste. Cliquez pour voir notre avis detaille et acheter sur Amazon.
-      </p>
+    <!-- En-tête -->
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+      <div>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+          Nos produits sélectionnés
+        </h1>
+        <p class="text-lg text-gray-600 max-w-2xl">
+          <strong>{sortedProducts.length} produits</strong> testés & approuvés — avis honnêtes, prix Amazon vérifiés.
+        </p>
+      </div>
+      <div class="flex items-center gap-2 bg-green-50 border border-green-200 rounded-xl px-4 py-3 flex-shrink-0">
+        <span class="text-2xl">⭐</span>
+        <div>
+          <p class="text-sm font-bold text-green-800">Tous notés 4+ / 5</p>
+          <p class="text-xs text-green-600">Sélection Amazon.fr</p>
+        </div>
+      </div>
     </div>
 
-    {sortedProducts.length > 0 ? (
-      <ProductGrid products={sortedProducts} columns={3} />
-    ) : (
-      <div class="text-center py-20">
-        <span class="text-6xl mb-4 block">🛒</span>
-        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Aucun produit pour le moment</h2>
-        <p class="text-gray-600">Les premiers produits arrivent bientot !</p>
-      </div>
-    )}
+    <!-- Filtres par catégorie -->
+    <div class="mb-8 flex flex-wrap gap-2" id="category-filters">
+      <button
+        class="filter-btn active px-4 py-2 rounded-full text-sm font-semibold border-2 transition-all duration-200"
+        data-category="all"
+      >
+        Tout ({sortedProducts.length})
+      </button>
+      {uniqueCategories.map((cat) => {
+        const count = sortedProducts.filter(p => p.data.category === cat).length;
+        return (
+          <button
+            class="filter-btn px-4 py-2 rounded-full text-sm font-semibold border-2 transition-all duration-200 capitalize"
+            data-category={cat}
+          >
+            {cat} ({count})
+          </button>
+        );
+      })}
+    </div>
+
+    <!-- Grille produits -->
+    <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+      {sortedProducts.map((product) => (
+        <div class="product-item h-full" data-category={product.data.category}>
+          <ProductCard
+            name={product.data.name}
+            slug={product.data.slug}
+            shortDescription={product.data.shortDescription}
+            image={product.data.image}
+            category={product.data.category}
+            amazonAsin={product.data.amazonAsin}
+            affiliateTag={product.data.affiliateTag}
+            price={product.data.price}
+            rating={product.data.rating}
+            featured={product.data.featured}
+            inStock={product.data.inStock}
+          />
+        </div>
+      ))}
+    </div>
+
+    <!-- Aucun résultat -->
+    <div id="no-results" class="hidden text-center py-20">
+      <span class="text-5xl mb-4 block">🔍</span>
+      <p class="text-gray-600 text-lg">Aucun produit dans cette catégorie pour l'instant.</p>
+    </div>
+
+    <!-- Disclaimer affilié -->
+    <p class="text-xs text-gray-400 text-center mt-12 max-w-2xl mx-auto">
+      En tant que Partenaire Amazon, je perçois une commission sur les achats qualifiés. Les prix peuvent varier — consultez Amazon.fr pour le prix actuel.
+    </p>
   </div>
 </BaseLayout>
+
+<style>
+  .filter-btn {
+    background: white;
+    border-color: #e5e7eb;
+    color: #6b7280;
+    cursor: pointer;
+  }
+  .filter-btn:hover {
+    border-color: #f97316;
+    color: #f97316;
+  }
+  .filter-btn.active {
+    background: #f97316;
+    border-color: #f97316;
+    color: white;
+  }
+  .product-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .product-item > article {
+    flex: 1;
+  }
+</style>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const items = document.querySelectorAll<HTMLElement>('.product-item');
+  const noResults = document.getElementById('no-results');
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category ?? 'all';
+
+      buttons.forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      let visible = 0;
+      items.forEach((item) => {
+        const show = cat === 'all' || item.dataset.category === cat;
+        item.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+
+      if (noResults) {
+        noResults.classList.toggle('hidden', visible > 0);
+      }
+    });
+  });
+</script>

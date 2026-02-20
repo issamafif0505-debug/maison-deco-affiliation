@@ -9,6 +9,8 @@ interface Product {
     shortDescription: string;
     image: string;
     category: string;
+    amazonAsin: string;
+    affiliateTag: string;
     price: { current: number; currency: string };
     rating: { score: number; count: number };
     featured: boolean;
@@ -38,6 +40,8 @@ const gridCols = {
       shortDescription={product.data.shortDescription}
       image={product.data.image}
       category={product.data.category}
+      amazonAsin={product.data.amazonAsin}
+      affiliateTag={product.data.affiliateTag}
       price={product.data.price}
       rating={product.data.rating}
       featured={product.data.featured}
