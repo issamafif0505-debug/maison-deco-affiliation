@@ -1,0 +1,39 @@
+{
+  "name": "Planche à Découper en Bois d'Acacia XXL 45x30cm",
+  "slug": "planche-bois-service",
+  "shortDescription": "Grande planche à découper et de service en bois d'acacia 45x30cm avec rigole jus, poignée intégrée. Idéale apéro et cuisine.",
+  "fullDescription": "Cette grande planche en bois d'acacia massif est à la fois un outil de cuisine performant et un objet de service élégant. Le bois d'acacia est naturellement résistant à l'humidité et aux bactéries — aucun traitement chimique nécessaire. La rigole jus intégrée collecte les liquides lors de la découpe de viandes ou fruits juteux. La poignée encastrée facilite le transport de la planche du plan de travail à la table pour le service. La taille XXL (45x30cm) est idéale pour les fromages, charcuteries et fruits lors d'un apéritif. Huilez régulièrement pour entretenir le bois.",
+  "category": "cuisine-deco",
+  "amazonAsin": "B08NKXJVHF",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 28.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 16890
+  },
+  "image": "https://m.media-amazon.com/images/P/B08NKXJVHF.01._AC_SL600_.jpg",
+  "pros": [
+    "Bois acacia naturellement antibactérien",
+    "Format XXL — apéro généreux",
+    "Rigole jus intégrée",
+    "Double fonction : découpe + service"
+  ],
+  "cons": [
+    "Entretien huilage trimestriel requis",
+    "Non compatible lave-vaisselle"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "45 x 30 x 2 cm" },
+    { "label": "Matière", "value": "Bois d'acacia massif" },
+    { "label": "Rigole", "value": "Oui (3mm profondeur)" },
+    { "label": "Poignée", "value": "Intégrée sculptée" },
+    { "label": "Entretien", "value": "Main uniquement, huilage trimestriel" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

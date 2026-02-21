@@ -1,0 +1,39 @@
+{
+  "name": "Lanterne Solaire Extérieure Style Vintage — Set de 2",
+  "slug": "lanterne-exterieure-solaire",
+  "shortDescription": "Lot de 2 lanternes décoratives solaires style vintage métal noir, LED blanc chaud, allumage automatique. Terrasse, jardin, balcon.",
+  "fullDescription": "Ces lanternes solaires style vintage transforment terrasses et jardins en espaces cosy et accueillants dès la nuit tombée. La structure en métal noir mat avec vitre en verre givré crée une lumière douce et tamisée parfaitement romantique. Le panneau solaire intégré au couvercle assure 8h d'autonomie après charge solaire complète. L'allumage et l'extinction sont automatiques grâce au capteur crépusculaire. Le lot de 2 permet de créer une composition symétrique à l'entrée ou de part et d'autre d'un escalier de jardin. Étanche IP44 — résiste à la pluie et aux intempéries.",
+  "category": "éclairage",
+  "amazonAsin": "B09ZMKQPNF",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 31.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.2,
+    "count": 8760
+  },
+  "image": "https://m.media-amazon.com/images/P/B09ZMKQPNF.01._AC_SL600_.jpg",
+  "pros": [
+    "100% solaire — sans câble",
+    "Allumage automatique crépusculaire",
+    "Lot de 2 — composition harmonieuse",
+    "IP44 — résistant aux intempéries"
+  ],
+  "cons": [
+    "Autonomie réduite les jours nuageux",
+    "Lumière décorative (pas d'éclairage fonctionnel)"
+  ],
+  "specifications": [
+    { "label": "Alimentation", "value": "Solaire (panneau intégré)" },
+    { "label": "Autonomie", "value": "6-8h après charge complète" },
+    { "label": "LED", "value": "Blanc chaud" },
+    { "label": "Étanchéité", "value": "IP44" },
+    { "label": "Matière", "value": "Métal noir + verre givré" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

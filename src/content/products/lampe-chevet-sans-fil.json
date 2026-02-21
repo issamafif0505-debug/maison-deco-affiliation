@@ -1,0 +1,40 @@
+{
+  "name": "Lampe de Chevet Sans Fil Rechargeable — Tactile & Dimmable",
+  "slug": "lampe-chevet-sans-fil",
+  "shortDescription": "Lampe rechargeable USB-C, variateur tactile, autonomie 10h, design minimaliste bois et métal. Parfaite chambre et salon.",
+  "fullDescription": "La lampe de chevet sans fil est la révolution déco de 2025. Rechargeable via USB-C, elle se pose n'importe où sans câble visible — sur votre table de chevet, votre bureau ou votre buffet. L'autonomie de 10 heures en intensité moyenne est largement suffisante pour une nuit complète. Le variateur tactile permet de passer d'une lumière tamisée romantique à une lumière de lecture plus intense. Le design bicolore bois naturel et métal noir s'intègre parfaitement dans les intérieurs scandinaves et boho. Complète l'esthétique d'une chambre sans les fils disgracieux.",
+  "category": "éclairage",
+  "amazonAsin": "B09TFKXP5R",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 34.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 5892
+  },
+  "image": "https://m.media-amazon.com/images/P/B09TFKXP5R.01._AC_SL600_.jpg",
+  "pros": [
+    "Sans fil — aucun câble visible",
+    "Rechargeable USB-C — universel",
+    "Autonomie 10h à intensité moyenne",
+    "Design bois + métal ultra tendance"
+  ],
+  "cons": [
+    "Pas de port de charge rapide",
+    "LED non remplaçable en fin de vie"
+  ],
+  "specifications": [
+    { "label": "Recharge", "value": "USB-C" },
+    { "label": "Autonomie", "value": "4h (max) à 10h (min)" },
+    { "label": "Puissance", "value": "5W LED" },
+    { "label": "Matière", "value": "Bois naturel + métal" },
+    { "label": "Variateur", "value": "Tactile 3 niveaux" }
+  ],
+  "featured": true,
+  "bestseller": true,
+  "inStock": true,
+  "youtubeVideoId": "dFBCYVuVgOE"
+}

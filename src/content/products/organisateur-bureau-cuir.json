@@ -1,0 +1,39 @@
+{
+  "name": "Organisateur de Bureau Cuir Végan — 6 Compartiments",
+  "slug": "organisateur-bureau-cuir",
+  "shortDescription": "Organisateur bureau en cuir végan noir, 6 compartiments (stylos, téléphone, cartes, câbles). Design premium pour home office.",
+  "fullDescription": "Cet organisateur de bureau en cuir végan est l'accessoire qui transforme un bureau encombré en espace de travail élégant et productif. Ses 6 compartiments de tailles différentes accueillent : stylos, crayons, téléphone, cartes de visite, câbles, Post-it. Le cuir végan grain croco lui donne un aspect luxueux à un prix accessible. La base lestée évite les renversements même bien rempli. Parfait pour le home office mais aussi pour les bureaux en open space. Un cadeau professionnel idéal pour les débutants en organisation.",
+  "category": "rangement",
+  "amazonAsin": "B093VQX2XN",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 27.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 5670
+  },
+  "image": "https://m.media-amazon.com/images/P/B093VQX2XN.01._AC_SL600_.jpg",
+  "pros": [
+    "6 compartiments bien dimensionnés",
+    "Cuir végan aspect premium",
+    "Base lestée — stable même rempli",
+    "Idéal cadeau bureau et home office"
+  ],
+  "cons": [
+    "Couleur uniquement en noir",
+    "Cuir végan moins durable que cuir naturel"
+  ],
+  "specifications": [
+    { "label": "Compartiments", "value": "6 (tailles variées)" },
+    { "label": "Matière", "value": "Cuir végan grain croco" },
+    { "label": "Coloris", "value": "Noir" },
+    { "label": "Dimensions", "value": "24 x 13 x 10 cm" },
+    { "label": "Poids", "value": "450g" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

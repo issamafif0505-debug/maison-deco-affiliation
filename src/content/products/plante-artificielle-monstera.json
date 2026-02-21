@@ -1,0 +1,39 @@
+{
+  "name": "Monstera Artificielle 90cm avec Pot — Réaliste",
+  "slug": "plante-artificielle-monstera",
+  "shortDescription": "Monstera artificielle 90cm ultra-réaliste avec pot gris béton inclus. Feuilles texturées résistantes. Zéro entretien, effet garanti.",
+  "fullDescription": "Le monstera est LA plante déco de la décennie, et cette version artificielle ultra-réaliste vous permet d'en profiter sans contrainte d'entretien. Les feuilles en polyéthylène haute définition reproduisent à la perfection la texture, les nervures et même les trous caractéristiques du monstera. Les tiges en fil de fer permettent de plier et orienter les feuilles comme vous le souhaitez. Le pot gris béton inclus est déjà rempli de terre synthétique pour un effet naturel parfait. Anti-UV : la couleur ne jaunit pas. Idéale pour les pièces peu lumineuses ou pour les personnes allergiques.",
+  "category": "plantes-pots",
+  "amazonAsin": "B09NFKX5RW",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 45.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 7320
+  },
+  "image": "https://m.media-amazon.com/images/P/B09NFKX5RW.01._AC_SL600_.jpg",
+  "pros": [
+    "Ultra-réaliste — effet trompeur",
+    "Pot gris béton inclus — clé en main",
+    "Tiges orientables — personnalisable",
+    "Zéro entretien — idéal pour non-jardiniers"
+  ],
+  "cons": [
+    "Léger odeur plastique les premières semaines",
+    "Dépoussiérage nécessaire (fréquence mensuelle)"
+  ],
+  "specifications": [
+    { "label": "Hauteur", "value": "90 cm" },
+    { "label": "Matière feuilles", "value": "Polyéthylène HD" },
+    { "label": "Pot", "value": "Gris béton inclus (Ø18cm)" },
+    { "label": "Tiges", "value": "Fil de fer orientable" },
+    { "label": "Anti-UV", "value": "Oui" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

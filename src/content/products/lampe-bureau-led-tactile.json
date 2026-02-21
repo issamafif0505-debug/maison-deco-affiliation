@@ -1,0 +1,39 @@
+{
+  "name": "Lampe de Bureau LED Tactile avec Port USB — Blanc/Or",
+  "slug": "lampe-bureau-led-tactile",
+  "shortDescription": "Lampe de bureau LED avec variateur tactile 3 niveaux, port USB intégré, articulations flexibles. Idéale télétravail et bureau.",
+  "fullDescription": "Cette lampe de bureau est la référence pour le home office en 2025. Son bras articulé à 3 niveaux permet d'orienter la lumière exactement où vous en avez besoin. Le variateur tactile offre 3 températures de couleur (blanc chaud, neutre, froid) et 5 niveaux de luminosité. La base comprend un port USB pour charger votre téléphone en même temps. Design épuré blanc et or qui s'intègre dans tous les espaces de travail. L'ampoule LED intégrée a une durée de vie de 50 000 heures — vous ne changerez jamais d'ampoule. Parfaite aussi comme lampe de chevet.",
+  "category": "éclairage",
+  "amazonAsin": "B07YQGMRKB",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 29.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 8743
+  },
+  "image": "https://m.media-amazon.com/images/P/B07YQGMRKB.01._AC_SL600_.jpg",
+  "pros": [
+    "Variateur 3 températures x 5 intensités",
+    "Port USB intégré dans la base",
+    "Bras articulé très flexible",
+    "LED 50 000h — durée de vie exceptionnelle"
+  ],
+  "cons": [
+    "Câble assez court (1,5m)",
+    "Pied léger sur des surfaces glissantes"
+  ],
+  "specifications": [
+    { "label": "Puissance", "value": "12W LED intégrée" },
+    { "label": "Températures", "value": "3 (2700K / 4000K / 6500K)" },
+    { "label": "USB", "value": "Port USB-A 5V/1A" },
+    { "label": "Bras", "value": "Articulé 3 sections" },
+    { "label": "Durée de vie", "value": "50 000 heures" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

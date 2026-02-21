@@ -1,0 +1,40 @@
+{
+  "name": "Miroir Salle de Bain LED Anti-Buée 60x80cm",
+  "slug": "miroir-salle-de-bain-led",
+  "shortDescription": "Miroir LED salle de bain 60x80cm avec anti-buée, variateur tactile, lumière froide/chaude. Installation verticale ou horizontale.",
+  "fullDescription": "Ce miroir LED pour salle de bain combine élégance et fonctionnalité. Le rétroéclairage LED crée une lumière homogène idéale pour le maquillage et le rasage. La résistance anti-buée intégrée garde le miroir parfaitement clair même après une douche chaude. Le variateur tactile permet de régler l'intensité et la température de couleur pour un éclairage parfait en toutes circonstances. Les dimensions 60x80cm sont les plus polyvalentes — adaptées à la plupart des salles de bain. Installation possible en format portrait ou paysage. Certification IP44 : résistant aux projections d'eau.",
+  "category": "miroir",
+  "amazonAsin": "B0B2NFKXQH",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 79.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 9245
+  },
+  "image": "https://m.media-amazon.com/images/P/B0B2NFKXQH.01._AC_SL600_.jpg",
+  "pros": [
+    "Anti-buée intégré — parfait après douche",
+    "LED périphérique — lumière homogène",
+    "2 températures + variateur tactile",
+    "Certification IP44 — sécurité salle de bain"
+  ],
+  "cons": [
+    "Installation électrique requise",
+    "Prix un peu élevé mais justifié"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "60 x 80 cm" },
+    { "label": "Éclairage", "value": "LED rétroéclairage" },
+    { "label": "Anti-buée", "value": "Oui (résistance intégrée)" },
+    { "label": "IP", "value": "IP44" },
+    { "label": "Alimentation", "value": "220V secteur" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true,
+  "youtubeVideoId": "YmJpNbuvXIo"
+}

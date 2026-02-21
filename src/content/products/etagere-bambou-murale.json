@@ -1,0 +1,39 @@
+{
+  "name": "Étagère Murale Bambou Flottante — Set de 3",
+  "slug": "etagere-bambou-murale",
+  "shortDescription": "Lot de 3 étagères flottantes en bambou massif (40/50/60cm), charge max 5kg. Style naturel et eco-friendly pour tout type de mur.",
+  "fullDescription": "Ces étagères flottantes en bambou massif transforment n'importe quel mur vide en espace de vie organisé et décoratif. Le bambou, plus écologique que le bois, offre une résistance et une durabilité supérieures. Le lot de 3 longueurs différentes (40, 50 et 60cm) vous permet de créer des compositions asymétriques très tendance. La fixation invisible (chevilles et vis incluses) donne l'impression que les étagères flottent dans l'air. Capacité de charge : 5kg par étagère. Parfaites pour livres, plantes, cadres photos, objets déco.",
+  "category": "rangement",
+  "amazonAsin": "B09BNLZQPP",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 32.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 12410
+  },
+  "image": "https://m.media-amazon.com/images/P/B09BNLZQPP.01._AC_SL600_.jpg",
+  "pros": [
+    "Bambou massif — écologique et solide",
+    "Set de 3 longueurs — compositions variées",
+    "Fixation invisible — effet flottant",
+    "Charge 5kg — robuste"
+  ],
+  "cons": [
+    "Longueurs limitées à 60cm max",
+    "Bambou peut légèrement fendre dans milieux très secs"
+  ],
+  "specifications": [
+    { "label": "Longueurs", "value": "40 / 50 / 60 cm" },
+    { "label": "Profondeur", "value": "15 cm" },
+    { "label": "Matière", "value": "Bambou massif" },
+    { "label": "Charge max", "value": "5 kg par étagère" },
+    { "label": "Fixation", "value": "Chevilles et vis incluses" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

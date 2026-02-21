@@ -1,0 +1,39 @@
+{
+  "name": "Guirlande Solaire Extérieure 12m — 100 LED Blanc Chaud",
+  "slug": "guirlande-solaire-exterieure",
+  "shortDescription": "Guirlande solaire 12m 100 LED blanc chaud, étanche IP65, 8 modes, autonomie 8h. Parfaite terrasse, jardin, balcon.",
+  "fullDescription": "La guirlande solaire extérieure est la décoration incontournable pour les beaux jours. Totalement autonome grâce au panneau solaire inclus, elle se charge automatiquement le jour et s'allume la nuit. Avec ses 100 LED blanc chaud sur 12 mètres de câble, elle illumine terrasses, jardins, pergolas et balcons avec une lumière douce et chaleureuse. Le boîtier IP65 résiste à la pluie, à la neige et aux UV. 8 modes d'éclairage : constant, clignotant, fade... Programmable automatiquement au coucher du soleil grâce au capteur de lumière. Zéro câble, zéro facture d'électricité.",
+  "category": "éclairage",
+  "amazonAsin": "B09YNDKF9B",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 19.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 15420
+  },
+  "image": "https://m.media-amazon.com/images/P/B09YNDKF9B.01._AC_SL600_.jpg",
+  "pros": [
+    "100% solaire — aucun câble nécessaire",
+    "12m de longueur — grande couverture",
+    "Étanche IP65 — toutes saisons",
+    "8 modes d'éclairage"
+  ],
+  "cons": [
+    "Charge insuffisante par temps nuageux prolongé",
+    "Luminosité moindre que les guirlandes électriques"
+  ],
+  "specifications": [
+    { "label": "Longueur", "value": "12 mètres" },
+    { "label": "Ampoules", "value": "100 LED blanc chaud" },
+    { "label": "Étanchéité", "value": "IP65" },
+    { "label": "Modes", "value": "8 modes d'éclairage" },
+    { "label": "Autonomie", "value": "6-8h après charge complète" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Housse de Couette Satin Lavé 200x200cm — Beige Naturel",
+  "slug": "housse-couette-satin",
+  "shortDescription": "Housse de couette en coton satiné lavé 200x200cm coloris beige naturel. Effet hôtel de luxe à prix mini. Boutons pression inclus.",
+  "fullDescription": "La housse de couette en satin lavé est le secret des chambres d'hôtel 5 étoiles que vous pouvez recréer chez vous. Le coton satiné lavé offre ce mélange unique de douceur soyeuse et de légèreté. Le processus de lavage industriel lui confère cette texture légèrement froissée qui est très tendance et qui ne nécessite plus de repassage. Le coloris beige naturel s'harmonise avec toutes les têtes de lit et tous les mobiliers de chambre. Boutons pression qui maintiennent parfaitement la couette en place. Taies d'oreiller assorties disponibles.",
+  "category": "textiles",
+  "amazonAsin": "B07PZWCH6X",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 49.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 6780
+  },
+  "image": "https://m.media-amazon.com/images/P/B07PZWCH6X.01._AC_SL600_.jpg",
+  "pros": [
+    "Coton satin lavé — toucher soyeux",
+    "Effet hôtel 5 étoiles à domicile",
+    "Ne nécessite pas de repassage",
+    "Boutons pression solides"
+  ],
+  "cons": [
+    "Prix légèrement supérieur au polyester",
+    "Légère contraction au premier lavage"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "200 x 200 cm" },
+    { "label": "Matière", "value": "Coton satiné lavé" },
+    { "label": "Fil", "value": "200 fils/cm²" },
+    { "label": "Fermeture", "value": "Boutons pression" },
+    { "label": "Entretien", "value": "Lavage 40°C" }
+  ],
+  "featured": true,
+  "bestseller": false,
+  "inStock": true
+}

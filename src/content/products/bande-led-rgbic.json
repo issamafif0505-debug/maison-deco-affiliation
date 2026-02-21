@@ -1,0 +1,40 @@
+{
+  "name": "Ruban LED RGBIC 10m WiFi — Govee — Contrôle App & Alexa",
+  "slug": "bande-led-rgbic",
+  "shortDescription": "Bande LED RGBIC 10m WiFi Govee, effets multicolores simultanés, contrôle app iOS/Android, compatible Alexa & Google. Chambre et TV.",
+  "fullDescription": "Le ruban LED RGBIC Govee est la référence absolue pour l'ambiance lumineuse. Contrairement aux bandes LED classiques, la technologie RGBIC permet d'afficher plusieurs couleurs simultanément sur le même ruban — créant des effets arc-en-ciel et des animations fluides impossibles avec les LED classiques. 10 mètres de ruban suffisent pour faire le tour complet d'une chambre ou encadrer un mur TV. L'application Govee Home (iOS/Android) offre des milliers de scènes préprogrammées, des synchronisations musicales et des programmations horaires. Compatible Alexa et Google Assistant pour le contrôle vocal.",
+  "category": "éclairage",
+  "amazonAsin": "B08BQYVH6W",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 25.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 34560
+  },
+  "image": "https://m.media-amazon.com/images/P/B08BQYVH6W.01._AC_SL600_.jpg",
+  "pros": [
+    "RGBIC — plusieurs couleurs simultanées",
+    "10m — chambre complète",
+    "App Govee intuitive avec milliers de scènes",
+    "Compatible Alexa & Google"
+  ],
+  "cons": [
+    "Adhésif peut peindre la peinture fine",
+    "Nécessite WiFi 2.4GHz"
+  ],
+  "specifications": [
+    { "label": "Longueur", "value": "10 mètres" },
+    { "label": "Technologie", "value": "RGBIC (multicolore simultané)" },
+    { "label": "Connectivité", "value": "WiFi 2.4GHz" },
+    { "label": "Compatibilité", "value": "Alexa, Google, App Govee" },
+    { "label": "Voltage", "value": "12V (adaptateur inclus)" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true,
+  "youtubeVideoId": "SiVLQO3RLLY"
+}

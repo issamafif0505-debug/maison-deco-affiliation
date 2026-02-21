@@ -1,0 +1,39 @@
+{
+  "name": "Coussin Rond Pompons Boho 45cm — Beige et Terracotta",
+  "slug": "coussin-rond-boho",
+  "shortDescription": "Coussin rond 45cm avec pompons en coton naturel, motifs tissés bohème, coloris beige et terracotta. Rembourrage inclus.",
+  "fullDescription": "Ce coussin rond avec pompons est la touche finale parfaite pour un canapé ou un lit décoré dans un style bohème naturel. Le tissage à plat en coton naturel crée des motifs géométriques inspirés des textiles mexicains et berbères. Les pompons en fils de coton naturel apportent un relief ludique. Le coloris beige et terracotta est LE combo coloré de la saison — très tendance sur TikTok et Pinterest déco. Le rembourrage en fibre creuse hypoallergénique est inclus. Lavable en machine à 30°C.",
+  "category": "textiles",
+  "amazonAsin": "B09FKXMZRC",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 18.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 7890
+  },
+  "image": "https://m.media-amazon.com/images/P/B09FKXMZRC.01._AC_SL600_.jpg",
+  "pros": [
+    "Design pompons très photogénique",
+    "Coton naturel — écologique",
+    "Coloris terracotta ultra tendance",
+    "Rembourrage inclus"
+  ],
+  "cons": [
+    "Pompons peuvent s'emmêler",
+    "Format rond moins polyvalent que carré"
+  ],
+  "specifications": [
+    { "label": "Diamètre", "value": "45 cm" },
+    { "label": "Forme", "value": "Ronde" },
+    { "label": "Matière", "value": "Coton naturel tissé" },
+    { "label": "Garniture", "value": "Fibre creuse hypoallergénique" },
+    { "label": "Entretien", "value": "Lavage machine 30°C" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

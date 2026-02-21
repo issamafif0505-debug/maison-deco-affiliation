@@ -1,0 +1,39 @@
+{
+  "name": "Grande Bougie Parfumée Cire de Soja — Vanille & Bois de Cèdre 400g",
+  "slug": "bougie-cire-soja-grande",
+  "shortDescription": "Bougie artisanale 400g cire végétale soja, double mèche coton, parfum vanille et bois de cèdre, 60h de combustion. Pot verre givré.",
+  "fullDescription": "Cette grande bougie parfumée en cire de soja est la définition du luxe accessible. La cire de soja 100% végétale brûle plus lentement et plus proprement que la paraffine classique — zéro suie, zéro toxine. La double mèche en coton naturel assure une combustion homogène sur toute la surface sans effet tunnel. Le parfum vanille et bois de cèdre crée une ambiance cocooning irrésistible. Avec 60 heures de combustion pour 400g, le rapport qualité-durée est exceptionnel. Le pot en verre givré avec couvercle doré peut être réutilisé comme verre ou vide-poche après utilisation.",
+  "category": "décoration",
+  "amazonAsin": "B09MKXWQNV",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 24.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.7,
+    "count": 15430
+  },
+  "image": "https://m.media-amazon.com/images/P/B09MKXWQNV.01._AC_SL600_.jpg",
+  "pros": [
+    "Cire soja 100% végétale — non toxique",
+    "60h de combustion — très longue durée",
+    "Double mèche — combustion homogène",
+    "Pot verre réutilisable"
+  ],
+  "cons": [
+    "Parfum moins prononcé que paraffine",
+    "Fonctionner min 2h à chaque utilisation"
+  ],
+  "specifications": [
+    { "label": "Poids", "value": "400g (cire soja)" },
+    { "label": "Durée combustion", "value": "60 heures" },
+    { "label": "Mèches", "value": "Double mèche coton" },
+    { "label": "Parfum", "value": "Vanille & Bois de Cèdre" },
+    { "label": "Pot", "value": "Verre givré avec couvercle doré" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

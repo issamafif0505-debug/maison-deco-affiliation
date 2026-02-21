@@ -1,0 +1,39 @@
+{
+  "name": "Miroir sur Pied Pleine Hauteur 40x150cm — Cadre Noir",
+  "slug": "miroir-dressing-pied",
+  "shortDescription": "Grand miroir sur pied inclinable 40x150cm cadre métal noir. Miroir de dressing full-length pour chambre. Livré monté.",
+  "fullDescription": "Le miroir pleine hauteur sur pied est l'accessoire indispensable de toute chambre bien aménagée. Ce modèle 40x150cm permet de voir sa tenue complète — de la tête aux pieds. Le cadre en métal noir mat fin (1,5cm) met en valeur le miroir sans l'alourdir. L'inclinaison est réglable grâce aux rotules latérales — penchez-le légèrement vers l'avant pour un effet amplificateur de hauteur. Le pied en métal noir est stable et antidérapant. Livré monté et prêt à l'emploi — simplement poser contre le mur ou légèrement incliné. Parfait pour dressing, chambre et couloir.",
+  "category": "miroir",
+  "amazonAsin": "B09VRXQKLN",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 59.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 11230
+  },
+  "image": "https://m.media-amazon.com/images/P/B09VRXQKLN.01._AC_SL600_.jpg",
+  "pros": [
+    "Pleine hauteur 150cm — tenue complète visible",
+    "Livré monté — prêt à l'emploi",
+    "Inclinaison réglable",
+    "Cadre métal noir ultra fin et élégant"
+  ],
+  "cons": [
+    "Encombrant si petite chambre",
+    "Se raye facilement (miroir non traité)"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "40 x 150 cm" },
+    { "label": "Cadre", "value": "Métal noir mat 1.5cm" },
+    { "label": "Pied", "value": "Métal noir antidérapant" },
+    { "label": "Inclinaison", "value": "Réglable via rotules" },
+    { "label": "Livraison", "value": "Monté et prêt à l'emploi" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

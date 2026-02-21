@@ -24,10 +24,13 @@ interface Props {
   cons: string[];
   specifications: { label: string; value: string }[];
   featured: boolean;
+  bestseller?: boolean;
   inStock: boolean;
+  youtubeVideoId?: string;
 }
 
 const props = Astro.props;
+const { bestseller = false, youtubeVideoId } = props;
 
 const breadcrumbs = [
   { label: 'Produits', href: '/produits/' },
@@ -71,7 +74,8 @@ const schema = productSchema({
       <div class="flex flex-col justify-center">
         <div class="flex flex-wrap gap-2 mb-3">
           <span class="badge-category capitalize">{props.category}</span>
-          {props.featured && <span class="badge bg-amber-100 text-amber-700">Coup de coeur</span>}
+          {bestseller && <span class="badge bg-amber-500 text-white font-bold">🏆 Bestseller</span>}
+          {props.featured && <span class="badge bg-amber-100 text-amber-700">⭐ Coup de cœur</span>}
           {!props.inStock && <span class="badge bg-red-100 text-red-700">Indisponible</span>}
         </div>
 
@@ -108,6 +112,24 @@ const schema = productSchema({
         </div>
       </div>
     </div>
+
+    <!-- YouTube Video Embed -->
+    {youtubeVideoId && (
+      <div class="max-w-3xl mx-auto mb-12">
+        <h2 class="font-serif text-2xl font-bold text-gray-900 mb-4">Vidéo de présentation</h2>
+        <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+          <iframe
+            class="absolute inset-0 w-full h-full"
+            src={`https://www.youtube.com/embed/${youtubeVideoId}?rel=0&modestbranding=1`}
+            title={`Vidéo : ${props.name}`}
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    )}
 
     <!-- Full Description -->
     <div class="max-w-3xl mx-auto mb-12">

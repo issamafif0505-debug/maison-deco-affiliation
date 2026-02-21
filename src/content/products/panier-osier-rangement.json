@@ -1,0 +1,39 @@
+{
+  "name": "Lot 3 Paniers Osier Naturel Tressé — Rangement Boho",
+  "slug": "panier-osier-rangement",
+  "shortDescription": "Set de 3 paniers en osier naturel tressé (S/M/L), anses en cuir végan. Rangement tendance pour salon, chambre et SDB.",
+  "fullDescription": "Les paniers en osier naturel sont le moyen le plus élégant et le plus organisé de ranger vos affaires. Ce set de 3 tailles (S, M, L) vous permet de couvrir tous vos besoins de rangement. La texture tressée à la main crée des jeux de lumière et d'ombre très photogéniques. Les anses en cuir végan permettent un déplacement facile. Idéals pour : couvertures et plaids dans le salon, jouets dans la chambre d'enfant, serviettes dans la salle de bain, magazines, accessoires de yoga... La tendance osier est à son apogée sur les comptes déco minimaliste et naturel.",
+  "category": "rangement",
+  "amazonAsin": "B08QQHK5B6",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 38.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 8920
+  },
+  "image": "https://m.media-amazon.com/images/P/B08QQHK5B6.01._AC_SL600_.jpg",
+  "pros": [
+    "Set de 3 tailles — complet pour toute la maison",
+    "Osier naturel — matière écologique",
+    "Anses cuir végan — déplacement facile",
+    "Ultra polyvalent — décoration et rangement"
+  ],
+  "cons": [
+    "Osier peut laisser des fibres les premières semaines",
+    "Pas imperméable — éviter humidité intense"
+  ],
+  "specifications": [
+    { "label": "Tailles", "value": "S (20x15cm) / M (25x20cm) / L (30x25cm)" },
+    { "label": "Matière", "value": "Osier naturel" },
+    { "label": "Anses", "value": "Cuir végan" },
+    { "label": "Quantité", "value": "Set de 3" },
+    { "label": "Fond", "value": "Renforcé" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

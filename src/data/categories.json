@@ -24,16 +24,28 @@
     "emoji": "🚿"
   },
   {
-    "name": "Jardin",
-    "slug": "jardin",
-    "description": "Mobilier de jardin, plantes et décoration extérieure",
-    "emoji": "🌿"
+    "name": "Éclairage",
+    "slug": "eclairage",
+    "description": "Lampes, guirlandes et luminaires design",
+    "emoji": "💡"
   },
   {
-    "name": "Décoration",
-    "slug": "decoration",
-    "description": "Tableaux, vases, coussins et objets déco",
-    "emoji": "🎨"
+    "name": "Miroirs",
+    "slug": "miroirs",
+    "description": "Miroirs décoratifs, LED et design",
+    "emoji": "🪞"
+  },
+  {
+    "name": "Textiles",
+    "slug": "textiles",
+    "description": "Rideaux, plaids, coussins et tapis",
+    "emoji": "🧶"
+  },
+  {
+    "name": "Plantes & Pots",
+    "slug": "plantes-pots",
+    "description": "Pots, cache-pots et plantes d'intérieur",
+    "emoji": "🌿"
   },
   {
     "name": "Rangement",
@@ -42,9 +54,15 @@
     "emoji": "📦"
   },
   {
-    "name": "Éclairage",
-    "slug": "eclairage",
-    "description": "Lampes, guirlandes et luminaires",
-    "emoji": "💡"
+    "name": "Décoration",
+    "slug": "decoration",
+    "description": "Tableaux, vases, coussins et objets déco",
+    "emoji": "🎨"
+  },
+  {
+    "name": "Jardin",
+    "slug": "jardin",
+    "description": "Mobilier de jardin, plantes et décoration extérieure",
+    "emoji": "🌱"
   }
 ]

@@ -1,0 +1,39 @@
+{
+  "name": "Miroir Ovale Vintage Bois Naturel 40x55cm",
+  "slug": "miroir-ovale-vintage",
+  "shortDescription": "Miroir ovale cadre bois naturel 40x55cm, style Japandi et scandinave. L'accessoire déco intemporel pour chambre et salon.",
+  "fullDescription": "Le miroir ovale en bois naturel est la pièce maîtresse du style Japandi qui envahit les intérieurs tendance. Son cadre en bois de hêtre naturel non traité apporte chaleur et authenticité. La forme ovale adoucit les angles droits des meubles modernes. Ses dimensions 40x55cm sont idéales pour une utilisation en miroir de chambre posé sur une commode ou accroché au mur. Le finition naturelle non vernie développe une patine unique avec le temps. Compatible avec tous les styles : scandinave, japandi, wabi-sabi, minimaliste.",
+  "category": "miroir",
+  "amazonAsin": "B09K5XT9R3",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 35.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 3560
+  },
+  "image": "https://m.media-amazon.com/images/P/B09K5XT9R3.01._AC_SL600_.jpg",
+  "pros": [
+    "Bois naturel — aspect authentique",
+    "Forme ovale très tendance Japandi",
+    "Dimensions idéales pour chambre et salon",
+    "Intemporel — ne se démode pas"
+  ],
+  "cons": [
+    "Bois sensible à l'humidité (éviter SDB)",
+    "Poids notable — chevilles recommandées"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "40 x 55 cm" },
+    { "label": "Cadre", "value": "Bois de hêtre naturel" },
+    { "label": "Forme", "value": "Ovale" },
+    { "label": "Style", "value": "Japandi / Scandinave" },
+    { "label": "Orientation", "value": "Portrait ou paysage" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

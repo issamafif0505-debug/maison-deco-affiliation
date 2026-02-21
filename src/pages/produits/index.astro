@@ -1,42 +1,194 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import ProductGrid from '../../components/product/ProductGrid.astro';
+import ProductCard from '../../components/product/ProductCard.astro';
 import Breadcrumbs from '../../components/common/Breadcrumbs.astro';
 import { getCollection } from 'astro:content';
-import categories from '../../data/categories.json';
 
 const allProducts = await getCollection('products');
 const sortedProducts = allProducts.sort((a, b) => {
   if (a.data.featured && !b.data.featured) return -1;
   if (!a.data.featured && b.data.featured) return 1;
+  if (a.data.bestseller && !b.data.bestseller) return -1;
+  if (!a.data.bestseller && b.data.bestseller) return 1;
   return b.data.rating.score - a.data.rating.score;
 });
+
+// Derive unique categories from products
+const categoryCount: Record<string, number> = {};
+for (const p of sortedProducts) {
+  const cat = p.data.category;
+  categoryCount[cat] = (categoryCount[cat] || 0) + 1;
+}
+const productCategories = Object.entries(categoryCount)
+  .sort((a, b) => b[1] - a[1])
+  .map(([slug, count]) => ({ slug, count, name: slug }));
+
+const categoryLabels: Record<string, { label: string; emoji: string }> = {
+  'éclairage': { label: 'Éclairage', emoji: '💡' },
+  'miroir': { label: 'Miroirs', emoji: '🪞' },
+  'textiles': { label: 'Textiles', emoji: '🧶' },
+  'rangement': { label: 'Rangement', emoji: '📦' },
+  'plantes-pots': { label: 'Plantes & Pots', emoji: '🌿' },
+  'cuisine-deco': { label: 'Cuisine déco', emoji: '🍳' },
+  'salle-de-bain': { label: 'Salle de bain', emoji: '🚿' },
+  'décoration': { label: 'Décoration', emoji: '🎨' },
+  'salon': { label: 'Salon', emoji: '🛋️' },
+  'chambre': { label: 'Chambre', emoji: '🛏️' },
+};
+
+// Serialize products for client-side JS
+const productsData = sortedProducts.map(p => ({
+  slug: p.data.slug,
+  category: p.data.category,
+}));
 ---
 
 <BaseLayout
-  title="Tous les produits"
-  description="Decouvrez notre selection des meilleurs produits maison et decoration. Compares, testes et approuves."
+  title="Tous les produits — Maison & Déco"
+  description="Découvrez notre sélection de 50+ produits maison et décoration testés et approuvés. Filtrés par catégorie : éclairage, miroirs, textiles, rangement et plus."
 >
   <div class="container-custom py-8 md:py-12">
     <Breadcrumbs items={[{ label: 'Produits' }]} />
 
-    <div class="max-w-3xl mb-10">
+    <div class="max-w-3xl mb-8">
       <h1 class="font-serif text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-        Nos produits selectionnes
+        Nos {sortedProducts.length} produits sélectionnés
       </h1>
       <p class="text-lg text-gray-600">
-        Chaque produit est soigneusement selectionne et teste. Cliquez pour voir notre avis detaille et acheter sur Amazon.
+        Chaque produit est soigneusement sélectionné et testé. Cliquez pour voir notre avis détaillé et acheter sur Amazon.
       </p>
     </div>
 
+    <!-- Filtres par catégorie -->
+    <div class="mb-8">
+      <div class="flex flex-wrap gap-2" id="category-filters">
+        <button
+          class="category-btn active px-4 py-2 rounded-full text-sm font-semibold border-2 border-primary-600 bg-primary-600 text-white transition-all duration-200"
+          data-category="all"
+        >
+          Tous ({sortedProducts.length})
+        </button>
+        {productCategories.map(({ slug, count }) => {
+          const meta = categoryLabels[slug] || { label: slug, emoji: '📦' };
+          return (
+            <button
+              class="category-btn px-4 py-2 rounded-full text-sm font-semibold border-2 border-gray-200 bg-white text-gray-700 hover:border-primary-400 hover:text-primary-600 transition-all duration-200"
+              data-category={slug}
+            >
+              {meta.emoji} {meta.label} ({count})
+            </button>
+          );
+        })}
+      </div>
+    </div>
+
+    <!-- Nombre de résultats visible -->
+    <p class="text-sm text-gray-500 mb-6" id="result-count">
+      Affichage de <strong>{sortedProducts.length}</strong> produits
+    </p>
+
+    <!-- Grille produits -->
     {sortedProducts.length > 0 ? (
-      <ProductGrid products={sortedProducts} columns={3} />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="products-grid">
+        {sortedProducts.map((product) => (
+          <div class="product-item" data-category={product.data.category}>
+            <ProductCard
+              name={product.data.name}
+              slug={product.data.slug}
+              shortDescription={product.data.shortDescription}
+              image={product.data.image}
+              category={product.data.category}
+              price={product.data.price}
+              rating={product.data.rating}
+              featured={product.data.featured}
+              bestseller={product.data.bestseller}
+              inStock={product.data.inStock}
+            />
+          </div>
+        ))}
+      </div>
     ) : (
       <div class="text-center py-20">
         <span class="text-6xl mb-4 block">🛒</span>
         <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Aucun produit pour le moment</h2>
-        <p class="text-gray-600">Les premiers produits arrivent bientot !</p>
+        <p class="text-gray-600">Les premiers produits arrivent bientôt !</p>
       </div>
     )}
+
+    <!-- Message aucun résultat -->
+    <div id="no-results" class="hidden text-center py-20">
+      <span class="text-6xl mb-4 block">🔍</span>
+      <h2 class="font-serif text-2xl font-bold text-gray-900 mb-2">Aucun produit dans cette catégorie</h2>
+      <p class="text-gray-600">D'autres produits arrivent bientôt !</p>
+    </div>
   </div>
 </BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.category-btn');
+  const items = document.querySelectorAll<HTMLElement>('.product-item');
+  const resultCount = document.getElementById('result-count');
+  const noResults = document.getElementById('no-results');
+  const grid = document.getElementById('products-grid');
+
+  function filterProducts(category: string) {
+    let count = 0;
+    items.forEach(item => {
+      const itemCat = item.dataset.category || '';
+      const show = category === 'all' || itemCat === category;
+      item.style.display = show ? '' : 'none';
+      if (show) count++;
+    });
+
+    if (resultCount) {
+      resultCount.innerHTML = `Affichage de <strong>${count}</strong> produit${count > 1 ? 's' : ''}`;
+    }
+    if (noResults && grid) {
+      noResults.classList.toggle('hidden', count > 0);
+      grid.classList.toggle('hidden', count === 0);
+    }
+  }
+
+  function activateButton(category: string) {
+    buttons.forEach(b => {
+      b.classList.remove('active', 'border-primary-600', 'bg-primary-600', 'text-white');
+      b.classList.add('border-gray-200', 'bg-white', 'text-gray-700');
+    });
+    const target = document.querySelector<HTMLButtonElement>(`[data-category="${category}"]`);
+    if (target) {
+      target.classList.add('active', 'border-primary-600', 'bg-primary-600', 'text-white');
+      target.classList.remove('border-gray-200', 'bg-white', 'text-gray-700');
+    }
+    filterProducts(category);
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const cat = btn.dataset.category || 'all';
+      activateButton(cat);
+    });
+  });
+
+  // Handle ?cat= URL param for deep-linking from homepage
+  const urlParams = new URLSearchParams(window.location.search);
+  const catParam = urlParams.get('cat');
+  if (catParam) {
+    // Map homepage category slugs to product category values
+    const slugMap: Record<string, string> = {
+      'eclairage': 'éclairage',
+      'miroirs': 'miroir',
+      'textiles': 'textiles',
+      'rangement': 'rangement',
+      'plantes-pots': 'plantes-pots',
+      'cuisine-deco': 'cuisine-deco',
+      'salle-de-bain': 'salle-de-bain',
+      'decoration': 'décoration',
+      'salon': 'salon',
+      'chambre': 'chambre',
+    };
+    const mapped = slugMap[catParam] || catParam;
+    // Check if button exists, otherwise fall back to all
+    const target = document.querySelector<HTMLButtonElement>(`[data-category="${mapped}"]`);
+    activateButton(target ? mapped : 'all');
+  }
+</script>

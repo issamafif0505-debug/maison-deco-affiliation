@@ -1,0 +1,39 @@
+{
+  "name": "Set Accessoires Salle de Bain Noir Mat 6 Pièces — Acier Inox",
+  "slug": "accessoires-bain-noir-mat",
+  "shortDescription": "Set 6 pièces salle de bain en acier inox noir mat : distributeur savon, porte-brosse, gobelet, porte-papier, crochet, étagère. Style luxe.",
+  "fullDescription": "Ce set 6 pièces en acier inox noir mat crée une salle de bain digne d'un hôtel de luxe. Le noir mat est le coloris tendance incontournable pour transformer instantanément une salle de bain ordinaire en spa privé. L'acier inox 304 garantit une résistance à la rouille et à l'humidité sur le long terme. Chaque pièce est fixée au mur par adhésif haute résistance (idéal locataires) ou par vis (pour une fixation permanente). Le set comprend : distributeur de savon, porte-brosse à dents, gobelet, porte-papier toilette, crochet serviette et étagère 2 niveaux. Un investissement qui transforme l'ensemble de votre salle de bain.",
+  "category": "salle-de-bain",
+  "amazonAsin": "B09L5XTQNK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 65.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 8340
+  },
+  "image": "https://m.media-amazon.com/images/P/B09L5XTQNK.01._AC_SL600_.jpg",
+  "pros": [
+    "Set 6 pièces complet — salle de bain transformée",
+    "Inox 304 — résistant rouille et humidité",
+    "Noir mat ultra tendance",
+    "Installation adhésive ou vissée"
+  ],
+  "cons": [
+    "Prix plus élevé mais justifié par la qualité",
+    "Traces de mains visibles sur noir mat"
+  ],
+  "specifications": [
+    { "label": "Pièces", "value": "6 (distributeur, porte-brosse, gobelet, PP toilette, crochet, étagère)" },
+    { "label": "Matière", "value": "Acier inox 304" },
+    { "label": "Finition", "value": "Noir mat" },
+    { "label": "Installation", "value": "Adhésif ou vissée" },
+    { "label": "Résistance", "value": "Anti-rouille, anti-humidité" }
+  ],
+  "featured": true,
+  "bestseller": false,
+  "inStock": true
+}
