@@ -1,0 +1,39 @@
+{
+  "name": "Horloge Murale Scandinave 50cm — Bois et Métal Noir",
+  "slug": "horloge-murale-scandinave",
+  "shortDescription": "Grande horloge murale silencieuse 50cm design scandinave, cadran bois naturel et aiguilles métal noir. Mécanisme quartz silencieux.",
+  "fullDescription": "Cette grande horloge murale 50cm est bien plus qu'une simple montre murale — c'est une pièce décorative à part entière. Le contraste entre le bois naturel clair du cadran et les aiguilles en métal noir mat crée un design scandinave immédiatement reconnaissable. Le mécanisme quartz silencieux garantit une précision sans tic-tac — votre sommeil n'est pas perturbé. La taille 50cm est visible depuis toute la pièce sans être trop imposante. Compatible pile AA (non fournie). S'accroche avec un seul crochet mural. Parfaite pour salon, chambre, couloir ou bureau.",
+  "category": "décoration",
+  "amazonAsin": "B09VQRXMNK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 35.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 9870
+  },
+  "image": "https://m.media-amazon.com/images/P/B09VQRXMNK.01._AC_SL600_.jpg",
+  "pros": [
+    "50cm — impact visuel fort",
+    "Mécanisme silencieux — ideal chambre",
+    "Design bois + métal intemporel",
+    "Un seul crochet — installation simple"
+  ],
+  "cons": [
+    "Pile non fournie",
+    "Lisibilité des chiffres (design minimaliste)"
+  ],
+  "specifications": [
+    { "label": "Diamètre", "value": "50 cm" },
+    { "label": "Matière", "value": "Bois naturel + métal noir" },
+    { "label": "Mécanisme", "value": "Quartz silencieux" },
+    { "label": "Pile", "value": "1x AA (non fournie)" },
+    { "label": "Poids", "value": "550 g" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

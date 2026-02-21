@@ -1,0 +1,39 @@
+{
+  "name": "Barre Magnétique Couteaux Inox 45cm + Crochets",
+  "slug": "support-ustensiles-cuisine",
+  "shortDescription": "Barre magnétique murale 45cm en inox avec 8 crochets inclus pour couteaux, louches et ustensiles. Gain de place garanti.",
+  "fullDescription": "La barre magnétique est THE organisation cuisine que les chefs professionnels utilisent depuis toujours. Elle libère vos tiroirs, affiche vos plus beaux couteaux comme des œuvres d'art et vous fait gagner un temps précieux lors de la cuisine. Cette barre de 45cm en inox 304 brossé est assez longue pour accueillir 8 à 12 couteaux selon leur taille. Les 8 crochets S en inox inclus permettent d'y accrocher également louches, spatules et ustensiles. La fixation murale est double vis pour une solidité absolue. Le puissant aimant néodyme maintient même les gros couteaux de chef.",
+  "category": "cuisine-deco",
+  "amazonAsin": "B08X2YGMRK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 22.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 11450
+  },
+  "image": "https://m.media-amazon.com/images/P/B08X2YGMRK.01._AC_SL600_.jpg",
+  "pros": [
+    "Aimant néodyme très puissant",
+    "8 crochets inclus — multi-usage",
+    "Inox 304 brossé — pro et résistant",
+    "Libère tiroirs et plans de travail"
+  ],
+  "cons": [
+    "Installation murale requise (2 vis)",
+    "Pas compatible avec couteaux céramique"
+  ],
+  "specifications": [
+    { "label": "Longueur", "value": "45 cm" },
+    { "label": "Matière", "value": "Inox 304 brossé" },
+    { "label": "Aimant", "value": "Néodyme puissant" },
+    { "label": "Crochets", "value": "8 crochets S inclus" },
+    { "label": "Fixation", "value": "Double vis murale" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

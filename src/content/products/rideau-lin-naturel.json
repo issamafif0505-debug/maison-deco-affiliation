@@ -1,0 +1,39 @@
+{
+  "name": "Rideaux Lin Naturel 140x260cm — Style Bohème — Lot de 2",
+  "slug": "rideau-lin-naturel",
+  "shortDescription": "Lot de 2 panneaux rideaux en lin naturel 140x260cm, œillets métal. Filtrent la lumière sans l'occulter. Style méditerranéen.",
+  "fullDescription": "Les rideaux en lin sont la pièce maîtresse d'un intérieur chaleureux et naturel. Ce lot de 2 panneaux en lin naturel brut crée cet effet de lumière tamisée si recherché dans les intérieurs style méditerranéen et bohème. Les œillets en métal chromé permettent une pose rapide sur n'importe quelle tringle. La hauteur 260cm convient aux pièces standards et aux appartements haussmanniens. Le lin naturel améliore avec le temps — il se froisse de façon naturelle créant un style décontracté et élégant. Lavable en machine à 30°C (légère contraction à prévoir).",
+  "category": "textiles",
+  "amazonAsin": "B09D7KQMHV",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 55.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 4890
+  },
+  "image": "https://m.media-amazon.com/images/P/B09D7KQMHV.01._AC_SL600_.jpg",
+  "pros": [
+    "Lin naturel — matière premium intemporelle",
+    "Lot de 2 — habille une fenêtre complète",
+    "Œillets métal — pose rapide",
+    "Filtrant — lumière douce sans occulter"
+  ],
+  "cons": [
+    "Se froisse facilement (c'est le charme du lin)",
+    "Peut légèrement rétrécir au lavage"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "140 x 260 cm (x2)" },
+    { "label": "Matière", "value": "100% Lin naturel" },
+    { "label": "Accrochage", "value": "Œillets métal Ø35mm" },
+    { "label": "Opacité", "value": "Semi-transparent (filtrant)" },
+    { "label": "Entretien", "value": "Lavage machine 30°C" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

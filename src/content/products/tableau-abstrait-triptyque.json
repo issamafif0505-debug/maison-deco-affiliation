@@ -1,0 +1,39 @@
+{
+  "name": "Tableau Triptyque Abstrait Moderne — Canvas 3x40x60cm",
+  "slug": "tableau-abstrait-triptyque",
+  "shortDescription": "Set de 3 toiles canvas abstraites moderne 40x60cm chacune. Impression haute définition sur châssis bois. Décoration murale salon.",
+  "fullDescription": "Ce triptyque abstrait moderne est la solution idéale pour habiller un grand mur vide sans se ruiner avec des tableaux d'art originaux. Les 3 toiles canvas 40x60cm forment un ensemble harmonieux avec une composition abstraite aux tons neutres (beige, taupe, or) qui s'intègre dans tous les styles d'intérieur. L'impression haute définition sur toile de lin texturée donne un rendu très proche d'une peinture originale. Chaque toile est montée sur châssis en bois épais — prête à accrocher avec les crochets fournis. L'ensemble couvre une surface de 120x60cm sur votre mur.",
+  "category": "décoration",
+  "amazonAsin": "B09JKXMFNV",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 42.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 5670
+  },
+  "image": "https://m.media-amazon.com/images/P/B09JKXMFNV.01._AC_SL600_.jpg",
+  "pros": [
+    "3 toiles coordonnées — composition complète",
+    "Canvas texturé — effet peinture originale",
+    "Châssis bois épais — prêt à accrocher",
+    "Tons neutres — tous styles déco"
+  ],
+  "cons": [
+    "Impression (pas une peinture originale)",
+    "Alignement délicat à l'installation"
+  ],
+  "specifications": [
+    { "label": "Taille par toile", "value": "40 x 60 cm" },
+    { "label": "Quantité", "value": "3 toiles (triptyque)" },
+    { "label": "Matière", "value": "Canvas polyester sur châssis pin" },
+    { "label": "Impression", "value": "HD sur toile texturée" },
+    { "label": "Accrochage", "value": "Crochets inclus" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

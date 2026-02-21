@@ -1,0 +1,39 @@
+{
+  "name": "Mini Serre d'Intérieur Boutures — Verre et Métal Noir",
+  "slug": "mini-serre-interieure",
+  "shortDescription": "Terrarium mini serre 35x25x25cm en verre et métal noir pour boutures et plantes tropicales. Idéal propagation et décoration.",
+  "fullDescription": "Cette mini serre en verre et métal noir est l'accessoire idéal pour les passionnés de plantes d'intérieur. Elle crée un micro-climat humide parfait pour faire bouturer vos plantes tropicales, enraciner vos boutures et garder vos semis protégés. Le format 35x25x25cm est parfait pour un rebord de fenêtre ou une étagère. En dehors de la propagation, elle peut aussi servir de terrarium décoratif avec de petites plantes tropicales, de la mousse, des pierres et des figurines. Le métal noir mat crée un contraste élégant avec la végétation verte. Parfait cadeau pour les amateurs de plantes.",
+  "category": "plantes-pots",
+  "amazonAsin": "B09S8P5KHV",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 32.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 3450
+  },
+  "image": "https://m.media-amazon.com/images/P/B09S8P5KHV.01._AC_SL600_.jpg",
+  "pros": [
+    "Double usage : bouturage + décoration",
+    "Verre transparent — visibilité totale",
+    "Métal noir — design très élégant",
+    "Format compact — rebord de fenêtre"
+  ],
+  "cons": [
+    "Nécessite entretien humidité régulier",
+    "Pas idéal pour plantes à faible humidité"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "35 x 25 x 25 cm" },
+    { "label": "Matière", "value": "Verre + métal noir mat" },
+    { "label": "Ouverture", "value": "Couvercle à charnière" },
+    { "label": "Usage", "value": "Bouturage + terrarium déco" },
+    { "label": "Fond", "value": "Plateau amovible" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

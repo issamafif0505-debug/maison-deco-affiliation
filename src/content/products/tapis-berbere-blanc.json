@@ -1,0 +1,39 @@
+{
+  "name": "Tapis Berbère Style Boucherouite 120x170cm — Noir et Blanc",
+  "slug": "tapis-berbere-blanc",
+  "shortDescription": "Tapis motif berbère géométrique noir et blanc 120x170cm, poils ras anti-dérapant. Style boho-chic intemporel pour salon.",
+  "fullDescription": "Le tapis berbère géométrique est le fondement de tout intérieur boho-chic réussi. Ce modèle noir et blanc aux motifs géométriques inspirés du Maroc s'intègre dans absolument tous les styles de décoration : scandinave, bohème, moderne, minimaliste. La taille 120x170cm est la plus polyvalente pour un salon standard — elle définit l'espace salon sans envahir. Les poils ras facilitent l'entretien : aspiration simple et lavable en machine jusqu'au format 120x170. L'antidérapant intégré évite les glissades sur parquet et carrelage. Résistant même avec des enfants et des animaux.",
+  "category": "textiles",
+  "amazonAsin": "B08VKPC4TX",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 44.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 18650
+  },
+  "image": "https://m.media-amazon.com/images/P/B08VKPC4TX.01._AC_SL600_.jpg",
+  "pros": [
+    "Motifs géométriques intemporels",
+    "Antidérapant intégré — sécurité",
+    "Entretien facile — lavable machine",
+    "S'adapte à tous les styles déco"
+  ],
+  "cons": [
+    "Peut légèrement rétrécir au lavage",
+    "Poils ras = moins chaud que shaggy"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "120 x 170 cm" },
+    { "label": "Matière", "value": "Polypropylène" },
+    { "label": "Hauteur poils", "value": "6 mm (poils ras)" },
+    { "label": "Antidérapant", "value": "Intégré" },
+    { "label": "Entretien", "value": "Lavable machine 30°C" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

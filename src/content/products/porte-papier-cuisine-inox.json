@@ -1,0 +1,39 @@
+{
+  "name": "Dérouleur Papier Essuie-Tout Inox avec Tablette — Mural",
+  "slug": "porte-papier-cuisine-inox",
+  "shortDescription": "Dérouleur papier cuisine mural en inox brossé avec tablette rangement. Design industriel, installation sans perçage ou vissée.",
+  "fullDescription": "Ce dérouleur papier cuisine en inox brossé n'est pas qu'un accessoire fonctionnel — c'est un vrai objet déco qui structure l'espace cuisine. La tablette supérieure intégrée offre un espace de rangement pour sel, poivre, herbes aromatiques ou petits accessoires. L'inox brossé résiste aux éclaboussures et à la graisse et se nettoie d'un coup d'éponge. Installation possible en deux versions : vissée au mur pour une fixation définitive, ou adhésive avec les crochet fournis pour les locataires. Compatible avec tous formats de rouleaux standard.",
+  "category": "cuisine-deco",
+  "amazonAsin": "B09YJKFN7X",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 24.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.2,
+    "count": 6780
+  },
+  "image": "https://m.media-amazon.com/images/P/B09YJKFN7X.01._AC_SL600_.jpg",
+  "pros": [
+    "Tablette rangement intégrée",
+    "Inox brossé — facile à nettoyer",
+    "Installation vissée ou adhésive",
+    "Design industriel élégant"
+  ],
+  "cons": [
+    "Adhésif moins résistant sur carrelage lisse",
+    "Tablette petite (pour petits objets)"
+  ],
+  "specifications": [
+    { "label": "Matière", "value": "Inox brossé 304" },
+    { "label": "Tablette", "value": "15 x 8 cm" },
+    { "label": "Installation", "value": "Vissée ou adhésive" },
+    { "label": "Compatibilité", "value": "Tous formats standard" },
+    { "label": "Largeur rouleau max", "value": "28 cm" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

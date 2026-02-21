@@ -57,7 +57,9 @@ const products = defineCollection({
       })
     ),
     featured: z.boolean().default(false),
+    bestseller: z.boolean().default(false),
     inStock: z.boolean().default(true),
+    youtubeVideoId: z.string().optional(),
   }),
 });
 

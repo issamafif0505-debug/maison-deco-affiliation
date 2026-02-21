@@ -1,0 +1,39 @@
+{
+  "name": "Set 3 Miroirs Géométriques Muraux — Hexagone Noir",
+  "slug": "miroir-tryptique-galerie",
+  "shortDescription": "Lot de 3 miroirs hexagonaux muraux noirs à assembler. Crée un effet galerie déco unique. Tendance loft et moderne.",
+  "fullDescription": "Ces 3 miroirs hexagonaux se combinent en nombre illimité de configurations pour créer un mur décoratif unique et personnalisé. Chaque miroir mesure 23cm de diamètre avec un cadre en métal noir mat ultra fin qui met en valeur le miroir. Vous pouvez les assembler en grappe, en ligne, ou mélanger avec d'autres hexagones pour un mur signature. C'est LA déco murale tendance qu'on voit sur tous les comptes Pinterest et Instagram de déco intérieure. Quincaillerie de fixation incluse. Idéal pour couloir, chambre, salon ou entrée.",
+  "category": "miroir",
+  "amazonAsin": "B09JKXMFNV",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 42.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 2870
+  },
+  "image": "https://m.media-amazon.com/images/P/B09JKXMFNV.01._AC_SL600_.jpg",
+  "pros": [
+    "Configurations infinies — totalement personnalisable",
+    "Effet galerie déco sans tableaux coûteux",
+    "Cadre métal noir ultra fin et élégant",
+    "Lot de 3 — prix très compétitif"
+  ],
+  "cons": [
+    "Petite taille (23cm) — nécessite plusieurs sets",
+    "Alignement délicat à l'installation"
+  ],
+  "specifications": [
+    { "label": "Taille par miroir", "value": "23 cm (hexagone)" },
+    { "label": "Cadre", "value": "Métal noir mat" },
+    { "label": "Quantité", "value": "Lot de 3" },
+    { "label": "Forme", "value": "Hexagonale" },
+    { "label": "Fixation", "value": "Crochet mural inclus" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Lampadaire Arc Salon LED Dimmable — Noir 190cm",
+  "slug": "lampe-arc-salon",
+  "shortDescription": "Grand lampadaire arc 190cm, tête LED 18W dimmable, pied lourd lésté, câble tissu noir. Style moderne pour salon et lecture.",
+  "fullDescription": "Le lampadaire arc est la pièce signature de tout salon bien décoré. Ce modèle 190cm en métal noir mat avec bras courbe offre une position d'éclairage idéale au-dessus d'un canapé ou d'un fauteuil de lecture. La tête LED 18W intégrée est dimmable — réglez l'intensité via le bouton sur le câble pour passer d'une ambiance tamisée romantique à un éclairage de lecture. Le pied lesté (8kg de béton) garantit une stabilité absolue même avec l'extension maximale. Le câble tissu tressé noir ajoute une touche artisanale premium. Conçu pour durer 25 000 heures.",
+  "category": "éclairage",
+  "amazonAsin": "B09YPKFQZ4",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 119.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 4320
+  },
+  "image": "https://m.media-amazon.com/images/P/B09YPKFQZ4.01._AC_SL600_.jpg",
+  "pros": [
+    "Arc 190cm — éclairage au-dessus du canapé",
+    "LED dimmable — ambiance parfaite",
+    "Pied lesté 8kg — stabilité totale",
+    "Câble tissu tressé — finition premium"
+  ],
+  "cons": [
+    "Prix plus élevé mais qualité premium",
+    "Lourd (10kg total) — déplacement difficile"
+  ],
+  "specifications": [
+    { "label": "Hauteur", "value": "190 cm" },
+    { "label": "Ampoule", "value": "LED 18W intégrée" },
+    { "label": "Variateur", "value": "Sur câble (dimmer inline)" },
+    { "label": "Pied", "value": "Lésté béton 8kg" },
+    { "label": "Durée LED", "value": "25 000 heures" }
+  ],
+  "featured": true,
+  "bestseller": false,
+  "inStock": true,
+  "youtubeVideoId": "o7aZHlBpg6Q"
+}

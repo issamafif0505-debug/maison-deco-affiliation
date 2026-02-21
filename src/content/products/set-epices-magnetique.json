@@ -1,0 +1,39 @@
+{
+  "name": "Set Épices Magnétiques 12 Pots Ronds — Tableau Métal Inclus",
+  "slug": "set-epices-magnetique",
+  "shortDescription": "12 pots à épices magnétiques ronds avec tableau métal mural 30x40cm, couvercles visables, étiquettes incluses. Organisation parfaite.",
+  "fullDescription": "Ce set de 12 pots à épices magnétiques révolutionne l'organisation de votre cuisine. Le tableau métal mural (30x40cm) s'accroche au mur grâce à 2 vis — les pots se fixent dessus par aimant puissant et vous pouvez réorganiser l'ordre en une seconde. Les pots en verre transparent avec couvercle en inox vissable gardent les épices fraîches et protégées. Les 12 étiquettes ardoise effaçables et la craie liquide sont incluses pour étiqueter vos épices de façon élégante. Un cadeau cuisine parfait et une organisation visuellement satisfaisante.",
+  "category": "cuisine-deco",
+  "amazonAsin": "B09QMKXHVF",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 42.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 8760
+  },
+  "image": "https://m.media-amazon.com/images/P/B09QMKXHVF.01._AC_SL600_.jpg",
+  "pros": [
+    "12 pots + tableau métal — kit complet",
+    "Magnétique — réorganisation instantanée",
+    "Étiquettes ardoise élégantes incluses",
+    "Gain de place + esthétique"
+  ],
+  "cons": [
+    "Tableau métal limité à 12 pots standard",
+    "Couvercles visser légèrement ardus à l'usage quotidien"
+  ],
+  "specifications": [
+    { "label": "Pots", "value": "12 x 130ml verre transparent" },
+    { "label": "Tableau", "value": "30 x 40 cm métal noir" },
+    { "label": "Aimants", "value": "Néodyme (très forts)" },
+    { "label": "Étiquettes", "value": "12 ardoise effaçables + craie" },
+    { "label": "Couvercle", "value": "Inox vissable" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

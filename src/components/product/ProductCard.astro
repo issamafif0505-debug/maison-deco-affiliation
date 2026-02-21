@@ -11,50 +11,96 @@ interface Props {
   price: { current: number; currency: string };
   rating: { score: number; count: number };
   featured?: boolean;
+  bestseller?: boolean;
   inStock?: boolean;
 }
 
-const { name, slug, shortDescription, image, category, price, rating, featured = false, inStock = true } = Astro.props;
+const { name, slug, shortDescription, image, category, price, rating, featured = false, bestseller = false, inStock = true } = Astro.props;
+
+function formatCount(count: number): string {
+  if (count >= 1000) {
+    return (count / 1000).toFixed(count >= 10000 ? 0 : 1) + 'k';
+  }
+  return count.toString();
+}
 ---
 
-<article class="card group relative">
-  {featured && (
+<article class="card group relative flex flex-col h-full">
+  <!-- Badges superposés -->
+  <div class="absolute top-3 left-3 z-10 flex flex-col gap-1">
+    {bestseller && (
+      <span class="inline-flex items-center gap-1 bg-amber-500 text-white text-xs font-bold px-2 py-0.5 rounded-full shadow-sm">
+        🏆 Bestseller
+      </span>
+    )}
+    {featured && !bestseller && (
+      <span class="inline-flex items-center gap-1 bg-primary-600 text-white text-xs font-bold px-2 py-0.5 rounded-full shadow-sm">
+        ⭐ Coup de cœur
+      </span>
+    )}
+    {featured && bestseller && (
+      <span class="inline-flex items-center gap-1 bg-primary-600 text-white text-xs font-bold px-2 py-0.5 rounded-full shadow-sm">
+        ⭐ Coup de cœur
+      </span>
+    )}
+  </div>
+  {!inStock && (
     <div class="absolute top-3 right-3 z-10">
-      <span class="badge bg-amber-100 text-amber-700 text-xs">Coup de coeur</span>
+      <span class="bg-red-100 text-red-600 text-xs font-medium px-2 py-0.5 rounded-full">Indisponible</span>
     </div>
   )}
-  <a href={`/produits/${slug}/`} class="block">
+
+  <a href={`/produits/${slug}/`} class="block flex-1 flex flex-col">
     <!-- Image -->
-    <div class="aspect-square bg-gray-50 flex items-center justify-center p-6 overflow-hidden">
+    <div class="aspect-square bg-gray-50 flex items-center justify-center p-6 overflow-hidden rounded-t-xl">
       <img
         src={image}
         alt={name}
         class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-300"
         loading="lazy"
+        onerror="this.src='/favicon.svg'"
       />
     </div>
 
     <!-- Content -->
-    <div class="p-4">
+    <div class="p-4 flex flex-col flex-1">
       <span class="badge-category text-xs capitalize mb-2 inline-block">{category}</span>
-      <h3 class="font-serif font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-1 line-clamp-2">
+      <h3 class="font-serif font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-1 line-clamp-2 flex-1">
         {name}
       </h3>
       <p class="text-sm text-gray-500 line-clamp-2 mb-3">{shortDescription}</p>
 
+      <!-- Rating avec nombre d'avis -->
       <div class="flex items-center gap-2 mb-3">
         <RatingStars score={rating.score} />
-        <span class="text-xs text-gray-400">({rating.count})</span>
+        <span class="text-sm font-semibold text-gray-700">{rating.score}</span>
+        <span class="text-xs text-gray-400">({formatCount(rating.count)} avis)</span>
       </div>
 
-      <div class="flex items-center justify-between">
+      <!-- Prix et stock -->
+      <div class="flex items-center justify-between mt-auto pt-2 border-t border-gray-100">
         <span class="text-xl font-bold text-gray-900">
           {formatPrice(price.current, price.currency)}
         </span>
-        {!inStock && (
+        {inStock ? (
+          <span class="text-xs text-green-600 font-medium flex items-center gap-1">
+            <span class="w-1.5 h-1.5 bg-green-500 rounded-full inline-block"></span>
+            En stock
+          </span>
+        ) : (
           <span class="text-xs text-red-500 font-medium">Indisponible</span>
         )}
       </div>
     </div>
   </a>
+
+  <!-- Bouton Amazon visible en hover -->
+  <div class="px-4 pb-4">
+    <a
+      href={`/produits/${slug}/`}
+      class="w-full block text-center bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-sm py-2 rounded-lg transition-colors duration-200"
+    >
+      Voir le produit →
+    </a>
+  </div>
 </article>

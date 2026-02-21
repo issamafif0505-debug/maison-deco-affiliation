@@ -1,0 +1,40 @@
+{
+  "name": "Applique Murale Noire Industrielle — Set de 2",
+  "slug": "applique-murale-noire",
+  "shortDescription": "Lot de 2 appliques murales industrielles noires, culot E27, style loft moderne. Parfaites salon, couloir, chambre.",
+  "fullDescription": "Ces appliques murales au style industriel sont la touche déco qui transforme instantanément un couloir ou un salon banal en espace stylé. Le design minimaliste avec bras articulé en métal noir mat s'adapte à tous les intérieurs : loft, scandinave, moderne ou bohème. Le culot E27 universel vous permet d'utiliser n'importe quelle ampoule, y compris LED à filament pour un effet vintage chic. Le lot de 2 assure une installation symétrique de chaque côté d'un lit, d'un canapé ou d'un couloir. Fixation murale simple et quincaillerie incluse. Compatible avec les ampoules connectées Philips Hue.",
+  "category": "éclairage",
+  "amazonAsin": "B08FHXQTLK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 39.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 3210
+  },
+  "image": "https://m.media-amazon.com/images/P/B08FHXQTLK.01._AC_SL600_.jpg",
+  "pros": [
+    "Lot de 2 — parfait pour installation symétrique",
+    "Design industriel ultra tendance",
+    "Bras articulé — orientation flexible",
+    "Compatible toutes ampoules E27"
+  ],
+  "cons": [
+    "Ne convient pas aux pièces humides",
+    "Ampoules non fournies"
+  ],
+  "specifications": [
+    { "label": "Culot", "value": "E27" },
+    { "label": "Matière", "value": "Métal noir mat" },
+    { "label": "Quantité", "value": "Lot de 2" },
+    { "label": "Style", "value": "Industriel / Loft" },
+    { "label": "Alimentation", "value": "Secteur 220V" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true,
+  "youtubeVideoId": "kZ2kHZE4pQM"
+}

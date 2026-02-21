@@ -1,0 +1,39 @@
+{
+  "name": "Porte-Serviette Bambou 3 Barres — Sans Perçage",
+  "slug": "porte-serviette-bambou",
+  "shortDescription": "Porte-serviette mural en bambou massif 3 barres, installation sans perçage (adhésif double face haute résistance). Eco-friendly.",
+  "fullDescription": "Ce porte-serviette en bambou massif 3 barres est la solution eco-friendly pour organiser votre salle de bain sans abîmer les murs. L'installation sans perçage utilise un adhésif double face haute résistance capable de supporter 10kg (vendu en rouleau séparé ou fourni selon la version). Le bambou naturel apporte chaleur et authenticité dans un espace souvent dominé par les matières froides. Les 3 barres permettent d'y accrocher serviettes de bain, serviettes de main et gants de toilette simultanément. Le bambou est naturellement antibactérien et résistant à l'humidité.",
+  "category": "salle-de-bain",
+  "amazonAsin": "B09FPX3KNM",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 25.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 7560
+  },
+  "image": "https://m.media-amazon.com/images/P/B09FPX3KNM.01._AC_SL600_.jpg",
+  "pros": [
+    "Installation sans perçage — idéal locataires",
+    "Bambou naturel antibactérien",
+    "3 barres — toutes les serviettes rangées",
+    "Écologique et durable"
+  ],
+  "cons": [
+    "Adhésif moins résistant sur surfaces texturées",
+    "Bambou à huiler si très sec"
+  ],
+  "specifications": [
+    { "label": "Barres", "value": "3 barres horizontales" },
+    { "label": "Largeur", "value": "55 cm" },
+    { "label": "Matière", "value": "Bambou massif" },
+    { "label": "Installation", "value": "Sans perçage (adhésif) ou vissée" },
+    { "label": "Charge max", "value": "5 kg" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

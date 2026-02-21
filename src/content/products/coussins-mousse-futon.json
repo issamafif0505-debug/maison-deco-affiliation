@@ -1,0 +1,39 @@
+{
+  "name": "Coussin de Sol Futon Japonais 60x60cm — Lin Naturel",
+  "slug": "coussins-mousse-futon",
+  "shortDescription": "Grand coussin de sol futon style japonais 60x60cm en lin naturel, rembourrage mousse 8cm. Parfait méditation, lecture et salon.",
+  "fullDescription": "Ce coussin de sol futon XL en lin naturel apporte une dimension zen et cosy à n'importe quel espace. Le format généreux 60x60cm est parfait pour s'asseoir en tailleur, méditer, ou poser aux pieds d'un canapé pour un salon bohème. Le rembourrage en mousse haute densité de 8cm offre un confort ferme et durable qui ne s'affaisse pas. La housse en lin naturel est à la fois esthétique et respirante — idéale dans les espaces de vie. La fermeture zip cachée permet le lavage de la housse. Disponible en plusieurs coloris neutres.",
+  "category": "textiles",
+  "amazonAsin": "B08RLXVFNM",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 34.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 5670
+  },
+  "image": "https://m.media-amazon.com/images/P/B08RLXVFNM.01._AC_SL600_.jpg",
+  "pros": [
+    "Format XXL 60x60cm — confort optimal",
+    "Mousse haute densité — ne s'affaisse pas",
+    "Lin naturel respirant",
+    "Housse lavable"
+  ],
+  "cons": [
+    "Lourd à déplacer une fois rempli",
+    "Lin se froisse facilement"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "60 x 60 x 8 cm" },
+    { "label": "Matière", "value": "Lin naturel" },
+    { "label": "Rembourrage", "value": "Mousse haute densité" },
+    { "label": "Fermeture", "value": "Zip invisible" },
+    { "label": "Entretien", "value": "Housse lavable 30°C" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

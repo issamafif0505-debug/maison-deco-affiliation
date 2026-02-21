@@ -1,0 +1,39 @@
+{
+  "name": "Tête de Lit Capitonnée Velours 160cm — Gris Anthracite",
+  "slug": "tete-de-lit-capitonnee",
+  "shortDescription": "Tête de lit capitonnée velours gris anthracite 160cm (pour lit 140/160cm), fixation murale incluse, hauteur 60cm. Luxueux et confortable.",
+  "fullDescription": "Cette tête de lit capitonnée en velours est l'élément qui transforme radicalement une chambre. Le capitonnage (boutons apparents en diamant) est la technique de tapisserie la plus luxueuse, habituellement réservée aux hôtels 5 étoiles. Le velours gris anthracite est la couleur la plus polyvalente pour une tête de lit — elle s'adapte avec tous les coloris de literie. Dimensions 160x60cm pour lit 140 ou 160cm. La fixation murale par câbles acier inox incluse est solide et invisible. L'épaisseur de 8cm offre un vrai confort pour lire au lit ou regarder des films.",
+  "category": "chambre",
+  "amazonAsin": "B09MKXLQVF",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 89.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 6780
+  },
+  "image": "https://m.media-amazon.com/images/P/B09MKXLQVF.01._AC_SL600_.jpg",
+  "pros": [
+    "Capitonnage luxueux effet hôtel",
+    "Velours doux et noble",
+    "Fixation murale incluse",
+    "8cm d'épaisseur — vrai confort"
+  ],
+  "cons": [
+    "Installation nécessite 2 personnes",
+    "Velours sensible aux poils d'animaux"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "160 x 60 cm" },
+    { "label": "Épaisseur", "value": "8 cm" },
+    { "label": "Matière", "value": "Velours polyester" },
+    { "label": "Rembourrage", "value": "Mousse haute densité" },
+    { "label": "Fixation", "value": "Câbles acier inox inclus" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

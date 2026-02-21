@@ -1,0 +1,39 @@
+{
+  "name": "Cache-Pot Terrazzo Gris et Or — 3 Tailles",
+  "slug": "cache-pot-terrazzo",
+  "shortDescription": "Set de 3 cache-pots en ciment terrazzo gris moucheté or, style artisanal. Tendance maximale pour collections de plantes.",
+  "fullDescription": "Le terrazzo fait son grand retour en déco et ces cache-pots l'illustrent à la perfection. Le mélange de ciment gris avec des éclats de marbre blanc et des paillettes dorées crée un effet artisanal et luxueux unique. Chaque pièce est légèrement différente des autres — c'est la beauté de la fabrication artisanale. La surface texturée absorbe légèrement les imperfections et devient plus belle avec le temps. Le set de 3 (S/M/L) permet de créer une collection harmonieuse sur un rebord de fenêtre ou une étagère. Compatible avec succulentes, cactus, herbes aromatiques.",
+  "category": "plantes-pots",
+  "amazonAsin": "B08RQLXFBK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 34.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.2,
+    "count": 2890
+  },
+  "image": "https://m.media-amazon.com/images/P/B08RQLXFBK.01._AC_SL600_.jpg",
+  "pros": [
+    "Terrazzo artisanal unique",
+    "Set de 3 — collection harmonieuse",
+    "Éclats dorés — touch luxe",
+    "Chaque pièce est unique"
+  ],
+  "cons": [
+    "Lourd (ciment) — attention aux étagères légères",
+    "Fragile en cas de chute"
+  ],
+  "specifications": [
+    { "label": "Tailles", "value": "S (8cm) / M (12cm) / L (15cm)" },
+    { "label": "Matière", "value": "Ciment terrazzo" },
+    { "label": "Motif", "value": "Gris moucheté or" },
+    { "label": "Style", "value": "Artisanal / Contemporain" },
+    { "label": "Drainage", "value": "Fond plein" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

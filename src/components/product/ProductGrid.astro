@@ -12,6 +12,7 @@ interface Product {
     price: { current: number; currency: string };
     rating: { score: number; count: number };
     featured: boolean;
+    bestseller: boolean;
     inStock: boolean;
   };
 }
@@ -41,6 +42,7 @@ const gridCols = {
       price={product.data.price}
       rating={product.data.rating}
       featured={product.data.featured}
+      bestseller={product.data.bestseller}
       inStock={product.data.inStock}
     />
   ))}
