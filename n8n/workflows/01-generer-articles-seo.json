@@ -1,0 +1,139 @@
+{
+  "name": "01 - Générer Articles SEO (ChatGPT → Blog)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Planification (Toutes les 24h)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Liste de mots-clés SEO pour déco maison\nconst keywords = [\n  { keyword: \"lampe de chevet tendance 2025\", category: \"eclairage\", produit: \"Lampe LED\" },\n  { keyword: \"decoration salon boheme pas cher\", category: \"salon\", produit: \"Guirlande LED\" },\n  { keyword: \"chambre cosy ado\", category: \"chambre\", produit: \"Projecteur galaxie\" },\n  { keyword: \"idee deco cuisine moderne\", category: \"cuisine\", produit: \"Ustensiles déco\" },\n  { keyword: \"plante artificielle tendance\", category: \"decoration\", produit: \"Plante déco\" },\n  { keyword: \"miroir decoratif salon\", category: \"salon\", produit: \"Miroir LED\" },\n  { keyword: \"rangement chambre ado\", category: \"rangement\", produit: \"Étagère\" },\n  { keyword: \"guirlande lumineuse chambre\", category: \"eclairage\", produit: \"Guirlande LED\" },\n  { keyword: \"tableau deco moderne salon\", category: \"salon\", produit: \"Tableau déco\" },\n  { keyword: \"tapis salon tendance\", category: \"salon\", produit: \"Tapis design\" }\n];\n\n// Choisir un mot-clé aléatoire non utilisé récemment\nconst randomIndex = Math.floor(Math.random() * keywords.length);\nconst selected = keywords[randomIndex];\n\nconst today = new Date();\nconst dateStr = today.toISOString().split('T')[0];\nconst slug = selected.keyword\n  .toLowerCase()\n  .normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')\n  .replace(/[^a-z0-9]+/g, '-')\n  .replace(/^-+|-+$/g, '');\n\nreturn [{\n  json: {\n    keyword: selected.keyword,\n    category: selected.category,\n    produit: selected.produit,\n    slug: slug,\n    date: dateStr,\n    affiliateTag: 'issamdeco-21'\n  }\n}];\n"
+      },
+      "id": "select-keyword",
+      "name": "Sélectionner mot-clé SEO",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "resource": "chat",
+        "operation": "create",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "Tu es un expert en SEO et décoration intérieure française. Tu écris des articles de blog en français, optimisés pour Google, pour un site d'affiliation Amazon sur la décoration maison. Tes articles doivent :\n- Être entre 800-1200 mots\n- Utiliser le format Markdown (frontmatter YAML inclus)\n- Contenir des mots-clés naturellement intégrés\n- Avoir des titres H2 et H3 structurés\n- Inclure un call-to-action Amazon affilié naturel\n- Être engageants et informatifs"
+            },
+            {
+              "role": "user",
+              "content": "=Écris un article SEO complet en Markdown pour le mot-clé : \"{{ $json.keyword }}\"\n\nFrontmatter à inclure :\n```\ntitle: [Titre accrocheur avec le mot-clé]\ndescription: [Meta description 155 chars max]\npubDate: {{ $json.date }}\ncategory: {{ $json.category }}\ntags: [tag1, tag2, tag3]\nimage:\n  url: '/images/blog/{{ $json.slug }}.jpg'\n  alt: '[Description image]'\n```\n\nL'article doit mentionner naturellement des produits de décoration disponibles sur Amazon avec ce format de lien :\nhttps://www.amazon.fr/s?k={{ $json.keyword }}&tag=issamdeco-21\n\nTermine avec une section \"Notre recommandation\" qui pointe vers Amazon."
+            }
+          ]
+        },
+        "options": {
+          "temperature": 0.7,
+          "maxTokens": 2000
+        }
+      },
+      "id": "chatgpt-generate",
+      "name": "ChatGPT - Générer Article",
+      "type": "@n8n/n8n-nodes-langchain.openAi",
+      "typeVersion": 1.4,
+      "position": [680, 300],
+      "credentials": {
+        "openAiApi": {
+          "name": "OpenAI API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nettoyer et formater le contenu Markdown\nconst content = $input.first().json.message.content;\nconst slug = $('Sélectionner mot-clé SEO').first().json.slug;\nconst date = $('Sélectionner mot-clé SEO').first().json.date;\n\n// Créer le nom de fichier\nconst filename = `${date}-${slug}.md`;\n\nreturn [{\n  json: {\n    filename: filename,\n    content: content,\n    slug: slug,\n    path: `src/content/blog/${filename}`\n  }\n}];\n"
+      },
+      "id": "format-article",
+      "name": "Formater Article Markdown",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "resource": "file",
+        "operation": "create",
+        "owner": "={{ $vars.GITHUB_REPO.split('/')[0] }}",
+        "repository": "={{ $vars.GITHUB_REPO.split('/')[1] }}",
+        "filePath": "={{ $json.path }}",
+        "fileContent": "={{ $json.content }}",
+        "commitMessage": "=✍️ Article SEO auto: {{ $json.slug }}",
+        "additionalParameters": {
+          "branch": "main"
+        }
+      },
+      "id": "github-push",
+      "name": "Push sur GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [1120, 300],
+      "credentials": {
+        "githubApi": {
+          "name": "GitHub API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $vars.TELEGRAM_CHAT_ID }}",
+        "text": "=✅ *Nouvel article SEO publié !*\n\n📝 *{{ $('Sélectionner mot-clé SEO').first().json.keyword }}*\n📁 Catégorie : {{ $('Sélectionner mot-clé SEO').first().json.category }}\n🔗 Slug : {{ $('Formater Article Markdown').first().json.slug }}\n\n🌐 Site mis à jour sur Netlify dans ~2 min",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "telegram-notif",
+      "name": "Notification Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [1340, 300],
+      "credentials": {
+        "telegramApi": {
+          "name": "Telegram Bot"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Planification (Toutes les 24h)": {
+      "main": [[{ "node": "Sélectionner mot-clé SEO", "type": "main", "index": 0 }]]
+    },
+    "Sélectionner mot-clé SEO": {
+      "main": [[{ "node": "ChatGPT - Générer Article", "type": "main", "index": 0 }]]
+    },
+    "ChatGPT - Générer Article": {
+      "main": [[{ "node": "Formater Article Markdown", "type": "main", "index": 0 }]]
+    },
+    "Formater Article Markdown": {
+      "main": [[{ "node": "Push sur GitHub", "type": "main", "index": 0 }]]
+    },
+    "Push sur GitHub": {
+      "main": [[{ "node": "Notification Telegram", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": ["seo", "blog", "automatisation"]
+}

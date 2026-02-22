@@ -1,0 +1,29 @@
+---
+// AffiliateTracker - Envoie les clics Amazon à n8n via webhook
+---
+
+<script>
+  function trackAffiliateClick(product: string, asin: string, price: string, page: string) {
+    fetch('/api/track-click', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ product, asin, price, page }),
+    }).catch(() => {}); // Silencieux si erreur
+  }
+
+  // Attacher le tracking à tous les liens Amazon
+  document.addEventListener('DOMContentLoaded', () => {
+    const amazonLinks = document.querySelectorAll<HTMLAnchorElement>('a[href*="amazon.fr"][href*="issamdeco-21"]');
+
+    amazonLinks.forEach((link) => {
+      link.addEventListener('click', () => {
+        const product = link.dataset.product || link.innerText.trim() || 'Produit';
+        const asin = link.dataset.asin || '';
+        const price = link.dataset.price || '';
+        const page = window.location.pathname;
+
+        trackAffiliateClick(product, asin, price, page);
+      });
+    });
+  });
+</script>

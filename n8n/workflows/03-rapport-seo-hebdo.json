@@ -1,0 +1,79 @@
+{
+  "name": "03 - Rapport SEO Hebdomadaire (→ Telegram)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "weeksInterval": 1,
+              "triggerAtDay": [1],
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "id": "schedule-weekly",
+      "name": "Chaque Lundi à 9h",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $vars.SITE_URL }}/rss.xml",
+        "options": {}
+      },
+      "id": "fetch-rss",
+      "name": "Récupérer RSS Blog",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Compter les articles de la semaine\nconst rssContent = $input.first().json.data || '';\nconst articlesCount = (rssContent.match(/<item>/g) || []).length;\n\nconst now = new Date();\nconst weekStart = new Date(now.setDate(now.getDate() - 7)).toLocaleDateString('fr-FR');\nconst weekEnd = new Date().toLocaleDateString('fr-FR');\n\nreturn [{\n  json: {\n    totalArticles: articlesCount,\n    weekStart,\n    weekEnd,\n    siteUrl: 'https://maison-deco-issam.netlify.app'\n  }\n}];\n"
+      },
+      "id": "analyze-stats",
+      "name": "Analyser Statistiques",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $vars.TELEGRAM_CHAT_ID }}",
+        "text": "=📊 *Rapport SEO Hebdomadaire*\n*Maison Déco Affiliation*\n\n📅 Semaine du {{ $json.weekStart }} au {{ $json.weekEnd }}\n\n📝 Total articles publiés : *{{ $json.totalArticles }}*\n\n✅ *Actions cette semaine :*\n• Continuer la publication quotidienne\n• Vérifier les clics Amazon dans Seller Central\n• Optimiser les articles les plus visités\n\n🔗 [Voir le site]({{ $json.siteUrl }})\n🔗 [Amazon Associates](https://affiliate-program.amazon.fr)\n\n_Rapport automatique n8n_",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "telegram-report",
+      "name": "Rapport Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [900, 300],
+      "credentials": {
+        "telegramApi": {
+          "name": "Telegram Bot"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Chaque Lundi à 9h": {
+      "main": [[{ "node": "Récupérer RSS Blog", "type": "main", "index": 0 }]]
+    },
+    "Récupérer RSS Blog": {
+      "main": [[{ "node": "Analyser Statistiques", "type": "main", "index": 0 }]]
+    },
+    "Analyser Statistiques": {
+      "main": [[{ "node": "Rapport Telegram", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": ["seo", "rapport", "monitoring"]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "02 - Alertes Clics Affiliés Amazon (Webhook → Telegram)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "affiliate-click",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-click",
+      "name": "Webhook - Clic Affilié",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "affiliate-click"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Analyser le clic affilié\nconst body = $input.first().json.body;\nconst timestamp = new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Casablanca' });\n\nreturn [{\n  json: {\n    product: body.product || 'Produit inconnu',\n    asin: body.asin || 'N/A',\n    page: body.page || 'N/A',\n    price: body.price || 'N/A',\n    timestamp: timestamp,\n    userAgent: body.userAgent || 'N/A'\n  }\n}];\n"
+      },
+      "id": "parse-click",
+      "name": "Analyser le clic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $vars.TELEGRAM_CHAT_ID }}",
+        "text": "=💰 *Clic Affilié Amazon !*\n\n🛍️ Produit : *{{ $json.product }}*\n📦 ASIN : `{{ $json.asin }}`\n💶 Prix : {{ $json.price }}€\n📄 Page source : {{ $json.page }}\n🕐 Heure : {{ $json.timestamp }}\n\n🔗 [Voir sur Amazon](https://www.amazon.fr/dp/{{ $json.asin }}?tag=issamdeco-21)",
+        "additionalFields": {
+          "parse_mode": "Markdown"
+        }
+      },
+      "id": "telegram-alert",
+      "name": "Alerte Telegram",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [680, 300],
+      "credentials": {
+        "telegramApi": {
+          "name": "Telegram Bot"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={ \"status\": \"ok\" }"
+      },
+      "id": "respond-webhook",
+      "name": "Répondre OK",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [900, 300]
+    }
+  ],
+  "connections": {
+    "Webhook - Clic Affilié": {
+      "main": [[{ "node": "Analyser le clic", "type": "main", "index": 0 }]]
+    },
+    "Analyser le clic": {
+      "main": [[{ "node": "Alerte Telegram", "type": "main", "index": 0 }]]
+    },
+    "Alerte Telegram": {
+      "main": [[{ "node": "Répondre OK", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "tags": ["affiliation", "monitoring", "telegram"]
+}
