@@ -3,6 +3,7 @@ import Header from '../components/common/Header.astro';
 import Footer from '../components/common/Footer.astro';
 import SEOHead from '../components/common/SEOHead.astro';
 import SchemaMarkup from '../components/common/SchemaMarkup.astro';
+import AffiliateTracker from '../components/AffiliateTracker.astro';
 import { websiteSchema } from '../utils/seo';
 import '../styles/global.css';
 
@@ -45,5 +46,6 @@ const { title, description, image, type, publishDate, canonicalUrl, noindex, sch
       <slot />
     </main>
     <Footer />
+    <AffiliateTracker />
   </body>
 </html>
