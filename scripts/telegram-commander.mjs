@@ -23,33 +23,35 @@ const NETLIFY_HOOK = process.env.NETLIFY_BUILD_HOOK || '';
 
 let lastUpdateId = 0;
 
-// ─── API TELEGRAM ──────────────────────────────────────────────────────────
-async function tgRequest(method, params = {}) {
-  const url = `${API}/${method}`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(params),
-  });
-  return res.json();
+// ─── API TELEGRAM via curl (Node fetch bloqué en sandbox) ──────────────────
+function tgRequest(method, params = {}) {
+  try {
+    const json = JSON.stringify(params).replace(/'/g, "'\\''");
+    const cmd = `curl -s -X POST '${API}/${method}' -H 'Content-Type: application/json' -d '${json}'`;
+    const out = execSync(cmd, { timeout: 15000, encoding: 'utf8' });
+    return JSON.parse(out);
+  } catch (e) {
+    return { ok: false, error: e.message };
+  }
 }
 
-async function sendMessage(chatId, text, extra = {}) {
-  return tgRequest('sendMessage', {
-    chat_id: chatId,
-    text,
-    parse_mode: 'Markdown',
-    ...extra,
-  });
+function sendMessage(chatId, text, extra = {}) {
+  const payload = { chat_id: chatId, text, parse_mode: 'Markdown', ...extra };
+  return tgRequest('sendMessage', payload);
 }
 
-async function sendPhoto(chatId, photo, caption) {
-  return tgRequest('sendPhoto', {
-    chat_id: chatId,
-    photo,
-    caption,
-    parse_mode: 'Markdown',
-  });
+function sendPhoto(chatId, photo, caption) {
+  return tgRequest('sendPhoto', { chat_id: chatId, photo, caption, parse_mode: 'Markdown' });
+}
+
+function getUpdates() {
+  try {
+    const cmd = `curl -s '${API}/getUpdates?offset=${lastUpdateId + 1}&timeout=10&allowed_updates=["message"]'`;
+    const out = execSync(cmd, { timeout: 20000, encoding: 'utf8' });
+    return JSON.parse(out);
+  } catch (e) {
+    return { ok: false, result: [] };
+  }
 }
 
 // ─── SÉCURITÉ ──────────────────────────────────────────────────────────────
@@ -336,24 +338,27 @@ async function cmdDeploy(chatId) {
   }
 }
 
-async function cmdStatus(chatId) {
+function cmdStatus(chatId) {
   try {
-    const res = await fetch(SITE_URL, { timeout: 10000 });
-    const status = res.ok ? '✅ En ligne' : `⚠️ Status ${res.status}`;
-    
+    const result = execSync(`curl -s -o /dev/null -w "%{http_code}" --max-time 10 '${SITE_URL}'`, { encoding: 'utf8' }).trim();
+    const code = parseInt(result);
+    const status = code >= 200 && code < 400 ? `✅ En ligne (${code})` : `⚠️ Status ${code}`;
+    const gitBranch = execSync('git rev-parse --abbrev-ref HEAD 2>/dev/null', { encoding: 'utf8', cwd: ROOT }).trim();
+    const gitHash = execSync('git rev-parse --short HEAD 2>/dev/null', { encoding: 'utf8', cwd: ROOT }).trim();
+
     const msg = `🌐 *Status du Site*
 
 • URL : ${SITE_URL}
 • Status : ${status}
-• Response : ${res.status} ${res.statusText}
 
 📋 *Git*
-• Branche : claude/add-products-merge-updates-PNJNf
+• Branche : ${gitBranch}
+• Commit : \`${gitHash}\`
 • Repo : issamafif0505-debug/maison-deco-affiliation`;
 
-    await sendMessage(chatId, msg);
+    sendMessage(chatId, msg);
   } catch (err) {
-    await sendMessage(chatId, `⚠️ *Impossible de contacter le site*\n\n${err.message}`);
+    sendMessage(chatId, `⚠️ *Erreur status*\n\n${err.message.slice(0, 200)}`);
   }
 }
 
@@ -566,28 +571,22 @@ async function handleMessage(msg) {
   }
 }
 
-// ─── POLLING LOOP ─────────────────────────────────────────────────────────
-async function poll() {
+// ─── POLLING LOOP (synchrone via curl) ────────────────────────────────────
+function poll() {
   try {
-    const res = await tgRequest('getUpdates', {
-      offset: lastUpdateId + 1,
-      timeout: 30,
-      allowed_updates: ['message'],
-    });
-    
+    const res = getUpdates();
     if (res.ok && res.result?.length > 0) {
       for (const update of res.result) {
         lastUpdateId = update.update_id;
         if (update.message) {
-          await handleMessage(update.message).catch(console.error);
+          try { handleMessage(update.message); } catch(e) { console.error('Handler error:', e.message); }
         }
       }
     }
   } catch (err) {
-    // Silence network errors in polling
+    // ignore network errors
   }
-  
-  setTimeout(poll, 1000);
+  setTimeout(poll, 1500);
 }
 
 // ─── DÉMARRAGE ────────────────────────────────────────────────────────────
@@ -598,15 +597,9 @@ console.log(`🏠 Site : ${SITE_URL}`);
 console.log('');
 console.log('En attente de commandes...');
 
-// Message de démarrage
-tgRequest('sendMessage', {
-  chat_id: ALLOWED_CHAT_ID,
-  text: `🤖 *Bot démarré !*\n\nTon centre de contrôle Maison Déco est prêt.\n\nEnvoie /start pour voir le menu.`,
-  parse_mode: 'Markdown',
-}).then(() => {
-  console.log('✅ Message de démarrage envoyé à Telegram');
-}).catch(() => {
-  console.log('⚠️  Impossible d\'envoyer le message de démarrage');
-});
+const startResult = sendMessage(ALLOWED_CHAT_ID,
+  `🤖 *Bot redémarré !*\n\nCentre de contrôle Maison Déco prêt.\nEnvoie /start pour le menu.`
+);
+console.log(startResult?.ok ? '✅ Message de démarrage envoyé' : '⚠️ Démarrage silencieux');
 
 poll();
