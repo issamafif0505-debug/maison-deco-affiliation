@@ -16,6 +16,7 @@
   "author": "Issam",
   "license": "ISC",
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
     "@astrojs/rss": "^4.0.15",
     "@astrojs/sitemap": "^3.7.0",
     "@astrojs/tailwind": "^6.0.2",
