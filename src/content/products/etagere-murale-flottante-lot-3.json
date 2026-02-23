@@ -1,0 +1,50 @@
+{
+  "name": "Étagère Murale Flottante Lot de 3 — Bois Naturel Rustique",
+  "slug": "etagere-murale-flottante-lot-3",
+  "shortDescription": "Lot de 3 étagères murales flottantes en bois massif, fixation invisible, style rustique industriel. Supporte 10kg chacune.",
+  "fullDescription": "Le problème classique des petits espaces : pas assez de rangement au sol. Ces 3 étagères flottantes en bois massif se fixent au mur avec un système invisible — aucun support visible, effet flottant garanti. Style rustique-industriel qui s'adapte au salon, chambre ou cuisine. Chaque étagère supporte jusqu'à 10kg. Kit de fixation complet inclus, installation en 15 minutes. Trois tailles différentes (40cm, 50cm, 60cm) pour un rendu design asymétrique.",
+  "category": "rangement",
+  "amazonAsin": "B07YJHK9PC",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 34.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-22"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 8920
+  },
+  "image": "https://m.media-amazon.com/images/P/B07YJHK9PC.01._AC_SL600_.jpg",
+  "pros": [
+    "Fixation invisible — effet flottant",
+    "3 tailles pour design asymétrique",
+    "Bois massif — supporte 10kg/étagère",
+    "Kit fixation complet inclus"
+  ],
+  "cons": [
+    "Perçage mur nécessaire",
+    "Bois brut — peut varier légèrement en teinte"
+  ],
+  "specifications": [
+    {
+      "label": "Matériau",
+      "value": "Bois massif pin"
+    },
+    {
+      "label": "Tailles",
+      "value": "40cm + 50cm + 60cm"
+    },
+    {
+      "label": "Charge max",
+      "value": "10 kg par étagère"
+    },
+    {
+      "label": "Fixation",
+      "value": "Invisible (kit inclus)"
+    }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}
