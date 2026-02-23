@@ -1,0 +1,39 @@
+{
+  "name": "Set Couverts Inox Noir Mat 24 Pièces — Style Restaurant",
+  "slug": "set-couverts-inox-noir-mat",
+  "shortDescription": "Ménagère complète 24 pièces inox 18/10 finition noir mat, pour 6 personnes, style restaurant gastronomique",
+  "fullDescription": "Ce set de 24 couverts en inox noir mat reproduit l'élégance des tables de restaurants gastronomiques dans votre salle à manger. L'inox 18/10 garanti une résistance à la rouille et au lave-vaisselle pour des années d'utilisation. La finition noir mat est tendance et imparable : couteau, fourchette, cuillère à soupe et cuillère à café pour 6 personnes. Livré dans un écrin cadeau satiné, parfait comme cadeau de mariage ou pendaison de crémaillère.",
+  "category": "cuisine-deco",
+  "amazonAsin": "B08ZQPKL9M",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 58.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.7,
+    "count": 3456
+  },
+  "image": "https://m.media-amazon.com/images/P/B08ZQPKL9M.01._AC_SL600_.jpg",
+  "pros": [
+    "Inox 18/10 qualité pro",
+    "Finition noir mat ultra-tendance",
+    "Lave-vaisselle compatible",
+    "Livré dans écrin cadeau"
+  ],
+  "cons": [
+    "Traces de doigts visibles sur noir mat",
+    "Prix légèrement supérieur aux basiques"
+  ],
+  "specifications": [
+    { "label": "Pièces", "value": "24 (pour 6 personnes)" },
+    { "label": "Matière", "value": "Inox 18/10" },
+    { "label": "Finition", "value": "Noir mat" },
+    { "label": "Lave-vaisselle", "value": "Compatible" },
+    { "label": "Emballage", "value": "Écrin satiné cadeau" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

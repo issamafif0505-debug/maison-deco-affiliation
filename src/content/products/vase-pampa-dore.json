@@ -1,37 +1,37 @@
 {
-  "name": "Vase Pampa Doré 30cm — Style Boho avec Graminées",
+  "name": "Vase Pampa Doré Élégant — Set de 2 Hauteurs",
   "slug": "vase-pampa-dore",
-  "shortDescription": "Grand vase doré 30cm style boho pour herbes de la pampa, bouquets secs et feuilles d'eucalyptus. Céramique texturée effet porcelaine.",
-  "fullDescription": "Ce vase doré 30cm est l'accessoire indispensable pour créer ces arrangements de graminées et d'herbes de la pampa si tendance sur Instagram. La céramique texturée avec finition dorée mate crée un contraste élégant entre la matière brute et la finition luxueuse. La hauteur 30cm et l'ouverture large (12cm) permettent d'y mettre des bouquets amples de graminées, d'herbes de la pampa, de branches d'eucalyptus séchées ou même des bouquets frais. Le fond lesté évite le renversement même avec de grandes tiges. Compatible avec tous les styles : boho, tropical, scandinave, moderne.",
+  "shortDescription": "Set de 2 vases dorés style boho pour herbes de pampa, séchées ou artificielles — tendance 2025",
+  "fullDescription": "Les vases dorés pour herbes de pampa sont la tendance déco incontournable de 2025. Ce set de 2 vases de hauteurs différentes (30 et 45cm) permet de créer une composition élégante dans un angle de salon ou une entrée. Le métal doré brossé résiste au temps et s'accorde parfaitement avec les styles boho, minimaliste et contemporain. Livré avec un fond plat anti-rayures. Idéal pour les fleurs séchées, herbes de pampa, branchages ou plantes artificielles.",
   "category": "décoration",
-  "amazonAsin": "B09XYJKFNM",
+  "amazonAsin": "B09R45TLP7",
   "affiliateTag": "issamdeco-21",
   "price": {
-    "current": 27.99,
+    "current": 32.99,
     "currency": "EUR",
     "lastChecked": "2026-02-01"
   },
   "rating": {
-    "score": 4.4,
-    "count": 6890
+    "score": 4.6,
+    "count": 4320
   },
-  "image": "https://m.media-amazon.com/images/P/B09XYJKFNM.01._AC_SL600_.jpg",
+  "image": "https://m.media-amazon.com/images/P/B09R45TLP7.01._AC_SL600_.jpg",
   "pros": [
-    "Hauteur 30cm — impact visuel fort",
-    "Ouverture large — idéal gros bouquets",
-    "Dorure mate résistante",
-    "Fond lesté — stable même avec grandes tiges"
+    "Set de 2 tailles complémentaires",
+    "Finition dorée brossée premium",
+    "Compatible herbes de pampa & fleurs séchées",
+    "Fond anti-rayures inclus"
   ],
   "cons": [
-    "Fragile en céramique",
-    "Graminées non incluses"
+    "Fleurs non incluses",
+    "Fragile si bousculé (métal fin)"
   ],
   "specifications": [
-    { "label": "Hauteur", "value": "30 cm" },
-    { "label": "Diamètre ouverture", "value": "12 cm" },
-    { "label": "Matière", "value": "Céramique texturée" },
-    { "label": "Finition", "value": "Dorée mate" },
-    { "label": "Style", "value": "Boho / Contemporain" }
+    { "label": "Hauteurs", "value": "30 cm et 45 cm" },
+    { "label": "Matière", "value": "Métal doré brossé" },
+    { "label": "Contenu", "value": "Set de 2 vases" },
+    { "label": "Style", "value": "Boho / Contemporain" },
+    { "label": "Usage", "value": "Fleurs séchées, pampa, déco" }
   ],
   "featured": false,
   "bestseller": true,

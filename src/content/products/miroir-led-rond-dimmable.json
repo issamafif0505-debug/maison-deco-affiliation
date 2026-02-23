@@ -1,0 +1,39 @@
+{
+  "name": "Miroir LED Rond Dimmable 60cm — Anti-Buée",
+  "slug": "miroir-led-rond-dimmable",
+  "shortDescription": "Miroir rond LED 60cm avec rétroéclairage dimmable, anti-buée, tactile, parfait salle de bain",
+  "fullDescription": "Ce miroir LED rond de 60cm transforme votre salle de bain en espace luxueux. L'éclairage rétro-éclairé crée une lumière douce et uniforme pour un maquillage parfait. La fonction anti-buée maintient le miroir clair même sous la vapeur. Le système tactile permet de régler la luminosité et la température de couleur (lumière froide à chaude). Installation murale simple avec supports fournis.",
+  "category": "miroir",
+  "amazonAsin": "B09KZQVL4T",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 85.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.6,
+    "count": 2847
+  },
+  "image": "https://m.media-amazon.com/images/P/B09KZQVL4T.01._AC_SL600_.jpg",
+  "pros": [
+    "Éclairage LED rétro-éclairé uniforme",
+    "Anti-buée intégré",
+    "Dimmable + réglage température couleur",
+    "Design épuré premium"
+  ],
+  "cons": [
+    "Nécessite prise électrique proche",
+    "Câblage visible si pas d'électricien"
+  ],
+  "specifications": [
+    { "label": "Diamètre", "value": "60 cm" },
+    { "label": "Éclairage", "value": "LED rétro-éclairé" },
+    { "label": "Couleur lumière", "value": "3000K à 6500K réglable" },
+    { "label": "Anti-buée", "value": "Oui" },
+    { "label": "Commande", "value": "Tactile" }
+  ],
+  "featured": true,
+  "bestseller": false,
+  "inStock": true
+}

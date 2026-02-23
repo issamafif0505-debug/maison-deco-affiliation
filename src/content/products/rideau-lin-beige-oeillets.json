@@ -1,0 +1,39 @@
+{
+  "name": "Rideaux Lin Beige Œillets — Paire 140x260cm",
+  "slug": "rideau-lin-beige-oeillets",
+  "shortDescription": "Paire de rideaux en lin beige naturel à œillets, 140x260cm, semi-occultant, style scandinave",
+  "fullDescription": "Ces rideaux en lin naturel beige apportent élégance et lumière tamisée à votre intérieur. Le lin est le matériau tendance 2025 pour les rideaux — naturel, respirant et intemporel. La paire de 140x260cm habille parfaitement une fenêtre standard avec des plis généreux. Les œillets métalliques facilitent le montage et permettent un beau tombé. Effet semi-occultant pour filtrer la lumière sans obscurcir totalement.",
+  "category": "textiles",
+  "amazonAsin": "B0867QXVTK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 52.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 4123
+  },
+  "image": "https://m.media-amazon.com/images/P/B0867QXVTK.01._AC_SL600_.jpg",
+  "pros": [
+    "Lin naturel haut de gamme",
+    "Beau tombé naturel",
+    "Œillets métalliques solides",
+    "Effet semi-occultant parfait"
+  ],
+  "cons": [
+    "Se froisse un peu (nature du lin)",
+    "Lavage à 30°C uniquement"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "1 paire (2 rideaux)" },
+    { "label": "Dimensions", "value": "140 x 260 cm par rideau" },
+    { "label": "Matière", "value": "Lin naturel 100%" },
+    { "label": "Fixation", "value": "Œillets métal" },
+    { "label": "Opacité", "value": "Semi-occultant" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Set 3 Pots Béton Gris Architectural — Cactus & Succulentes",
+  "slug": "pot-fleur-beton-gris",
+  "shortDescription": "Set de 3 pots en ciment beton style architectral, tailles S/M/L, avec soucoupe drainage incluse",
+  "fullDescription": "Ce set de 3 pots en béton gris de différentes tailles (S/M/L) est parfait pour créer une composition végétale tendance. Le béton ciment véritable donne un aspect brut et architectural très recherché dans les décos contemporaines et industrielles. Chaque pot est livré avec une soucoupe drainage pour protéger vos meubles. Idéal pour cactus, succulentes, petites plantes grasses ou herbes aromatiques.",
+  "category": "plantes-pots",
+  "amazonAsin": "B09NFKVLQZ",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 21.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 3241
+  },
+  "image": "https://m.media-amazon.com/images/P/B09NFKVLQZ.01._AC_SL600_.jpg",
+  "pros": [
+    "Béton véritable aspect authentique",
+    "Set de 3 tailles complémentaires",
+    "Soucoupes drainage incluses",
+    "Style architecturel tendance"
+  ],
+  "cons": [
+    "Lourd (béton réel)",
+    "Peut laisser une trace de calcaire"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "3 pots S/M/L + 3 soucoupes" },
+    { "label": "Tailles", "value": "Ø 8cm / 11cm / 14cm" },
+    { "label": "Matière", "value": "Ciment béton" },
+    { "label": "Drainage", "value": "Trou + soucoupe incluse" },
+    { "label": "Usage", "value": "Cactus, succulentes, herbes" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

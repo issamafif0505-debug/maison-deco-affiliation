@@ -1,0 +1,39 @@
+{
+  "name": "Tapis Shaggy Rond Gris Perle — Ø120cm",
+  "slug": "tapis-shaggy-rond-gris",
+  "shortDescription": "Tapis rond shaggy ultra-doux gris perle Ø120cm, poils longs 5cm, idéal salon et chambre",
+  "fullDescription": "Ce tapis shaggy rond en gris perle est la pièce maîtresse de tout salon ou chambre tendance. Ses poils longs de 5cm offrent une douceur incomparable sous les pieds. Le format rond Ø120cm s'intègre parfaitement sous une table basse ou au pied d'un lit double. La couleur gris perle neutre s'associe avec toutes les palettes de couleurs. Lavable en machine jusqu'à 30°C pour un entretien facile.",
+  "category": "textiles",
+  "amazonAsin": "B08W6VFKQP",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 42.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 2981
+  },
+  "image": "https://m.media-amazon.com/images/P/B08W6VFKQP.01._AC_SL600_.jpg",
+  "pros": [
+    "Ultra-doux (poils 5cm)",
+    "Format rond tendance",
+    "Lavable en machine 30°C",
+    "Antidérapant intégré"
+  ],
+  "cons": [
+    "Poils longs difficiles à aspirer",
+    "Peut pelucher les premiers jours"
+  ],
+  "specifications": [
+    { "label": "Forme", "value": "Rond Ø 120 cm" },
+    { "label": "Hauteur poils", "value": "5 cm" },
+    { "label": "Matière", "value": "Polyester premium" },
+    { "label": "Lavage", "value": "Machine 30°C" },
+    { "label": "Antidérapant", "value": "Oui" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

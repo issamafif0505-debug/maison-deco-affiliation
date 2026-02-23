@@ -1,0 +1,39 @@
+{
+  "name": "Pêle-Mêle Photos Bois Naturel — 12 Cadres",
+  "slug": "cadre-photo-pele-mele-bois",
+  "shortDescription": "Pêle-mêle cadres photos en bois naturel — set de 12 cadres (10x15cm), montage mural facile",
+  "fullDescription": "Ce pêle-mêle de 12 cadres photos en bois naturel crée un mur de galerie élégant et personnalisé. Les cadres (10x15cm) acceptent vos photos préférées, cartes postales ou aquarelles. Le bois naturel clair s'accorde avec tous les styles de déco. Le kit de montage inclus permet de disposer les cadres exactement comme vous le souhaitez. Un cadeau parfait pour les pendaisons de crémaillères ou les anniversaires.",
+  "category": "décoration",
+  "amazonAsin": "B08HFZR5YK",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 45.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 1567
+  },
+  "image": "https://m.media-amazon.com/images/P/B08HFZR5YK.01._AC_SL600_.jpg",
+  "pros": [
+    "Set complet 12 cadres",
+    "Bois naturel qualité premium",
+    "Kit montage inclus",
+    "Cadeau idéal"
+  ],
+  "cons": [
+    "Verre non fourni (protection plastique)",
+    "Installation longue si peu habitué"
+  ],
+  "specifications": [
+    { "label": "Quantité", "value": "12 cadres" },
+    { "label": "Format photo", "value": "10 x 15 cm" },
+    { "label": "Matière", "value": "Bois naturel" },
+    { "label": "Kit montage", "value": "Inclus" },
+    { "label": "Style", "value": "Galerie murale" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

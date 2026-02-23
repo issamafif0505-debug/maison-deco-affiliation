@@ -1,0 +1,39 @@
+{
+  "name": "Horloge Murale Bois Naturel Design Scandinave 30cm",
+  "slug": "horloge-murale-bois-naturel",
+  "shortDescription": "Horloge murale en bois naturel style scandinave, silencieuse, 30cm, idéale salon ou chambre",
+  "fullDescription": "Cette horloge murale en bois naturel apporte une touche chaleureuse et scandinave à votre intérieur. Le mouvement à quartz silencieux garantit un silence total, même dans une chambre. Son diamètre de 30cm est parfait pour un mur de salon ou de cuisine. Le cadran épuré avec chiffres romains ou arabes s'accorde avec tous les styles déco : boho, minimaliste, naturel. Fabriquée en bois véritable, chaque pièce est unique avec ses veines naturelles.",
+  "category": "décoration",
+  "amazonAsin": "B08CFXJB2K",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 24.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 2156
+  },
+  "image": "https://m.media-amazon.com/images/P/B08CFXJB2K.01._AC_SL600_.jpg",
+  "pros": [
+    "100% bois naturel, aspect premium",
+    "Silencieux — idéal chambre",
+    "Style scandinave intemporel",
+    "Facile à installer"
+  ],
+  "cons": [
+    "Pile AA non incluse",
+    "Verre de protection absent"
+  ],
+  "specifications": [
+    { "label": "Diamètre", "value": "30 cm" },
+    { "label": "Matière", "value": "Bois naturel" },
+    { "label": "Mouvement", "value": "Quartz silencieux" },
+    { "label": "Pile", "value": "1x AA (non incluse)" },
+    { "label": "Style", "value": "Scandinave / Naturel" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

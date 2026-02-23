@@ -1,0 +1,39 @@
+{
+  "name": "Étagère Échelle Bois Blanc — 5 Niveaux 170cm",
+  "slug": "etagere-echelle-bois-blanc",
+  "shortDescription": "Étagère échelle blanche en bois 5 niveaux 170cm, style scandinave, stable et décorative",
+  "fullDescription": "L'étagère en forme d'échelle est l'un des meubles les plus polyvalents de la déco scandinave. En blanc laqué et bois de pin, elle offre 5 niveaux de rangement sur 170cm de haut. Idéale dans un salon pour exposer plantes, livres et objets déco, ou dans une salle de bain pour les serviettes et produits. Sa forme particulière lui donne une présence décorative unique. Structure stable avec embouts anti-glissement. Montage sans outils en 10 minutes.",
+  "category": "rangement",
+  "amazonAsin": "B08R6YQLTM",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 64.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 2103
+  },
+  "image": "https://m.media-amazon.com/images/P/B08R6YQLTM.01._AC_SL600_.jpg",
+  "pros": [
+    "Design échelle unique et tendance",
+    "5 niveaux de rangement",
+    "Montage sans outils en 10min",
+    "Embouts anti-glissement"
+  ],
+  "cons": [
+    "Pas d'ancrage mural (prévoir si enfants)",
+    "Charge max 10kg par niveau"
+  ],
+  "specifications": [
+    { "label": "Hauteur", "value": "170 cm" },
+    { "label": "Largeur", "value": "45 cm" },
+    { "label": "Niveaux", "value": "5" },
+    { "label": "Matière", "value": "Pin massif + laque blanche" },
+    { "label": "Charge max", "value": "10 kg/niveau" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

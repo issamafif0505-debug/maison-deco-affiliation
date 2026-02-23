@@ -1,0 +1,39 @@
+{
+  "name": "Set Bougies Parfumées Luxe — 4 Senteurs Maison",
+  "slug": "set-bougies-parfumees-luxe",
+  "shortDescription": "Set 4 bougies parfumées en cire de soja naturelle — Vanille, Cèdre, Jasmin, Coton — 45h chacune",
+  "fullDescription": "Ce set de 4 bougies parfumées en cire de soja naturelle est le cadeau ultime pour les amateurs de déco intérieure. Chaque bougie offre jusqu'à 45 heures de combustion avec une diffusion homogène du parfum. Les 4 senteurs — Vanille douce, Cèdre & Bois, Jasmin nocturne, Coton frais — couvrent tous les espaces et humeurs. Les pots en verre dépoli peuvent être réutilisés comme vases ou organisateurs après usage.",
+  "category": "décoration",
+  "amazonAsin": "B09XQTLP4R",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 34.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.7,
+    "count": 6234
+  },
+  "image": "https://m.media-amazon.com/images/P/B09XQTLP4R.01._AC_SL600_.jpg",
+  "pros": [
+    "Cire de soja 100% naturelle",
+    "45h de combustion par bougie",
+    "4 parfums variés",
+    "Pots réutilisables après"
+  ],
+  "cons": [
+    "Mèches à tailler régulièrement",
+    "Parfum léger dans grandes pièces"
+  ],
+  "specifications": [
+    { "label": "Contenu", "value": "4 bougies de 200g" },
+    { "label": "Cire", "value": "Soja naturelle" },
+    { "label": "Durée", "value": "45h par bougie" },
+    { "label": "Parfums", "value": "Vanille, Cèdre, Jasmin, Coton" },
+    { "label": "Récipient", "value": "Verre dépoli réutilisable" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

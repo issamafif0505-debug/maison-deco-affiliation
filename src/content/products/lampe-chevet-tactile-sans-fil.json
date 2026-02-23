@@ -1,0 +1,39 @@
+{
+  "name": "Lampe de Chevet Tactile Sans Fil Rechargeable USB-C",
+  "slug": "lampe-chevet-tactile-sans-fil",
+  "shortDescription": "Lampe de chevet sans fil rechargeable USB-C, 3 niveaux de luminosité, tactile, autonomie 8h",
+  "fullDescription": "La lampe de chevet sans fil est l'accessoire indispensable de la chambre moderne. Elle se recharge via USB-C en seulement 2 heures et offre jusqu'à 8 heures d'autonomie. Le système tactile permet de choisir entre 3 niveaux de luminosité pour lire, se détendre ou dormir. Son design cylindrique minimaliste s'intègre dans tous les styles de chambre. Plus de fils qui trainent, posez-la où vous voulez.",
+  "category": "éclairage",
+  "amazonAsin": "B09WQVTL8K",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 22.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.3,
+    "count": 5671
+  },
+  "image": "https://m.media-amazon.com/images/P/B09WQVTL8K.01._AC_SL600_.jpg",
+  "pros": [
+    "100% sans fil, pose libre",
+    "Recharge USB-C rapide (2h)",
+    "3 niveaux de luminosité",
+    "Tactile ultra-responsive"
+  ],
+  "cons": [
+    "Autonomie limitée pour lecture longue",
+    "Pas de changement de couleur"
+  ],
+  "specifications": [
+    { "label": "Autonomie", "value": "Jusqu'à 8 heures" },
+    { "label": "Recharge", "value": "USB-C (câble inclus)" },
+    { "label": "Niveaux", "value": "3 luminosités" },
+    { "label": "Commande", "value": "Tactile" },
+    { "label": "Couleur lumière", "value": "Blanc chaud 3000K" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

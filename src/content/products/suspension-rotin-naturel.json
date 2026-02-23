@@ -1,0 +1,39 @@
+{
+  "name": "Suspension Rotin Naturel — Lustre Bohème 40cm",
+  "slug": "suspension-rotin-naturel",
+  "shortDescription": "Suspension luminaire en rotin naturel tressé style boho-chic, Ø40cm, E27, idéale salon ou salle à manger",
+  "fullDescription": "Cette suspension en rotin naturel tressé à la main apporte une chaleur unique à votre intérieur. Le style boho-chic est en plein essor et ce lustre de 40cm de diamètre habillera parfaitement votre salon, salle à manger ou chambre. Compatible ampoule E27 standard (vendue séparément). La structure en rotin laisse passer la lumière pour créer des jeux d'ombres naturels sur vos murs. Facile à installer avec le câble tissu et la suspension réglable en hauteur.",
+  "category": "éclairage",
+  "amazonAsin": "B09FVHMQ7S",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 49.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.5,
+    "count": 1234
+  },
+  "image": "https://m.media-amazon.com/images/P/B09FVHMQ7S.01._AC_SL600_.jpg",
+  "pros": [
+    "Rotin naturel tressé main artisanal",
+    "Jeux d'ombres magnifiques allumée",
+    "Câble textile ajustable en hauteur",
+    "Style boho très tendance"
+  ],
+  "cons": [
+    "Ampoule E27 non incluse",
+    "Nécessite installation électrique"
+  ],
+  "specifications": [
+    { "label": "Diamètre", "value": "40 cm" },
+    { "label": "Matière", "value": "Rotin naturel" },
+    { "label": "Douille", "value": "E27" },
+    { "label": "Câble", "value": "Tissu coton 1,5m ajustable" },
+    { "label": "Style", "value": "Boho / Naturel" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "inStock": true
+}

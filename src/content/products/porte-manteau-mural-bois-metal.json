@@ -1,0 +1,39 @@
+{
+  "name": "Porte-Manteau Mural Bois & Métal — 6 Crochets",
+  "slug": "porte-manteau-mural-bois-metal",
+  "shortDescription": "Porte-manteau mural industriel bois & métal noir, 6 crochets en laiton, 60cm, idéal entrée",
+  "fullDescription": "Ce porte-manteau mural au style industriel chic combine une planche en bois de pin massif et des crochets en métal laqué noir. Les 6 crochets robustes peuvent chacun supporter jusqu'à 5kg. La finition bois naturel avec vis apparentes s'intègre dans les styles industriel, loft, et scandinave. Dimensions 60x10cm, installation murale simple avec vis et chevilles fournies. Parfait pour l'entrée, la chambre ou la salle de bain.",
+  "category": "rangement",
+  "amazonAsin": "B09LM3TXQP",
+  "affiliateTag": "issamdeco-21",
+  "price": {
+    "current": 29.99,
+    "currency": "EUR",
+    "lastChecked": "2026-02-01"
+  },
+  "rating": {
+    "score": 4.4,
+    "count": 3758
+  },
+  "image": "https://m.media-amazon.com/images/P/B09LM3TXQP.01._AC_SL600_.jpg",
+  "pros": [
+    "Bois de pin massif solide",
+    "6 crochets métal noir robustes (5kg/crochet)",
+    "Style industriel très tendance",
+    "Kit montage complet inclus"
+  ],
+  "cons": [
+    "Planche peut avoir des nœuds (naturel)",
+    "Couleur bois peut varier légèrement"
+  ],
+  "specifications": [
+    { "label": "Dimensions", "value": "60 x 10 x 4 cm" },
+    { "label": "Crochets", "value": "6 crochets métal noir" },
+    { "label": "Charge", "value": "5 kg par crochet" },
+    { "label": "Matière", "value": "Pin massif + métal" },
+    { "label": "Kit montage", "value": "Vis + chevilles inclus" }
+  ],
+  "featured": false,
+  "bestseller": true,
+  "inStock": true
+}
