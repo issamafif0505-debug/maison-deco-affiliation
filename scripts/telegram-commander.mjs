@@ -340,33 +340,56 @@ function handleMessage(msg) {
   // Match slash commands (first word) or full keyboard button text
   const slashCmd = cmd.split(' ')[0];
 
+  // Smart keyword matching for natural language
+  function has(...words) { return words.some(w => cmd.includes(w)); }
+
   switch (true) {
-    case slashCmd === '/start' || slashCmd === '/menu' || cmd === '🏢 business':
+    case slashCmd === '/start' || slashCmd === '/menu' || cmd === '🏢 business'
+      || has('menu', 'accueil', 'bonjour', 'salut', 'hello', 'hi', 'hey', 'slt'):
       cmdStart(chatId); break;
-    case slashCmd === '/stats' || cmd === '📊 stats':
+    case slashCmd === '/stats' || cmd === '📊 stats'
+      || has('stat', 'tableau', 'dashboard', 'résumé', 'resume', 'boulot', 'travail', 'où on en est', 'avancement'):
       cmdStats(chatId); break;
-    case slashCmd === '/revenus' || cmd === '💰 revenus':
+    case slashCmd === '/revenus' || cmd === '💰 revenus'
+      || has('revenu', 'argent', 'gains', 'combien', 'fric', 'thune', 'money', 'commission'):
       cmdRevenus(chatId); break;
-    case slashCmd === '/produits' || cmd === '📦 produits':
+    case slashCmd === '/produits' || cmd === '📦 produits'
+      || has('produit', 'catalogue', 'article', 'boutique', 'shop'):
       cmdProduits(chatId); break;
-    case slashCmd === '/topproduits':
+    case slashCmd === '/topproduits'
+      || has('top', 'meilleur', 'classement', 'ranking'):
       cmdTopProduits(chatId); break;
-    case slashCmd === '/blog' || cmd === '✍️ blog':
+    case slashCmd === '/blog' || cmd === '✍️ blog'
+      || has('blog', 'contenu', 'seo'):
       cmdBlog(chatId); break;
-    case slashCmd === '/rapport':
+    case slashCmd === '/rapport'
+      || has('rapport', 'report', 'bilan', 'analyse'):
       cmdRapport(chatId); break;
-    case slashCmd === '/deploy' || cmd === '🚀 deploy':
+    case slashCmd === '/deploy' || cmd === '🚀 deploy'
+      || has('deploy', 'déployer', 'deployer', 'publier', 'mettre en ligne', 'push'):
       cmdDeploy(chatId); break;
-    case slashCmd === '/status' || cmd === '🌐 status':
+    case slashCmd === '/status' || cmd === '🌐 status'
+      || has('status', 'site', 'en ligne', 'marche', 'fonctionne'):
       cmdStatus(chatId); break;
-    case slashCmd === '/business':
+    case slashCmd === '/business'
+      || has('business', 'entreprise', 'global', 'vue'):
       cmdBusiness(chatId); break;
-    case slashCmd === '/ajouterproduit':
+    case slashCmd === '/ajouterproduit'
+      || has('ajouter', 'nouveau produit', 'créer produit'):
       userStates[chatId] = cmdAjouterProduit(chatId, state); break;
-    case slashCmd === '/help' || slashCmd === '/aide':
+    case slashCmd === '/help' || slashCmd === '/aide'
+      || has('help', 'aide', 'commande', 'quoi faire', '?'):
       cmdHelp(chatId); break;
     default:
-      send(chatId, `Commande inconnue : \`${text}\`\n\nEnvoie /help pour la liste.`);
+      send(chatId,
+        `🤔 Je n'ai pas compris *"${text}"*\n\n` +
+        `Essaie en langage naturel :\n` +
+        `• "stats" ou "où on en est"\n` +
+        `• "revenus" ou "combien"\n` +
+        `• "produits" ou "catalogue"\n` +
+        `• "deploy" ou "publier"\n\n` +
+        `Ou tape /help pour toutes les commandes.`
+      );
   }
 }
 
