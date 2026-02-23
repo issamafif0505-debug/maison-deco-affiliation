@@ -334,25 +334,39 @@ function handleMessage(msg) {
     return;
   }
 
-  const cmd = text.toLowerCase().split(' ')[0];
+  const cmd = text.toLowerCase();
   console.log(`[${new Date().toLocaleTimeString('fr-FR')}] CMD: ${cmd} from ${chatId}`);
 
-  switch (cmd) {
-    case '/start': case '/menu': case '🏢 business': cmdStart(chatId); break;
-    case '/stats': case '📊 stats':                  cmdStats(chatId); break;
-    case '/revenus': case '💰 revenus':              cmdRevenus(chatId); break;
-    case '/produits': case '📦 produits':            cmdProduits(chatId); break;
-    case '/topproduits':                             cmdTopProduits(chatId); break;
-    case '/blog': case '✍️ blog':                    cmdBlog(chatId); break;
-    case '/rapport':                                 cmdRapport(chatId); break;
-    case '/deploy': case '🚀 deploy':                cmdDeploy(chatId); break;
-    case '/status': case '🌐 status':               cmdStatus(chatId); break;
-    case '/business':                                cmdBusiness(chatId); break;
-    case '/ajouterproduit':
+  // Match slash commands (first word) or full keyboard button text
+  const slashCmd = cmd.split(' ')[0];
+
+  switch (true) {
+    case slashCmd === '/start' || slashCmd === '/menu' || cmd === '🏢 business':
+      cmdStart(chatId); break;
+    case slashCmd === '/stats' || cmd === '📊 stats':
+      cmdStats(chatId); break;
+    case slashCmd === '/revenus' || cmd === '💰 revenus':
+      cmdRevenus(chatId); break;
+    case slashCmd === '/produits' || cmd === '📦 produits':
+      cmdProduits(chatId); break;
+    case slashCmd === '/topproduits':
+      cmdTopProduits(chatId); break;
+    case slashCmd === '/blog' || cmd === '✍️ blog':
+      cmdBlog(chatId); break;
+    case slashCmd === '/rapport':
+      cmdRapport(chatId); break;
+    case slashCmd === '/deploy' || cmd === '🚀 deploy':
+      cmdDeploy(chatId); break;
+    case slashCmd === '/status' || cmd === '🌐 status':
+      cmdStatus(chatId); break;
+    case slashCmd === '/business':
+      cmdBusiness(chatId); break;
+    case slashCmd === '/ajouterproduit':
       userStates[chatId] = cmdAjouterProduit(chatId, state); break;
-    case '/help': case '/aide':                      cmdHelp(chatId); break;
+    case slashCmd === '/help' || slashCmd === '/aide':
+      cmdHelp(chatId); break;
     default:
-      send(chatId, `Commande inconnue : \`${cmd}\`\n\nEnvoie /help pour la liste.`);
+      send(chatId, `Commande inconnue : \`${text}\`\n\nEnvoie /help pour la liste.`);
   }
 }
 
