@@ -29,3 +29,16 @@ export function affiliateLinkAttributes(): string {
 export function buildShortAffiliateUrl(asin: string): string {
   return `/amazon/${asin}`;
 }
+
+// ===== CLICKBANK =====
+const CB_VENDOR_ID = 'rockfit'; // Vendor ID du produit escalade
+
+// Génère un hoplink Clickbank
+export function buildClickbankLink(affiliateId: string = 'VOTRE_ID_CB', vendorId: string = CB_VENDOR_ID): string {
+  return `https://${affiliateId}.${vendorId}.hop.clickbank.net/`;
+}
+
+// Attributs HTML pour liens Clickbank
+export function clickbankLinkAttributes(): string {
+  return 'rel="nofollow sponsored noopener" target="_blank"';
+}

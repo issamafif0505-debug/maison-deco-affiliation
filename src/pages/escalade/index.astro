@@ -1,0 +1,278 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildClickbankLink } from '../../utils/affiliate';
+
+const hoplink = buildClickbankLink('VOTRE_ID_CB', 'rockfit');
+
+const testimonials = [
+  {
+    name: 'Thomas M.',
+    location: 'Lyon',
+    text: 'Avant ce programme, je stagnais depuis 6 mois au même niveau. En 8 semaines, j\'ai grimpé mes premières 6b+ en salle. La méthode est vraiment structurée et progressive.',
+    stars: 5,
+    date: 'Janvier 2026',
+  },
+  {
+    name: 'Camille R.',
+    location: 'Paris',
+    text: 'J\'ai évité une blessure aux doigts grâce aux conseils de récupération. Les exercices de gainage ont tout changé — je tiens bien plus longtemps sur les prises difficiles.',
+    stars: 5,
+    date: 'Décembre 2025',
+  },
+  {
+    name: 'Mehdi K.',
+    location: 'Marseille',
+    text: 'Je n\'aurais pas cru progresser autant en si peu de temps. La bibliothèque de mouvements est une mine d\'or. Je la regarde avant chaque séance.',
+    stars: 5,
+    date: 'Novembre 2025',
+  },
+];
+
+const faqs = [
+  {
+    q: 'C\'est pour quel niveau ?',
+    a: 'Ce programme est conçu pour les débutants et les grimpeurs intermédiaires (jusqu\'à 6b/6c en salle). Si vous êtes au-dessus de ce niveau, certaines parties resteront utiles mais le programme core s\'adresse aux niveaux débutant-intermédiaire.',
+  },
+  {
+    q: 'Il faut s\'inscrire dans une salle d\'escalade ?',
+    a: 'Idéalement oui, car les exercices sont pensés pour la salle (bloc ou voie). Cependant, environ 30% du programme peut être pratiqué à la maison avec une planche à doigts et des bandes élastiques.',
+  },
+  {
+    q: 'Le programme est en français ?',
+    a: 'Le programme est en anglais avec des schémas visuels très clairs. La plupart des termes techniques d\'escalade sont les mêmes en français et en anglais. Un dictionnaire suffira pour les rares passages textuels.',
+  },
+  {
+    q: 'Comment fonctionne la garantie 60 jours ?',
+    a: 'Si vous n\'êtes pas satisfait pour quelque raison que ce soit dans les 60 jours suivant votre achat, Clickbank vous rembourse intégralement. C\'est automatique — aucune question posée.',
+  },
+  {
+    q: 'Comment accède-t-on au programme après achat ?',
+    a: 'Immédiatement après l\'achat, vous recevez un email avec votre accès à la plateforme en ligne. Le contenu est accessible depuis n\'importe quel appareil (ordinateur, téléphone, tablette).',
+  },
+];
+---
+
+<BaseLayout
+  title="Rock Climbing Mastery Pro — Programme Escalade Débutant 8 Semaines"
+  description="Transformez votre escalade en 8 semaines avec le programme Rock Climbing Mastery Pro. Méthode structurée, bibliothèque de mouvements, garantie 60 jours. Commission Clickbank."
+>
+  <!-- HERO -->
+  <section class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: url('https://images.unsplash.com/photo-1522163182402-834f871fd851?w=1200&q=60'); background-size: cover; background-position: center;"></div>
+    <div class="container mx-auto px-4 relative z-10 max-w-4xl text-center">
+      <span class="inline-block bg-red-500 text-white text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full mb-6">
+        Programme Clickbank · Commission 75%
+      </span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        Transformez votre escalade<br/>
+        <span class="text-orange-400">en 8 semaines</span> — garanti
+      </h1>
+      <p class="text-xl md:text-2xl text-gray-300 mb-4 max-w-2xl mx-auto">
+        Le programme structuré qui a aidé <strong class="text-white">12 000+ grimpeurs</strong> à passer un cap — du débutant au niveau intermédiaire confirmé.
+      </p>
+      <p class="text-gray-400 mb-10 text-sm">
+        Techniques · Force spécifique · Prévention des blessures · Garantie 60 jours
+      </p>
+
+      <a
+        href={hoplink}
+        rel="nofollow sponsored noopener"
+        target="_blank"
+        class="inline-block bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-xl px-10 py-5 rounded-xl shadow-2xl transition-all duration-200 hover:scale-105"
+      >
+        🧗 Accéder au Programme — $47 →
+      </a>
+      <p class="text-gray-500 text-xs mt-4">Accès immédiat · Garantie remboursement 60 jours · Lien partenaire Clickbank</p>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+        Ce que vous allez accomplir
+      </h2>
+      <p class="text-gray-500 text-center mb-12">Le programme le plus complet pour progresser rapidement et durablement</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-8 text-center border border-gray-100">
+          <div class="text-5xl mb-4">💪</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Force spécifique</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Développez la force des doigts, des avant-bras et du gainage. Les exercices sont calibrés pour l'escalade — pas de musculation inutile.
+          </p>
+        </div>
+        <div class="bg-orange-50 rounded-2xl p-8 text-center border border-orange-100">
+          <div class="text-5xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Maîtrise des techniques</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Bibliothèque de 50+ mouvements filmés sous plusieurs angles. Apprenez à lire une voie, économiser de l'énergie et passer les crux difficiles.
+          </p>
+        </div>
+        <div class="bg-green-50 rounded-2xl p-8 text-center border border-green-100">
+          <div class="text-5xl mb-4">🛡️</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Zéro blessure</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Protocole de récupération intégré. Apprenez les signaux d'alerte et les échauffements qui protègent vos tendons sur le long terme.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INSIDE -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Ce que contient le programme</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {[
+          '✅ Plan d\'entraînement complet semaine par semaine (8 semaines)',
+          '✅ 50+ vidéos de techniques filmées sous plusieurs angles',
+          '✅ Programme de force spécifique escalade (doigts, gainage, épaules)',
+          '✅ Guide de nutrition et récupération adapté à l\'escalade',
+          '✅ Exercices réalisables à la maison sans équipement coûteux',
+          '✅ Protocole anti-blessures et échauffements progressifs',
+          '✅ Accès à la communauté privée de grimpeurs',
+          '✅ Mises à jour gratuites à vie',
+        ].map((item) => (
+          <div class="flex items-start gap-3 bg-white rounded-xl px-5 py-4 shadow-sm border border-gray-100">
+            <span class="text-sm text-gray-700">{item}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-10">
+        <a
+          href={hoplink}
+          rel="nofollow sponsored noopener"
+          target="_blank"
+          class="inline-block bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-lg px-10 py-4 rounded-xl shadow-xl transition-all duration-200 hover:scale-105"
+        >
+          🧗 Obtenir l'accès complet — $47 →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">Ils ont transformé leur escalade</h2>
+      <p class="text-gray-500 text-center mb-12">Des centaines de grimpeurs ont déjà utilisé ce programme</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {testimonials.map((t) => (
+          <div class="bg-gray-50 rounded-2xl p-6 border border-gray-100">
+            <div class="flex gap-1 mb-3">
+              {Array.from({ length: t.stars }).map(() => (
+                <span class="text-yellow-400 text-lg">★</span>
+              ))}
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4 italic">"{t.text}"</p>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-bold text-gray-900 text-sm">{t.name}</p>
+                <p class="text-gray-500 text-xs">{t.location}</p>
+              </div>
+              <span class="text-gray-400 text-xs">{t.date}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <div class="container mx-auto px-4 max-w-2xl text-center">
+      <h2 class="text-3xl font-bold mb-4">Prix & Garantie</h2>
+      <p class="text-gray-300 mb-10">Investissement unique, accès à vie</p>
+
+      <div class="bg-white/10 backdrop-blur rounded-3xl p-8 md:p-10 border border-white/20 mb-8">
+        <div class="mb-6">
+          <span class="text-gray-400 line-through text-xl">$97</span>
+          <span class="block text-6xl font-bold text-orange-400 my-2">$47</span>
+          <span class="text-gray-300 text-sm">Accès complet, paiement unique</span>
+        </div>
+
+        <a
+          href={hoplink}
+          rel="nofollow sponsored noopener"
+          target="_blank"
+          class="block bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-bold text-xl px-10 py-5 rounded-xl shadow-2xl transition-all duration-200 hover:scale-105 mb-6"
+        >
+          🧗 Commencer maintenant — $47 →
+        </a>
+
+        <div class="flex items-center justify-center gap-3 text-sm text-gray-300">
+          <span>🔒 Paiement sécurisé</span>
+          <span>·</span>
+          <span>✅ Garantie 60 jours</span>
+          <span>·</span>
+          <span>⚡ Accès immédiat</span>
+        </div>
+      </div>
+
+      <div class="bg-green-900/40 border border-green-500/30 rounded-2xl p-6">
+        <h3 class="text-green-400 font-bold text-lg mb-2">🛡️ Garantie Remboursement 60 Jours</h3>
+        <p class="text-gray-300 text-sm leading-relaxed">
+          Si vous n'êtes pas satisfait pour quelque raison que ce soit dans les 60 jours, Clickbank vous rembourse intégralement. Aucune question posée. Aucun délai. C'est notre engagement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Questions fréquentes</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <div class="border border-gray-200 rounded-xl overflow-hidden">
+            <button
+              class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-50 transition-colors faq-btn"
+            >
+              <span>{faq.q}</span>
+              <span class="text-gray-400 text-xl flex-shrink-0 ml-4">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              {faq.a}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-16 bg-gradient-to-r from-orange-500 to-red-500 text-white text-center">
+    <div class="container mx-auto px-4 max-w-2xl">
+      <h2 class="text-3xl font-bold mb-4">Prêt à transformer votre escalade ?</h2>
+      <p class="text-orange-100 mb-8 text-lg">
+        Rejoignez 12 000+ grimpeurs qui ont déjà progressé avec ce programme. Garantie 60 jours sans risque.
+      </p>
+      <a
+        href={hoplink}
+        rel="nofollow sponsored noopener"
+        target="_blank"
+        class="inline-block bg-white text-orange-600 font-bold text-xl px-12 py-5 rounded-xl shadow-2xl hover:bg-gray-100 transition-all duration-200 hover:scale-105"
+      >
+        🧗 Accéder au Programme — $47 →
+      </a>
+      <p class="text-orange-200 text-xs mt-4">
+        Lien partenaire Clickbank. Commission perçue sur vente sans surcoût pour vous.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.faq-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling as HTMLElement;
+      const icon = btn.querySelector('span:last-child') as HTMLElement;
+      answer.classList.toggle('hidden');
+      icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+    });
+  });
+</script>
