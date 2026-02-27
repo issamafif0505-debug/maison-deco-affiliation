@@ -10,6 +10,14 @@
   status = 301
   force = true
 
+# Redirections ClickBank court-liens
+# Utilisation : tonsite.com/cb/vendor-name → HopLink ClickBank
+[[redirects]]
+  from = "/cb/:vendor"
+  to = "https://issamaffil.:vendor.hop.clickbank.net/"
+  status = 301
+  force = true
+
 # Redirection trailing slash
 [[redirects]]
   from = "/*"
