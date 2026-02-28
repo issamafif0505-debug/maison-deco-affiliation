@@ -1,0 +1,330 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { buildClickbankLink } from '../../utils/affiliate';
+
+const hoplink = buildClickbankLink('VOTRE_ID_CB', 'tedsplans');
+
+const testimonials = [
+  {
+    name: 'Laurent B.',
+    location: 'Bordeaux',
+    text: 'J\'ai construit une bibliothèque sur mesure pour mon salon en suivant un plan du pack. Résultat professionnel pour moins de 80 € de bois. Ma femme n\'en revient toujours pas !',
+    stars: 5,
+    date: 'Janvier 2026',
+  },
+  {
+    name: 'Sophie D.',
+    location: 'Nantes',
+    text: 'Je suis totale débutante et j\'ai réussi à faire une tête de lit en bois flotté. Les plans sont ultra détaillés avec toutes les mesures. Aucune prise de tête.',
+    stars: 5,
+    date: 'Décembre 2025',
+  },
+  {
+    name: 'Karim A.',
+    location: 'Toulouse',
+    text: 'Plus besoin d\'Ikea ! J\'ai fait toute ma cuisine d\'été en bois : plan de travail, étagères, bac à compost. 16 000 plans c\'est vraiment inépuisable.',
+    stars: 5,
+    date: 'Novembre 2025',
+  },
+];
+
+const faqs = [
+  {
+    q: 'C\'est pour quel niveau de bricoleur ?',
+    a: 'Ted\'s Woodworking couvre tous les niveaux — du grand débutant (aucun outil professionnel requis) à l\'ébéniste confirmé. Chaque plan indique le niveau de difficulté et la liste d\'outils nécessaires.',
+  },
+  {
+    q: 'Les plans sont en anglais ou en français ?',
+    a: 'Les plans sont en anglais, mais ils sont entièrement schématiques avec les mesures en cm/mm. Même sans maîtriser l\'anglais, les illustrations suffisent à comprendre et reproduire chaque projet.',
+  },
+  {
+    q: 'De quels outils ai-je besoin pour commencer ?',
+    a: 'Beaucoup de plans débutants sont réalisables avec seulement une scie, un marteau, une perceuse et des vis. Ted\'s Woodworking propose des projets adaptés à tous les niveaux d\'équipement.',
+  },
+  {
+    q: 'Comment fonctionne la garantie 60 jours ?',
+    a: 'Si vous n\'êtes pas satisfait pour quelque raison que ce soit dans les 60 jours suivant votre achat, Clickbank vous rembourse intégralement. C\'est automatique — aucune question posée, aucun délai.',
+  },
+  {
+    q: 'Comment accède-t-on aux plans après l\'achat ?',
+    a: 'Immédiatement après l\'achat, vous recevez un email avec votre accès à la bibliothèque en ligne. Tous les plans sont téléchargeables en PDF — accessible depuis n\'importe quel appareil à vie.',
+  },
+];
+
+const projects = [
+  { icon: '🪑', label: 'Chaises & tabourets', count: '800+' },
+  { icon: '🛏️', label: 'Têtes de lit & cadres', count: '600+' },
+  { icon: '📚', label: 'Bibliothèques & étagères', count: '1 200+' },
+  { icon: '🌿', label: 'Jardin & terrasse', count: '1 500+' },
+  { icon: '🍳', label: 'Meubles cuisine', count: '900+' },
+  { icon: '🚿', label: 'Salle de bain', count: '400+' },
+  { icon: '🪞', label: 'Cadres & miroirs', count: '700+' },
+  { icon: '🏠', label: 'Abris & cabanes', count: '2 000+' },
+];
+---
+
+<BaseLayout
+  title="Ted's Woodworking — 16 000 Plans Bricolage Bois pour Créer vos Meubles Maison"
+  description="Accédez à 16 000+ plans bricolage bois ultra-détaillés pour fabriquer vos propres meubles. Étagères, tables, têtes de lit, jardinières... Tous niveaux. Garantie 60 jours Clickbank."
+>
+  <!-- HERO -->
+  <section class="relative bg-gradient-to-br from-amber-900 via-stone-800 to-stone-900 text-white py-20 md:py-28 overflow-hidden">
+    <div class="absolute inset-0 opacity-15" style="background-image: url('https://images.unsplash.com/photo-1504148455328-c376907d081c?w=1200&q=60'); background-size: cover; background-position: center;"></div>
+    <div class="container mx-auto px-4 relative z-10 max-w-4xl text-center">
+      <span class="inline-block bg-amber-500 text-amber-900 text-xs font-bold uppercase tracking-widest px-4 py-1 rounded-full mb-6">
+        Partenaire Clickbank · Commission 75%
+      </span>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+        Fabriquez vos propres meubles<br/>
+        <span class="text-amber-400">avec 16 000 plans</span> bois
+      </h1>
+      <p class="text-xl md:text-2xl text-stone-300 mb-4 max-w-2xl mx-auto">
+        La bibliothèque de plans bricolage la plus complète du web — <strong class="text-white">du débutant à l'ébéniste confirmé.</strong> Économisez des milliers d'euros en faisant vous-même.
+      </p>
+      <p class="text-stone-400 mb-10 text-sm">
+        Étagères · Tables · Têtes de lit · Mobilier jardin · Cabanes · Et bien plus encore
+      </p>
+
+      <a
+        href={hoplink}
+        rel="nofollow sponsored noopener"
+        target="_blank"
+        class="inline-block bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-amber-900 font-bold text-xl px-10 py-5 rounded-xl shadow-2xl transition-all duration-200 hover:scale-105"
+      >
+        🪵 Accéder aux 16 000 Plans — $67 →
+      </a>
+      <p class="text-stone-500 text-xs mt-4">Accès immédiat · Téléchargement PDF · Garantie remboursement 60 jours · Lien partenaire Clickbank</p>
+    </div>
+  </section>
+
+  <!-- WHY THIS NICHE -->
+  <section class="py-16 bg-amber-50 border-b border-amber-100">
+    <div class="container mx-auto px-4 max-w-4xl text-center">
+      <p class="text-amber-800 font-semibold text-lg">
+        💡 Un meuble fait maison coûte <strong>3 à 10x moins cher</strong> qu'un meuble acheté en magasin — et dure bien plus longtemps.
+      </p>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4">
+        Pourquoi Ted's Woodworking est unique
+      </h2>
+      <p class="text-gray-500 text-center mb-12">La référence mondiale en plans de bricolage bois depuis plus de 10 ans</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-amber-50 rounded-2xl p-8 text-center border border-amber-100">
+          <div class="text-5xl mb-4">📐</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Plans ultra-précis</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Chaque plan inclut coupes détaillées, mesures exactes, liste de matériaux et étapes numérotées. Zéro improvisation — suivez, construisez, admirez.
+          </p>
+        </div>
+        <div class="bg-stone-50 rounded-2xl p-8 text-center border border-stone-100">
+          <div class="text-5xl mb-4">🔢</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">16 000+ projets</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            De la petite étagère murale à la maison en bois complète. Avec 16 000 plans, vous ne serez jamais à court d'inspiration pour votre intérieur et votre jardin.
+          </p>
+        </div>
+        <div class="bg-green-50 rounded-2xl p-8 text-center border border-green-100">
+          <div class="text-5xl mb-4">⭐</div>
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Tous niveaux</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Projets classés par niveau de difficulté. Les débutants commencent par des projets simples (2-3h) et progressent vers des réalisations complexes à leur rythme.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT CATEGORIES -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">Des projets pour chaque pièce de la maison</h2>
+      <p class="text-gray-500 text-center mb-12">16 000 plans organisés par catégorie — trouvez votre prochain projet en secondes</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+        {projects.map((p) => (
+          <div class="bg-white rounded-2xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+            <div class="text-4xl mb-3">{p.icon}</div>
+            <p class="font-bold text-gray-900 text-sm mb-1">{p.label}</p>
+            <p class="text-amber-600 font-bold text-lg">{p.count}</p>
+            <p class="text-gray-400 text-xs">plans disponibles</p>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center">
+        <a
+          href={hoplink}
+          rel="nofollow sponsored noopener"
+          target="_blank"
+          class="inline-block bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-amber-900 font-bold text-lg px-10 py-4 rounded-xl shadow-xl transition-all duration-200 hover:scale-105"
+        >
+          🪵 Voir tous les plans — $67 →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT'S INSIDE -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Ce que vous obtenez</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {[
+          '✅ 16 000+ plans bois organisés par catégorie et niveau',
+          '✅ Plans avec mesures précises, liste de coupes et matériaux',
+          '✅ Tutoriels vidéo étape par étape pour les projets clés',
+          '✅ Guide débutant : outils essentiels & techniques de base',
+          '✅ Plans réalisables avec outils simples (scie, perceuse, marteau)',
+          '✅ Mises à jour gratuites à vie — de nouveaux plans ajoutés régulièrement',
+          '✅ Accès illimité depuis PC, tablette ou smartphone',
+          '✅ Garantie satisfait ou remboursé 60 jours sans condition',
+        ].map((item) => (
+          <div class="flex items-start gap-3 bg-amber-50 rounded-xl px-5 py-4 border border-amber-100">
+            <span class="text-sm text-gray-700">{item}</span>
+          </div>
+        ))}
+      </div>
+
+      <div class="text-center mt-10">
+        <a
+          href={hoplink}
+          rel="nofollow sponsored noopener"
+          target="_blank"
+          class="inline-block bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-amber-900 font-bold text-lg px-10 py-4 rounded-xl shadow-xl transition-all duration-200 hover:scale-105"
+        >
+          🪵 Accéder à la bibliothèque complète →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 max-w-5xl">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-4">Ils ont transformé leur intérieur</h2>
+      <p class="text-gray-500 text-center mb-12">Des bricoleurs de tous niveaux ont déjà réalisé leurs projets grâce à ces plans</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {testimonials.map((t) => (
+          <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
+            <div class="flex gap-1 mb-3">
+              {Array.from({ length: t.stars }).map(() => (
+                <span class="text-yellow-400 text-lg">★</span>
+              ))}
+            </div>
+            <p class="text-gray-700 text-sm leading-relaxed mb-4 italic">"{t.text}"</p>
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-bold text-gray-900 text-sm">{t.name}</p>
+                <p class="text-gray-500 text-xs">{t.location}</p>
+              </div>
+              <span class="text-gray-400 text-xs">{t.date}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-16 bg-gradient-to-br from-stone-900 to-amber-900 text-white">
+    <div class="container mx-auto px-4 max-w-2xl text-center">
+      <h2 class="text-3xl font-bold mb-4">Prix & Garantie</h2>
+      <p class="text-stone-300 mb-10">Un investissement unique pour des économies à vie sur vos meubles</p>
+
+      <div class="bg-white/10 backdrop-blur rounded-3xl p-8 md:p-10 border border-white/20 mb-8">
+        <div class="mb-6">
+          <span class="text-stone-400 line-through text-xl">$197</span>
+          <span class="block text-6xl font-bold text-amber-400 my-2">$67</span>
+          <span class="text-stone-300 text-sm">Accès complet à vie · Paiement unique</span>
+        </div>
+
+        <a
+          href={hoplink}
+          rel="nofollow sponsored noopener"
+          target="_blank"
+          class="block bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-amber-900 font-bold text-xl px-10 py-5 rounded-xl shadow-2xl transition-all duration-200 hover:scale-105 mb-6"
+        >
+          🪵 Obtenir les 16 000 Plans — $67 →
+        </a>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 text-sm text-stone-300">
+          <span>🔒 Paiement sécurisé</span>
+          <span>·</span>
+          <span>✅ Garantie 60 jours</span>
+          <span>·</span>
+          <span>⚡ Accès immédiat</span>
+          <span>·</span>
+          <span>📥 Téléchargement PDF</span>
+        </div>
+      </div>
+
+      <div class="bg-green-900/40 border border-green-500/30 rounded-2xl p-6">
+        <h3 class="text-green-400 font-bold text-lg mb-2">🛡️ Garantie Remboursement 60 Jours</h3>
+        <p class="text-stone-300 text-sm leading-relaxed">
+          Si vous n'êtes pas satisfait pour quelque raison que ce soit dans les 60 jours, Clickbank vous rembourse intégralement. Aucune question posée. Aucun délai. Aucun risque.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-3xl">
+      <h2 class="text-3xl font-bold text-gray-900 text-center mb-12">Questions fréquentes</h2>
+      <div class="space-y-4">
+        {faqs.map((faq) => (
+          <div class="border border-gray-200 rounded-xl overflow-hidden">
+            <button
+              class="w-full text-left px-6 py-5 font-semibold text-gray-900 flex items-center justify-between hover:bg-gray-50 transition-colors faq-btn"
+            >
+              <span>{faq.q}</span>
+              <span class="text-gray-400 text-xl flex-shrink-0 ml-4">+</span>
+            </button>
+            <div class="faq-answer hidden px-6 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">
+              {faq.a}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-16 bg-gradient-to-r from-amber-500 to-amber-600 text-amber-900 text-center">
+    <div class="container mx-auto px-4 max-w-2xl">
+      <h2 class="text-3xl font-bold mb-4">Prêt à créer vos premiers meubles maison ?</h2>
+      <p class="text-amber-800 mb-8 text-lg">
+        Rejoignez des dizaines de milliers de bricoleurs qui ont économisé sur leurs meubles. Accès illimité, garantie 60 jours.
+      </p>
+      <a
+        href={hoplink}
+        rel="nofollow sponsored noopener"
+        target="_blank"
+        class="inline-block bg-amber-900 text-amber-100 font-bold text-xl px-12 py-5 rounded-xl shadow-2xl hover:bg-stone-900 transition-all duration-200 hover:scale-105"
+      >
+        🪵 Accéder aux 16 000 Plans — $67 →
+      </a>
+      <p class="text-amber-700 text-xs mt-4">
+        Lien partenaire Clickbank. Commission perçue sur vente sans surcoût pour vous.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  document.querySelectorAll('.faq-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const answer = btn.nextElementSibling as HTMLElement;
+      const icon = btn.querySelector('span:last-child') as HTMLElement;
+      answer.classList.toggle('hidden');
+      icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+    });
+  });
+</script>
