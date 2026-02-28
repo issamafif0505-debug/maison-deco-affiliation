@@ -31,7 +31,7 @@ export function buildShortAffiliateUrl(asin: string): string {
 }
 
 // ===== CLICKBANK =====
-const CB_VENDOR_ID = 'rockfit'; // Vendor ID du produit escalade
+const CB_VENDOR_ID = 'tedsplans'; // Vendor ID du produit Ted's Woodworking (plans bricolage bois)
 
 // Génère un hoplink Clickbank
 export function buildClickbankLink(affiliateId: string = 'VOTRE_ID_CB', vendorId: string = CB_VENDOR_ID): string {
