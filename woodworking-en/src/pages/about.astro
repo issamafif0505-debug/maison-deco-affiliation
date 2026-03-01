@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import siteConfig from '../data/site-config.json';
+---
+
+<BaseLayout title="About" description="About DIY WoodCraft Pro — honest reviews of the best woodworking plans and home improvement programs.">
+
+  <section class="max-w-3xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <div class="text-6xl mb-4">🪵</div>
+      <h1 class="text-4xl font-bold text-gray-900 mb-4">About DIY WoodCraft Pro</h1>
+      <p class="text-xl text-gray-500">{siteConfig.siteTagline}</p>
+    </div>
+
+    <div class="prose prose-lg max-w-none text-gray-600">
+      <p>
+        Hey! I'm {siteConfig.author.name}, and I started this site because I got tired of paying ridiculous contractor prices for things I could build myself.
+      </p>
+      <p>
+        I've been doing DIY woodworking for over 10 years. I've built sheds, decks, furniture, garden beds, and even a small cabin. Along the way, I've tried dozens of woodworking plan packages, programs, and guides — and most of them are garbage.
+      </p>
+      <p>
+        This site is my honest take on the best DIY programs available. I only recommend things that actually deliver on their promises. Every product I list has been thoroughly researched, and I only feature programs with strong customer satisfaction and real money-back guarantees.
+      </p>
+      <h2>What You'll Find Here</h2>
+      <ul>
+        <li><strong>Honest reviews</strong> of the top ClickBank DIY programs</li>
+        <li><strong>Beginner guides</strong> for getting started with woodworking</li>
+        <li><strong>Money-saving tips</strong> for building instead of buying</li>
+        <li><strong>Project ideas</strong> from simple to advanced</li>
+      </ul>
+      <h2>Affiliate Disclosure</h2>
+      <p>
+        This site contains affiliate links to ClickBank products. If you click a link and make a purchase, I earn a commission at no extra cost to you. This is how I keep the site free. I only recommend products I genuinely believe in.
+      </p>
+    </div>
+  </section>
+
+</BaseLayout>

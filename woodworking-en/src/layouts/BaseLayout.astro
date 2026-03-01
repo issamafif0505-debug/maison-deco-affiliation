@@ -1,0 +1,97 @@
+---
+import siteConfig from '../data/site-config.json';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+}
+
+const { title, description, ogImage, canonical } = Astro.props;
+const fullTitle = title === 'Home' ? siteConfig.siteName + ' — ' + siteConfig.siteTagline : `${title} | ${siteConfig.siteName}`;
+const metaDesc = description || siteConfig.siteDescription;
+const ogImg = ogImage || siteConfig.defaultOgImage;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={metaDesc} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={metaDesc} />
+  <meta property="og:image" content={siteConfig.siteUrl + ogImg} />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  {canonical && <link rel="canonical" href={canonical} />}
+  <title>{fullTitle}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2 font-bold text-xl text-primary-700 hover:text-primary-800">
+        <span class="text-2xl">🪵</span>
+        <span>DIY WoodCraft Pro</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
+        <a href="/products/" class="hover:text-primary-600 transition-colors">Products</a>
+        <a href="/blog/" class="hover:text-primary-600 transition-colors">Guides</a>
+        <a href="/about/" class="hover:text-primary-600 transition-colors">About</a>
+      </nav>
+      <a href="/products/" class="hidden md:inline-flex items-center gap-2 bg-primary-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary-700 transition-colors">
+        See All Plans →
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <slot />
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12 mt-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 text-white font-bold text-lg mb-3">
+            <span>🪵</span>
+            <span>DIY WoodCraft Pro</span>
+          </div>
+          <p class="text-sm leading-relaxed">Honest reviews of the best DIY woodworking plans and home improvement programs. Build more, spend less.</p>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/products/" class="hover:text-white transition-colors">All Products</a></li>
+            <li><a href="/blog/" class="hover:text-white transition-colors">Guides & Tips</a></li>
+            <li><a href="/about/" class="hover:text-white transition-colors">About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-white font-semibold mb-3">Follow Us</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="https://pinterest.com/diywoodcraftpro" class="hover:text-white transition-colors">📌 Pinterest</a></li>
+            <li><a href="https://tiktok.com/@diywoodcraftpro" class="hover:text-white transition-colors">🎵 TikTok</a></li>
+            <li><a href="https://reddit.com/r/DIY" class="hover:text-white transition-colors">🤖 Reddit (r/DIY)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-6 text-xs text-center space-y-2">
+        <p>© {new Date().getFullYear()} DIY WoodCraft Pro. All rights reserved.</p>
+        <p class="text-gray-500">
+          <strong>Affiliate Disclosure:</strong> This site contains affiliate links. If you purchase through our links, we may earn a commission at no extra cost to you.
+          All opinions are our own.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

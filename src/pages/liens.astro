@@ -2,6 +2,7 @@
 import LinkInBioLayout from '../layouts/LinkInBioLayout.astro';
 import siteConfig from '../data/site-config.json';
 import { buildAmazonLink } from '../utils/affiliate';
+import { buildClickBankShortUrl } from '../utils/clickbank';
 ---
 
 <LinkInBioLayout>
@@ -36,6 +37,17 @@ import { buildAmazonLink } from '../utils/affiliate';
     >
       <span class="absolute top-0 right-0 bg-yellow-400 text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">-50%</span>
       📚 Ebook : 50 Astuces Déco (9,99 €)
+    </a>
+
+    <!-- ClickBank Formation -->
+    <a
+      href={buildClickBankShortUrl('thevenus1')}
+      target="_blank"
+      rel="nofollow sponsored noopener"
+      class="block w-full p-4 rounded-xl text-center font-bold transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-md hover:shadow-lg relative overflow-hidden"
+    >
+      <span class="absolute top-0 right-0 bg-yellow-400 text-gray-900 text-[10px] font-bold px-2 py-0.5 rounded-bl-lg">75% COM.</span>
+      🎓 Formation Déco Pro — Accès immédiat
     </a>
 
     <!-- Trending badge product -->

@@ -1,0 +1,52 @@
+{
+  "name": "Energy Revolution System — Cut Your Electricity Bill by 68%",
+  "slug": "energy-revolution-system",
+  "shortDescription": "DIY home energy system that can slash your electricity bill by up to 68%. Build it in a weekend for under $200 using parts from any hardware store.",
+  "fullDescription": "With energy prices at all-time highs, millions of homeowners are desperately looking for ways to lower their electricity bills. The Energy Revolution System delivers. This step-by-step guide shows you how to build your own off-grid power system using readily available components — no electrician required. The system can power your most energy-hungry appliances (refrigerator, AC, water heater) and can be scaled up as your needs grow. The program is part of the larger EPC Workshop ecosystem, which has produced multiple 7-figure ClickBank offers including Aqua Tower, Water Freedom System, and Ultimate Off-Grid Generator. Affiliates benefit from a proven, high-converting funnel with multiple upsells, making average order values significantly higher than the front-end price.",
+  "category": "home-energy",
+  "clickbankNickname": "energyrev",
+  "clickbankId": "issamaffil",
+  "price": {
+    "current": 49,
+    "currency": "USD",
+    "lastChecked": "2026-02-01"
+  },
+  "commission": {
+    "percentage": 75,
+    "avgPerSale": 75,
+    "epc": 0.44
+  },
+  "gravity": 64,
+  "rating": {
+    "score": 4.6,
+    "count": 14300
+  },
+  "image": "/images/energy-revolution.jpg",
+  "heroIcon": "⚡",
+  "pros": [
+    "Can reduce electricity bills by up to 68%",
+    "Build for under $200 — ROI in months",
+    "Works during power outages",
+    "Scalable — add more capacity any time",
+    "No electrician or special skills needed",
+    "Strong upsell funnel = higher average commissions"
+  ],
+  "cons": [
+    "Results vary based on local energy costs",
+    "Requires some weekend project time to build"
+  ],
+  "specifications": [
+    { "label": "Bill reduction", "value": "Up to 68%" },
+    { "label": "Build cost", "value": "Under $200" },
+    { "label": "Build time", "value": "1 weekend" },
+    { "label": "Format", "value": "Video + PDF guide" },
+    { "label": "Skill level", "value": "Beginner-friendly" },
+    { "label": "Guarantee", "value": "60-day money back" }
+  ],
+  "featured": true,
+  "bestseller": false,
+  "badge": "Trending",
+  "badgeColor": "orange",
+  "targetAudience": ["Homeowners", "Preppers", "Self-sufficiency seekers", "Budget-conscious families", "Off-grid enthusiasts"],
+  "keywords": ["cut electricity bill", "DIY solar", "home energy system", "off grid power", "reduce energy costs"]
+}

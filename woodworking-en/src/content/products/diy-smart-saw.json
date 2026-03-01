@@ -1,0 +1,52 @@
+{
+  "name": "DIY Smart Saw — Build Your Own CNC Machine",
+  "slug": "diy-smart-saw",
+  "shortDescription": "Build your own CNC woodworking machine in a few hours. Create intricate designs, custom signs, and professional-quality woodwork — at the push of a button.",
+  "fullDescription": "The DIY Smart Saw is for the woodworker who wants to take their craft to the next level. A CNC (Computer Numerical Control) machine can carve intricate designs, cut perfect joints, and create custom signs with precision that no hand tool can match. The problem? Commercial CNC machines cost $3,000–$15,000. The DIY Smart Saw shows you how to build your own for a fraction of that cost — using parts you can find at any hardware store. The program includes step-by-step video instructions, a complete parts list, and software guides. Once built, you can use it to start a woodworking side business making custom signs, gifts, and furniture. With a $0.59 EPC (among the highest on ClickBank) and 75% commission, this converts particularly well with a maker/hobbyist audience.",
+  "category": "diy-tools",
+  "clickbankNickname": "cncwood",
+  "clickbankId": "issamaffil",
+  "price": {
+    "current": 39,
+    "currency": "USD",
+    "lastChecked": "2026-02-01"
+  },
+  "commission": {
+    "percentage": 75,
+    "avgPerSale": 52.34,
+    "epc": 0.59
+  },
+  "gravity": 58,
+  "rating": {
+    "score": 4.5,
+    "count": 9800
+  },
+  "image": "/images/diy-smart-saw.jpg",
+  "heroIcon": "🪚",
+  "pros": [
+    "Highest EPC on ClickBank ($0.59) — proven converter",
+    "Build a $5,000 CNC machine for under $500",
+    "Create a side business making custom signs & gifts",
+    "Step-by-step video instructions included",
+    "No engineering background needed",
+    "Passive income potential once machine is built"
+  ],
+  "cons": [
+    "More advanced project — not for complete beginners",
+    "Requires some basic tools to build the machine"
+  ],
+  "specifications": [
+    { "label": "Project type", "value": "DIY CNC machine build" },
+    { "label": "Format", "value": "Video + PDF guide" },
+    { "label": "Parts cost", "value": "Approx. $150–$300" },
+    { "label": "Build time", "value": "4–8 hours" },
+    { "label": "Skill level", "value": "Intermediate" },
+    { "label": "Guarantee", "value": "60-day money back" }
+  ],
+  "featured": true,
+  "bestseller": false,
+  "badge": "Highest EPC",
+  "badgeColor": "purple",
+  "targetAudience": ["Woodworking hobbyists", "Makers", "Entrepreneurs", "Custom gift creators", "Side hustlers"],
+  "keywords": ["DIY CNC machine", "build CNC router", "woodworking machine", "DIY smart saw", "custom woodwork"]
+}

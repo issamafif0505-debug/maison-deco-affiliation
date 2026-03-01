@@ -1,0 +1,21 @@
+{
+  "siteName": "DIY WoodCraft Pro",
+  "siteTagline": "Build It Yourself. Save Thousands.",
+  "siteDescription": "Honest reviews and guides for the best DIY woodworking plans, shed kits, and home improvement projects. Save money by building it yourself.",
+  "siteUrl": "https://diy-woodcraft-pro.netlify.app",
+  "author": {
+    "name": "Alex",
+    "bio": "DIY enthusiast and home improvement nerd. I've built 3 sheds, a deck, and way too many bookshelves. I test woodworking plans so you don't have to waste money on bad ones.",
+    "location": "Online"
+  },
+  "clickbankId": "issamaffil",
+  "social": {
+    "pinterest": "https://pinterest.com/diywoodcraftpro",
+    "tiktok": "https://tiktok.com/@diywoodcraftpro",
+    "reddit": "https://reddit.com/user/diywoodcraftpro",
+    "youtube": "https://youtube.com/@diywoodcraftpro"
+  },
+  "defaultOgImage": "/images/og-default.jpg",
+  "locale": "en_US",
+  "currency": "USD"
+}

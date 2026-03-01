@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Woodworking Plans",
+    "slug": "woodworking-plans",
+    "description": "Thousands of step-by-step woodworking plans for all skill levels",
+    "emoji": "🪵",
+    "icon": "tree"
+  },
+  {
+    "name": "Shed Plans",
+    "slug": "shed-plans",
+    "description": "Build your perfect backyard shed from scratch with detailed blueprints",
+    "emoji": "🛖",
+    "icon": "home"
+  },
+  {
+    "name": "DIY Tools & Machines",
+    "slug": "diy-tools",
+    "description": "Smart tools and machines to make woodworking easier and faster",
+    "emoji": "🪚",
+    "icon": "tool"
+  },
+  {
+    "name": "Home Energy",
+    "slug": "home-energy",
+    "description": "DIY energy solutions to slash your electricity bills",
+    "emoji": "⚡",
+    "icon": "zap"
+  },
+  {
+    "name": "Garden & Survival",
+    "slug": "garden-survival",
+    "description": "Grow your own food and achieve true self-sufficiency",
+    "emoji": "🌱",
+    "icon": "leaf"
+  }
+]
