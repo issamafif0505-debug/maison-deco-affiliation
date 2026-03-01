@@ -41,6 +41,14 @@ const typeLabels: Record<string, string> = {
   'guide': 'Guide',
   'astuce': 'Astuce',
 };
+
+const typeColors: Record<string, string> = {
+  'top-10': 'badge-viral',
+  'comparatif': 'badge-type',
+  'review': 'badge-category',
+  'guide': 'badge-new',
+  'astuce': 'badge-type',
+};
 ---
 
 <BaseLayout
@@ -55,34 +63,42 @@ const typeLabels: Record<string, string> = {
     <Breadcrumbs items={breadcrumbs} />
 
     <!-- Article Header -->
-    <header class="max-w-3xl mx-auto mb-10">
+    <header class="max-w-3xl mx-auto mb-8">
       <div class="flex flex-wrap gap-2 mb-4">
-        <span class="badge-category capitalize">{category}</span>
-        <span class="badge-type">{typeLabels[type] || type}</span>
+        <span class="badge-category capitalize text-sm">{category}</span>
+        <span class:list={[typeColors[type] || 'badge-type', 'text-sm']}>{typeLabels[type] || type}</span>
       </div>
 
-      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-5">
         {title}
       </h1>
 
-      <p class="text-lg text-gray-600 mb-6">{description}</p>
+      <p class="text-lg text-gray-600 mb-5 leading-relaxed">{description}</p>
 
-      <div class="flex items-center gap-4 text-sm text-gray-500">
+      <div class="flex flex-wrap items-center gap-4 text-sm text-gray-500 pb-5 border-b border-gray-100">
         <div class="flex items-center gap-2">
-          <div class="w-8 h-8 rounded-full bg-primary-100 flex items-center justify-center">
-            <span class="text-primary-700 font-semibold text-xs">{author.charAt(0)}</span>
+          <div class="w-9 h-9 rounded-full bg-gradient-to-br from-primary-400 to-accent-500 flex items-center justify-center flex-shrink-0">
+            <span class="text-white font-bold text-sm">{author.charAt(0)}</span>
           </div>
-          <span class="font-medium text-gray-700">{author}</span>
+          <div>
+            <span class="font-semibold text-gray-800 block leading-none">{author}</span>
+            <span class="text-xs text-gray-400">Testeur & rédacteur</span>
+          </div>
         </div>
-        <span>•</span>
-        <time datetime={pubDate.toISOString()}>
+        <span class="text-gray-200">|</span>
+        <time datetime={pubDate.toISOString()} class="flex items-center gap-1">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
           {formatDate(pubDate)}
         </time>
         {updatedDate && (
-          <>
-            <span>•</span>
-            <span>Mis a jour le {formatDate(updatedDate)}</span>
-          </>
+          <span class="flex items-center gap-1 text-green-600">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+            Mis à jour le {formatDate(updatedDate)}
+          </span>
         )}
       </div>
     </header>
@@ -92,44 +108,78 @@ const typeLabels: Record<string, string> = {
       <img
         src={cover}
         alt={coverAlt}
-        class="w-full h-64 md:h-96 object-cover rounded-2xl shadow-lg"
+        class="w-full h-56 md:h-80 lg:h-96 object-cover rounded-2xl shadow-lg"
         loading="eager"
+        width="800"
+        height="400"
       />
     </div>
 
-    <!-- Article Content -->
+    <!-- Layout article + sidebar -->
     <div class="max-w-3xl mx-auto">
-      <div class="prose-custom">
+      <!-- Article Content -->
+      <div class="prose-custom mb-12">
         <slot />
       </div>
 
+      <!-- Newsletter inline CTA (content-strategy skill) -->
+      <div class="my-10 p-6 bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl border border-primary-100">
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <div class="text-3xl flex-shrink-0">📬</div>
+          <div class="flex-1 min-w-0">
+            <h3 class="font-serif font-bold text-gray-900 mb-1">Reçois les meilleurs bons plans</h3>
+            <p class="text-sm text-gray-600">Chaque semaine : produits testés + codes promo Amazon</p>
+          </div>
+          <form class="flex gap-2 w-full sm:w-auto flex-shrink-0" onsubmit="return false;">
+            <input type="email" placeholder="ton@email.fr" class="input-newsletter flex-1 sm:w-48 text-sm py-2.5" />
+            <button type="submit" class="btn-primary text-sm py-2.5 px-4 whitespace-nowrap">Je m'abonne</button>
+          </form>
+        </div>
+      </div>
+
       <!-- Tags -->
-      <div class="mt-10 pt-8 border-t border-gray-200">
-        <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-3">Tags</h3>
+      <div class="pt-6 border-t border-gray-100">
+        <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Mots-clés</h3>
         <div class="flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm hover:bg-gray-200 transition-colors">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs hover:bg-primary-50 hover:text-primary-700 transition-colors cursor-default">
               #{tag}
             </span>
           ))}
         </div>
       </div>
 
-      <!-- Author Box -->
-      <div class="mt-8 p-6 bg-warm-100 rounded-2xl">
+      <!-- Author Box — Authority bias (marketing-psychology) -->
+      <div class="mt-8 p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
         <div class="flex items-start gap-4">
-          <div class="w-14 h-14 rounded-full bg-primary-200 flex items-center justify-center flex-shrink-0">
-            <span class="text-primary-700 font-bold text-xl">{author.charAt(0)}</span>
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary-400 to-accent-500 flex items-center justify-center flex-shrink-0">
+            <span class="text-white font-bold text-xl">{author.charAt(0)}</span>
           </div>
-          <div>
-            <h3 class="font-serif font-semibold text-gray-900 mb-1">A propos de {author}</h3>
-            <p class="text-sm text-gray-600">{siteConfig.author.bio}</p>
-            <div class="flex gap-3 mt-3">
-              <a href={siteConfig.social.tiktok} target="_blank" rel="noopener" class="text-sm text-primary-600 hover:text-primary-700 font-medium">TikTok</a>
-              <a href={siteConfig.social.youtube} target="_blank" rel="noopener" class="text-sm text-primary-600 hover:text-primary-700 font-medium">YouTube</a>
+          <div class="flex-1">
+            <h3 class="font-serif font-bold text-gray-900 mb-1">À propos de {author}</h3>
+            <p class="text-sm text-gray-600 leading-relaxed mb-3">{siteConfig.author.bio}</p>
+            <div class="flex flex-wrap gap-3">
+              <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-medium text-gray-600 hover:text-gray-900 bg-gray-100 hover:bg-gray-200 px-3 py-1.5 rounded-lg transition-colors">
+                TikTok @issam_deco
+              </a>
+              <a href={siteConfig.social.youtube} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-medium text-white bg-red-600 hover:bg-red-700 px-3 py-1.5 rounded-lg transition-colors">
+                YouTube
+              </a>
+              <a href="/a-propos/" class="inline-flex items-center gap-1.5 text-xs font-medium text-primary-600 hover:text-primary-700 bg-primary-50 hover:bg-primary-100 px-3 py-1.5 rounded-lg transition-colors">
+                En savoir plus →
+              </a>
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Disclosure -->
+      <div class="mt-6 p-4 bg-gray-50 rounded-xl border border-gray-100">
+        <p class="text-xs text-gray-500 leading-relaxed">
+          <strong>Transparence :</strong> Certains liens de cet article sont des liens d'affiliation Amazon.
+          Si vous achetez via ces liens, je perçois une petite commission sans frais supplémentaires pour vous.
+          Cela me permet de continuer à tester des produits gratuitement pour vous.
+        </p>
       </div>
     </div>
   </article>

@@ -2,9 +2,12 @@
 title: "5 Solutions Pour Organiser Ses Tiroirs Sans Se Ruiner"
 description: "Découvrez les meilleurs organisateurs de tiroirs pour cuisine, bureau et chambre. Guide complet avec comparatif et avis clients 2026."
 pubDate: "2026-02-22"
+author: "Issam"
 category: "rangement"
-image: "https://m.media-amazon.com/images/P/B08KH2JV3N.01._AC_SL600_.jpg"
-affiliate: true
+cover: "https://m.media-amazon.com/images/P/B08KH2JV3N.01._AC_SL600_.jpg"
+coverAlt: "Organisateur tiroir bambou - meilleure solution rangement"
+tags: ["rangement", "organisation", "tiroir", "bambou", "cuisine"]
+type: "guide"
 ---
 
 ## Le problème que tout le monde connaît

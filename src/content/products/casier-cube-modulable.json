@@ -15,7 +15,7 @@
     "score": 4.3,
     "count": 14870
   },
-  "image": "https://m.media-amazon.com/images/P/B08BPJHBK1.01._AC_SL600_.jpg",
+  "image": "/images/products/casier-cube-modulable.svg",
   "pros": [
     "9 cases polyvalentes",
     "Modulable — debout ou couché",
@@ -27,11 +27,26 @@
     "Assez lourd à déplacer une fois monté"
   ],
   "specifications": [
-    { "label": "Dimensions", "value": "108 x 108 x 33 cm" },
-    { "label": "Cases", "value": "9 (33x33cm chacune)" },
-    { "label": "Matière", "value": "MDF mélaminé" },
-    { "label": "Finition", "value": "Blanc brillant" },
-    { "label": "Charge max par case", "value": "10 kg" }
+    {
+      "label": "Dimensions",
+      "value": "108 x 108 x 33 cm"
+    },
+    {
+      "label": "Cases",
+      "value": "9 (33x33cm chacune)"
+    },
+    {
+      "label": "Matière",
+      "value": "MDF mélaminé"
+    },
+    {
+      "label": "Finition",
+      "value": "Blanc brillant"
+    },
+    {
+      "label": "Charge max par case",
+      "value": "10 kg"
+    }
   ],
   "featured": false,
   "bestseller": false,

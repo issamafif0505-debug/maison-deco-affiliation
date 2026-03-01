@@ -15,7 +15,7 @@
     "score": 4.5,
     "count": 8340
   },
-  "image": "https://m.media-amazon.com/images/P/B09L5XTQNK.01._AC_SL600_.jpg",
+  "image": "/images/products/accessoires-bain-noir-mat.svg",
   "pros": [
     "Set 6 pièces complet — salle de bain transformée",
     "Inox 304 — résistant rouille et humidité",
@@ -27,11 +27,26 @@
     "Traces de mains visibles sur noir mat"
   ],
   "specifications": [
-    { "label": "Pièces", "value": "6 (distributeur, porte-brosse, gobelet, PP toilette, crochet, étagère)" },
-    { "label": "Matière", "value": "Acier inox 304" },
-    { "label": "Finition", "value": "Noir mat" },
-    { "label": "Installation", "value": "Adhésif ou vissée" },
-    { "label": "Résistance", "value": "Anti-rouille, anti-humidité" }
+    {
+      "label": "Pièces",
+      "value": "6 (distributeur, porte-brosse, gobelet, PP toilette, crochet, étagère)"
+    },
+    {
+      "label": "Matière",
+      "value": "Acier inox 304"
+    },
+    {
+      "label": "Finition",
+      "value": "Noir mat"
+    },
+    {
+      "label": "Installation",
+      "value": "Adhésif ou vissée"
+    },
+    {
+      "label": "Résistance",
+      "value": "Anti-rouille, anti-humidité"
+    }
   ],
   "featured": true,
   "bestseller": false,

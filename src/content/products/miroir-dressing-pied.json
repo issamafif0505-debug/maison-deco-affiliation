@@ -15,7 +15,7 @@
     "score": 4.5,
     "count": 11230
   },
-  "image": "https://m.media-amazon.com/images/P/B09VRXQKLN.01._AC_SL600_.jpg",
+  "image": "/images/products/miroir-dressing-pied.svg",
   "pros": [
     "Pleine hauteur 150cm — tenue complète visible",
     "Livré monté — prêt à l'emploi",
@@ -27,11 +27,26 @@
     "Se raye facilement (miroir non traité)"
   ],
   "specifications": [
-    { "label": "Dimensions", "value": "40 x 150 cm" },
-    { "label": "Cadre", "value": "Métal noir mat 1.5cm" },
-    { "label": "Pied", "value": "Métal noir antidérapant" },
-    { "label": "Inclinaison", "value": "Réglable via rotules" },
-    { "label": "Livraison", "value": "Monté et prêt à l'emploi" }
+    {
+      "label": "Dimensions",
+      "value": "40 x 150 cm"
+    },
+    {
+      "label": "Cadre",
+      "value": "Métal noir mat 1.5cm"
+    },
+    {
+      "label": "Pied",
+      "value": "Métal noir antidérapant"
+    },
+    {
+      "label": "Inclinaison",
+      "value": "Réglable via rotules"
+    },
+    {
+      "label": "Livraison",
+      "value": "Monté et prêt à l'emploi"
+    }
   ],
   "featured": false,
   "bestseller": true,

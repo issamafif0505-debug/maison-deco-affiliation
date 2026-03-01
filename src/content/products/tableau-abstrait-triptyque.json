@@ -15,7 +15,7 @@
     "score": 4.3,
     "count": 5670
   },
-  "image": "https://m.media-amazon.com/images/P/B09JKXMFNV.01._AC_SL600_.jpg",
+  "image": "/images/products/tableau-abstrait-triptyque.svg",
   "pros": [
     "3 toiles coordonnées — composition complète",
     "Canvas texturé — effet peinture originale",
@@ -27,11 +27,26 @@
     "Alignement délicat à l'installation"
   ],
   "specifications": [
-    { "label": "Taille par toile", "value": "40 x 60 cm" },
-    { "label": "Quantité", "value": "3 toiles (triptyque)" },
-    { "label": "Matière", "value": "Canvas polyester sur châssis pin" },
-    { "label": "Impression", "value": "HD sur toile texturée" },
-    { "label": "Accrochage", "value": "Crochets inclus" }
+    {
+      "label": "Taille par toile",
+      "value": "40 x 60 cm"
+    },
+    {
+      "label": "Quantité",
+      "value": "3 toiles (triptyque)"
+    },
+    {
+      "label": "Matière",
+      "value": "Canvas polyester sur châssis pin"
+    },
+    {
+      "label": "Impression",
+      "value": "HD sur toile texturée"
+    },
+    {
+      "label": "Accrochage",
+      "value": "Crochets inclus"
+    }
   ],
   "featured": false,
   "bestseller": false,

@@ -15,7 +15,7 @@
     "score": 4.6,
     "count": 5892
   },
-  "image": "https://m.media-amazon.com/images/P/B09TFKXP5R.01._AC_SL600_.jpg",
+  "image": "/images/products/lampe-chevet-sans-fil.svg",
   "pros": [
     "Sans fil — aucun câble visible",
     "Rechargeable USB-C — universel",
@@ -27,11 +27,26 @@
     "LED non remplaçable en fin de vie"
   ],
   "specifications": [
-    { "label": "Recharge", "value": "USB-C" },
-    { "label": "Autonomie", "value": "4h (max) à 10h (min)" },
-    { "label": "Puissance", "value": "5W LED" },
-    { "label": "Matière", "value": "Bois naturel + métal" },
-    { "label": "Variateur", "value": "Tactile 3 niveaux" }
+    {
+      "label": "Recharge",
+      "value": "USB-C"
+    },
+    {
+      "label": "Autonomie",
+      "value": "4h (max) à 10h (min)"
+    },
+    {
+      "label": "Puissance",
+      "value": "5W LED"
+    },
+    {
+      "label": "Matière",
+      "value": "Bois naturel + métal"
+    },
+    {
+      "label": "Variateur",
+      "value": "Tactile 3 niveaux"
+    }
   ],
   "featured": true,
   "bestseller": true,
