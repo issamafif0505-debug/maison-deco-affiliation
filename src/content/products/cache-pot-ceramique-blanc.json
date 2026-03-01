@@ -15,7 +15,7 @@
     "score": 4.6,
     "count": 14870
   },
-  "image": "https://m.media-amazon.com/images/P/B09ZT4BHLQ.01._AC_SL600_.jpg",
+  "image": "/images/products/cache-pot-ceramique-blanc.svg",
   "pros": [
     "Céramique véritable — poids et qualité",
     "Set de 3 tailles — toutes vos plantes couvertes",
@@ -27,11 +27,26 @@
     "Sans trou de drainage (utiliser avec gravier)"
   ],
   "specifications": [
-    { "label": "Tailles", "value": "Ø11 / Ø14 / Ø17 cm" },
-    { "label": "Matière", "value": "Céramique grès" },
-    { "label": "Finition", "value": "Blanc mat" },
-    { "label": "Soucoupes", "value": "Incluses (x3)" },
-    { "label": "Drainage", "value": "Fond plein (avec trou optionnel)" }
+    {
+      "label": "Tailles",
+      "value": "Ø11 / Ø14 / Ø17 cm"
+    },
+    {
+      "label": "Matière",
+      "value": "Céramique grès"
+    },
+    {
+      "label": "Finition",
+      "value": "Blanc mat"
+    },
+    {
+      "label": "Soucoupes",
+      "value": "Incluses (x3)"
+    },
+    {
+      "label": "Drainage",
+      "value": "Fond plein (avec trou optionnel)"
+    }
   ],
   "featured": true,
   "bestseller": true,

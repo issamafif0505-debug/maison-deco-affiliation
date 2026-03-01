@@ -15,7 +15,7 @@
     "score": 4.3,
     "count": 3450
   },
-  "image": "https://m.media-amazon.com/images/P/B09S8P5KHV.01._AC_SL600_.jpg",
+  "image": "/images/products/mini-serre-interieure.svg",
   "pros": [
     "Double usage : bouturage + décoration",
     "Verre transparent — visibilité totale",
@@ -27,11 +27,26 @@
     "Pas idéal pour plantes à faible humidité"
   ],
   "specifications": [
-    { "label": "Dimensions", "value": "35 x 25 x 25 cm" },
-    { "label": "Matière", "value": "Verre + métal noir mat" },
-    { "label": "Ouverture", "value": "Couvercle à charnière" },
-    { "label": "Usage", "value": "Bouturage + terrarium déco" },
-    { "label": "Fond", "value": "Plateau amovible" }
+    {
+      "label": "Dimensions",
+      "value": "35 x 25 x 25 cm"
+    },
+    {
+      "label": "Matière",
+      "value": "Verre + métal noir mat"
+    },
+    {
+      "label": "Ouverture",
+      "value": "Couvercle à charnière"
+    },
+    {
+      "label": "Usage",
+      "value": "Bouturage + terrarium déco"
+    },
+    {
+      "label": "Fond",
+      "value": "Plateau amovible"
+    }
   ],
   "featured": false,
   "bestseller": false,

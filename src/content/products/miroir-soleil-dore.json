@@ -15,7 +15,7 @@
     "score": 4.5,
     "count": 7840
   },
-  "image": "https://m.media-amazon.com/images/P/B08L5VXYZ7.01._AC_SL600_.jpg",
+  "image": "/images/products/miroir-soleil-dore.svg",
   "pros": [
     "Design soleil viral TikTok & Instagram",
     "60cm — taille idéale, impact maximal",
@@ -27,11 +27,26 @@
     "Ne convient pas aux petits espaces"
   ],
   "specifications": [
-    { "label": "Diamètre total", "value": "60 cm" },
-    { "label": "Diamètre miroir", "value": "30 cm" },
-    { "label": "Matière", "value": "Métal doré mat" },
-    { "label": "Style", "value": "Bohème / Art déco" },
-    { "label": "Fixation", "value": "Crochet inclus" }
+    {
+      "label": "Diamètre total",
+      "value": "60 cm"
+    },
+    {
+      "label": "Diamètre miroir",
+      "value": "30 cm"
+    },
+    {
+      "label": "Matière",
+      "value": "Métal doré mat"
+    },
+    {
+      "label": "Style",
+      "value": "Bohème / Art déco"
+    },
+    {
+      "label": "Fixation",
+      "value": "Crochet inclus"
+    }
   ],
   "featured": true,
   "bestseller": true,

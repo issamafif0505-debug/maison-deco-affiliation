@@ -15,7 +15,7 @@
     "score": 4.3,
     "count": 4890
   },
-  "image": "https://m.media-amazon.com/images/P/B09D7KQMHV.01._AC_SL600_.jpg",
+  "image": "/images/products/rideau-lin-naturel.svg",
   "pros": [
     "Lin naturel — matière premium intemporelle",
     "Lot de 2 — habille une fenêtre complète",
@@ -27,11 +27,26 @@
     "Peut légèrement rétrécir au lavage"
   ],
   "specifications": [
-    { "label": "Dimensions", "value": "140 x 260 cm (x2)" },
-    { "label": "Matière", "value": "100% Lin naturel" },
-    { "label": "Accrochage", "value": "Œillets métal Ø35mm" },
-    { "label": "Opacité", "value": "Semi-transparent (filtrant)" },
-    { "label": "Entretien", "value": "Lavage machine 30°C" }
+    {
+      "label": "Dimensions",
+      "value": "140 x 260 cm (x2)"
+    },
+    {
+      "label": "Matière",
+      "value": "100% Lin naturel"
+    },
+    {
+      "label": "Accrochage",
+      "value": "Œillets métal Ø35mm"
+    },
+    {
+      "label": "Opacité",
+      "value": "Semi-transparent (filtrant)"
+    },
+    {
+      "label": "Entretien",
+      "value": "Lavage machine 30°C"
+    }
   ],
   "featured": false,
   "bestseller": false,

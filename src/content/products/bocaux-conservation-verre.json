@@ -15,7 +15,7 @@
     "score": 4.7,
     "count": 22340
   },
-  "image": "https://m.media-amazon.com/images/P/B07YCPF9JX.01._AC_SL600_.jpg",
+  "image": "/images/products/bocaux-conservation-verre.svg",
   "pros": [
     "Verre borosilicate — ultra résistant",
     "Set de 6 tailles — toute la cuisine couverte",
@@ -27,11 +27,26 @@
     "Verre reste fragile en cas de chute"
   ],
   "specifications": [
-    { "label": "Contenance", "value": "200 / 400 / 600 / 800ml / 1L / 1,5L" },
-    { "label": "Matière bocal", "value": "Verre borosilicate" },
-    { "label": "Couvercle", "value": "Bambou + joint silicone" },
-    { "label": "Quantité", "value": "Set de 6" },
-    { "label": "Entretien", "value": "Bocal lave-vaisselle / Couvercle main" }
+    {
+      "label": "Contenance",
+      "value": "200 / 400 / 600 / 800ml / 1L / 1,5L"
+    },
+    {
+      "label": "Matière bocal",
+      "value": "Verre borosilicate"
+    },
+    {
+      "label": "Couvercle",
+      "value": "Bambou + joint silicone"
+    },
+    {
+      "label": "Quantité",
+      "value": "Set de 6"
+    },
+    {
+      "label": "Entretien",
+      "value": "Bocal lave-vaisselle / Couvercle main"
+    }
   ],
   "featured": true,
   "bestseller": true,
