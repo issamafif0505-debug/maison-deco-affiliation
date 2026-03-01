@@ -6,7 +6,7 @@ import RatingStars from '../components/product/RatingStars.astro';
 import ProsCons from '../components/product/ProsCons.astro';
 import { formatPrice } from '../utils/formatting';
 import { productSchema } from '../utils/seo';
-import { buildAmazonLink } from '../utils/affiliate';
+import { buildAmazonLink, buildAmazonSearchLink } from '../utils/affiliate';
 import siteConfig from '../data/site-config.json';
 
 interface Props {
@@ -31,7 +31,8 @@ interface Props {
 
 const props = Astro.props;
 const { bestseller = false, youtubeVideoId } = props;
-const amazonUrl = buildAmazonLink(props.amazonAsin, props.affiliateTag);
+// Lien de recherche Amazon avec nom du produit — fiable même si l'ASIN est incorrect
+const amazonUrl = buildAmazonSearchLink(props.name, props.affiliateTag);
 
 const breadcrumbs = [
   { label: 'Produits', href: '/produits/' },

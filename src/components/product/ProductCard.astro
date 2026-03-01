@@ -1,7 +1,7 @@
 ---
 import { formatPrice } from '../../utils/formatting';
 import RatingStars from './RatingStars.astro';
-import { buildAmazonLink } from '../../utils/affiliate';
+import { buildAmazonSearchLink } from '../../utils/affiliate';
 
 interface Props {
   name: string;
@@ -24,7 +24,7 @@ const {
   featured = false, bestseller = false, inStock = true
 } = Astro.props;
 
-const amazonUrl = buildAmazonLink(amazonAsin, affiliateTag);
+const amazonUrl = buildAmazonSearchLink(name, affiliateTag);
 
 function formatCount(count: number): string {
   if (count >= 1000) {
