@@ -1,0 +1,52 @@
+{
+  "name": "Ted's Woodworking — 16,000 Plans",
+  "slug": "teds-woodworking",
+  "shortDescription": "The world's #1 woodworking resource. 16,000 step-by-step plans with blueprints, materials lists, and video tutorials for all skill levels.",
+  "fullDescription": "Ted's Woodworking has been the #1 woodworking plan package on the internet since 2010 — and for good reason. Whether you want to build a birdhouse, a dining table, a deck, a cabinet, or a full workshop bench, Ted's has a detailed, step-by-step plan for it. The package includes 16,000+ projects with CAD-designed blueprints, cut lists, material lists, and access to instructional videos. No experience needed — every plan is rated by difficulty level and includes a full tools list so you know exactly what you need before you start. At 75% commission for affiliates and an average conversion rate that beats every other woodworking offer on ClickBank, this is the undisputed king of the niche.",
+  "category": "woodworking-plans",
+  "clickbankNickname": "tedswoodworking",
+  "clickbankId": "issamaffil",
+  "price": {
+    "current": 67,
+    "currency": "USD",
+    "lastChecked": "2026-02-01"
+  },
+  "commission": {
+    "percentage": 75,
+    "avgPerSale": 63.84,
+    "epc": 0.19
+  },
+  "gravity": 85,
+  "rating": {
+    "score": 4.7,
+    "count": 23500
+  },
+  "image": "/images/teds-woodworking.jpg",
+  "heroIcon": "🪵",
+  "pros": [
+    "16,000+ step-by-step plans — largest collection on the internet",
+    "Works for complete beginners (no experience needed)",
+    "CAD-designed blueprints with exact measurements",
+    "Instant digital download — access immediately",
+    "60-day money back guarantee",
+    "Bonus: DWG/CAD plan viewer included"
+  ],
+  "cons": [
+    "Digital product only — no physical materials included",
+    "Some older plans may need updating"
+  ],
+  "specifications": [
+    { "label": "Plans included", "value": "16,000+" },
+    { "label": "Format", "value": "Digital download (PDF + Video)" },
+    { "label": "Skill levels", "value": "Beginner to Advanced" },
+    { "label": "Guarantee", "value": "60-day money back" },
+    { "label": "Access", "value": "Lifetime, immediate" },
+    { "label": "Bonus", "value": "CAD viewer + 4 bonus guides" }
+  ],
+  "featured": true,
+  "bestseller": true,
+  "badge": "Best Seller",
+  "badgeColor": "gold",
+  "targetAudience": ["DIY beginners", "Hobbyist woodworkers", "Homeowners", "Retirees", "Gift buyers"],
+  "keywords": ["woodworking plans", "DIY woodworking", "Ted's Woodworking", "woodworking blueprints", "how to build furniture"]
+}

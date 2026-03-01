@@ -1,0 +1,52 @@
+{
+  "name": "Family Survival Garden — Grow 12 Months of Food",
+  "slug": "family-survival-garden",
+  "shortDescription": "The complete guide to growing enough food for your entire family — even in a small backyard. Survive food shortages and skyrocketing grocery prices forever.",
+  "fullDescription": "Grocery prices are up 30%+ since 2020, and food shortages are becoming more common. The Family Survival Garden teaches you how to create a self-sustaining food garden that produces fresh vegetables, fruits, and herbs year-round — enough to dramatically reduce your grocery bill or even eliminate it entirely. The guide covers companion planting, soil preparation, seed saving, food preservation, and how to plan a garden that produces food in every season. Unlike generic gardening books, this guide is specifically designed around food security and self-sufficiency, making it extremely compelling for anyone worried about the state of the world. With 75% commission and a survival crossover appeal, this product converts extremely well with both homesteaders and mainstream audiences.",
+  "category": "garden-survival",
+  "clickbankNickname": "survivalg",
+  "clickbankId": "issamaffil",
+  "price": {
+    "current": 37,
+    "currency": "USD",
+    "lastChecked": "2026-02-01"
+  },
+  "commission": {
+    "percentage": 75,
+    "avgPerSale": 41.25,
+    "epc": 0.28
+  },
+  "gravity": 47,
+  "rating": {
+    "score": 4.5,
+    "count": 8900
+  },
+  "image": "/images/family-survival-garden.jpg",
+  "heroIcon": "🌱",
+  "pros": [
+    "Save $200–$500/month on groceries",
+    "Works in any backyard size — even tiny spaces",
+    "Year-round food production strategies",
+    "Companion planting for maximum yield",
+    "Seed saving guide — never buy seeds again",
+    "Food preservation & canning included"
+  ],
+  "cons": [
+    "Requires some outdoor space (at least a small garden)",
+    "Results depend on local climate and soil"
+  ],
+  "specifications": [
+    { "label": "Garden size needed", "value": "As small as 100 sq ft" },
+    { "label": "Format", "value": "PDF + Video guide" },
+    { "label": "Seasons covered", "value": "All 4 seasons" },
+    { "label": "Bonus", "value": "Seed saving + food preservation guide" },
+    { "label": "Skill level", "value": "Beginner-friendly" },
+    { "label": "Guarantee", "value": "60-day money back" }
+  ],
+  "featured": false,
+  "bestseller": false,
+  "badge": "Food Independence",
+  "badgeColor": "green",
+  "targetAudience": ["Homesteaders", "Preppers", "Families", "Budget-conscious", "Health-conscious"],
+  "keywords": ["grow your own food", "survival garden", "homesteading", "self sufficient garden", "food independence"]
+}

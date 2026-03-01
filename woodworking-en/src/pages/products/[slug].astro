@@ -1,0 +1,199 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { buildClickBankLink } from '../../utils/affiliate';
+
+export async function getStaticPaths() {
+  const products = await getCollection('products');
+  return products.map(product => ({
+    params: { slug: product.data.slug },
+    props: { product: product.data },
+  }));
+}
+
+const { product } = Astro.props;
+const cbLink = buildClickBankLink(product.clickbankNickname, product.clickbankId);
+const commissionAmount = product.commission.avgPerSale.toFixed(2);
+---
+
+<BaseLayout
+  title={`${product.name} Review`}
+  description={product.shortDescription}
+>
+
+  <!-- Breadcrumb -->
+  <div class="bg-gray-50 border-b border-gray-100 py-3 px-4">
+    <div class="max-w-4xl mx-auto text-sm text-gray-500">
+      <a href="/" class="hover:text-primary-600">Home</a>
+      <span class="mx-2">›</span>
+      <a href="/products/" class="hover:text-primary-600">Products</a>
+      <span class="mx-2">›</span>
+      <span class="text-gray-800 font-medium">{product.name}</span>
+    </div>
+  </div>
+
+  <!-- Product Hero -->
+  <section class="max-w-4xl mx-auto px-4 py-10">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+
+      <!-- Left: Icon + quick stats -->
+      <div class="text-center">
+        <div class="bg-gradient-to-br from-primary-50 to-wood-50 rounded-3xl p-12 mb-6">
+          <span class="text-8xl">{product.heroIcon}</span>
+        </div>
+        {product.badge && (
+          <div class={`inline-block px-4 py-1.5 rounded-full text-sm font-bold mb-4 ${
+            product.badgeColor === 'gold' ? 'bg-yellow-100 text-yellow-800' :
+            product.badgeColor === 'blue' ? 'bg-blue-100 text-blue-800' :
+            product.badgeColor === 'purple' ? 'bg-purple-100 text-purple-800' :
+            product.badgeColor === 'orange' ? 'bg-orange-100 text-orange-800' :
+            'bg-green-100 text-green-800'
+          }`}>
+            ★ {product.badge}
+          </div>
+        )}
+        <!-- Affiliate stats box -->
+        <div class="bg-white border border-green-200 rounded-2xl p-5 text-left shadow-sm">
+          <div class="text-xs text-gray-500 font-semibold uppercase tracking-wide mb-3">Affiliate Stats</div>
+          <div class="space-y-2.5">
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-500">Commission rate</span>
+              <span class="font-bold text-green-600">{product.commission.percentage}%</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-500">Avg per sale</span>
+              <span class="font-bold">${commissionAmount}</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-500">EPC</span>
+              <span class="font-bold">${product.commission.epc}</span>
+            </div>
+            <div class="flex justify-between text-sm">
+              <span class="text-gray-500">Gravity score</span>
+              <span class="font-bold">{product.gravity}</span>
+            </div>
+            {product.commission.conversionRate && (
+              <div class="flex justify-between text-sm">
+                <span class="text-gray-500">Conv. rate</span>
+                <span class="font-bold text-blue-600">{product.commission.conversionRate}</span>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Product info -->
+      <div>
+        <h1 class="text-3xl font-bold text-gray-900 mb-3 leading-tight">{product.name}</h1>
+
+        <!-- Rating -->
+        <div class="flex items-center gap-2 mb-4">
+          <div class="flex">
+            {Array.from({length: 5}).map((_, i) => (
+              <span class={`text-lg ${i < Math.round(product.rating.score) ? 'text-yellow-400' : 'text-gray-200'}`}>★</span>
+            ))}
+          </div>
+          <span class="font-semibold text-gray-800">{product.rating.score}</span>
+          <span class="text-gray-400 text-sm">({(product.rating.count / 1000).toFixed(1)}k verified reviews)</span>
+        </div>
+
+        <p class="text-gray-600 leading-relaxed mb-6">{product.shortDescription}</p>
+
+        <!-- Price -->
+        <div class="flex items-end gap-3 mb-6">
+          <div class="text-4xl font-bold text-gray-900">${product.price.current}</div>
+          <div class="text-sm text-gray-500 mb-1">
+            You earn: <span class="text-green-600 font-bold text-base">${commissionAmount}</span> per sale
+          </div>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="space-y-3 mb-6">
+          <a href={cbLink} target="_blank" rel="noopener noreferrer nofollow"
+             class="block w-full text-center bg-primary-600 text-white font-bold py-4 rounded-2xl text-lg hover:bg-primary-700 transition-colors shadow-md">
+            Get Your Affiliate Link →
+          </a>
+          <p class="text-center text-xs text-gray-400">
+            60-day money back guarantee • Instant access • ClickBank secured
+          </p>
+        </div>
+
+        <!-- Target audience chips -->
+        <div>
+          <div class="text-xs text-gray-500 font-semibold uppercase tracking-wide mb-2">Best for</div>
+          <div class="flex flex-wrap gap-2">
+            {product.targetAudience.map(audience => (
+              <span class="bg-primary-50 text-primary-700 text-xs px-3 py-1 rounded-full font-medium">{audience}</span>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full Description -->
+  <section class="max-w-4xl mx-auto px-4 py-8 border-t border-gray-100">
+    <h2 class="text-2xl font-bold text-gray-900 mb-4">About This Product</h2>
+    <p class="text-gray-600 leading-relaxed text-lg">{product.fullDescription}</p>
+  </section>
+
+  <!-- Pros & Cons -->
+  <section class="max-w-4xl mx-auto px-4 py-8 border-t border-gray-100">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Pros & Cons</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="bg-green-50 rounded-2xl p-6">
+        <h3 class="font-bold text-green-800 mb-4 flex items-center gap-2">
+          <span class="text-xl">✅</span> What's Great
+        </h3>
+        <ul class="space-y-2.5">
+          {product.pros.map(pro => (
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <span class="text-green-500 mt-0.5 flex-shrink-0">✓</span>
+              {pro}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="bg-red-50 rounded-2xl p-6">
+        <h3 class="font-bold text-red-800 mb-4 flex items-center gap-2">
+          <span class="text-xl">⚠️</span> Keep in Mind
+        </h3>
+        <ul class="space-y-2.5">
+          {product.cons.map(con => (
+            <li class="flex items-start gap-2 text-sm text-gray-700">
+              <span class="text-red-400 mt-0.5 flex-shrink-0">✗</span>
+              {con}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specifications -->
+  <section class="max-w-4xl mx-auto px-4 py-8 border-t border-gray-100">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Specs</h2>
+    <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+      {product.specifications.map((spec, i) => (
+        <div class={`flex items-center justify-between px-5 py-3.5 ${i % 2 === 0 ? 'bg-gray-50' : 'bg-white'}`}>
+          <span class="text-gray-500 text-sm">{spec.label}</span>
+          <span class="font-semibold text-gray-900 text-sm">{spec.value}</span>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="max-w-4xl mx-auto px-4 py-10 border-t border-gray-100">
+    <div class="bg-gradient-to-r from-primary-700 to-primary-900 rounded-3xl p-8 text-white text-center">
+      <h2 class="text-2xl font-bold mb-2">Ready to Promote {product.name}?</h2>
+      <p class="text-primary-200 mb-6">Earn ${commissionAmount} per sale at {product.commission.percentage}% commission</p>
+      <a href={cbLink} target="_blank" rel="noopener noreferrer nofollow"
+         class="inline-flex items-center gap-2 bg-yellow-400 text-gray-900 font-bold px-8 py-4 rounded-xl text-lg hover:bg-yellow-300 transition-colors">
+        Get Affiliate Link →
+      </a>
+      <p class="text-primary-300 text-xs mt-4">Via ClickBank • Instant approval • 60-day cookie</p>
+    </div>
+  </section>
+
+</BaseLayout>
