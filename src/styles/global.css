@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply font-sans text-gray-800 bg-warm-50 antialiased;
+    @apply font-sans text-gray-800 bg-white antialiased;
   }
 
   h1, h2, h3, h4 {
@@ -24,15 +24,23 @@
   }
 
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-lg hover:bg-primary-600 transition-colors duration-200 shadow-md hover:shadow-lg;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-500 text-white font-semibold rounded-xl hover:bg-primary-600 transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-white text-gray-800 font-semibold rounded-xl border-2 border-gray-200 hover:border-primary-400 hover:text-primary-600 transition-all duration-200;
   }
 
   .btn-amazon {
-    @apply inline-flex items-center justify-center px-6 py-3 bg-amber-400 text-gray-900 font-bold rounded-lg hover:bg-amber-500 transition-all duration-200 shadow-md hover:shadow-lg gap-2;
+    @apply inline-flex items-center justify-center px-6 py-3 bg-amber-400 text-gray-900 font-bold rounded-xl hover:bg-amber-500 transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 gap-2;
+  }
+
+  .btn-amazon-lg {
+    @apply inline-flex items-center justify-center w-full px-8 py-4 bg-amber-400 text-gray-900 font-bold text-lg rounded-xl hover:bg-amber-500 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 gap-3;
   }
 
   .card {
-    @apply bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-gray-100;
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100;
   }
 
   .badge {
@@ -40,17 +48,71 @@
   }
 
   .badge-category {
-    @apply badge bg-primary-100 text-primary-700;
+    @apply badge bg-primary-50 text-primary-700 border border-primary-100;
   }
 
   .badge-type {
-    @apply badge bg-accent-100 text-accent-700;
+    @apply badge bg-accent-50 text-accent-700 border border-accent-100;
+  }
+
+  .badge-viral {
+    @apply badge bg-red-50 text-red-600 border border-red-100 font-bold;
+  }
+
+  .badge-new {
+    @apply badge bg-green-50 text-green-700 border border-green-100 font-bold;
   }
 
   .prose-custom {
     @apply prose prose-lg prose-gray max-w-none;
     @apply prose-headings:font-serif prose-headings:text-gray-900;
     @apply prose-a:text-primary-600 prose-a:no-underline hover:prose-a:underline;
-    @apply prose-img:rounded-xl;
+    @apply prose-img:rounded-xl prose-img:shadow-md;
+    @apply prose-blockquote:border-primary-400 prose-blockquote:bg-primary-50 prose-blockquote:rounded-r-xl prose-blockquote:not-italic;
+  }
+
+  /* Announcement bar */
+  .announcement-bar {
+    @apply bg-gradient-to-r from-primary-600 to-accent-600 text-white text-sm py-2 text-center font-medium;
+  }
+
+  /* Newsletter input */
+  .input-newsletter {
+    @apply w-full px-4 py-3 rounded-xl border-2 border-gray-200 focus:border-primary-400 focus:outline-none focus:ring-2 focus:ring-primary-100 transition-all duration-200 text-gray-800 placeholder-gray-400;
+  }
+
+  /* Section divider */
+  .section-divider {
+    @apply border-t border-gray-100 my-2;
+  }
+
+  /* Stats card */
+  .stat-card {
+    @apply text-center p-4 bg-white rounded-2xl border border-gray-100 shadow-sm;
+  }
+
+  /* Trust badge */
+  .trust-badge {
+    @apply flex items-center gap-2 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full border border-gray-100 shadow-sm text-sm font-medium text-gray-700;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent;
+  }
+
+  .bg-pattern {
+    background-image: radial-gradient(circle at 1px 1px, rgba(215, 127, 53, 0.08) 1px, transparent 0);
+    background-size: 32px 32px;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
   }
 }
