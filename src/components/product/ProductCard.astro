@@ -1,6 +1,7 @@
 ---
 import { formatPrice } from '../../utils/formatting';
 import RatingStars from './RatingStars.astro';
+import { buildAmazonLink } from '../../utils/affiliate';
 
 interface Props {
   name: string;
@@ -10,12 +11,20 @@ interface Props {
   category: string;
   price: { current: number; currency: string };
   rating: { score: number; count: number };
+  amazonAsin: string;
+  affiliateTag?: string;
   featured?: boolean;
   bestseller?: boolean;
   inStock?: boolean;
 }
 
-const { name, slug, shortDescription, image, category, price, rating, featured = false, bestseller = false, inStock = true } = Astro.props;
+const {
+  name, slug, shortDescription, image, category, price, rating,
+  amazonAsin, affiliateTag = 'issamdeco-21',
+  featured = false, bestseller = false, inStock = true
+} = Astro.props;
+
+const amazonUrl = buildAmazonLink(amazonAsin, affiliateTag);
 
 function formatCount(count: number): string {
   if (count >= 1000) {
@@ -46,8 +55,8 @@ function formatCount(count: number): string {
     </div>
   )}
 
+  <!-- Image + info → page interne (SEO) -->
   <a href={`/produits/${slug}/`} class="block flex-1 flex flex-col">
-    <!-- Image -->
     <div class="aspect-square bg-gray-50 flex items-center justify-center p-6 overflow-hidden">
       <img
         src={image}
@@ -60,7 +69,6 @@ function formatCount(count: number): string {
       />
     </div>
 
-    <!-- Content -->
     <div class="p-4 flex flex-col flex-1 border-t border-gray-50">
       <span class="badge-category text-xs capitalize mb-2 inline-block w-fit">{category}</span>
       <h3 class="font-serif font-bold text-gray-900 group-hover:text-primary-600 transition-colors mb-1.5 line-clamp-2 text-sm leading-snug flex-1">
@@ -68,14 +76,12 @@ function formatCount(count: number): string {
       </h3>
       <p class="text-xs text-gray-500 line-clamp-2 mb-3 leading-relaxed">{shortDescription}</p>
 
-      <!-- Rating -->
       <div class="flex items-center gap-1.5 mb-3">
         <RatingStars score={rating.score} />
         <span class="text-xs font-semibold text-gray-700">{rating.score}</span>
         <span class="text-xs text-gray-400">({formatCount(rating.count)})</span>
       </div>
 
-      <!-- Prix & stock -->
       <div class="flex items-center justify-between mt-auto pt-2.5 border-t border-gray-100">
         <span class="text-lg font-bold text-gray-900">
           {formatPrice(price.current, price.currency)}
@@ -92,15 +98,23 @@ function formatCount(count: number): string {
     </div>
   </a>
 
-  <!-- CTA -->
-  <div class="px-4 pb-4 pt-2">
+  <!-- CTA → Amazon directement -->
+  <div class="px-4 pb-4 pt-2 flex flex-col gap-1.5">
     <a
-      href={`/produits/${slug}/`}
+      href={amazonUrl}
+      target="_blank"
+      rel="nofollow sponsored noopener noreferrer"
       class="w-full block text-center bg-amber-400 hover:bg-amber-500 text-gray-900 font-bold text-sm py-2.5 rounded-xl transition-all duration-200 hover:shadow-md"
     >
-      Voir le prix Amazon →
+      🛒 Voir le prix sur Amazon →
     </a>
-    <p class="text-center text-xs text-gray-400 mt-1.5 flex items-center justify-center gap-1">
+    <a
+      href={`/produits/${slug}/`}
+      class="w-full block text-center text-xs text-gray-400 hover:text-primary-600 transition-colors py-1"
+    >
+      Lire l'avis complet
+    </a>
+    <p class="text-center text-xs text-gray-400 flex items-center justify-center gap-1">
       <span>📦</span> Livraison Prime 24h disponible
     </p>
   </div>
